@@ -291,11 +291,14 @@ const CATEGORIES = [
 ];
 
 const SKILLS = [
-{n:"codex-plugin-setup",inv:"/codex:setup",o:"プラグイン",c:14,d:"Claude Code起動後に「/plugin marketplace add openai/codex-plugin-cc」→「/plugin install codex@openai-codex」→「/reload-plugins」→「/codex:setup」の順で実行し、Codex CLIの導入・ログイン状態を確認する。認証済みなら完了、失効時は「codex login」で再ログインを案内。前提はNode.js 18.18以上、ChatGPT契約(無料枠可)またはOpenAI APIキー。導入後は「コデックスでレビューして」のような自然言語でも呼び出せる。",e:"コデックスをセットアップして"},
-{n:"codex:review",inv:"/codex:review",o:"プラグイン",c:14,d:"未コミットの差分をCodexに読み取り専用でレビューさせる。",e:"コデックスでレビューして"},
-{n:"codex:adversarial-review",inv:"/codex:adversarial-review",o:"プラグイン",c:14,d:"Codexによる敵対的レビュー(あら探し視点での厳しめレビュー)を実行する。",e:"コデックスで敵対的レビューして"},
-{n:"codex:rescue",inv:"/codex:rescue",o:"プラグイン",c:14,d:"デバッグ・修正・実装をCodexに委任する。",e:"このバグの修正をコデックスに任せて"},
-{n:"codex:status/result/cancel",inv:"/codex:status",o:"プラグイン",c:14,d:"Codexのバックグラウンドジョブの状態確認(/codex:status)、結果取得(/codex:result)、キャンセル(/codex:cancel)を行う。",e:"コデックスのジョブ状況を確認して"},
+{n:"codex:setup",inv:"/codex:setup",o:"プラグイン",c:14,d:"点検(まず最初にこれ)。",e:"コデックスの動作確認をして"},
+{n:"codex:review",inv:"/codex:review",o:"プラグイン",c:14,d:"現在の変更をレビュー(--base main / --background)。",e:"今の変更をコデックスでレビューして"},
+{n:"codex:adversarial-review",inv:"/codex:adversarial-review",o:"プラグイン",c:14,d:"設計判断ごと疑わせる挑戦レビュー。",e:"コデックスで設計を厳しくレビューして"},
+{n:"codex:rescue",inv:"/codex:rescue",o:"プラグイン",c:14,d:"バグ調査・修正をCodexに委譲(--model 指定可)。",e:"このバグ調査をコデックスに任せて"},
+{n:"codex:transfer",inv:"/codex:transfer",o:"プラグイン",c:14,d:"今の会話をCodexの継続セッションへ引っ越し。",e:"この会話をコデックスに引き継いで"},
+{n:"codex:status",inv:"/codex:status",o:"プラグイン",c:14,d:"実行中ジョブの進捗。",e:"コデックスのジョブ進捗を確認して"},
+{n:"codex:result",inv:"/codex:result",o:"プラグイン",c:14,d:"完了ジョブの結果。",e:"コデックスのジョブ結果を見せて"},
+{n:"codex:cancel",inv:"/codex:cancel",o:"プラグイン",c:14,d:"ジョブ中止。",e:"コデックスのジョブを中止して"},
 {n:"cowork-plugin-management:cowork-plugin-customizer",inv:"/cowork-plugin-management:cowork-plugin-customizer",o:"プラグイン",c:12,d:"組織のツールやワークフローに合わせて、既存のCoworkプラグインをカスタマイズする。",e:"このプラグインを自社のワークフローに合わせて調整して"},
 {n:"cowork-plugin-management:create-cowork-plugin",inv:"/cowork-plugin-management:create-cowork-plugin",o:"プラグイン",c:12,d:"ゼロから新しいCoworkプラグインを作成する手順をガイドする。",e:"新しいプラグインを一から作りたい"},
 {n:"adv-business-knowledge",inv:"/adv-post-order-operations:adv-business-knowledge",o:"自作",c:1,d:"ADVの業務知識を、提供された資料や会話、社内情報をもとに検索・整理・説明し、関連スキルの利用方針を示す。",e:"この案件では何を確認すべきか教えて"},
