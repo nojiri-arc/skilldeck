@@ -1,0 +1,546 @@
+<title>SkillDeck</title>
+<style>
+:root{
+  --bg: hsl(350 10% 97%);
+  --surface: #ffffff;
+  --surface-2: hsl(350 12% 99%);
+  --border: hsl(350 8% 88%);
+  --border-soft: hsl(350 8% 92%);
+  --text: hsl(350 15% 14%);
+  --text-muted: hsl(350 6% 42%);
+  --text-faint: hsl(350 5% 60%);
+  --accent: #8c2f3a;
+  --accent-strong: #6e1f28;
+  --accent-soft: hsl(350 55% 95%);
+  --accent-contrast: #fff;
+  --chip-bg: hsl(350 10% 95%);
+  --shadow: 0 1px 2px hsl(350 30% 20% / 0.04), 0 6px 20px hsl(350 30% 20% / 0.05);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg: hsl(350 14% 9%);
+    --surface: hsl(350 12% 13%);
+    --surface-2: hsl(350 12% 15%);
+    --border: hsl(350 10% 22%);
+    --border-soft: hsl(350 10% 19%);
+    --text: hsl(350 12% 92%);
+    --text-muted: hsl(350 8% 66%);
+    --text-faint: hsl(350 6% 48%);
+    --accent: #e08893;
+    --accent-strong: #f2b3ba;
+    --accent-soft: hsl(350 30% 20%);
+    --accent-contrast: #2b0f13;
+    --chip-bg: hsl(350 12% 18%);
+    --shadow: 0 1px 2px hsl(0 0% 0% / 0.3), 0 8px 24px hsl(0 0% 0% / 0.35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg: hsl(350 14% 9%);
+  --surface: hsl(350 12% 13%);
+  --surface-2: hsl(350 12% 15%);
+  --border: hsl(350 10% 22%);
+  --border-soft: hsl(350 10% 19%);
+  --text: hsl(350 12% 92%);
+  --text-muted: hsl(350 8% 66%);
+  --text-faint: hsl(350 6% 48%);
+  --accent: #e08893;
+  --accent-strong: #f2b3ba;
+  --accent-soft: hsl(350 30% 20%);
+  --accent-contrast: #2b0f13;
+  --chip-bg: hsl(350 12% 18%);
+  --shadow: 0 1px 2px hsl(0 0% 0% / 0.3), 0 8px 24px hsl(0 0% 0% / 0.35);
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  font-size:14px;
+  line-height:1.6;
+}
+.wrap{max-width:1400px;margin:0 auto;padding:0 28px 64px;}
+
+/* header */
+header.top{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:20px;padding:30px 0 18px;flex-wrap:wrap;
+  border-bottom:1px solid var(--border);
+  margin-bottom:22px;
+}
+.brand{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
+.brand h1{
+  font-family:"Zen Old Mincho",serif;
+  font-weight:600;font-size:28px;letter-spacing:.02em;margin:0;
+  color:var(--text);
+}
+.brand .sub{
+  font-size:12.5px;color:var(--text-faint);
+  border-left:1px solid var(--border);padding-left:14px;
+  max-width:420px;
+}
+.tabs{display:flex;gap:26px;align-items:baseline;}
+.tab{
+  font-size:14px;color:var(--text-faint);cursor:default;
+  padding-bottom:12px;border-bottom:2px solid transparent;
+  display:flex;gap:6px;align-items:baseline;
+}
+.tab .n{font-size:12px;color:var(--text-faint);}
+.tab.active{color:var(--text);border-color:var(--accent);font-weight:600;}
+.tab.active .n{color:var(--accent);}
+
+/* layout */
+.layout{display:grid;grid-template-columns:272px 1fr;gap:26px;align-items:start;}
+@media (max-width:880px){.layout{grid-template-columns:1fr;}}
+
+/* sidebar */
+.panel{
+  background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  padding:16px;margin-bottom:16px;box-shadow:var(--shadow);
+}
+.panel h2{
+  font-size:11.5px;letter-spacing:.06em;color:var(--text-faint);
+  margin:0 0 10px;font-weight:600;text-transform:uppercase;
+}
+.search-box{
+  width:100%;padding:9px 11px;border:1px solid var(--border);border-radius:8px;
+  background:var(--surface-2);color:var(--text);font-size:13.5px;font-family:inherit;
+}
+.search-box:focus{outline:2px solid var(--accent-soft);border-color:var(--accent);}
+.field-toggles{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:10px;}
+.field-toggles label{
+  display:flex;align-items:center;gap:5px;font-size:12.5px;color:var(--text-muted);
+}
+.field-toggles input{accent-color:var(--accent);}
+
+.sort-row{margin-top:12px;}
+.sort-row select{
+  width:100%;padding:8px 9px;border:1px solid var(--border);border-radius:8px;
+  background:var(--surface-2);color:var(--text);font-size:13px;font-family:inherit;
+}
+
+.list-row{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:7px 9px;border-radius:8px;cursor:pointer;font-size:13.5px;color:var(--text-muted);
+  margin:0 -4px;
+}
+.list-row:hover{background:var(--surface-2);}
+.list-row .num{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;color:var(--text-faint);
+  margin-right:8px;
+}
+.list-row .cnt{
+  font-size:11.5px;color:var(--text-faint);font-family:"JetBrains Mono",ui-monospace,monospace;
+}
+.list-row.active{background:var(--accent);color:var(--accent-contrast);font-weight:600;}
+.list-row.active .num,.list-row.active .cnt{color:var(--accent-contrast);opacity:.85;}
+
+.origin-key{margin-top:6px;font-size:11.5px;color:var(--text-faint);line-height:1.7;}
+.origin-key b{color:var(--text-muted);font-weight:600;}
+
+/* main */
+.toolbar{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  margin-bottom:16px;
+}
+.result-count{font-size:13px;color:var(--text-muted);}
+.result-count b{color:var(--text);font-family:"JetBrains Mono",ui-monospace,monospace;}
+.active-filters{display:flex;gap:8px;flex-wrap:wrap;}
+.filter-chip{
+  display:flex;align-items:center;gap:6px;background:var(--accent-soft);color:var(--accent-strong);
+  border-radius:999px;padding:4px 10px 4px 12px;font-size:12px;font-weight:600;
+}
+.filter-chip button{
+  border:none;background:none;color:inherit;cursor:pointer;font-size:13px;line-height:1;
+  padding:0;opacity:.7;
+}
+.filter-chip button:hover{opacity:1;}
+
+.grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;
+}
+.card{
+  background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  padding:16px 17px 14px;display:flex;flex-direction:column;gap:9px;
+  box-shadow:var(--shadow);
+}
+.card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
+.card-name{
+  font-family:"Zen Old Mincho",serif;font-size:16.5px;font-weight:600;color:var(--text);
+  line-height:1.4;
+}
+.badge{
+  flex:none;font-size:10.5px;font-weight:600;padding:3px 9px;border-radius:999px;
+  white-space:nowrap;letter-spacing:.02em;
+}
+.badge-自作{background:var(--accent);color:var(--accent-contrast);}
+.badge-公式{background:var(--chip-bg);color:var(--text-muted);border:1px solid var(--border);}
+.badge-プラグイン{background:var(--chip-bg);color:var(--text-muted);border:1px solid var(--border);}
+.badge-もらった{background:var(--chip-bg);color:var(--text-muted);border:1px solid var(--border);}
+
+.invoke{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;color:var(--accent);
+  background:var(--accent-soft);display:inline-block;padding:2px 8px;border-radius:6px;
+  width:fit-content;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.card-cat{font-size:11px;color:var(--text-faint);}
+.card-desc{font-size:13px;color:var(--text-muted);line-height:1.65;flex:1;}
+
+.example{
+  background:var(--surface-2);border:1px solid var(--border-soft);border-radius:9px;
+  padding:9px 11px;display:flex;align-items:center;gap:8px;margin-top:2px;
+}
+.example .ex-label{font-size:10px;color:var(--text-faint);flex:none;}
+.example p{margin:0;font-size:12.5px;color:var(--text);flex:1;line-height:1.5;}
+.copy-btn{
+  flex:none;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);
+  border-radius:6px;padding:5px 10px;font-size:10.5px;font-weight:600;cursor:pointer;
+  font-family:inherit;letter-spacing:.03em;
+}
+.copy-btn:hover{border-color:var(--accent);color:var(--accent);}
+.copy-btn.copied{border-color:var(--accent);color:var(--accent);background:var(--accent-soft);}
+
+.empty{
+  grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--text-faint);font-size:13.5px;
+}
+
+.footnote{
+  margin-top:26px;font-size:11.5px;color:var(--text-faint);line-height:1.8;
+  border-top:1px solid var(--border);padding-top:14px;
+}
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>SkillDeck</h1>
+      <div class="sub">保存済みスキルを分類・検索できる一覧ページ。由来とカテゴリはAIによる推定です。</div>
+    </div>
+    <nav class="tabs">
+      <span class="tab active">スキル <span class="n" id="tabCount">81</span></span>
+      <span class="tab">MCP</span>
+      <span class="tab">アプリ</span>
+      <span class="tab">棚卸し</span>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <div class="panel">
+        <h2>キーワード検索</h2>
+        <input class="search-box" id="searchInput" type="text" placeholder="例: 議事録, スライド, 広告">
+        <div class="field-toggles">
+          <label><input type="checkbox" id="fName" checked> 名前</label>
+          <label><input type="checkbox" id="fDesc" checked> 説明</label>
+          <label><input type="checkbox" id="fEx" checked> 依頼例</label>
+        </div>
+        <div class="sort-row">
+          <select id="sortSelect">
+            <option value="default">並び順: 登録順</option>
+            <option value="name">並び順: 名前順</option>
+            <option value="category">並び順: カテゴリ順</option>
+            <option value="origin">並び順: 由来順</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>カテゴリ</h2>
+        <div id="categoryList"></div>
+      </div>
+
+      <div class="panel">
+        <h2>由来</h2>
+        <div id="originList"></div>
+        <div class="origin-key">
+          <div><b>自作</b> — このセッション専用に作られたスキル</div>
+          <div><b>公式</b> — Anthropic標準の組み込みスキル</div>
+          <div><b>プラグイン</b> — プラグイン由来のスキル</div>
+          <div><b>もらった</b> — 外部の作者から取り込んだスキル集</div>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="toolbar">
+        <div class="result-count"><b id="resultCount">81</b> 件のスキルを表示中</div>
+        <div class="active-filters" id="activeFilters"></div>
+      </div>
+      <div class="grid" id="cardGrid"></div>
+      <div class="footnote">
+        SkillDeck — このセッションで利用可能な保存スキル一覧を可視化した参照ページです。由来（自作/公式/プラグイン/もらった）とカテゴリ分類は、各スキルの説明文をもとにしたAIによる推定であり、実際の使用回数などの利用統計は含まれていません。
+      </div>
+    </main>
+  </div>
+</div>
+
+<script>
+const CATEGORIES = [
+  "資料作成・プレゼン","デザイン・ビジュアル","議事録・会議","営業・CRM",
+  "受注後業務・案件運用","広告運用・レポート","リサーチ・分析","開発・エンジニアリング",
+  "タスク・日次運用","翻訳・言語","Cowork・プラグイン管理","その他・生活サポート",
+  "ADV関連"
+];
+
+const SKILLS = [
+{n:"cowork-plugin-management:cowork-plugin-customizer",inv:"/cowork-plugin-management:cowork-plugin-customizer",o:"プラグイン",c:11,d:"組織のツールやワークフローに合わせて、既存のCoworkプラグインをカスタマイズする。",e:"このプラグインを自社のワークフローに合わせて調整して"},
+{n:"cowork-plugin-management:create-cowork-plugin",inv:"/cowork-plugin-management:create-cowork-plugin",o:"プラグイン",c:11,d:"ゼロから新しいCoworkプラグインを作成する手順をガイドする。",e:"新しいプラグインを一から作りたい"},
+{n:"adv-business-knowledge",inv:"/adv-post-order-operations:adv-business-knowledge",o:"自作",c:13,d:"ADVの業務知識を、提供された資料や会話、社内情報をもとに検索・整理・説明し、関連スキルの利用方針を示す。",e:"この案件では何を確認すべきか教えて"},
+{n:"adv-shiryo-sakusei",inv:"/adv-post-order-operations:adv-shiryo-sakusei",o:"自作",c:13,d:"ADVの標準様式で営業提案資料、サービス概要、ASO・CPD提案、施策レポートなどを作成・編集する。",e:"ADV仕様で提案資料を作って"},
+{n:"adv-shiyo-gijiroku",inv:"/adv-post-order-operations:adv-shiyo-gijiroku",o:"自作",c:13,d:"会議の文字起こしをADV指定フォーマットの議事録に整形する。",e:"この文字起こしをADV議事録の形式にまとめて"},
+{n:"aso-internal-order-request",inv:"/adv-post-order-operations:aso-internal-order-request",o:"自作",c:13,d:"ASO実施が確定した案件について必要情報を確認し、社内向け新規発注依頼のSlack下書きを準備する。",e:"このASO案件の社内発注依頼を下書きして"},
+{n:"aso-simulation-and-order-request",inv:"/adv-post-order-operations:aso-simulation-and-order-request",o:"自作",c:13,d:"ADVのASO案件をシミュレーション事前確認、または発注依頼へ段階に応じて振り分ける。",e:"このASO案件、今どの段階か判断して次に進めて"},
+{n:"aso-simulation-intake",inv:"/adv-post-order-operations:aso-simulation-intake",o:"自作",c:13,d:"ASOシミュレーション実施前に必要情報を確認し、担当者や先方への確認文を下書きする。",e:"ASOシミュレーション前の確認事項をまとめて"},
+{n:"calendar-event-and-meet-link",inv:"/adv-post-order-operations:calendar-event-and-meet-link",o:"自作",c:13,d:"ADVの命名規則に沿ってGoogleカレンダーに予定を登録し、必要に応じてGoogle Meetリンクを発行する。",e:"この打ち合わせをカレンダーに登録してMeetリンクも発行して"},
+{n:"customer-icebreaker-research",inv:"/adv-post-order-operations:customer-icebreaker-research",o:"自作",c:13,d:"商談前に見込み客企業を調査し、話のきっかけになる情報とアイスブレイクを準備する。",e:"この会社との商談前にアイスブレイクのネタを調べて"},
+{n:"draft-client-proposal",inv:"/adv-post-order-operations:draft-client-proposal",o:"自作",c:13,d:"過去の議事録やメールのやり取りを踏まえ、クライアント向け提案書の下書きを作成する。",e:"この案件の提案書のたたき台を作って"},
+{n:"draft-sales-email",inv:"/adv-post-order-operations:draft-sales-email",o:"自作",c:13,d:"過去の議事録や直近のメールのやり取りをもとに、相手先の状況に合わせた営業メールの下書きを作成する。",e:"この会社宛ての営業メールを下書きして"},
+{n:"existing-attacker",inv:"/adv-post-order-operations:existing-attacker",o:"自作",c:13,d:"「既存更新」の際に、過去に見込みのあった既存顧客を担当別に最大3件ずつ優先度をつけて掘り起こす。",e:"既存更新の対象を担当ごとに提案して"},
+{n:"makeleaps-client-registration",inv:"/adv-post-order-operations:makeleaps-client-registration",o:"自作",c:13,d:"MakeLeapsに新しい取引先を登録し、登録内容を確認する。",e:"この取引先をMakeLeapsに登録して"},
+{n:"makeleaps-orderslip-creation",inv:"/adv-post-order-operations:makeleaps-orderslip-creation",o:"自作",c:13,d:"受注内容からMakeLeapsの発注書（自社宛）を作成し、内容を確認する。",e:"この受注内容で発注書を作って"},
+{n:"meeting-minutes-notion-registration",inv:"/adv-post-order-operations:meeting-minutes-notion-registration",o:"自作",c:13,d:"会議メモや文字起こしをADV標準の議事録形式に整え、確認後にNotionのメモ・議事録ビューへ登録する。",e:"この議事録をNotionに登録して"},
+{n:"mtg-after-automation",inv:"/adv-post-order-operations:mtg-after-automation",o:"自作",c:13,d:"会議の文字起こしや議事録を会議後フローで処理し、議事録・Slack文案・CRM整理と根拠ある次アクションを関連スキルへつなぐ。",e:"議事録を共有したので、以降の対応をお願い"},
+{n:"new-attacker",inv:"/adv-post-order-operations:new-attacker",o:"自作",c:13,d:"「新規更新」向けに新規アプリの営業候補選定、ストア情報更新、送付準備を根拠付きで整える。",e:"新規開拓の候補を提案して"},
+{n:"pipedrive-manage-sales",inv:"/adv-post-order-operations:pipedrive-manage-sales",o:"自作",c:13,d:"Pipedriveで組織・担当者・取引の登録や更新、パイプラインのステータス変更、Todo・アクティビティ管理を一貫して行う。",e:"この商談をPipedriveに登録して"},
+{n:"post-order-operations-router",inv:"/adv-post-order-operations:post-order-operations-router",o:"自作",c:13,d:"受注後業務をまとめて進行し、取引先登録・MakeLeaps発注書・売上票・施策シートを案件に応じて計画し、承認後に実行する。",e:"受注後業務の対応をお願い"},
+{n:"review-cleaning-sales-sheet-update",inv:"/adv-post-order-operations:review-cleaning-sales-sheet-update",o:"自作",c:13,d:"レビューまたはクリーニング案件について、売上票だけを追加・更新する。",e:"このクリーニング案件を売上票に記入して"},
+{n:"review-cleaning-sheet-setup",inv:"/adv-post-order-operations:review-cleaning-sheet-setup",o:"自作",c:13,d:"レビュー施策またはクリーニング施策の受注後に、正式テンプレートからクライアント用スプレッドシートを発行し、必要な設定まで完了する。",e:"レビュー施策のシートを発行して"},
+{n:"review-screenshot-automation-setup",inv:"/adv-post-order-operations:review-screenshot-automation-setup",o:"自作",c:13,d:"レビュー施策のスクリーンショット自動化について、新案件追加や設定変更を安全テスト付きで行う。",e:"レビュー自動化に新しい案件を追加して"},
+{n:"review-screenshot-daily-operations",inv:"/adv-post-order-operations:review-screenshot-daily-operations",o:"自作",c:13,d:"レビュー施策の日々のスクリーンショット反映、失敗案件対応、残回数通知を確認・運用する。",e:"今日のレビュースクリーンショットを反映して"},
+{n:"review-screenshot-reflection",inv:"/adv-post-order-operations:review-screenshot-reflection",o:"自作",c:13,d:"レビュー施策のスクリーンショット業務を、日次反映か新規設定かで適切なスキルへ振り分ける。",e:"このレビュー案件、次は何をすればいい?"},
+{n:"sales-deal-lifecycle-router",inv:"/adv-post-order-operations:sales-deal-lifecycle-router",o:"自作",c:13,d:"初回接点から受注・施策実行までを、資料と会話の文脈から一気通貫で整理・進行する。",e:"この案件、初回接点から今までの流れをまとめて次を進めて"},
+{n:"sales-sheet-update",inv:"/adv-post-order-operations:sales-sheet-update",o:"自作",c:13,d:"売上票に受注後の案件情報（クライアント・サービス・金額・期間・担当）を追加・更新する。",e:"この受注内容を売上票に反映して"},
+{n:"skill-registry-update",inv:"/adv-post-order-operations:skill-registry-update",o:"自作",c:13,d:"新規または更新したスキルをスキル管理表に、重複を避けて登録する。",e:"このスキルをスキル管理表に登録して"},
+{n:"task-collection-daily-brief",inv:"/adv-post-order-operations:task-collection-daily-brief",o:"自作",c:13,d:"Slack・Gmail・カレンダー・Pipedriveから対応が必要な事項だけを読み取り、重複のない短いTODO候補を作る。",e:"今日のTODOを集めて"},
+{n:"design",inv:"/design",o:"公式",c:2,d:"UIモックアップ、LP、広告・SNSクリエイティブ、印刷物などを複数アートボードのデザインキャンバスとして作成する。",e:"このサービスのLPをデザインして"},
+{n:"dataviz",inv:"/dataviz",o:"公式",c:2,d:"チャート・グラフ・ダッシュボードなど、あらゆるデータ可視化を作る前に読む配色・レイアウトのガイド。",e:"この売上データを分かりやすいグラフにして"},
+{n:"artifact-design",inv:"/artifact-design",o:"公式",c:2,d:"Artifactを書く前に読む、デザインの基本方針ガイド。",e:"このページをもっと洗練されたデザインにして"},
+{n:"artifact-diagramming",inv:"/artifact-diagramming",o:"公式",c:2,d:"Artifact内で図解が有効な場面と、両テーマで見やすいSVG図の描き方のノウハウ。",e:"この仕組みを図解して"},
+{n:"artifact-capabilities",inv:"/artifact-capabilities",o:"公式",c:2,d:"公開したArtifactページに、データ保存や共有状態など静的HTMLにはない機能を持たせるためのガイド。",e:"このツールに保存機能を付けたい"},
+{n:"cowork-plugin",inv:"/cowork-plugin",o:"公式",c:11,d:"新しいCoworkプラグインをゼロから作成、またはインストール済みプラグインを組織向けにカスタマイズする。",e:"新しいプラグインを作りたい"},
+{n:"explain-usage",inv:"/explain-usage",o:"公式",c:11,d:"このセッションのトークンがどこで使われたかを、簡単なグラフと分かりやすい言葉で説明する。",e:"今回のトークン使用量を教えて"},
+{n:"setup-cowork",inv:"/setup-cowork",o:"公式",c:11,d:"プラグイン導入・スキル体験・ツール接続までを案内するCoworkの初期セットアップ。",e:"Coworkの初期設定を手伝って"},
+{n:"claude-in-chrome",inv:"/claude-in-chrome",o:"公式",c:11,d:"Chromeブラウザを自動操作し、クリック・フォーム入力・スクリーンショット・コンソール確認・サイト巡回を行う。",e:"このサイトの操作を自動化して"},
+{n:"ai-workflow-consultant",inv:"/ai-workflow-consultant",o:"自作",c:8,d:"定型業務をAIに任せるための実務的なワークフローと専用アシスタントを設計する。",e:"この業務をAIで自動化する方法を考えて"},
+{n:"artifact-template-adv-1",inv:"/artifact-template-adv-1",o:"自作",c:13,d:"ADV仕様資料作成パターン1のテンプレートを使ってプレゼン資料を作成する。",e:"パターン1のADV仕様で資料を作って"},
+{n:"artifact-template-adv-2",inv:"/artifact-template-adv-2",o:"自作",c:13,d:"ADV仕様資料作成パターン2の構成・配色・タイポグラフィに沿ってプレゼン資料を作成する。",e:"パターン2のADV仕様で資料を作って"},
+{n:"artifact-template-jra",inv:"/artifact-template-jra",o:"自作",c:13,d:"アドウェイズ提案資料フォーマット（JRA提案ベース）でプレゼン資料を作成する。",e:"JRAベースのフォーマットで提案資料を作って"},
+{n:"ask-matt",inv:"/ask-matt",o:"もらった",c:8,d:"状況に合った進め方（設計の壁打ち、試作、仕様・チケット化、実装、TDD、レビュー）を案内するルータースキル。",e:"今の状況にどのスキルが合うか教えて"},
+{n:"business-card-contact-import",inv:"/business-card-contact-import",o:"自作",c:12,d:"名刺画像から氏名・会社名・役職・電話番号・メールアドレスを読み取り、既存の連絡先リストへ同じ形式で追記する。",e:"この名刺を連絡先リストに追加して"},
+{n:"catchphrase-ideation",inv:"/catchphrase-ideation",o:"自作",c:1,d:"商品・サービス・企画のキャッチコピーを、ターゲットや悩み、解決価値を整理したうえで複数案考案する。",e:"このサービスのキャッチコピーを考えて"},
+{n:"competitive-service-research",inv:"/competitive-service-research",o:"自作",c:4,d:"競合サービスや代替製品を公式サイト・料金ページなどの一次情報に基づいて調査し、機能・料金・強み弱みを比較する。",e:"この分野の競合サービスを比較して"},
+{n:"create-chatgpt-project",inv:"/create-chatgpt-project",o:"公式",c:11,d:"案件ごとの専用作業スペースを作成し、名前・案件概要・進捗タスクを設定してその中で作業を開始する。",e:"この案件をプロジェクト化して進めて"},
+{n:"design-qc",inv:"/design-qc",o:"自作",c:2,d:"LP・広告・SNS投稿・メール・スライドなど各種クリエイティブの視覚品質、分かりやすさ、コンバージョン適性をレビューする。",e:"このバナーをデザインチェックして"},
+{n:"docx",inv:"/docx",o:"公式",c:1,d:"Word文書（.docx）の作成・読み取り・編集を行う。目次やページ番号などの整形にも対応する。",e:"この内容をWord文書にまとめて"},
+{n:"domain-modeling",inv:"/domain-modeling",o:"もらった",c:8,d:"プロジェクトのドメインモデルを構築・洗練し、用語集やアーキテクチャ決定を記録する。",e:"このプロジェクトの用語を整理して"},
+{n:"google-ads-consultant",inv:"/google-ads-consultant",o:"自作",c:6,d:"Google広告データを分析し、単発の監査または承認制の日次改善提案を行う。",e:"このアカウントのGoogle広告を分析して"},
+{n:"grill-me",inv:"/grill-me",o:"もらった",c:8,d:"計画やデザインを鍛えるための、容赦ない壁打ちインタビュー。",e:"このプランを壁打ちして"},
+{n:"grill-with-docs",inv:"/grill-with-docs",o:"もらった",c:8,d:"壁打ちインタビューと同時に、ADRや用語集などのドキュメントも作成していく。",e:"このプランを壁打ちしながらドキュメント化して"},
+{n:"grilling",inv:"/grilling",o:"もらった",c:8,d:"計画・決定・アイデアについてユーザーを容赦なく問い詰め、思考を鍛える。",e:"この決定について厳しく突っ込んで"},
+{n:"implement",inv:"/implement",o:"もらった",c:8,d:"仕様書やチケット一式をもとに、実際の実装作業を行う。",e:"このチケットの内容を実装して"},
+{n:"import-memory",inv:"/import-memory",o:"公式",c:11,d:"他のAIアシスタントからのメモリーエクスポートを、会話的かつ追加的にClaudeの記憶へ取り込む。",e:"他のAIのメモリーをインポートして"},
+{n:"japanese-english-translator",inv:"/japanese-english-translator",o:"自作",c:10,d:"日本語と英語を自然で正確な表現に校正・翻訳する。",e:"この文章を自然な英語に翻訳して"},
+{n:"japanese-korean-translator",inv:"/japanese-korean-translator",o:"自作",c:10,d:"日本語と韓国語を自然で正確な表現に校正・翻訳する。",e:"この文章を自然な韓国語に翻訳して"},
+{n:"kimono-brain-todo-management",inv:"/kimono-brain-todo-management",o:"自作",c:9,d:"きものブレイン支援シートの既存フォーマットに合わせて、ゆいいつ・ItoguchiのTODOを確認・追記・更新する。",e:"きものブレインのTODOを更新して"},
+{n:"mission-control-daily-brief",inv:"/mission-control-daily-brief",o:"自作",c:9,d:"ユーザーの依頼に応じて、Slackを除いた読み取り専用の日次優先ブリーフをまとめる。",e:"今日のTODOをまとめて"},
+{n:"morning",inv:"/morning",o:"自作",c:9,d:"朝のブリーフをスタイル付きHTMLで表示、または平日の定期タスクとして設定する。",e:"今日の朝ブリーフを見せて"},
+{n:"operating-principles",inv:"/operating-principles",o:"自作",c:9,d:"ほぼ全てのタスクで基準となる判断基準・手段選定・確認要否・表現スタイルなどの運用方針。",e:"(他のスキルが内部的に参照する基盤方針)"},
+{n:"pc-lightening",inv:"/pc-lightening",o:"自作",c:12,d:"Macの動作や容量を安全に診断し、不要なローカルデータの整理を支援する。",e:"PCを軽量化したい"},
+{n:"pdf",inv:"/pdf",o:"公式",c:1,d:"PDFの読み取り・結合・分割・回転・透かし追加・フォーム入力・OCRなど、あらゆる操作を行う。",e:"このPDFを結合して"},
+{n:"plan-landing-page",inv:"/plan-landing-page",o:"自作",c:1,d:"サービスや商品のランディングページの構成・訴求・キャッチコピー・CTA・必要素材を設計する。",e:"このサービスのLP構成を考えて"},
+{n:"pptx",inv:"/pptx",o:"公式",c:1,d:"PowerPoint（.pptx）の作成・読み取り・編集を行う。テンプレートやレイアウトにも対応する。",e:"この内容でスライドを作って"},
+{n:"prompt-engineering-assistant",inv:"/prompt-engineering-assistant",o:"公式",c:11,d:"曖昧なタスクを、要件が明確な精度の高い実行プロンプトへ組み立てる。",e:"このタスク用のプロンプトを設計して"},
+{n:"research",inv:"/research",o:"公式",c:7,d:"信頼できる一次情報をもとに調査し、結果をMarkdownファイルとして記録する。",e:"このテーマについて調べてまとめて"},
+{n:"setup-matt-pocock-skills",inv:"/setup-matt-pocock-skills",o:"もらった",c:8,d:"他のエンジニアリングスキル群を使う前に、課題管理・トリアージ用語・ドキュメント構成を初期設定する。",e:"エンジニアリングスキル群の初期設定をして"},
+{n:"skill-creator",inv:"/skill-creator",o:"公式",c:11,d:"新しいスキルの作成、既存スキルの編集・最適化、性能評価を行う。",e:"新しいスキルを作りたい"},
+{n:"slide-outline-generator",inv:"/slide-outline-generator",o:"公式",c:1,d:"提供された資料から、10枚以内のビジネスプレゼン用アウトラインを作成する。",e:"この資料でスライドの構成案を作って"},
+{n:"sso-quick-diagnostics",inv:"/sso-quick-diagnostics",o:"自作",c:6,d:"YouTube・TikTokなどの動画・SNSチャンネルのソーシャル検索最適化を評価し、改善案を提案する。",e:"このYouTubeチャンネルの発見されやすさを調べて"},
+{n:"tdd",inv:"/tdd",o:"もらった",c:8,d:"テスト駆動開発でRed-Greenサイクルを回しながら機能開発やバグ修正を行う。",e:"TDDでこの機能を作って"},
+{n:"teach",inv:"/teach",o:"公式",c:11,d:"状態を保持する作業ディレクトリの中で、複数セッションにわたり新しいスキルや概念を教える。",e:"このテーマについて教えて"},
+{n:"to-spec",inv:"/to-spec",o:"もらった",c:8,d:"これまでの会話をそのまま仕様書にまとめ、課題管理ツールへ公開する。",e:"この会話を仕様書にして登録して"},
+{n:"to-tickets",inv:"/to-tickets",o:"もらった",c:8,d:"計画や仕様、会話の内容を、依存関係を明示した実装チケット群に分解して公開する。",e:"この計画をチケットに分解して"},
+{n:"wayfinder",inv:"/wayfinder",o:"もらった",c:8,d:"一度のセッションでは収まらない大きな作業を、課題管理ツール上の意思決定チケットの地図として計画・解決する。",e:"この大きなプロジェクトを計画に落とし込んで"},
+{n:"xlsx",inv:"/xlsx",o:"公式",c:1,d:"スプレッドシート（.xlsx/.csv等）の作成・編集・数式計算・グラフ作成・データ整形を行う。",e:"このデータを表にまとめて"},
+{n:"yuiitsu-ad-reporting",inv:"/yuiitsu-ad-reporting",o:"自作",c:6,d:"ゆいいつGoogle広告について、データに基づく週次Slack下書きや隔週レポート更新、承認済み日次確認を行う。",e:"ゆいいつの週次レポートを作って"},
+{n:"yuiitsu-before-after-posts",inv:"/yuiitsu-before-after-posts",o:"自作",c:6,d:"ゆいいつの着物ビフォアフター施策で、素材確認から投稿一式作成、社内確認、投稿後管理までを進める。",e:"着物ビフォアフターの投稿を準備して"},
+{n:"yuiitsu-daily-ads-analysis",inv:"/yuiitsu-daily-ads-analysis",o:"自作",c:6,d:"ゆいいつGoogle広告の承認制デイリー分析を実行する。",e:"デイリー分析開始"},
+];
+
+let state = { origin: null, category: null, query: "", sort: "default" };
+
+function el(tag, cls, text){
+  const e = document.createElement(tag);
+  if(cls) e.className = cls;
+  if(text !== undefined) e.textContent = text;
+  return e;
+}
+
+function buildOriginList(){
+  const wrap = document.getElementById("originList");
+  wrap.innerHTML = "";
+  const counts = {};
+  SKILLS.forEach(s => counts[s.o] = (counts[s.o]||0)+1);
+  const order = ["自作","公式","プラグイン","もらった"];
+  const allRow = el("div","list-row"+(state.origin===null?" active":""));
+  allRow.append(el("span","", "ALL すべて"));
+  allRow.append(el("span","cnt", String(SKILLS.length)));
+  allRow.onclick = () => { state.origin = null; render(); };
+  wrap.append(allRow);
+  order.forEach(o=>{
+    const row = el("div","list-row"+(state.origin===o?" active":""));
+    row.append(el("span","", o));
+    row.append(el("span","cnt", String(counts[o]||0)));
+    row.onclick = () => { state.origin = (state.origin===o? null : o); render(); };
+    wrap.append(row);
+  });
+}
+
+function buildCategoryList(){
+  const wrap = document.getElementById("categoryList");
+  wrap.innerHTML = "";
+  const counts = {};
+  SKILLS.forEach(s => counts[s.c] = (counts[s.c]||0)+1);
+  const allRow = el("div","list-row"+(state.category===null?" active":""));
+  const allLabel = el("span","","ALL すべて");
+  allRow.append(allLabel);
+  allRow.append(el("span","cnt", String(SKILLS.length)));
+  allRow.onclick = () => { state.category = null; render(); };
+  wrap.append(allRow);
+  CATEGORIES.forEach((name,i)=>{
+    const idx = i+1;
+    const row = el("div","list-row"+(state.category===idx?" active":""));
+    const left = document.createElement("span");
+    const num = el("span","num", String(idx).padStart(2,"0"));
+    left.append(num, document.createTextNode(name));
+    row.append(left);
+    row.append(el("span","cnt", String(counts[idx]||0)));
+    row.onclick = () => { state.category = (state.category===idx? null : idx); render(); };
+    wrap.append(row);
+  });
+}
+
+function matches(s){
+  if(state.origin && s.o !== state.origin) return false;
+  if(state.category && s.c !== state.category) return false;
+  const q = state.query.trim().toLowerCase();
+  if(!q) return true;
+  const fName = document.getElementById("fName").checked;
+  const fDesc = document.getElementById("fDesc").checked;
+  const fEx = document.getElementById("fEx").checked;
+  let hay = "";
+  if(fName) hay += s.n.toLowerCase() + " ";
+  if(fDesc) hay += s.d.toLowerCase() + " ";
+  if(fEx) hay += s.e.toLowerCase() + " ";
+  return hay.includes(q);
+}
+
+function sortList(list){
+  const arr = list.slice();
+  if(state.sort === "name") arr.sort((a,b)=>a.n.localeCompare(b.n));
+  else if(state.sort === "category") arr.sort((a,b)=>a.c-b.c || a.n.localeCompare(b.n));
+  else if(state.sort === "origin"){
+    const order = {"自作":0,"公式":1,"プラグイン":2,"もらった":3};
+    arr.sort((a,b)=> (order[a.o]-order[b.o]) || a.n.localeCompare(b.n));
+  }
+  return arr;
+}
+
+function renderChips(){
+  const wrap = document.getElementById("activeFilters");
+  wrap.innerHTML = "";
+  if(state.origin){
+    const chip = el("div","filter-chip");
+    chip.append(document.createTextNode("由来: "+state.origin));
+    const btn = el("button","","×"); btn.onclick=()=>{state.origin=null;render();};
+    chip.append(btn); wrap.append(chip);
+  }
+  if(state.category){
+    const chip = el("div","filter-chip");
+    chip.append(document.createTextNode("カテゴリ: "+CATEGORIES[state.category-1]));
+    const btn = el("button","","×"); btn.onclick=()=>{state.category=null;render();};
+    chip.append(btn); wrap.append(chip);
+  }
+}
+
+function copyText(text, btn){
+  const done = () => {
+    const original = btn.textContent;
+    btn.textContent = "コピー済み";
+    btn.classList.add("copied");
+    setTimeout(()=>{ btn.textContent = original; btn.classList.remove("copied"); }, 1400);
+  };
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done).catch(()=>fallbackCopy(text,done));
+  } else {
+    fallbackCopy(text, done);
+  }
+}
+function fallbackCopy(text, done){
+  const ta = document.createElement("textarea");
+  ta.value = text; ta.style.position="fixed"; ta.style.opacity="0";
+  document.body.appendChild(ta); ta.select();
+  try{ document.execCommand("copy"); done(); }catch(e){}
+  document.body.removeChild(ta);
+}
+
+function renderGrid(){
+  const grid = document.getElementById("cardGrid");
+  grid.innerHTML = "";
+  const filtered = sortList(SKILLS.filter(matches));
+  document.getElementById("resultCount").textContent = filtered.length;
+  if(filtered.length === 0){
+    grid.append(el("div","empty","該当するスキルが見つかりませんでした。検索条件を変えてお試しください。"));
+    return;
+  }
+  filtered.forEach(s=>{
+    const card = el("div","card");
+
+    const head = el("div","card-head");
+    head.append(el("div","card-name", s.n));
+    head.append(el("div","badge badge-"+s.o, s.o));
+    card.append(head);
+
+    card.append(el("div","invoke", s.inv));
+    card.append(el("div","card-cat", String(s.c).padStart(2,"0")+" "+CATEGORIES[s.c-1]));
+    card.append(el("div","card-desc", s.d));
+
+    const ex = el("div","example");
+    ex.append(el("div","ex-label","依頼例"));
+    const p = el("p","", s.e);
+    ex.append(p);
+    const btn = el("button","copy-btn","COPY");
+    btn.onclick = () => copyText(s.e, btn);
+    ex.append(btn);
+    card.append(ex);
+
+    grid.append(card);
+  });
+}
+
+function render(){
+  buildOriginList();
+  buildCategoryList();
+  renderChips();
+  renderGrid();
+}
+
+document.getElementById("searchInput").addEventListener("input", e=>{
+  state.query = e.target.value; renderGrid();
+});
+["fName","fDesc","fEx"].forEach(id=>{
+  document.getElementById(id).addEventListener("change", renderGrid);
+});
+document.getElementById("sortSelect").addEventListener("change", e=>{
+  state.sort = e.target.value; renderGrid();
+});
+
+document.getElementById("tabCount").textContent = SKILLS.length;
+render();
+</script>
