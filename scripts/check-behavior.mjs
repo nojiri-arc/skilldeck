@@ -56,6 +56,7 @@ const checks = [
   ,['精査画面は削除候補を先頭に表示する', html.indexOf("reviewPanel('削除候補'") < html.indexOf("reviewPanel('必要性を要確認'") && html.indexOf("reviewPanel('必要性を要確認'") < html.indexOf("reviewPanel('保持推奨'")]
   ,['保持・削除依頼は実削除せず判断保存と依頼文コピーに限定する', html.includes('data-review-action="keep"') && html.includes('data-review-action="request_delete"') && html.includes('実削除はトシの承認後に実施') && !html.includes('fetch(\'/api/delete')]
   ,['判断一覧はコピーと全消去ができる', html.includes('id="copyReviewQueue"') && html.includes('id="clearReviewQueue"') && html.includes("localStorage.removeItem(reviewStorageKey)")]
+  ,['技術差分の重複表示には判断ボタンを重ねない', html.includes("records.map((record) => diffItem(record,{actions:false}))")]
 ];
 const failures = checks.filter(([, result]) => !result);
 if (failures.length) { console.error(failures.map(([name]) => name).join('\n')); process.exit(1); }

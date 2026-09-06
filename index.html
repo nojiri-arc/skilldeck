@@ -144,12 +144,12 @@
       const selected=reviewDecisions()[target.id]?.decision;
       return `<div class="review-actions"><button class="review-action" type="button" data-review-action="keep" data-review-id="${escapeHtml(target.id)}" aria-pressed="${selected === 'keep'}">保持</button><button class="review-action delete" type="button" data-review-action="request_delete" data-review-id="${escapeHtml(target.id)}" aria-pressed="${selected === 'request_delete'}">削除依頼</button></div>`;
     }
-    function diffItem(record) {
+    function diffItem(record,{ actions=true }={}) {
       const usage=record.usage; const governance=record.governance;
       const summary=record.summary || record.mirror?.reason || statusLabel[record.mirror?.status] || '要確認';
-      return `<div class="diff-item"><b>${escapeHtml(record.name)}</b><span>${escapeHtml(kindLabel[record.kind] || record.kind)} · ${escapeHtml(summary)}</span>${usage && governance ? `<div class="review-meta"><span>${escapeHtml(usageLabel[usage.status] || '利用状況: 要確認')}</span><span>${escapeHtml(governanceLabel[governance.status] || '必要性: 要確認')}</span></div><p class="review-reason">${escapeHtml(usage.reason)}</p><p class="review-reason">${escapeHtml(governance.reason)}</p>${reviewActions(record)}` : ''}</div>`;
+      return `<div class="diff-item"><b>${escapeHtml(record.name)}</b><span>${escapeHtml(kindLabel[record.kind] || record.kind)} · ${escapeHtml(summary)}</span>${usage && governance ? `<div class="review-meta"><span>${escapeHtml(usageLabel[usage.status] || '利用状況: 要確認')}</span><span>${escapeHtml(governanceLabel[governance.status] || '必要性: 要確認')}</span></div><p class="review-reason">${escapeHtml(usage.reason)}</p><p class="review-reason">${escapeHtml(governance.reason)}</p>${actions ? reviewActions(record) : ''}` : ''}</div>`;
     }
-    function diffPanel(title,records,empty='該当なし') { return `<section class="panel"><h3 class="panel-title">${escapeHtml(title)} <span>(${records.length})</span></h3><div class="diff-list">${records.length ? records.map(diffItem).join('') : `<p class="status-note">${empty}</p>`}</div></section>`; }
+    function diffPanel(title,records,empty='該当なし') { return `<section class="panel"><h3 class="panel-title">${escapeHtml(title)} <span>(${records.length})</span></h3><div class="diff-list">${records.length ? records.map((record) => diffItem(record,{actions:false})).join('') : `<p class="status-note">${empty}</p>`}</div></section>`; }
     function reviewPanel(title,targets,{ open=false,note='',skillCount=targets.length }={}) { return `<details class="panel review-panel"${open ? ' open' : ''}><summary>${escapeHtml(title)} <span>${targets.length}判断対象 / ${skillCount}Skill</span></summary><div class="review-panel-body">${note ? `<p class="review-panel-note">${escapeHtml(note)}</p>` : ''}<div class="diff-list">${targets.length ? targets.map(diffItem).join('') : '<p class="status-note">該当なし</p>'}</div></div></details>`; }
     function pluginPackageTargets(records) {
       const grouped=new Map();
