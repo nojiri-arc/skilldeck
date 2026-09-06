@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-06T09:38:46.573Z",
+  "generatedAt": "2026-09-06T13:20:24.193Z",
   "categories": [
     {
       "id": "sales-customer",
@@ -66,7 +66,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+        "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
       },
       {
         "id": "capability.codex.openai-bundled-browser",
@@ -75,7 +75,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+        "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
       },
       {
         "id": "capability.codex.openai-bundled-chrome",
@@ -84,7 +84,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+        "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
       },
       {
         "id": "capability.codex.openai-bundled-codex-app-tools",
@@ -93,7 +93,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+        "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
       },
       {
         "id": "capability.codex.openai-bundled-computer-use",
@@ -102,7 +102,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+        "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
       },
       {
         "id": "capability.codex.openai-bundled-unified-computer-use",
@@ -111,7 +111,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+        "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
       },
       {
         "id": "capability.codex.openai-curated-remote-app-69b266168488819199dab47b2ab2e4a7",
@@ -120,7 +120,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+        "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
       },
       {
         "id": "capability.codex.openai-curated-remote-gmail",
@@ -129,7 +129,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+        "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
       },
       {
         "id": "capability.codex.openai-curated-remote-google-calendar",
@@ -138,7 +138,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+        "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
       },
       {
         "id": "capability.codex.openai-curated-remote-slack",
@@ -147,7 +147,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+        "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
       },
       {
         "id": "capability.codex.openai-curated-pipedrive",
@@ -156,7 +156,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+        "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
       },
       {
         "id": "capability.claude.marker.superdesign-claude-plugins-official",
@@ -165,7 +165,7 @@
         "evidenceType": "install_marker",
         "availability": "installed_unverified",
         "reason": "導入マーカーはありますが、現在のSkillパッケージおよび有効化状態を確認できませんでした。",
-        "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+        "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
       }
     ],
     "migrationCandidates": [
@@ -247,7 +247,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.ads-manager.ads-manager-actionable-review",
@@ -295,7 +295,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.ads-manager.ads-manager-ad-creation",
@@ -343,7 +343,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.ads-manager.ads-manager-delivery-recovery",
@@ -391,7 +391,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.ads-manager.ads-manager-entity-management",
@@ -439,7 +439,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.ads-manager.ads-manager-help",
@@ -487,7 +487,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.ads-manager.ads-manager-insights",
@@ -535,7 +535,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.ads-manager.ads-manager-onboarding",
@@ -583,7 +583,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.ads-manager.ads-manager-review",
@@ -631,7 +631,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.ads-manager.ads-manager-start-agent",
@@ -679,7 +679,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.adv-business-knowledge",
@@ -736,7 +736,7 @@
           "adv-business-knowledge"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "automation.claude.adv-existing-attacker-weekly",
@@ -786,7 +786,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.adv-shiryo-sakusei",
@@ -843,7 +843,7 @@
           "adv-shiryo-sakusei"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.adv-shiyo-gijiroku",
@@ -900,7 +900,7 @@
           "adv-shiyo-gijiroku"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.ai-workflow-consultant",
@@ -958,7 +958,7 @@
           "ai-workflow-consultant"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.analyze-data-quality",
@@ -1006,7 +1006,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.artifact-capabilities",
@@ -1061,7 +1061,7 @@
           "artifact-capabilities"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.artifact-design",
@@ -1116,7 +1116,7 @@
           "artifact-design"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.artifact-diagramming",
@@ -1171,7 +1171,7 @@
           "artifact-diagramming"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.artifact-template-adv-1",
@@ -1231,7 +1231,7 @@
           "artifact-template-adv-1"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.artifact-template-adv-2",
@@ -1291,7 +1291,7 @@
           "artifact-template-adv-2"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-analytics-dashboard",
@@ -1339,7 +1339,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-business-review",
@@ -1387,7 +1387,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-design-report",
@@ -1435,7 +1435,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-experiment-analysis",
@@ -1483,7 +1483,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-financial-budget",
@@ -1531,7 +1531,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-investment-committee-memo",
@@ -1579,7 +1579,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.artifact-template-jra",
@@ -1639,7 +1639,7 @@
           "artifact-template-jra"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-legal-memorandum",
@@ -1687,7 +1687,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-market-trends-report",
@@ -1735,7 +1735,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-minimal-letterhead",
@@ -1783,7 +1783,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-operating-calendar",
@@ -1831,7 +1831,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-operating-review",
@@ -1879,7 +1879,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-project-kickoff",
@@ -1927,7 +1927,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-project-tracker",
@@ -1975,7 +1975,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-sales-pipeline",
@@ -2023,7 +2023,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-simple-dark-mode",
@@ -2071,7 +2071,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-simple-light-mode",
@@ -2119,7 +2119,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-strategy-memorandum",
@@ -2167,7 +2167,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-system-design",
@@ -2215,7 +2215,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-team-alignment",
@@ -2263,7 +2263,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.openai-templates.artifact-template-three-statement-forecast",
@@ -2311,7 +2311,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.ask-matt",
@@ -2369,7 +2369,7 @@
           "ask-matt"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.aso-internal-order-request",
@@ -2426,7 +2426,7 @@
           "aso-internal-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.aso-simulation-and-order-request",
@@ -2483,7 +2483,7 @@
           "aso-simulation-and-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.aso-simulation-intake",
@@ -2540,7 +2540,7 @@
           "aso-simulation-intake"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.assess-patch-risk",
@@ -2588,7 +2588,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.attack-path-analysis",
@@ -2636,7 +2636,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.product-design.audit",
@@ -2684,7 +2684,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.brainstorming",
@@ -2732,7 +2732,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.build-dashboard",
@@ -2780,7 +2780,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.build-report",
@@ -2828,7 +2828,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.build-zoom-bot",
@@ -2876,7 +2876,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.build-zoom-contact-center-app",
@@ -2926,7 +2926,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.build-zoom-meeting-app",
@@ -2974,7 +2974,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.build-zoom-meeting-sdk-app",
@@ -3024,7 +3024,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.build-zoom-phone-integration",
@@ -3074,7 +3074,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.build-zoom-rest-api-app",
@@ -3124,7 +3124,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.build-zoom-team-chat-app",
@@ -3174,7 +3174,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.build-zoom-video-sdk-app",
@@ -3224,7 +3224,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.build-zoom-virtual-agent",
@@ -3274,7 +3274,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.business-card-contact-import",
@@ -3332,7 +3332,7 @@
           "business-card-contact-import"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.calendar-event-and-meet-link",
@@ -3389,7 +3389,7 @@
           "calendar-event-and-meet-link"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.canva.canva-brand-check",
@@ -3437,7 +3437,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.canva.canva-branded-presentation",
@@ -3485,7 +3485,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.canva.canva-bulk-create",
@@ -3533,7 +3533,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.canva.canva-design-feedback",
@@ -3581,7 +3581,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.canva.canva-edit-design",
@@ -3629,7 +3629,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.canva.canva-implement-feedback",
@@ -3677,7 +3677,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.canva.canva-resize-for-social-media",
@@ -3725,7 +3725,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.canva.canva-translate-design",
@@ -3773,7 +3773,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.catchphrase-ideation",
@@ -3831,7 +3831,7 @@
           "catchphrase-ideation"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-material-themes.choose-codex-theme",
@@ -3879,7 +3879,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.choose-zoom-approach",
@@ -3927,7 +3927,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.claude-in-chrome",
@@ -3982,7 +3982,7 @@
           "claude-in-chrome"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.app-69b31dc2110c8191b8b47dc98fe5a052.clean-up-dropbox-content",
@@ -4030,7 +4030,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.code-review",
@@ -4081,7 +4081,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.openai-codex.codex.codex-cli-runtime",
@@ -4129,7 +4129,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "agent.claude.codex.codex-rescue",
@@ -4177,7 +4177,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.openai-codex.codex.codex-result-handling",
@@ -4225,7 +4225,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "command.claude.adversarial-review",
@@ -4280,7 +4280,7 @@
           "codex:adversarial-review"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "command.claude.cancel",
@@ -4335,7 +4335,7 @@
           "codex:cancel"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "command.claude.rescue",
@@ -4390,7 +4390,7 @@
           "codex:rescue"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "command.claude.result",
@@ -4445,7 +4445,7 @@
           "codex:result"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "command.claude.review",
@@ -4500,7 +4500,7 @@
           "codex:review"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "command.claude.setup",
@@ -4555,7 +4555,7 @@
           "codex:setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "command.claude.status",
@@ -4610,7 +4610,7 @@
           "codex:status"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "command.claude.transfer",
@@ -4665,7 +4665,7 @@
           "codex:transfer"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.app-69b31dc2110c8191b8b47dc98fe5a052.collect-files-with-request",
@@ -4713,7 +4713,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.communication-approval",
@@ -4764,7 +4764,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.competitive-service-research",
@@ -4822,7 +4822,7 @@
           "competitive-service-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.cowork-plugin",
@@ -4877,7 +4877,7 @@
           "cowork-plugin"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.cowork-plugin-management-cowork-plugin-customizer",
@@ -4932,7 +4932,7 @@
           "cowork-plugin-management:cowork-plugin-customizer"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.cowork-plugin-management-create-cowork-plugin",
@@ -4987,7 +4987,7 @@
           "cowork-plugin-management:create-cowork-plugin"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.create-chatgpt-project",
@@ -5045,7 +5045,7 @@
           "create-chatgpt-project"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.create-data-context",
@@ -5093,7 +5093,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.customer-icebreaker-research",
@@ -5150,7 +5150,7 @@
           "customer-icebreaker-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.dataviz",
@@ -5205,7 +5205,7 @@
           "dataviz"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.debug-zoom",
@@ -5253,7 +5253,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.debug-zoom-integration",
@@ -5301,7 +5301,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.deep-research-work.deep-research",
@@ -5349,7 +5349,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.deep-security-scan",
@@ -5397,7 +5397,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.define-security-policy",
@@ -5445,7 +5445,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.design",
@@ -5500,7 +5500,7 @@
           "design"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.design-kpis",
@@ -5548,7 +5548,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.product-design.design-qa",
@@ -5596,7 +5596,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.design-qc",
@@ -5654,7 +5654,7 @@
           "design-qc"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.dispatching-parallel-agents",
@@ -5702,7 +5702,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-primary-runtime.documents.documents",
@@ -5750,7 +5750,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.docx",
@@ -5805,7 +5805,7 @@
           "docx"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.domain-modeling",
@@ -5863,7 +5863,7 @@
           "domain-modeling"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.draft-client-proposal",
@@ -5920,7 +5920,7 @@
           "draft-client-proposal"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.draft-sales-email",
@@ -5977,7 +5977,7 @@
           "draft-sales-email"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-primary-runtime.spreadsheets.excel-live-control",
@@ -6025,7 +6025,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.executing-plans",
@@ -6073,7 +6073,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.existing-attacker",
@@ -6130,7 +6130,7 @@
           "existing-attacker"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.explain-usage",
@@ -6185,7 +6185,7 @@
           "explain-usage"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.figma.figma-code-connect",
@@ -6233,7 +6233,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.figma.figma-create-new-file",
@@ -6281,7 +6281,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.figma.figma-design-to-code",
@@ -6329,7 +6329,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.figma.figma-generate-design",
@@ -6377,7 +6377,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.figma.figma-generate-diagram",
@@ -6425,7 +6425,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.figma.figma-generate-library",
@@ -6473,7 +6473,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.figma.figma-implement-motion",
@@ -6521,7 +6521,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.figma.figma-swiftui",
@@ -6569,7 +6569,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.figma.figma-use",
@@ -6617,7 +6617,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.figma.figma-use-figjam",
@@ -6665,7 +6665,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.figma.figma-use-motion",
@@ -6713,7 +6713,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.figma.figma-use-slides",
@@ -6761,7 +6761,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.app-69b31dc2110c8191b8b47dc98fe5a052.find-dropbox-content",
@@ -6809,7 +6809,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.finding-discovery",
@@ -6857,7 +6857,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.finishing-a-development-branch",
@@ -6905,7 +6905,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.fix-finding",
@@ -6953,7 +6953,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.funny-gif",
@@ -7004,7 +7004,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.gather-business-context",
@@ -7052,7 +7052,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.product-design.get-context",
@@ -7100,7 +7100,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.google-ads-consultant",
@@ -7158,7 +7158,7 @@
           "google-ads-consultant"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.google-drive.google-docs",
@@ -7206,7 +7206,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.google-drive.google-drive",
@@ -7254,7 +7254,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.google-drive.google-drive-comments",
@@ -7302,7 +7302,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.google-drive.google-sheets",
@@ -7350,7 +7350,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.google-drive.google-slides",
@@ -7398,7 +7398,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.openai-codex.codex.gpt-5-4-prompting",
@@ -7446,7 +7446,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.grill-with-docs",
@@ -7504,7 +7504,7 @@
           "grill-with-docs"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.grilling",
@@ -7564,7 +7564,7 @@
           "grilling"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.product-design.ideate",
@@ -7612,7 +7612,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.product-design.image-to-code",
@@ -7660,7 +7660,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "builtin.codex.imagegen",
@@ -7708,7 +7708,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.implement",
@@ -7766,7 +7766,7 @@
           "implement"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.import-memory",
@@ -7821,7 +7821,7 @@
           "import-memory"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.index",
@@ -7869,7 +7869,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.product-design.index",
@@ -7917,7 +7917,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.app-69b31dc2110c8191b8b47dc98fe5a052.inspect-dropbox-file",
@@ -7965,7 +7965,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.japanese-english-translator",
@@ -8023,7 +8023,7 @@
           "japanese-english-translator"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.japanese-korean-translator",
@@ -8081,7 +8081,7 @@
           "japanese-korean-translator"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.jupyter-notebooks",
@@ -8129,7 +8129,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.kimono-brain-todo-management",
@@ -8190,7 +8190,7 @@
           "kimono-brain-todo-management"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.kpi-reporting",
@@ -8238,7 +8238,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.makeleaps-client-registration",
@@ -8295,7 +8295,7 @@
           "makeleaps-client-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.makeleaps-orderslip-creation",
@@ -8352,14 +8352,14 @@
           "makeleaps-orderslip-creation"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.manage-codex-claude-mirroring",
       "kind": "skill",
       "name": "manage-codex-claude-mirroring",
       "aliases": [],
-      "description": "Manage, reconcile, and safely distribute user-authored skills and shared instructions between Codex and Claude through one canonical source. Use when creating, importing, updating, auditing, or mirroring cross-environment AI configuration.",
+      "description": "Manage, reconcile, and safely distribute user-authored skills and shared instructions between Codex and Claude through one canonical source. Use for ANY request to create, edit, rename, or retire a user-authored skill in Codex or Claude - including 「スキルを作って」「スキル化して」「スキルを更新して」 - and when importing, auditing, or mirroring cross-environment AI configuration.",
       "example": "",
       "category": "development-ai",
       "projectTags": [],
@@ -8369,7 +8369,7 @@
       },
       "source": {
         "canonicalId": "canonical/skills/manage-codex-claude-mirroring",
-        "contentHash": "sha256:51138f12ad6c309352d5bb2fec788e7a525e2883e4e163af1c4dca1a9b96ac45"
+        "contentHash": "sha256:08792e22fc0d9bb52f4c94b0cf9d7b2065f0b0f0d3a13776fa040767133e3736"
       },
       "identity": {
         "frontmatterName": "manage-codex-claude-mirroring"
@@ -8380,7 +8380,7 @@
           "installed": true,
           "invocation": "$manage-codex-claude-mirroring",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:51138f12ad6c309352d5bb2fec788e7a525e2883e4e163af1c4dca1a9b96ac45",
+          "contentHash": "sha256:08792e22fc0d9bb52f4c94b0cf9d7b2065f0b0f0d3a13776fa040767133e3736",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         },
@@ -8389,7 +8389,7 @@
           "installed": true,
           "invocation": "/manage-codex-claude-mirroring",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:51138f12ad6c309352d5bb2fec788e7a525e2883e4e163af1c4dca1a9b96ac45",
+          "contentHash": "sha256:08792e22fc0d9bb52f4c94b0cf9d7b2065f0b0f0d3a13776fa040767133e3736",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         }
@@ -8403,7 +8403,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.market-sizing",
@@ -8451,7 +8451,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.meeting-minutes-notion-registration",
@@ -8508,7 +8508,7 @@
           "meeting-minutes-notion-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.metric-diagnostics",
@@ -8556,7 +8556,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.mission-control-daily-brief",
@@ -8614,7 +8614,7 @@
           "mission-control-daily-brief"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.morning",
@@ -8669,7 +8669,7 @@
           "morning"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.mtg-after-automation",
@@ -8726,7 +8726,7 @@
           "mtg-after-automation"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.new-attacker",
@@ -8783,7 +8783,7 @@
           "new-attacker"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.notion.notion-knowledge-capture",
@@ -8831,7 +8831,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.notion.notion-meeting-intelligence",
@@ -8879,7 +8879,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.notion.notion-research-documentation",
@@ -8927,7 +8927,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.notion.notion-spec-to-implementation",
@@ -8975,7 +8975,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.open-design.open-design-mode",
@@ -9023,7 +9023,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "builtin.codex.openai-docs",
@@ -9071,7 +9071,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.operating-principles",
@@ -9126,7 +9126,7 @@
           "operating-principles"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.app-69b31dc2110c8191b8b47dc98fe5a052.organize-dropbox-folder",
@@ -9174,7 +9174,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.pc-lightening",
@@ -9232,7 +9232,7 @@
           "pc-lightening"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-primary-runtime.pdf.pdf",
@@ -9287,7 +9287,7 @@
           "pdf"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.pipedrive-manage-sales",
@@ -9344,7 +9344,7 @@
           "pipedrive-manage-sales"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.plan-landing-page",
@@ -9402,7 +9402,7 @@
           "plan-landing-page"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.plan-zoom-integration",
@@ -9450,7 +9450,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.plan-zoom-product",
@@ -9498,7 +9498,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "builtin.codex.plugin-creator",
@@ -9546,7 +9546,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.plugin-management.plugin-management",
@@ -9594,7 +9594,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.post-order-operations-router",
@@ -9651,7 +9651,7 @@
           "post-order-operations-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.pptx",
@@ -9706,7 +9706,7 @@
           "pptx"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-primary-runtime.presentations.Presentations",
@@ -9754,7 +9754,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.probe-sdk",
@@ -9802,7 +9802,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.product-business-analysis",
@@ -9850,7 +9850,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.prompt-engineering-assistant",
@@ -9908,7 +9908,7 @@
           "prompt-engineering-assistant"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.propose-security-hardening",
@@ -9956,7 +9956,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.prototype",
@@ -10007,7 +10007,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.publish-artifact-to-sites",
@@ -10055,7 +10055,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.receiving-code-review",
@@ -10103,7 +10103,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-bundled.record-and-replay.record-and-replay",
@@ -10151,7 +10151,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.remotion.remotion-best-practices",
@@ -10199,7 +10199,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.remotion.remotion-captions",
@@ -10247,7 +10247,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.remotion.remotion-create",
@@ -10295,7 +10295,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.remotion.remotion-docs",
@@ -10343,7 +10343,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.remotion.remotion-interactivity",
@@ -10391,7 +10391,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.remotion.remotion-maps",
@@ -10439,7 +10439,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.remotion.remotion-markup",
@@ -10487,7 +10487,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.remotion.remotion-multimedia",
@@ -10535,7 +10535,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.remotion.remotion-render",
@@ -10583,7 +10583,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.remotion.remotion-saas",
@@ -10631,7 +10631,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.remotion.remotion-studio",
@@ -10679,7 +10679,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.remotion.remotion-upgrade",
@@ -10727,7 +10727,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.report-to-google-doc",
@@ -10775,7 +10775,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.report-to-google-slides",
@@ -10823,7 +10823,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.report-to-pdf",
@@ -10871,7 +10871,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.requesting-code-review",
@@ -10919,7 +10919,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.research",
@@ -10977,7 +10977,7 @@
           "research"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.product-design.research",
@@ -11032,7 +11032,7 @@
           "research"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "builtin.codex.review-agent",
@@ -11080,7 +11080,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.review-cleaning-sales-sheet-update",
@@ -11137,7 +11137,7 @@
           "review-cleaning-sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.review-cleaning-sheet-setup",
@@ -11194,7 +11194,7 @@
           "review-cleaning-sheet-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.review-screenshot-automation-setup",
@@ -11251,7 +11251,7 @@
           "review-screenshot-automation-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.review-screenshot-daily-operations",
@@ -11308,7 +11308,7 @@
           "review-screenshot-daily-operations"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.review-screenshot-reflection",
@@ -11365,7 +11365,7 @@
           "review-screenshot-reflection"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.rivet-sdk",
@@ -11413,7 +11413,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.sales-deal-lifecycle-router",
@@ -11470,7 +11470,7 @@
           "sales-deal-lifecycle-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.sales-sheet-update",
@@ -11527,7 +11527,7 @@
           "sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.scribe",
@@ -11575,7 +11575,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.security-diff-scan",
@@ -11623,7 +11623,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.security-scan",
@@ -11671,7 +11671,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.setup-cowork",
@@ -11726,7 +11726,7 @@
           "setup-cowork"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.setup-matt-pocock-skills",
@@ -11784,7 +11784,7 @@
           "setup-matt-pocock-skills"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.setup-zoom-oauth",
@@ -11832,7 +11832,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.setup-zoom-webhooks",
@@ -11882,7 +11882,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.setup-zoom-websockets",
@@ -11932,7 +11932,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.product-design.share",
@@ -11980,7 +11980,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.app-69b31dc2110c8191b8b47dc98fe5a052.share-dropbox-content",
@@ -12028,7 +12028,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-bundled.sites.sites-building",
@@ -12076,7 +12076,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-bundled.sites.sites-hosting",
@@ -12124,7 +12124,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "builtin.codex.skill-creator",
@@ -12179,7 +12179,7 @@
           "skill-creator"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "builtin.codex.skill-installer",
@@ -12227,7 +12227,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.skill-registry-update",
@@ -12284,7 +12284,7 @@
           "skill-registry-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.slide-outline-generator",
@@ -12342,7 +12342,7 @@
           "slide-outline-generator"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-primary-runtime.spreadsheets.Spreadsheets",
@@ -12390,7 +12390,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.sso-quick-diagnostics",
@@ -12448,7 +12448,7 @@
           "sso-quick-diagnostics"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.start",
@@ -12496,7 +12496,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.subagent-driven-development",
@@ -12544,7 +12544,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.systematic-debugging",
@@ -12592,7 +12592,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.adv-sales.adv-post-order-operations.task-collection-daily-brief",
@@ -12649,7 +12649,7 @@
           "task-collection-daily-brief"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "automation.claude.task-depot-daily-sync",
@@ -12697,7 +12697,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "automation.claude.task-depot-pipedrive-sync",
@@ -12745,7 +12745,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.tdd",
@@ -12803,7 +12803,7 @@
           "tdd"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.teach",
@@ -12861,7 +12861,7 @@
           "teach"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-primary-runtime.template-creator.template-creator",
@@ -12909,7 +12909,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.test-driven-development",
@@ -12957,7 +12957,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.threat-model",
@@ -13005,7 +13005,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.to-spec",
@@ -13063,7 +13063,7 @@
           "to-spec"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.to-tickets",
@@ -13121,7 +13121,7 @@
           "to-tickets"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.track-findings",
@@ -13169,7 +13169,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.triage-finding",
@@ -13217,7 +13217,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.ui-toolkit",
@@ -13265,7 +13265,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.product-design.url-to-code",
@@ -13313,7 +13313,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.product-design.user-context",
@@ -13361,7 +13361,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.using-git-worktrees",
@@ -13409,7 +13409,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.using-superpowers",
@@ -13457,7 +13457,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.validate-data",
@@ -13505,7 +13505,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.validation",
@@ -13553,7 +13553,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.verification-before-completion",
@@ -13601,7 +13601,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.verify-fix",
@@ -13649,7 +13649,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-bundled.visualize.visualize",
@@ -13697,7 +13697,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.data-analytics.visualize-data",
@@ -13745,7 +13745,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.codex-security.vulnerability-writeup",
@@ -13793,7 +13793,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.wayfinder",
@@ -13851,7 +13851,7 @@
           "wayfinder"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.writing-plans",
@@ -13899,7 +13899,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.claude.claude-plugins-official.superpowers.writing-skills",
@@ -13947,7 +13947,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "legacy.xlsx",
@@ -14002,7 +14002,7 @@
           "xlsx"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.yuiitsu-ad-reporting",
@@ -14063,7 +14063,7 @@
           "yuiitsu-ad-reporting"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "automation.claude.yuiitsu-aug-cohort-reconcile",
@@ -14114,7 +14114,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.yuiitsu-before-after-posts",
@@ -14175,7 +14175,7 @@
           "yuiitsu-before-after-posts"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "user.yuiitsu-daily-ads-analysis",
@@ -14236,7 +14236,7 @@
           "yuiitsu-daily-ads-analysis"
         ]
       },
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "automation.claude.yuiitsu-erume-daily-sync",
@@ -14287,7 +14287,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-apps-sdk",
@@ -14335,7 +14335,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-cobrowse-sdk",
@@ -14385,7 +14385,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-contact-center-android",
@@ -14435,7 +14435,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-contact-center-ios",
@@ -14485,7 +14485,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-contact-center-web",
@@ -14535,7 +14535,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-general",
@@ -14585,7 +14585,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-meeting-sdk-android",
@@ -14635,7 +14635,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-meeting-sdk-electron",
@@ -14685,7 +14685,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-meeting-sdk-ios",
@@ -14735,7 +14735,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-meeting-sdk-linux",
@@ -14785,7 +14785,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-meeting-sdk-macos",
@@ -14835,7 +14835,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-meeting-sdk-react-native",
@@ -14885,7 +14885,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-meeting-sdk-unreal",
@@ -14935,7 +14935,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-meeting-sdk-web",
@@ -14985,7 +14985,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-meeting-sdk-web-client-view",
@@ -15035,7 +15035,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-meeting-sdk-web-component-view",
@@ -15085,7 +15085,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-meeting-sdk-windows",
@@ -15135,7 +15135,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-oauth",
@@ -15185,7 +15185,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-rtms",
@@ -15235,7 +15235,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-video-sdk-android",
@@ -15285,7 +15285,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-video-sdk-flutter",
@@ -15335,7 +15335,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-video-sdk-ios",
@@ -15385,7 +15385,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-video-sdk-linux",
@@ -15435,7 +15435,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-video-sdk-macos",
@@ -15485,7 +15485,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-video-sdk-react-native",
@@ -15535,7 +15535,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-video-sdk-unity",
@@ -15585,7 +15585,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-video-sdk-web",
@@ -15635,7 +15635,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-video-sdk-windows",
@@ -15685,7 +15685,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-virtual-agent-android",
@@ -15735,7 +15735,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-virtual-agent-ios",
@@ -15785,7 +15785,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     },
     {
       "id": "plugin.codex.openai-curated-remote.zoom.zoom-virtual-agent-web",
@@ -15835,7 +15835,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-06T09:38:46.573Z"
+      "lastVerifiedAt": "2026-09-06T13:20:24.193Z"
     }
   ]
 }
