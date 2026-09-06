@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
 const html = await readFile(resolve(import.meta.dirname, '..', 'index.html'), 'utf8');
-const required = ['skillsTab', 'diffTab', 'data-env="codex"', 'data-env="claude"', 'environmentControls', "hidden=!isSkills", '[hidden] { display:none !important; }', 'aria-pressed', 'skilldeck.json', 'navigator.clipboard', '環境差分', 'if (!count) continue', 'ArrowRight', 'origin-self', 'origin-official', 'origin-external', '重複候補', '別名統合済み', '同一能力の移行候補', 'normalizeSkillName', '提供元', '正本ID:', '必要な連携', 'hasEnvironmentEvidence', 'ignoreCategory:true', 'overflow-x:clip', 'overflow-wrap:anywhere', '.difference-grid { grid-template-columns:1fr; }'];
+const required = ['skillsTab', 'diffTab', 'data-env="codex"', 'data-env="claude"', 'data-provider="自作"', 'data-provider="他作"', 'data-provider="公式"', 'environmentControls', "hidden=!isSkills", '[hidden] { display:none !important; }', 'aria-pressed', 'skilldeck.json', 'navigator.clipboard', '環境差分', 'if (!count) continue', 'ArrowRight', 'originBadge(record)', 'origin-self', 'origin-official', 'origin-external', '重複候補', '別名統合済み', '同一能力の移行候補', 'normalizeSkillName', '提供元', '正本ID:', '必要な連携', 'hasEnvironmentEvidence', 'ignoreCategory:true', '保持推奨', '削除候補', '必要性を要確認', 'data-review-action="keep"', 'data-review-action="request_delete"', 'reviewStorageKey', 'overflow-x:clip', 'overflow-wrap:anywhere', '.difference-grid { grid-template-columns:1fr; }'];
 const banned = ['>MCP<', '>アプリ<', 'const SKILLS =', 'CATEGORIES ='];
 const errors = required.filter((value) => !html.includes(value)).map((value) => `不足: ${value}`)
   .concat(banned.filter((value) => html.includes(value)).map((value) => `旧実装が残っています: ${value}`));

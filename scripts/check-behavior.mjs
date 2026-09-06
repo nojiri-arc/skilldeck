@@ -35,11 +35,10 @@ const checks = [
   ['Codex選択はCodexの導入・設定証跡がある項目だけ', codex.every((record) => record.environments.codex.configured || record.environments.codex.installed)],
   ['Claude選択はClaudeの導入・設定証跡がある項目だけ', claude.every((record) => record.environments.claude.configured || record.environments.claude.installed)],
   ['両選択は両環境の導入・設定証跡がある項目だけ', both.every((record) => (record.environments.codex.configured || record.environments.codex.installed) && (record.environments.claude.configured || record.environments.claude.installed))],
-  ['全6カテゴリに表示対象がある', data.categories.length === 6 && Object.values(categoryCounts).every((count) => count > 0)],
-  ['ADVカテゴリは存在しない', !data.categories.some((category) => category.id === 'adv')],
-  ['ADVタグのSkillはすべて6カテゴリへ分類済み', all.filter((record) => record.projectTags.includes('ADV')).every((record) => data.categories.some((category) => category.id === record.category))],
-  ['第1カテゴリは営業・顧客対応', data.categories[0]?.id === 'sales-customer'],
-  ['第2カテゴリは広告・分析', data.categories[1]?.id === 'ads-analysis'],
+  ['全7カテゴリに表示対象がある', data.categories.length === 7 && Object.values(categoryCounts).every((count) => count > 0)],
+  ['第1カテゴリはADV関連', data.categories[0]?.id === 'adv'],
+  ['ADVタグのSkillはすべてADV関連', all.filter((record) => record.projectTags.includes('ADV')).every((record) => record.category === 'adv')],
+  ['第2カテゴリは開発・AI管理', data.categories[1]?.id === 'development-ai'],
   ['由来は自作・公式・他作だけ', all.every((record) => ['自作', '公式', '他作'].includes(origin(record)))],
   ['通常一覧にcommand・agent・自動実行を混在させない', all.every((record) => ['skill', 'builtin_skill', 'plugin_skill'].includes(record.kind))],
   ['共通正本の未配布Skillを通常一覧に混在させない', !all.some((record) => record.id === 'canonical.manage-codex-claude-mirroring')],
@@ -47,9 +46,16 @@ const checks = [
   ['片側Skillに移行可否を設定する', all.filter((record) => record.mirror.status === 'codex_only' || record.mirror.status === 'claude_only').every((record) => ['directly_shareable','adapter_required','functionally_recreatable','mirror_impossible','requires_review'].includes(record.mirror.portability))],
   ['重複候補は正規化した表示名から自動集計する', duplicates.some(([name, group]) => name === 'research' && group.some((record) => record.provider.type === 'user') && group.some((record) => record.provider.type === 'plugin'))],
   ['別名統合済みにgrill-me/grillingを含む', skillLike.some((record) => record.name === 'grilling' && record.aliases.includes('grill-me'))]
-  ,['カテゴリ選択後も6カテゴリの件数を算出できる', data.categories.length === 6 && Object.values(categoryCounts).every((count) => count > 0)]
+  ,['カテゴリ選択後も7カテゴリの件数を算出できる', data.categories.length === 7 && Object.values(categoryCounts).every((count) => count > 0)]
   ,['旧形式と現行Skillの移行候補を自動削除せず保持する', migrationCandidates.length === 3 && migrationCandidates.every((candidate) => candidate.recordIds.length === 2)]
   ,['差分画面では無効な環境フィルターを表示しない', differenceViewHidesEnvironment]
+  ,['由来3区分を常時見えるボタンで絞り込める', ['自作','他作','公式'].every((provider) => html.includes(`data-provider="${provider}"`)) && html.includes('originBadge(record)')]
+  ,['全Skillに利用状況と必要性判定がある', all.every((record) => ['recent_signal','no_signal'].includes(record.usage?.status) && ['keep_required','keep_recommended','needs_review','delete_candidate'].includes(record.governance?.status))]
+  ,['削除候補は実環境未検出・直近利用シグナルなしだけ', all.filter((record) => record.governance?.status === 'delete_candidate').every((record) => record.usage.status === 'no_signal' && !['codex','claude'].some((environment) => record.environments[environment].configured || record.environments[environment].installed))]
+  ,['Pluginの必要性判断は個別Skillではなく一式へ集約する', html.includes('function pluginPackageTargets(records)') && html.includes("id:`package:${provider}`") && html.includes("kind:'plugin_package'")]
+  ,['精査画面は削除候補を先頭に表示する', html.indexOf("reviewPanel('削除候補'") < html.indexOf("reviewPanel('必要性を要確認'") && html.indexOf("reviewPanel('必要性を要確認'") < html.indexOf("reviewPanel('保持推奨'")]
+  ,['保持・削除依頼は実削除せず判断保存と依頼文コピーに限定する', html.includes('data-review-action="keep"') && html.includes('data-review-action="request_delete"') && html.includes('実削除はトシの承認後に実施') && !html.includes('fetch(\'/api/delete')]
+  ,['判断一覧はコピーと全消去ができる', html.includes('id="copyReviewQueue"') && html.includes('id="clearReviewQueue"') && html.includes("localStorage.removeItem(reviewStorageKey)")]
 ];
 const failures = checks.filter(([, result]) => !result);
 if (failures.length) { console.error(failures.map(([name]) => name).join('\n')); process.exit(1); }

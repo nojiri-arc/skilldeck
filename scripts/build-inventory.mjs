@@ -3,19 +3,22 @@ import { readdir, readFile, writeFile, mkdir, stat } from 'node:fs/promises';
 import { homedir } from 'node:os';
 import { basename, dirname, join, relative, resolve } from 'node:path';
 import { selectSkillCandidate } from './inventory-utils.mjs';
+import { collectUsageEvidence } from './collect-usage.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const outputPath = resolve(root, 'data/skilldeck.json');
 const legacyPath = resolve(root, 'data/legacy-skills.json');
 const now = new Date().toISOString();
+const usageEvidence = await collectUsageEvidence({ now: new Date(now), days: 7 });
 
 const CATEGORIES = [
+  { id: 'adv', name: 'ADV関連' },
+  { id: 'development-ai', name: '開発・AI管理' },
   { id: 'sales-customer', name: '営業・顧客対応' },
   { id: 'ads-analysis', name: '広告・分析' },
   { id: 'materials-design', name: '資料・デザイン' },
   { id: 'meeting-writing-translation', name: '会議・文章・翻訳' },
-  { id: 'task-operations', name: 'タスク・業務運用' },
-  { id: 'development-ai', name: '開発・AI管理' }
+  { id: 'task-operations', name: 'タスク・業務運用' }
 ];
 
 const aliases = new Map([['grill-me', 'grilling']]);
@@ -192,6 +195,7 @@ function projectTags(name, legacy) {
 }
 
 function categoryFor(name, legacy) {
+  if (isAdvSkill(name, legacy)) return 'adv';
   if (categoryByName.has(name)) return categoryByName.get(name);
   if (name.startsWith('adv-') || name.includes('sales') || name.includes('order') || name.includes('customer')) return 'sales-customer';
   if (name.includes('ads') || name.includes('report') || name.includes('research') || name.includes('analysis')) return 'ads-analysis';
@@ -218,6 +222,27 @@ function mirrorStatus(record) {
   if (codexPresent) return 'codex_only';
   if (claudePresent) return 'claude_only';
   return 'needs_review';
+}
+
+function governanceFor(record) {
+  const usage = record.usage;
+  const hasEnvironmentEvidence = ['codex', 'claude'].some((environment) => record.environments[environment].configured || record.environments[environment].installed);
+  if (record.kind === 'builtin_skill') {
+    return { status: 'keep_required', actionScope: 'none', reason: 'ベンダー提供の組み込みSkillです。個別削除ではなく、環境の標準機能として保持します。' };
+  }
+  if (usage.status === 'recent_signal') {
+    return { status: 'keep_recommended', actionScope: record.kind === 'plugin_skill' ? 'plugin_package' : 'skill', reason: `直近${usage.windowDays}日間の利用シグナルがあるため保持推奨です。` };
+  }
+  if (!hasEnvironmentEvidence && record.provider.type === 'legacy') {
+    return { status: 'delete_candidate', actionScope: 'skilldeck_record', reason: '旧SkillDeckには登録されていますが、現在のCodex／Claude環境では検出されず、直近利用も確認できないため削除候補です。' };
+  }
+  if (record.kind === 'plugin_skill') {
+    return { status: 'needs_review', actionScope: 'plugin_package', reason: '個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。' };
+  }
+  if (record.provider.type === 'user') {
+    return { status: 'needs_review', actionScope: 'skill', reason: 'ユーザー作成Skillのため自動削除しません。役割重複と今後の利用予定を確認して判断します。' };
+  }
+  return { status: 'needs_review', actionScope: 'skill', reason: '利用履歴だけでは不要と断定できません。提供元・依存関係・代替機能を確認して判断します。' };
 }
 
 function makeEnvironment(configured = false, invocation = null, detectedBy = null, contentHash = null, availability = 'verified', installed = configured, evidenceType = configured ? 'verified_runtime' : 'none') {
@@ -611,6 +636,8 @@ const finalRecords = [...records.values()].map((record) => {
     else if (record.kind === 'builtin_skill' || record.kind === 'command' || record.kind === 'agent') record.mirror.portability = 'mirror_impossible';
     else record.mirror.portability = 'requires_review';
   }
+  record.usage = usageEvidence.forRecord(record);
+  record.governance = governanceFor(record);
   return record;
 }).sort((a, b) => a.name.localeCompare(b.name, 'ja'));
 
@@ -639,7 +666,9 @@ const result = {
     notes: [
       'Plugin cacheの物理ファイルだけでは、導入済み・利用可能とは扱いません。',
       'config有効化または導入マーカーだけのPluginは、実行可否未確認として記録しています。',
-      '認証情報、絶対パス、接続ID、会話履歴は公開データに含めていません。'
+      '認証情報、絶対パス、接続ID、会話履歴は公開データに含めていません。',
+      '利用状況は直近7日間のSkill定義読み込み・明示呼び出しだけを集計し、会話本文やセッション名は公開しません。',
+      '削除候補は提案であり、自動削除や即時削除は行いません。'
     ]
   },
   records: finalRecords

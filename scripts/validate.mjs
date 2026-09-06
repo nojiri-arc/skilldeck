@@ -11,10 +11,12 @@ const allowedKinds = new Set(['skill', 'builtin_skill', 'plugin_skill', 'canonic
 const allowedStatuses = new Set(['synced', 'codex_only', 'claude_only', 'not_mirrorable', 'needs_review']);
 const allowedAvailability = new Set(['verified', 'installed_unverified', 'not_distributed', 'not-applicable']);
 const allowedPortability = new Set(['directly_shareable', 'adapter_required', 'functionally_recreatable', 'mirror_impossible', 'requires_review']);
+const allowedUsageStatuses = new Set(['recent_signal', 'no_signal']);
+const allowedGovernanceStatuses = new Set(['keep_required', 'keep_recommended', 'needs_review', 'delete_candidate']);
 const categoryIds = new Set(data.categories.map((category) => category.id));
 
 if (data.schemaVersion !== 2) errors.push('schemaVersionは2である必要があります。');
-if (data.categories.length !== 6) errors.push(`カテゴリ数は6である必要があります（現在 ${data.categories.length}）。`);
+if (data.categories.length !== 7) errors.push(`カテゴリ数は7である必要があります（現在 ${data.categories.length}）。`);
 if (data.inventory.legacyCount !== 89) errors.push(`旧データは89件を保持する必要があります（現在 ${data.inventory.legacyCount}）。`);
 
 for (const record of data.records) {
@@ -25,6 +27,8 @@ for (const record of data.records) {
   if (!categoryIds.has(record.category)) errors.push(`カテゴリ不正: ${record.id}`);
   if (!allowedStatuses.has(record.mirror.status)) errors.push(`同期状態不正: ${record.id}`);
   if (!allowedPortability.has(record.mirror.portability)) errors.push(`移行可否不正: ${record.id}`);
+  if (!allowedUsageStatuses.has(record.usage?.status)) errors.push(`利用状況不正: ${record.id}`);
+  if (!allowedGovernanceStatuses.has(record.governance?.status) || !record.governance?.reason) errors.push(`必要性判定不正: ${record.id}`);
   if (!Array.isArray(record.requirements)) errors.push(`必要な連携の形式不正: ${record.id}`);
   for (const env of ['codex', 'claude']) {
     if (typeof record.environments[env].installed !== 'boolean') errors.push(`導入状態不正: ${record.id}/${env}`);
