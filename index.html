@@ -114,6 +114,27 @@
       if (/setup|install|onboard|config/i.test(record.name)) return `${categoryPurpose[record.category] || '対象'}を使い始めるための準備を行うスキルです。`;
       return `${categoryPurpose[record.category] || '対象'}に関する「${record.name}」の作業を進めるスキルです。`;
     }
+    const requestExampleByName = {
+      'strict-recheck-and-refine':'厳しめの再確認をお願い！',
+      'todo-add':'TODOシートに追加して'
+    };
+    function isUnknownExample(value = '') { return !value.trim() || /^(依頼例は)?要確認です。?$/.test(value.trim()); }
+    function requestExample(record) {
+      const supplied = record.example?.trim();
+      if (!isUnknownExample(supplied)) return supplied;
+      if (requestExampleByName[record.name]) return requestExampleByName[record.name];
+      const summary = japaneseSummary(record);
+      if (!summary || /^(説明は)?要確認です。?$|用途は不明|確認できていません|未検出/.test(summary)) return '用途が不明のため、詳細を確認してから依頼してください。';
+      const action = summary.replace(/(?:最終チェック用)?スキルです。?$|Pluginです。?$|自動化です。?$/,'');
+      const request = action
+        .replace(/する$/, 'して')
+        .replace(/行う$/, '行って')
+        .replace(/作る$/, '作って')
+        .replace(/出す$/, '出して')
+        .replace(/まとめる$/, 'まとめて')
+        .replace(/調べる$/, '調べて');
+      return request !== action ? `${request}。` : `「${record.name}」を使って、${categoryPurpose[record.category] || 'この'}作業を進めて。`;
+    }
     const isEnvironmentMatch = (record) => !state.envs.size || [...state.envs].every((env) => record.environments[env].configured || record.environments[env].installed);
     const visibleRecords = ({ ignoreCategory = false } = {}) => skillRecords().filter((record) => {
       const searchable = [record.name,...(record.aliases || []),record.description,record.example,...(record.projectTags || []),record.provider.name].join(' ').toLocaleLowerCase('ja');
@@ -143,7 +164,7 @@
       return `<details><summary>詳細を表示</summary><dl><dt>案件タグ</dt><dd>${record.projectTags.length ? escapeHtml(record.projectTags.join(' / ')) : '—'}</dd><dt>由来</dt><dd>${originLabel(record)}</dd><dt>提供元</dt><dd>${escapeHtml(record.provider.name)}</dd><dt>必要な連携</dt><dd>${requirements}</dd><dt>呼び出し方</dt><dd>${invocations}</dd><dt>種別</dt><dd>${kindLabel[record.kind] || record.kind}</dd>${originalDescription}<dt>棚卸し証拠</dt><dd>${escapeHtml(evidence)}</dd><dt>同期状態</dt><dd>${statusLabel[record.mirror.status]}${record.mirror.reason ? ` — ${escapeHtml(record.mirror.reason)}` : ''}</dd><dt>移行可否</dt><dd>${portabilityLabel[record.mirror.portability] || '要確認'}</dd><dt>正本ID</dt><dd>${source}</dd><dt>最終確認</dt><dd>${escapeHtml(formatDate(record.lastVerifiedAt))}</dd></dl></details>`;
     }
     function card(record) {
-      const example = record.example || '依頼例は要確認です。';
+      const example = requestExample(record);
       return `<article class="card"><div class="card-top"><span class="kind">${kindLabel[record.kind] || record.kind}</span><div class="card-flags">${originBadge(record)}<span class="status ${record.mirror.status}">${statusLabel[record.mirror.status]}</span></div></div><h2 class="card-name">${escapeHtml(record.name)}</h2><div class="badge-row">${environmentBadges(record)}</div><p class="description">${escapeHtml(japaneseSummary(record))}</p><div class="example"><div><span class="example-label">依頼例</span><p class="example-text">${escapeHtml(example)}</p></div><button class="copy" type="button" data-copy="${escapeHtml(example)}">COPY</button></div><div class="card-footer"><span>${escapeHtml(categoryName(record.category))}</span></div>${detailRows(record)}</article>`;
     }
     function bindCopyButtons() {
