@@ -56,7 +56,7 @@
         </div>
       </section>
       <section class="screen" id="diffScreen" role="tabpanel" aria-labelledby="diffTab">
-        <div class="difference-head"><div><h2>環境差分</h2><p class="status-note">ここは「残すか・消すか」を決める画面です。削除候補＝いまの環境で見つからず、使う予定も確認できないもの。要確認＝使えるが、今後使うか決めるものです。シグナルなしは未使用の断定ではありません。</p></div><div><div class="date" id="generatedAt">–</div><div class="review-head-actions"><button class="queue-copy" id="copyReviewQueue" type="button">判断一覧をコピー</button><button class="queue-copy" id="clearReviewQueue" type="button">判断を全消去</button></div></div></div>
+        <div class="difference-head"><div><h2>デクの見直し候補</h2><p class="status-note">デクが「本当に必要？」と考えたものだけを表示します。ここにない項目は保持扱いです。シグナルなしは未使用の断定ではありません。</p></div><div><div class="date" id="generatedAt">–</div><div class="review-head-actions"><button class="queue-copy" id="copyReviewQueue" type="button">判断一覧をコピー</button><button class="queue-copy" id="clearReviewQueue" type="button">判断を全消去</button></div></div></div>
         <div class="stat-grid" id="statGrid"></div><div class="difference-grid" id="differenceGrid"></div>
       </section>
     </main>
@@ -214,6 +214,12 @@
     function diffPanel(title,records,empty='該当なし') { return `<section class="panel"><h3 class="panel-title">${escapeHtml(title)} <span>(${records.length})</span></h3><p class="status-note">${escapeHtml(technicalGuide(title))}</p><div class="diff-list">${records.length ? records.map((record) => diffItem(record)).join('') : `<p class="status-note">${empty}</p>`}</div></section>`; }
     function reviewPanel(title,targets,{ open=false,note='',skillCount=targets.length }={}) { const isOpen=differencePanelState[title] ?? open; return `<details class="panel review-panel" data-difference-panel="${escapeHtml(title)}"${isOpen ? ' open' : ''}><summary>${escapeHtml(title)} <span>${targets.length}判断対象 / ${skillCount}Skill</span></summary><div class="review-panel-body">${note ? `<p class="review-panel-note">${escapeHtml(note)}</p>` : ''}<div class="diff-list">${targets.length ? targets.map(diffItem).join('') : '<p class="status-note">該当なし</p>'}</div></div></details>`; }
     const packageGovernanceOverrides = new Map([['codex-security@openai-curated-remote', 'トシが保持を選択。コードやリポジトリの安全性確認に使うため、Plugin一式を保持します。']]);
+    const dekuQuestionablePackageReasons = new Map([
+      ['figma@openai-curated-remote','Figmaを使った設計・実装連携専用です。直近利用がなく、現在の作業では他のデザイン手段と役割が重なるため見直し候補です。'],
+      ['open-design@openai-curated-remote','Webサイトの設計・改善向けです。直近利用がなく、既存の資料・デザイン用スキルでも代替できるため見直し候補です。'],
+      ['template-creator@openai-primary-runtime','再利用テンプレートを作る専用機能です。直近利用がなく、必要になった時に再導入できるため見直し候補です。'],
+      ['zoom@openai-curated-remote','Zoom向けアプリやSDK開発専用です。直近利用がなく、現在の通常業務では使う場面が限定的なため見直し候補です。']
+    ]);
     function pluginPackageTargets(records) {
       const grouped=new Map();
       for (const record of records.filter((item) => item.kind === 'plugin_skill')) grouped.set(record.provider.name,[...(grouped.get(record.provider.name) || []),record]);
@@ -244,39 +250,21 @@
       const scrollPosition=window.scrollY;
       differencePanelState=Object.fromEntries([...document.querySelectorAll('#differenceGrid details[data-difference-panel]')].map((panel) => [panel.dataset.differencePanel,panel.open]));
       const capabilityRecords = data.records.filter((record) => ['skill','builtin_skill','plugin_skill'].includes(record.kind));
-      const statuses=['synced','codex_only','claude_only','not_mirrorable','needs_review']; const labels={synced:'両方で一致',codex_only:'Codexのみ',claude_only:'Claudeのみ',not_mirrorable:'ミラー不可',needs_review:'要確認'};
       byId('generatedAt').textContent=`最終棚卸し: ${formatDate(data.generatedAt)}`;
-      const installedUnverified=capabilityRecords.filter((record) => ['codex','claude'].some((env) => record.environments[env].availability === 'installed_unverified')).length;
-      const recentSignals=capabilityRecords.filter((record) => record.usage?.status === 'recent_signal').length;
-      const deleteCandidates=capabilityRecords.filter((record) => record.governance?.status === 'delete_candidate').length;
-      byId('statGrid').innerHTML=[{label:'全Skill数',count:capabilityRecords.length},{label:'直近7日 利用シグナル',count:recentSignals},{label:'削除候補',count:deleteCandidates},{label:'導入済み・実行要確認',count:installedUnverified},...statuses.map((status) => ({label:labels[status],count:capabilityRecords.filter((record) => record.mirror.status === status).length}))].map((item) => `<div class="stat"><span>${item.label}</span><b>${item.count}</b></div>`).join('');
-      const hashMismatch=capabilityRecords.filter((record) => record.environments.codex.configured && record.environments.claude.configured && record.environments.codex.contentHash !== record.environments.claude.contentHash);
-      const hasEnvironmentEvidence=(record) => ['codex','claude'].some((env) => record.environments[env].configured || record.environments[env].installed);
-      const registeredOnly=data.records.filter((record) => record.legacy?.legacyNames?.length && !hasEnvironmentEvidence(record));
-      const environmentOnly=data.records.filter((record) => !record.legacy?.legacyNames?.length && hasEnvironmentEvidence(record));
-      const canonicalPending=data.records.filter((record) => record.kind === 'canonical_skill');
-      const nonSkills=data.records.filter((record) => ['command','agent','automation'].includes(record.kind));
-      const skillLike=data.records.filter((record) => ['skill','canonical_skill','builtin_skill','plugin_skill'].includes(record.kind));
-      const duplicateMap=new Map();
-      for (const record of skillLike) { const key=normalizeSkillName(record.name); duplicateMap.set(key,[...(duplicateMap.get(key) || []),record]); }
-      const duplicateGroups=[...duplicateMap.values()].filter((group) => group.length > 1).map((records) => ({ name:records[0].name, records }));
-      const aliasedRecords=skillLike.filter((record) => record.aliases?.length);
-      const capabilityItems=(data.inventory.capabilities || []).map((item) => ({ name:item.name, kind:'連携・能力', mirror:{reason:item.reason,status:'needs_review'} }));
+      byId('statGrid').innerHTML='';
       const packageTargets=pluginPackageTargets(capabilityRecords);
       const individualTargets=capabilityRecords.filter((record) => record.kind !== 'plugin_skill');
       const reviewTargets=[...packageTargets,...individualTargets];
       currentReviewTargets=new Map([...reviewTargets,...data.records.filter((record) => record.kind !== 'plugin_skill')].map((target) => [target.id,target]));
-      const deleteCandidateRecords=reviewTargets.filter((target) => target.governance?.status === 'delete_candidate');
-      const governanceReview=reviewTargets.filter((target) => target.governance?.status === 'needs_review');
-      const keepRecommended=reviewTargets.filter((target) => ['keep_required','keep_recommended'].includes(target.governance?.status));
+      const decisions=reviewDecisions();
+      const reviewCandidates=reviewTargets.filter((target) => {
+        const decision=decisions[target.id]?.decision;
+        if (decision === 'keep') return false;
+        if (decision === 'request_delete' || target.governance?.status === 'delete_candidate') return true;
+        return target.kind === 'plugin_package' && target.usage?.status === 'no_signal' && dekuQuestionablePackageReasons.has(target.provider.name);
+      }).map((target) => dekuQuestionablePackageReasons.has(target.provider.name) ? { ...target, governance:{...target.governance,reason:dekuQuestionablePackageReasons.get(target.provider.name)} } : target);
       const targetSkillCount=(targets) => targets.reduce((total,target) => total + (target.memberCount || 1),0);
-      const reviewMarkup=`<div class="review-grid">${[
-        reviewPanel('削除候補',deleteCandidateRecords,{open:true,note:'現在の環境で見つからず、直近の利用も確認できない旧登録です。今後使う予定がなければ削除、使うなら保持を選びます。',skillCount:targetSkillCount(deleteCandidateRecords)}),
-        reviewPanel('必要性を要確認',governanceReview,{open:true,note:'使える状態でも、今後使うかは別の話です。用途・代替手段・削除時の影響を見て、各カードの「デクのおすすめ」を判断材料にしてください。',skillCount:targetSkillCount(governanceReview)}),
-        reviewPanel('保持推奨',keepRecommended,{note:'直近利用のある項目、トシが保持を選んだ項目、個別に消せない組み込みSkillです。',skillCount:targetSkillCount(keepRecommended)})
-      ].join('')}</div>`;
-      const technicalMarkup=`<details class="technical-details" data-difference-panel="technical-details"${differencePanelState['technical-details'] ? ' open' : ''}><summary>技術的な差分・重複の詳細を表示</summary><div class="difference-grid">${[duplicatePanel(duplicateGroups),aliasPanel(aliasedRecords),migrationPanel(data.inventory.migrationCandidates || []),diffPanel('内容ハッシュ不一致',hashMismatch),diffPanel('登録済みだが実環境で未検出',registeredOnly),diffPanel('実環境で検出・旧一覧に未登録',environmentOnly),diffPanel('正本登録済み・両環境未配布・要確認',canonicalPending),diffPanel('導入証跡のみの連携・能力',capabilityItems,'該当なし'),diffPanel('ミラー不可',data.records.filter((record) => record.mirror.status === 'not_mirrorable')),diffPanel('同期状態が要確認',data.records.filter((record) => record.mirror.status === 'needs_review' && record.kind !== 'canonical_skill')),diffPanel('Skill以外の種別',nonSkills,'command・agent・自動実行タスクは未検出です。')].join('')}</div></details>`;
-      byId('differenceGrid').innerHTML=reviewMarkup + technicalMarkup;
+      byId('differenceGrid').innerHTML=reviewPanel('デクの見直し候補',reviewCandidates,{open:true,note:'トシが削除を選んだもの、または直近利用がなく役割の重なり・用途の限定からデクが不要かもしれないと判断したものだけです。ほかは保持扱いです。',skillCount:targetSkillCount(reviewCandidates)});
       requestAnimationFrame(() => window.scrollTo({ top:scrollPosition, behavior:'auto' }));
     }
     function selectView(view) { const isSkills=view === 'skills'; byId('skillsScreen').classList.toggle('active',isSkills); byId('diffScreen').classList.toggle('active',!isSkills); byId('environmentControls').hidden=!isSkills; byId('skillsTab').setAttribute('aria-selected',String(isSkills)); byId('diffTab').setAttribute('aria-selected',String(!isSkills)); }
