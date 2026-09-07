@@ -42,7 +42,7 @@ const governanceOverrides = new Map([
 const userTextOverrides = new Map([
   ['todo-add', {
     description: 'ADV MyシートのTODOタブへ、会社・大項目・中項目・TODO詳細・対応日を既存の並び順と書式どおりに1行追加する。分類は文脈から推測し、対応日だけ不明なら確認する。',
-    example: 'TODOシートに追加して'
+    example: 'TODO追加！'
   }]
 ]);
 
