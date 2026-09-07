@@ -23,7 +23,15 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add']);
+
+// legacy-skills.json は89件で凍結されているため、新規skillの日本語説明と依頼例はここで補う。
+const userTextOverrides = new Map([
+  ['todo-add', {
+    description: 'ADV MyシートのTODOタブへ、会社・大項目・中項目・TODO詳細・対応日を既存の並び順と書式どおりに1行追加する。分類は文脈から推測し、対応日だけ不明なら確認する。',
+    example: 'TODOシートに追加して'
+  }]
+]);
 
 const aliases = new Map([['grill-me', 'grilling']]);
 const categoryByName = new Map([
@@ -312,8 +320,8 @@ function makeUserRecord(skill, env) {
     kind: 'skill',
     name,
     aliases: [],
-    description: legacy?.d ?? skill.description ?? '説明は要確認です。',
-    example: legacy?.e ?? '',
+    description: userTextOverrides.get(name)?.description ?? legacy?.d ?? skill.description ?? '説明は要確認です。',
+    example: userTextOverrides.get(name)?.example ?? legacy?.e ?? '',
     category: categoryFor(name, legacy),
     projectTags: projectTags(name, legacy),
     provider: { type: 'user', name: 'トシ用に作成' },

@@ -38,7 +38,7 @@ const checks = [
   ['両選択は両環境の導入・設定証跡がある項目だけ', both.every((record) => (record.environments.codex.configured || record.environments.codex.installed) && (record.environments.claude.configured || record.environments.claude.installed))],
   ['全8カテゴリに表示対象がある', data.categories.length === 8 && Object.values(categoryCounts).every((count) => count > 0)],
   ['第1カテゴリは殿堂入り', data.categories[0]?.id === 'hall-of-fame'],
-  ['殿堂入りにはstrict-recheck-and-refineだけを1件登録する', hallOfFameSkills.length === 1 && hallOfFameSkills[0].name === 'strict-recheck-and-refine' && hallOfFameSkills[0].kind === 'skill'],
+  ['殿堂入りはトシが指定したskillだけを登録する', hallOfFameSkills.length === 2 && hallOfFameSkills.every((record) => record.kind === 'skill') && ['strict-recheck-and-refine', 'todo-add'].every((name) => hallOfFameSkills.some((record) => record.name === name))],
   ['第2カテゴリはADV関連', data.categories[1]?.id === 'adv'],
   ['ADVタグのSkillはすべてADV関連', all.filter((record) => record.projectTags.includes('ADV')).every((record) => record.category === 'adv')],
   ['第3カテゴリは開発・AI管理', data.categories[2]?.id === 'development-ai'],
