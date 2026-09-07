@@ -322,14 +322,6 @@
       "e": "このページをもっと洗練されたデザインにして"
     },
     {
-      "n": "artifact-capabilities",
-      "inv": "/artifact-capabilities",
-      "o": "公式",
-      "c": 3,
-      "d": "公開したArtifactページに、データ保存や共有状態など静的HTMLにはない機能を持たせるためのガイド。",
-      "e": "このツールに保存機能を付けたい"
-    },
-    {
       "n": "cowork-plugin",
       "inv": "/cowork-plugin",
       "o": "公式",
@@ -496,14 +488,6 @@
       "c": 9,
       "d": "仕様書やチケット一式をもとに、実際の実装作業を行う。",
       "e": "このチケットの内容を実装して"
-    },
-    {
-      "n": "import-memory",
-      "inv": "/import-memory",
-      "o": "公式",
-      "c": 12,
-      "d": "他のAIアシスタントからのメモリーエクスポートを、会話的かつ追加的にClaudeの記憶へ取り込む。",
-      "e": "他のAIのメモリーをインポートして"
     },
     {
       "n": "japanese-english-translator",

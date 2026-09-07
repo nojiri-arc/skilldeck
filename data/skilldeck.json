@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-07T22:09:52.676Z",
+  "generatedAt": "2026-09-07T22:42:51.350Z",
   "categories": [
     {
       "id": "hall-of-fame",
@@ -36,7 +36,7 @@
     }
   ],
   "inventory": {
-    "legacyCount": 87,
+    "legacyCount": 85,
     "userSkills": {
       "codex": 44,
       "claude": 44
@@ -44,25 +44,25 @@
     "evidence": {
       "codex": {
         "enabledPluginPackages": 15,
-        "remoteInstallMarkers": 21,
+        "remoteInstallMarkers": 18,
         "marketplaceSourcePackages": 3,
         "marketplaceSourceSkillFiles": 0,
-        "cachePhysicalSkillFiles": 236,
+        "cachePhysicalSkillFiles": 217,
         "nonRuntimeSkillDefinitions": 25,
         "cacheOnlySkillFiles": 0,
-        "pluginSkillFilesConsidered": 211,
+        "pluginSkillFilesConsidered": 192,
         "duplicateExclusions": 0
       },
       "claude": {
-        "enabledPluginPackages": 2,
-        "installedPluginPackages": 2,
+        "enabledPluginPackages": 1,
+        "installedPluginPackages": 1,
         "installMarkers": 2,
         "marketplaceSourcePackages": 41,
         "marketplaceSourceSkillFiles": 34,
         "cachePhysicalSkillFiles": 17,
-        "nonRuntimeSkillDefinitions": 0,
+        "nonRuntimeSkillDefinitions": 3,
         "cacheOnlySkillFiles": 0,
-        "pluginSkillFilesConsidered": 17,
+        "pluginSkillFilesConsidered": 14,
         "duplicateExclusions": 0
       }
     },
@@ -74,7 +74,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-07T22:09:52.676Z"
+        "lastVerifiedAt": "2026-09-07T22:42:51.350Z"
       },
       {
         "id": "capability.codex.openai-bundled-browser",
@@ -83,7 +83,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-07T22:09:52.676Z"
+        "lastVerifiedAt": "2026-09-07T22:42:51.350Z"
       },
       {
         "id": "capability.codex.openai-bundled-chrome",
@@ -92,7 +92,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-07T22:09:52.676Z"
+        "lastVerifiedAt": "2026-09-07T22:42:51.350Z"
       },
       {
         "id": "capability.codex.openai-bundled-codex-app-tools",
@@ -101,7 +101,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-07T22:09:52.676Z"
+        "lastVerifiedAt": "2026-09-07T22:42:51.350Z"
       },
       {
         "id": "capability.codex.openai-bundled-computer-use",
@@ -110,7 +110,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-07T22:09:52.676Z"
+        "lastVerifiedAt": "2026-09-07T22:42:51.350Z"
       },
       {
         "id": "capability.codex.openai-bundled-unified-computer-use",
@@ -119,7 +119,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-07T22:09:52.676Z"
+        "lastVerifiedAt": "2026-09-07T22:42:51.350Z"
       },
       {
         "id": "capability.codex.openai-curated-remote-app-69b266168488819199dab47b2ab2e4a7",
@@ -128,7 +128,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-07T22:09:52.676Z"
+        "lastVerifiedAt": "2026-09-07T22:42:51.350Z"
       },
       {
         "id": "capability.codex.openai-curated-remote-gmail",
@@ -137,7 +137,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-07T22:09:52.676Z"
+        "lastVerifiedAt": "2026-09-07T22:42:51.350Z"
       },
       {
         "id": "capability.codex.openai-curated-remote-google-calendar",
@@ -146,7 +146,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-07T22:09:52.676Z"
+        "lastVerifiedAt": "2026-09-07T22:42:51.350Z"
       },
       {
         "id": "capability.codex.openai-curated-remote-slack",
@@ -155,7 +155,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-07T22:09:52.676Z"
+        "lastVerifiedAt": "2026-09-07T22:42:51.350Z"
       },
       {
         "id": "capability.codex.openai-curated-pipedrive",
@@ -164,7 +164,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-07T22:09:52.676Z"
+        "lastVerifiedAt": "2026-09-07T22:42:51.350Z"
       },
       {
         "id": "capability.claude.marker.superdesign-claude-plugins-official",
@@ -173,7 +173,7 @@
         "evidenceType": "install_marker",
         "availability": "installed_unverified",
         "reason": "導入マーカーはありますが、現在のSkillパッケージおよび有効化状態を確認できませんでした。",
-        "lastVerifiedAt": "2026-09-07T22:09:52.676Z"
+        "lastVerifiedAt": "2026-09-07T22:42:51.350Z"
       }
     ],
     "migrationCandidates": [
@@ -257,7 +257,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -329,7 +329,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -401,7 +401,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -473,7 +473,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -545,7 +545,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -617,7 +617,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -689,7 +689,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -761,7 +761,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -833,7 +833,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -905,7 +905,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -986,7 +986,7 @@
           "adv-business-knowledge"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1060,7 +1060,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1137,7 +1137,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1218,7 +1218,7 @@
           "adv-shiryo-sakusei"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1299,7 +1299,7 @@
           "adv-shiyo-gijiroku"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1381,7 +1381,7 @@
           "ai-workflow-consultant"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1453,7 +1453,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1477,85 +1477,6 @@
         "status": "needs_review",
         "actionScope": "plugin_package",
         "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "legacy.artifact-capabilities",
-      "kind": "skill",
-      "name": "artifact-capabilities",
-      "aliases": [],
-      "description": "公開したArtifactページに、データ保存や共有状態など静的HTMLにはない機能を持たせるためのガイド。",
-      "example": "このツールに保存機能を付けたい",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "legacy",
-        "name": "旧SkillDeck登録"
-      },
-      "source": {
-        "canonicalId": null,
-        "contentHash": null
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "verified",
-          "evidenceType": "none"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "verified",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": null,
-        "status": "needs_review",
-        "reasonCode": "registered_only",
-        "reason": "現行の実環境との対応を確認できていません。削除せず要確認として保持します。",
-        "portability": "directly_shareable"
-      },
-      "requirements": [],
-      "legacy": {
-        "description": "公開したArtifactページに、データ保存や共有状態など静的HTMLにはない機能を持たせるためのガイド。",
-        "example": "このツールに保存機能を付けたい",
-        "origin": "公式",
-        "legacyNames": [
-          "artifact-capabilities"
-        ]
-      },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "recent_signal",
-        "windowDays": 7,
-        "sessionCount": 2,
-        "lastUsedAt": "2026-09-05T23:38:06.018Z",
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": true,
-            "sessionCount": 2,
-            "lastUsedAt": "2026-09-05T23:38:06.018Z"
-          }
-        },
-        "reason": "直近7日間に、CodexでSkill定義参照0セッション、Claudeで明示呼び出し2セッションを確認しました。"
-      },
-      "governance": {
-        "status": "keep_recommended",
-        "actionScope": "skill",
-        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
       }
     },
     {
@@ -1611,7 +1532,7 @@
           "artifact-design"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1695,7 +1616,7 @@
           "artifact-template-adv-1"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1779,7 +1700,7 @@
           "artifact-template-adv-2"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1851,7 +1772,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1923,7 +1844,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1995,7 +1916,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2067,7 +1988,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2139,7 +2060,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2211,7 +2132,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2295,7 +2216,7 @@
           "artifact-template-jra"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2367,7 +2288,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2439,7 +2360,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2511,7 +2432,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2583,7 +2504,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2655,7 +2576,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2727,7 +2648,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2799,7 +2720,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2871,7 +2792,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2943,7 +2864,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3015,7 +2936,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3087,7 +3008,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3159,7 +3080,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3231,7 +3152,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3303,7 +3224,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3385,7 +3306,7 @@
           "ask-matt"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3466,7 +3387,7 @@
           "aso-internal-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3547,7 +3468,7 @@
           "aso-simulation-and-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3628,7 +3549,7 @@
           "aso-simulation-intake"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3700,7 +3621,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3772,7 +3693,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3844,7 +3765,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3916,7 +3837,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3988,7 +3909,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4060,7 +3981,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4132,7 +4053,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4206,7 +4127,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4278,7 +4199,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4352,7 +4273,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4426,7 +4347,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4500,7 +4421,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4574,7 +4495,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4648,7 +4569,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4722,7 +4643,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4804,7 +4725,7 @@
           "business-card-contact-import"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4885,7 +4806,7 @@
           "calendar-event-and-meet-link"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4957,7 +4878,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -5029,7 +4950,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5101,7 +5022,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5173,7 +5094,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -5245,7 +5166,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5317,7 +5238,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5389,7 +5310,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5461,7 +5382,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5543,7 +5464,7 @@
           "catchphrase-ideation"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5618,7 +5539,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -5642,78 +5563,6 @@
         "status": "keep_recommended",
         "actionScope": "skill",
         "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.codex-material-themes.choose-codex-theme",
-      "kind": "plugin_skill",
-      "name": "choose-codex-theme",
-      "aliases": [],
-      "description": "Recommend, compare, preview, customize, and export Codex Material Themes through a guided conversation with automatically localized import instructions. Use when a user asks to choose, preview, switch, customize, import, or generate a Codex appearance theme; mentions preferences such as dark, light, warm, cool, low-glare, high-contrast, reading, or night work; wants UI and code font suggestions; needs instructions matching the language of their Codex UI; or requests a codex-theme-v1 import string.",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "codex-material-themes@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/codex-material-themes/skills/choose-codex-theme",
-        "contentHash": "sha256:f0b2ea32f299c4869a5b2f0d982f1c9a6eda91374c0a56ea8bb57f27d4ba2abc"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/choose-codex-theme",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:f0b2ea32f299c4869a5b2f0d982f1c9a6eda91374c0a56ea8bb57f27d4ba2abc",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
       }
     },
     {
@@ -5762,7 +5611,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5841,7 +5690,7 @@
           "claude-in-chrome"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5865,78 +5714,6 @@
         "status": "keep_recommended",
         "actionScope": "skilldeck_record",
         "reason": "トシが保持を選択。Chrome操作をClaudeで行いたいときのために旧登録を残します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.app-69b31dc2110c8191b8b47dc98fe5a052.clean-up-dropbox-content",
-      "kind": "plugin_skill",
-      "name": "clean-up-dropbox-content",
-      "aliases": [],
-      "description": "Clean up Dropbox content by identifying obsolete, duplicate, temporary, or unwanted files and deleting only after explicit review. Use when the user explicitly asks to delete, remove, or clean up Dropbox files or folders.",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "app-69b31dc2110c8191b8b47dc98fe5a052@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/app-69b31dc2110c8191b8b47dc98fe5a052/skills/clean-up-dropbox-content",
-        "contentHash": "sha256:0befed62b8dd03a7cd2a2ce56df16331b64355d3362f136bff289b8dd34a021b"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/clean-up-dropbox-content",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:0befed62b8dd03a7cd2a2ce56df16331b64355d3362f136bff289b8dd34a021b",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
       }
     },
     {
@@ -5988,7 +5765,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6015,223 +5792,7 @@
       }
     },
     {
-      "id": "plugin.claude.openai-codex.codex.codex-cli-runtime",
-      "kind": "plugin_skill",
-      "name": "codex-cli-runtime",
-      "aliases": [],
-      "description": "Internal helper contract for calling the codex-companion runtime from Claude Code",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "codex@openai-codex"
-      },
-      "source": {
-        "canonicalId": "claude-plugin/openai-codex/codex/skills/codex-cli-runtime",
-        "contentHash": "sha256:cce11c3bd6d7b5ec6277b3527e65ff38c5bd16084b436bf2870fabb30414359c"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        },
-        "claude": {
-          "configured": true,
-          "installed": true,
-          "invocation": "/codex-cli-runtime",
-          "detectedBy": "claude-enabled-plugin",
-          "contentHash": "sha256:cce11c3bd6d7b5ec6277b3527e65ff38c5bd16084b436bf2870fabb30414359c",
-          "availability": "installed_unverified",
-          "evidenceType": "config_enabled"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "claude_only",
-        "reasonCode": "plugin_skill",
-        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "agent.claude.codex.codex-rescue",
-      "kind": "agent",
-      "name": "codex-rescue",
-      "aliases": [],
-      "description": "Proactively use when Claude Code is stuck, wants a second implementation or diagnosis pass, needs a deeper root-cause investigation, or should hand a substantial coding task to Codex through the shared runtime",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "OpenAI Codex Plugin経由"
-      },
-      "source": {
-        "canonicalId": "claude-plugin/codex/agents/codex-rescue",
-        "contentHash": "sha256:5b0362f3658fe1fedb6f1def42b585bd20d58f0d27659edd165a6592a91c7587"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        },
-        "claude": {
-          "configured": true,
-          "installed": true,
-          "invocation": null,
-          "detectedBy": "claude-enabled-plugin-agent",
-          "contentHash": "sha256:5b0362f3658fe1fedb6f1def42b585bd20d58f0d27659edd165a6592a91c7587",
-          "availability": "installed_unverified",
-          "evidenceType": "config_enabled"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "claude_only",
-        "reasonCode": "plugin_agent",
-        "reason": "Claude Plugin由来のagentであり、Skillとは別種別です。実行可否はこの棚卸しでは未確認です。",
-        "portability": "mirror_impossible"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "skill",
-        "reason": "利用履歴だけでは不要と断定できません。提供元・依存関係・代替機能を確認して判断します。"
-      }
-    },
-    {
-      "id": "plugin.claude.openai-codex.codex.codex-result-handling",
-      "kind": "plugin_skill",
-      "name": "codex-result-handling",
-      "aliases": [],
-      "description": "Internal guidance for presenting Codex helper output back to the user",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "codex@openai-codex"
-      },
-      "source": {
-        "canonicalId": "claude-plugin/openai-codex/codex/skills/codex-result-handling",
-        "contentHash": "sha256:99fcbbebaeac1e1504b8adfba513bd5964e171414f6709034f3f980a1f2385a8"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        },
-        "claude": {
-          "configured": true,
-          "installed": true,
-          "invocation": "/codex-result-handling",
-          "detectedBy": "claude-enabled-plugin",
-          "contentHash": "sha256:99fcbbebaeac1e1504b8adfba513bd5964e171414f6709034f3f980a1f2385a8",
-          "availability": "installed_unverified",
-          "evidenceType": "config_enabled"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "claude_only",
-        "reasonCode": "plugin_skill",
-        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "command.claude.adversarial-review",
+      "id": "legacy.codex-adversarial-review",
       "kind": "command",
       "name": "codex:adversarial-review",
       "aliases": [],
@@ -6240,12 +5801,12 @@
       "category": "development-ai",
       "projectTags": [],
       "provider": {
-        "type": "plugin",
-        "name": "OpenAI Codex Plugin経由"
+        "type": "legacy",
+        "name": "旧SkillDeck登録"
       },
       "source": {
-        "canonicalId": "claude-plugin/codex/commands/adversarial-review",
-        "contentHash": "sha256:6c6ec17b0dcc39c45541321f663aa1e856e7ad3a4f7343281bd98886ef40c2c6"
+        "canonicalId": null,
+        "contentHash": null
       },
       "environments": {
         "codex": {
@@ -6254,24 +5815,24 @@
           "invocation": null,
           "detectedBy": null,
           "contentHash": null,
-          "availability": "not-applicable",
+          "availability": "verified",
           "evidenceType": "none"
         },
         "claude": {
-          "configured": true,
-          "installed": true,
-          "invocation": "/codex:adversarial-review",
-          "detectedBy": "claude-enabled-plugin-command",
-          "contentHash": "sha256:6c6ec17b0dcc39c45541321f663aa1e856e7ad3a4f7343281bd98886ef40c2c6",
-          "availability": "installed_unverified",
-          "evidenceType": "config_enabled"
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "verified",
+          "evidenceType": "none"
         }
       },
       "mirror": {
-        "eligible": false,
-        "status": "claude_only",
-        "reasonCode": "plugin_command",
-        "reason": "Claude Pluginのcommandであり、Skillとは別種別です。実行可否はこの棚卸しでは未確認です。",
+        "eligible": null,
+        "status": "needs_review",
+        "reasonCode": "registered_only",
+        "reason": "現行の実環境との対応を確認できていません。削除せず要確認として保持します。",
         "portability": "mirror_impossible"
       },
       "requirements": [],
@@ -6283,7 +5844,7 @@
           "codex:adversarial-review"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6304,13 +5865,13 @@
         "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
       },
       "governance": {
-        "status": "needs_review",
-        "actionScope": "skill",
-        "reason": "利用履歴だけでは不要と断定できません。提供元・依存関係・代替機能を確認して判断します。"
+        "status": "delete_candidate",
+        "actionScope": "skilldeck_record",
+        "reason": "旧SkillDeckには登録されていますが、現在のCodex／Claude環境では検出されず、直近利用も確認できないため削除候補です。"
       }
     },
     {
-      "id": "command.claude.cancel",
+      "id": "legacy.codex-cancel",
       "kind": "command",
       "name": "codex:cancel",
       "aliases": [],
@@ -6319,12 +5880,12 @@
       "category": "development-ai",
       "projectTags": [],
       "provider": {
-        "type": "plugin",
-        "name": "OpenAI Codex Plugin経由"
+        "type": "legacy",
+        "name": "旧SkillDeck登録"
       },
       "source": {
-        "canonicalId": "claude-plugin/codex/commands/cancel",
-        "contentHash": "sha256:e01ce5fbed90f4e65e21b39052cc018f091ad9cb8756629483ef09d6d00fba20"
+        "canonicalId": null,
+        "contentHash": null
       },
       "environments": {
         "codex": {
@@ -6333,24 +5894,24 @@
           "invocation": null,
           "detectedBy": null,
           "contentHash": null,
-          "availability": "not-applicable",
+          "availability": "verified",
           "evidenceType": "none"
         },
         "claude": {
-          "configured": true,
-          "installed": true,
-          "invocation": "/codex:cancel",
-          "detectedBy": "claude-enabled-plugin-command",
-          "contentHash": "sha256:e01ce5fbed90f4e65e21b39052cc018f091ad9cb8756629483ef09d6d00fba20",
-          "availability": "installed_unverified",
-          "evidenceType": "config_enabled"
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "verified",
+          "evidenceType": "none"
         }
       },
       "mirror": {
-        "eligible": false,
-        "status": "claude_only",
-        "reasonCode": "plugin_command",
-        "reason": "Claude Pluginのcommandであり、Skillとは別種別です。実行可否はこの棚卸しでは未確認です。",
+        "eligible": null,
+        "status": "needs_review",
+        "reasonCode": "registered_only",
+        "reason": "現行の実環境との対応を確認できていません。削除せず要確認として保持します。",
         "portability": "mirror_impossible"
       },
       "requirements": [],
@@ -6362,7 +5923,7 @@
           "codex:cancel"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6383,13 +5944,13 @@
         "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
       },
       "governance": {
-        "status": "needs_review",
-        "actionScope": "skill",
-        "reason": "利用履歴だけでは不要と断定できません。提供元・依存関係・代替機能を確認して判断します。"
+        "status": "delete_candidate",
+        "actionScope": "skilldeck_record",
+        "reason": "旧SkillDeckには登録されていますが、現在のCodex／Claude環境では検出されず、直近利用も確認できないため削除候補です。"
       }
     },
     {
-      "id": "command.claude.rescue",
+      "id": "legacy.codex-rescue",
       "kind": "command",
       "name": "codex:rescue",
       "aliases": [],
@@ -6398,12 +5959,12 @@
       "category": "development-ai",
       "projectTags": [],
       "provider": {
-        "type": "plugin",
-        "name": "OpenAI Codex Plugin経由"
+        "type": "legacy",
+        "name": "旧SkillDeck登録"
       },
       "source": {
-        "canonicalId": "claude-plugin/codex/commands/rescue",
-        "contentHash": "sha256:089207554cc3d34907916fbbf34b1954b1f5f1f3178e72dcbfb7ebd2d61d4e1e"
+        "canonicalId": null,
+        "contentHash": null
       },
       "environments": {
         "codex": {
@@ -6412,24 +5973,24 @@
           "invocation": null,
           "detectedBy": null,
           "contentHash": null,
-          "availability": "not-applicable",
+          "availability": "verified",
           "evidenceType": "none"
         },
         "claude": {
-          "configured": true,
-          "installed": true,
-          "invocation": "/codex:rescue",
-          "detectedBy": "claude-enabled-plugin-command",
-          "contentHash": "sha256:089207554cc3d34907916fbbf34b1954b1f5f1f3178e72dcbfb7ebd2d61d4e1e",
-          "availability": "installed_unverified",
-          "evidenceType": "config_enabled"
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "verified",
+          "evidenceType": "none"
         }
       },
       "mirror": {
-        "eligible": false,
-        "status": "claude_only",
-        "reasonCode": "plugin_command",
-        "reason": "Claude Pluginのcommandであり、Skillとは別種別です。実行可否はこの棚卸しでは未確認です。",
+        "eligible": null,
+        "status": "needs_review",
+        "reasonCode": "registered_only",
+        "reason": "現行の実環境との対応を確認できていません。削除せず要確認として保持します。",
         "portability": "mirror_impossible"
       },
       "requirements": [],
@@ -6441,7 +6002,7 @@
           "codex:rescue"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6462,13 +6023,13 @@
         "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
       },
       "governance": {
-        "status": "needs_review",
-        "actionScope": "skill",
-        "reason": "利用履歴だけでは不要と断定できません。提供元・依存関係・代替機能を確認して判断します。"
+        "status": "delete_candidate",
+        "actionScope": "skilldeck_record",
+        "reason": "旧SkillDeckには登録されていますが、現在のCodex／Claude環境では検出されず、直近利用も確認できないため削除候補です。"
       }
     },
     {
-      "id": "command.claude.result",
+      "id": "legacy.codex-result",
       "kind": "command",
       "name": "codex:result",
       "aliases": [],
@@ -6477,12 +6038,12 @@
       "category": "development-ai",
       "projectTags": [],
       "provider": {
-        "type": "plugin",
-        "name": "OpenAI Codex Plugin経由"
+        "type": "legacy",
+        "name": "旧SkillDeck登録"
       },
       "source": {
-        "canonicalId": "claude-plugin/codex/commands/result",
-        "contentHash": "sha256:2d996b04f51c6618e76fa142524a0cdf42ccf04fb70cd65bdc74f237de00873d"
+        "canonicalId": null,
+        "contentHash": null
       },
       "environments": {
         "codex": {
@@ -6491,24 +6052,24 @@
           "invocation": null,
           "detectedBy": null,
           "contentHash": null,
-          "availability": "not-applicable",
+          "availability": "verified",
           "evidenceType": "none"
         },
         "claude": {
-          "configured": true,
-          "installed": true,
-          "invocation": "/codex:result",
-          "detectedBy": "claude-enabled-plugin-command",
-          "contentHash": "sha256:2d996b04f51c6618e76fa142524a0cdf42ccf04fb70cd65bdc74f237de00873d",
-          "availability": "installed_unverified",
-          "evidenceType": "config_enabled"
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "verified",
+          "evidenceType": "none"
         }
       },
       "mirror": {
-        "eligible": false,
-        "status": "claude_only",
-        "reasonCode": "plugin_command",
-        "reason": "Claude Pluginのcommandであり、Skillとは別種別です。実行可否はこの棚卸しでは未確認です。",
+        "eligible": null,
+        "status": "needs_review",
+        "reasonCode": "registered_only",
+        "reason": "現行の実環境との対応を確認できていません。削除せず要確認として保持します。",
         "portability": "mirror_impossible"
       },
       "requirements": [],
@@ -6520,7 +6081,7 @@
           "codex:result"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6541,13 +6102,13 @@
         "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
       },
       "governance": {
-        "status": "needs_review",
-        "actionScope": "skill",
-        "reason": "利用履歴だけでは不要と断定できません。提供元・依存関係・代替機能を確認して判断します。"
+        "status": "delete_candidate",
+        "actionScope": "skilldeck_record",
+        "reason": "旧SkillDeckには登録されていますが、現在のCodex／Claude環境では検出されず、直近利用も確認できないため削除候補です。"
       }
     },
     {
-      "id": "command.claude.review",
+      "id": "legacy.codex-review",
       "kind": "command",
       "name": "codex:review",
       "aliases": [],
@@ -6556,12 +6117,12 @@
       "category": "development-ai",
       "projectTags": [],
       "provider": {
-        "type": "plugin",
-        "name": "OpenAI Codex Plugin経由"
+        "type": "legacy",
+        "name": "旧SkillDeck登録"
       },
       "source": {
-        "canonicalId": "claude-plugin/codex/commands/review",
-        "contentHash": "sha256:4e333e9172e5abca130f49b248b10d899743c959c43192ca20cfe535c7473cae"
+        "canonicalId": null,
+        "contentHash": null
       },
       "environments": {
         "codex": {
@@ -6570,24 +6131,24 @@
           "invocation": null,
           "detectedBy": null,
           "contentHash": null,
-          "availability": "not-applicable",
+          "availability": "verified",
           "evidenceType": "none"
         },
         "claude": {
-          "configured": true,
-          "installed": true,
-          "invocation": "/codex:review",
-          "detectedBy": "claude-enabled-plugin-command",
-          "contentHash": "sha256:4e333e9172e5abca130f49b248b10d899743c959c43192ca20cfe535c7473cae",
-          "availability": "installed_unverified",
-          "evidenceType": "config_enabled"
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "verified",
+          "evidenceType": "none"
         }
       },
       "mirror": {
-        "eligible": false,
-        "status": "claude_only",
-        "reasonCode": "plugin_command",
-        "reason": "Claude Pluginのcommandであり、Skillとは別種別です。実行可否はこの棚卸しでは未確認です。",
+        "eligible": null,
+        "status": "needs_review",
+        "reasonCode": "registered_only",
+        "reason": "現行の実環境との対応を確認できていません。削除せず要確認として保持します。",
         "portability": "mirror_impossible"
       },
       "requirements": [],
@@ -6599,7 +6160,7 @@
           "codex:review"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6620,13 +6181,13 @@
         "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
       },
       "governance": {
-        "status": "needs_review",
-        "actionScope": "skill",
-        "reason": "利用履歴だけでは不要と断定できません。提供元・依存関係・代替機能を確認して判断します。"
+        "status": "delete_candidate",
+        "actionScope": "skilldeck_record",
+        "reason": "旧SkillDeckには登録されていますが、現在のCodex／Claude環境では検出されず、直近利用も確認できないため削除候補です。"
       }
     },
     {
-      "id": "command.claude.setup",
+      "id": "legacy.codex-setup",
       "kind": "command",
       "name": "codex:setup",
       "aliases": [],
@@ -6635,12 +6196,12 @@
       "category": "development-ai",
       "projectTags": [],
       "provider": {
-        "type": "plugin",
-        "name": "OpenAI Codex Plugin経由"
+        "type": "legacy",
+        "name": "旧SkillDeck登録"
       },
       "source": {
-        "canonicalId": "claude-plugin/codex/commands/setup",
-        "contentHash": "sha256:e2d2c2671d7ea86691687030d6f8f6f3f054445cec06207d874732a2c6e0d2fa"
+        "canonicalId": null,
+        "contentHash": null
       },
       "environments": {
         "codex": {
@@ -6649,24 +6210,24 @@
           "invocation": null,
           "detectedBy": null,
           "contentHash": null,
-          "availability": "not-applicable",
+          "availability": "verified",
           "evidenceType": "none"
         },
         "claude": {
-          "configured": true,
-          "installed": true,
-          "invocation": "/codex:setup",
-          "detectedBy": "claude-enabled-plugin-command",
-          "contentHash": "sha256:e2d2c2671d7ea86691687030d6f8f6f3f054445cec06207d874732a2c6e0d2fa",
-          "availability": "installed_unverified",
-          "evidenceType": "config_enabled"
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "verified",
+          "evidenceType": "none"
         }
       },
       "mirror": {
-        "eligible": false,
-        "status": "claude_only",
-        "reasonCode": "plugin_command",
-        "reason": "Claude Pluginのcommandであり、Skillとは別種別です。実行可否はこの棚卸しでは未確認です。",
+        "eligible": null,
+        "status": "needs_review",
+        "reasonCode": "registered_only",
+        "reason": "現行の実環境との対応を確認できていません。削除せず要確認として保持します。",
         "portability": "mirror_impossible"
       },
       "requirements": [],
@@ -6678,7 +6239,7 @@
           "codex:setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6699,13 +6260,13 @@
         "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
       },
       "governance": {
-        "status": "needs_review",
-        "actionScope": "skill",
-        "reason": "利用履歴だけでは不要と断定できません。提供元・依存関係・代替機能を確認して判断します。"
+        "status": "delete_candidate",
+        "actionScope": "skilldeck_record",
+        "reason": "旧SkillDeckには登録されていますが、現在のCodex／Claude環境では検出されず、直近利用も確認できないため削除候補です。"
       }
     },
     {
-      "id": "command.claude.status",
+      "id": "legacy.codex-status",
       "kind": "command",
       "name": "codex:status",
       "aliases": [],
@@ -6714,12 +6275,12 @@
       "category": "development-ai",
       "projectTags": [],
       "provider": {
-        "type": "plugin",
-        "name": "OpenAI Codex Plugin経由"
+        "type": "legacy",
+        "name": "旧SkillDeck登録"
       },
       "source": {
-        "canonicalId": "claude-plugin/codex/commands/status",
-        "contentHash": "sha256:1af1dadf984bc65349935b288d8c078caedfd6272a6514a9ee93992f17bda489"
+        "canonicalId": null,
+        "contentHash": null
       },
       "environments": {
         "codex": {
@@ -6728,24 +6289,24 @@
           "invocation": null,
           "detectedBy": null,
           "contentHash": null,
-          "availability": "not-applicable",
+          "availability": "verified",
           "evidenceType": "none"
         },
         "claude": {
-          "configured": true,
-          "installed": true,
-          "invocation": "/codex:status",
-          "detectedBy": "claude-enabled-plugin-command",
-          "contentHash": "sha256:1af1dadf984bc65349935b288d8c078caedfd6272a6514a9ee93992f17bda489",
-          "availability": "installed_unverified",
-          "evidenceType": "config_enabled"
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "verified",
+          "evidenceType": "none"
         }
       },
       "mirror": {
-        "eligible": false,
-        "status": "claude_only",
-        "reasonCode": "plugin_command",
-        "reason": "Claude Pluginのcommandであり、Skillとは別種別です。実行可否はこの棚卸しでは未確認です。",
+        "eligible": null,
+        "status": "needs_review",
+        "reasonCode": "registered_only",
+        "reason": "現行の実環境との対応を確認できていません。削除せず要確認として保持します。",
         "portability": "mirror_impossible"
       },
       "requirements": [],
@@ -6757,7 +6318,7 @@
           "codex:status"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6778,13 +6339,13 @@
         "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
       },
       "governance": {
-        "status": "needs_review",
-        "actionScope": "skill",
-        "reason": "利用履歴だけでは不要と断定できません。提供元・依存関係・代替機能を確認して判断します。"
+        "status": "delete_candidate",
+        "actionScope": "skilldeck_record",
+        "reason": "旧SkillDeckには登録されていますが、現在のCodex／Claude環境では検出されず、直近利用も確認できないため削除候補です。"
       }
     },
     {
-      "id": "command.claude.transfer",
+      "id": "legacy.codex-transfer",
       "kind": "command",
       "name": "codex:transfer",
       "aliases": [],
@@ -6793,12 +6354,12 @@
       "category": "development-ai",
       "projectTags": [],
       "provider": {
-        "type": "plugin",
-        "name": "OpenAI Codex Plugin経由"
+        "type": "legacy",
+        "name": "旧SkillDeck登録"
       },
       "source": {
-        "canonicalId": "claude-plugin/codex/commands/transfer",
-        "contentHash": "sha256:ce2047c1d766bb371e96d24a8ff0eebdbc5be2e208b26cb0a7653c92b78db596"
+        "canonicalId": null,
+        "contentHash": null
       },
       "environments": {
         "codex": {
@@ -6807,24 +6368,24 @@
           "invocation": null,
           "detectedBy": null,
           "contentHash": null,
-          "availability": "not-applicable",
+          "availability": "verified",
           "evidenceType": "none"
         },
         "claude": {
-          "configured": true,
-          "installed": true,
-          "invocation": "/codex:transfer",
-          "detectedBy": "claude-enabled-plugin-command",
-          "contentHash": "sha256:ce2047c1d766bb371e96d24a8ff0eebdbc5be2e208b26cb0a7653c92b78db596",
-          "availability": "installed_unverified",
-          "evidenceType": "config_enabled"
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "verified",
+          "evidenceType": "none"
         }
       },
       "mirror": {
-        "eligible": false,
-        "status": "claude_only",
-        "reasonCode": "plugin_command",
-        "reason": "Claude Pluginのcommandであり、Skillとは別種別です。実行可否はこの棚卸しでは未確認です。",
+        "eligible": null,
+        "status": "needs_review",
+        "reasonCode": "registered_only",
+        "reason": "現行の実環境との対応を確認できていません。削除せず要確認として保持します。",
         "portability": "mirror_impossible"
       },
       "requirements": [],
@@ -6836,7 +6397,7 @@
           "codex:transfer"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6857,81 +6418,9 @@
         "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
       },
       "governance": {
-        "status": "needs_review",
-        "actionScope": "skill",
-        "reason": "利用履歴だけでは不要と断定できません。提供元・依存関係・代替機能を確認して判断します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.app-69b31dc2110c8191b8b47dc98fe5a052.collect-files-with-request",
-      "kind": "plugin_skill",
-      "name": "collect-files-with-request",
-      "aliases": [],
-      "description": "Create, inspect, and manage Dropbox file requests for collecting uploads from other people. Use when the user asks to collect files, request uploads, create an upload portal, check a file request, or list existing file requests.",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "app-69b31dc2110c8191b8b47dc98fe5a052@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/app-69b31dc2110c8191b8b47dc98fe5a052/skills/collect-files-with-request",
-        "contentHash": "sha256:f9de5fd6848b363b189c860455702db097ebaeae51306d9d06183a362224687d"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/collect-files-with-request",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:f9de5fd6848b363b189c860455702db097ebaeae51306d9d06183a362224687d",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+        "status": "delete_candidate",
+        "actionScope": "skilldeck_record",
+        "reason": "旧SkillDeckには登録されていますが、現在のCodex／Claude環境では検出されず、直近利用も確認できないため削除候補です。"
       }
     },
     {
@@ -6983,17 +6472,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
         "sessionCount": 7,
-        "lastUsedAt": "2026-09-07T21:36:44.092Z",
+        "lastUsedAt": "2026-09-07T22:14:24.410Z",
         "environments": {
           "codex": {
             "observed": true,
             "sessionCount": 7,
-            "lastUsedAt": "2026-09-07T21:36:44.092Z"
+            "lastUsedAt": "2026-09-07T22:14:24.410Z"
           },
           "claude": {
             "observed": false,
@@ -7065,7 +6554,7 @@
           "competitive-service-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7144,7 +6633,7 @@
           "cowork-plugin"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7223,7 +6712,7 @@
           "cowork-plugin-management:cowork-plugin-customizer"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7302,7 +6791,7 @@
           "cowork-plugin-management:create-cowork-plugin"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7384,7 +6873,7 @@
           "create-chatgpt-project"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7456,7 +6945,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7537,7 +7026,7 @@
           "customer-icebreaker-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7616,7 +7105,7 @@
           "dataviz"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7688,7 +7177,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7760,7 +7249,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7832,7 +7321,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7904,7 +7393,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7976,7 +7465,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8055,7 +7544,7 @@
           "design"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8127,7 +7616,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8199,7 +7688,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8281,7 +7770,7 @@
           "design-qc"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8353,7 +7842,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8425,7 +7914,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8504,7 +7993,7 @@
           "docx"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8586,7 +8075,7 @@
           "domain-modeling"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8667,7 +8156,7 @@
           "draft-client-proposal"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8748,7 +8237,7 @@
           "draft-sales-email"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8820,7 +8309,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8892,7 +8381,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8973,7 +8462,7 @@
           "existing-attacker"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9052,7 +8541,7 @@
           "explain-usage"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9124,7 +8613,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9196,7 +8685,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9268,7 +8757,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9340,7 +8829,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9412,7 +8901,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9484,7 +8973,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9556,7 +9045,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9628,7 +9117,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9700,7 +9189,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9772,7 +9261,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9844,7 +9333,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9916,79 +9405,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.app-69b31dc2110c8191b8b47dc98fe5a052.find-dropbox-content",
-      "kind": "plugin_skill",
-      "name": "find-dropbox-content",
-      "aliases": [],
-      "description": "Find Dropbox files and folders relevant to a user request. Use when the user asks to search Dropbox, find a document, locate recent files, browse a folder, identify likely source files, or narrow down where content lives before reading, sharing, organizing, or restoring it.",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "app-69b31dc2110c8191b8b47dc98fe5a052@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/app-69b31dc2110c8191b8b47dc98fe5a052/skills/find-dropbox-content",
-        "contentHash": "sha256:6aff4ca5c0fed3961ac5cc92e51c2fbd2405b46673558291f2836bb1021fc271"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/find-dropbox-content",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:6aff4ca5c0fed3961ac5cc92e51c2fbd2405b46673558291f2836bb1021fc271",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10060,7 +9477,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10132,7 +9549,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10204,7 +9621,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10279,7 +9696,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10351,7 +9768,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10423,7 +9840,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10505,7 +9922,7 @@
           "google-ads-consultant"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10577,7 +9994,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10649,7 +10066,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10721,7 +10138,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10793,7 +10210,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10865,79 +10282,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.claude.openai-codex.codex.gpt-5-4-prompting",
-      "kind": "plugin_skill",
-      "name": "gpt-5-4-prompting",
-      "aliases": [],
-      "description": "Internal guidance for composing Codex and GPT-5.4 prompts for coding, review, diagnosis, and research tasks inside the Codex Claude Code plugin",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "codex@openai-codex"
-      },
-      "source": {
-        "canonicalId": "claude-plugin/openai-codex/codex/skills/gpt-5-4-prompting",
-        "contentHash": "sha256:48222490b629e0e5cf7372253b864cc03b7780ce7afeaab4129f3dd2efdbf5d9"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        },
-        "claude": {
-          "configured": true,
-          "installed": true,
-          "invocation": "/gpt-5-4-prompting",
-          "detectedBy": "claude-enabled-plugin",
-          "contentHash": "sha256:48222490b629e0e5cf7372253b864cc03b7780ce7afeaab4129f3dd2efdbf5d9",
-          "availability": "installed_unverified",
-          "evidenceType": "config_enabled"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "claude_only",
-        "reasonCode": "plugin_skill",
-        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11019,7 +10364,7 @@
           "grill-with-docs"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11103,7 +10448,7 @@
           "grilling"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11175,7 +10520,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11247,7 +10592,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11319,7 +10664,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11401,7 +10746,7 @@
           "implement"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11425,85 +10770,6 @@
         "status": "keep_recommended",
         "actionScope": "skill",
         "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
-      }
-    },
-    {
-      "id": "legacy.import-memory",
-      "kind": "skill",
-      "name": "import-memory",
-      "aliases": [],
-      "description": "他のAIアシスタントからのメモリーエクスポートを、会話的かつ追加的にClaudeの記憶へ取り込む。",
-      "example": "他のAIのメモリーをインポートして",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "legacy",
-        "name": "旧SkillDeck登録"
-      },
-      "source": {
-        "canonicalId": null,
-        "contentHash": null
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "verified",
-          "evidenceType": "none"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "verified",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": null,
-        "status": "needs_review",
-        "reasonCode": "registered_only",
-        "reason": "現行の実環境との対応を確認できていません。削除せず要確認として保持します。",
-        "portability": "directly_shareable"
-      },
-      "requirements": [],
-      "legacy": {
-        "description": "他のAIアシスタントからのメモリーエクスポートを、会話的かつ追加的にClaudeの記憶へ取り込む。",
-        "example": "他のAIのメモリーをインポートして",
-        "origin": "公式",
-        "legacyNames": [
-          "import-memory"
-        ]
-      },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "delete_candidate",
-        "actionScope": "skilldeck_record",
-        "reason": "旧SkillDeckには登録されていますが、現在のCodex／Claude環境では検出されず、直近利用も確認できないため削除候補です。"
       }
     },
     {
@@ -11552,7 +10818,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11624,7 +10890,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11648,78 +10914,6 @@
         "status": "keep_recommended",
         "actionScope": "plugin_package",
         "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.app-69b31dc2110c8191b8b47dc98fe5a052.inspect-dropbox-file",
-      "kind": "plugin_skill",
-      "name": "inspect-dropbox-file",
-      "aliases": [],
-      "description": "Inspect a Dropbox file or folder by checking metadata, shared links, and file content when needed. Use when the user asks what a file is, whether it is shared, when it changed, what access links exist, or asks to read/analyze a Dropbox file.",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "app-69b31dc2110c8191b8b47dc98fe5a052@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/app-69b31dc2110c8191b8b47dc98fe5a052/skills/inspect-dropbox-file",
-        "contentHash": "sha256:de44c9809c8d498823ed5130f49494de9b161c85812bd741aaf709b0861dcf9f"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/inspect-dropbox-file",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:de44c9809c8d498823ed5130f49494de9b161c85812bd741aaf709b0861dcf9f",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
       }
     },
     {
@@ -11778,7 +10972,7 @@
           "japanese-english-translator"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11860,7 +11054,7 @@
           "japanese-korean-translator"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11932,7 +11126,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12017,7 +11211,7 @@
           "kimono-brain-todo-management"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12089,7 +11283,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12170,7 +11364,7 @@
           "makeleaps-client-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12251,7 +11445,7 @@
           "makeleaps-orderslip-creation"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12326,17 +11520,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 7,
-        "lastUsedAt": "2026-09-07T12:57:20.284Z",
+        "sessionCount": 8,
+        "lastUsedAt": "2026-09-07T22:36:20.918Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 3,
-            "lastUsedAt": "2026-09-07T12:53:03.938Z"
+            "sessionCount": 4,
+            "lastUsedAt": "2026-09-07T22:36:20.918Z"
           },
           "claude": {
             "observed": true,
@@ -12344,7 +11538,7 @@
             "lastUsedAt": "2026-09-07T12:57:20.284Z"
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照3セッション、Claudeで明示呼び出し4セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照4セッション、Claudeで明示呼び出し4セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -12398,7 +11592,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12479,7 +11673,7 @@
           "meeting-minutes-notion-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12551,7 +11745,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12630,7 +11824,7 @@
           "mission-control-daily-brief"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12711,7 +11905,7 @@
           "mtg-after-automation"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12792,7 +11986,7 @@
           "new-attacker"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12864,7 +12058,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12936,7 +12130,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13008,7 +12202,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13080,7 +12274,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13152,7 +12346,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13224,7 +12418,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13303,7 +12497,7 @@
           "operating-principles"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13327,78 +12521,6 @@
         "status": "keep_recommended",
         "actionScope": "skill",
         "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.app-69b31dc2110c8191b8b47dc98fe5a052.organize-dropbox-folder",
-      "kind": "plugin_skill",
-      "name": "organize-dropbox-folder",
-      "aliases": [],
-      "description": "Organize Dropbox files and folders by creating folders, copying content, or moving content into a cleaner structure. Use when the user asks to organize, archive, consolidate, restructure, copy, or move Dropbox content.",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "app-69b31dc2110c8191b8b47dc98fe5a052@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/app-69b31dc2110c8191b8b47dc98fe5a052/skills/organize-dropbox-folder",
-        "contentHash": "sha256:ac628ecb0fe11803011d4a2703cfc725d099546384fb023ce60b812dd3d362c8"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/organize-dropbox-folder",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:ac628ecb0fe11803011d4a2703cfc725d099546384fb023ce60b812dd3d362c8",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
       }
     },
     {
@@ -13457,7 +12579,7 @@
           "pc-lightening"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13536,7 +12658,7 @@
           "pdf"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13617,7 +12739,7 @@
           "pipedrive-manage-sales"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13699,7 +12821,7 @@
           "plan-landing-page"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13771,7 +12893,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13843,7 +12965,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13915,7 +13037,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13987,7 +13109,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14068,7 +13190,7 @@
           "post-order-operations-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14147,7 +13269,7 @@
           "pptx"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14219,7 +13341,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14291,7 +13413,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14363,7 +13485,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14445,7 +13567,7 @@
           "prompt-engineering-assistant"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14517,7 +13639,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14592,7 +13714,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14664,7 +13786,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14736,7 +13858,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14808,871 +13930,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.remotion.remotion-best-practices",
-      "kind": "plugin_skill",
-      "name": "remotion-best-practices",
-      "aliases": [],
-      "description": "Router for all Remotion skills",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "remotion@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/remotion/skills/remotion-best-practices",
-        "contentHash": "sha256:41119b9934a5c8252f4c8fe9afbfccde40914afe81c0f86924c8ee2897fae77f"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/remotion-best-practices",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:41119b9934a5c8252f4c8fe9afbfccde40914afe81c0f86924c8ee2897fae77f",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.remotion.remotion-captions",
-      "kind": "plugin_skill",
-      "name": "remotion-captions",
-      "aliases": [],
-      "description": "Transcribing, displaying and animating captions",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "remotion@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/remotion/skills/remotion-captions",
-        "contentHash": "sha256:a246e7031765a7c85dd9fd6d311592d3bf6fc990b53c63bb7142e7734d8ffd2b"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/remotion-captions",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:a246e7031765a7c85dd9fd6d311592d3bf6fc990b53c63bb7142e7734d8ffd2b",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.remotion.remotion-create",
-      "kind": "plugin_skill",
-      "name": "remotion-create",
-      "aliases": [],
-      "description": "Create a new Remotion video",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "remotion@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/remotion/skills/remotion-create",
-        "contentHash": "sha256:4df8cb95261ae9e20b1037ea11a3693ae4eb5883b2cdf8b72443ffc2bd5f7149"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/remotion-create",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:4df8cb95261ae9e20b1037ea11a3693ae4eb5883b2cdf8b72443ffc2bd5f7149",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.remotion.remotion-docs",
-      "kind": "plugin_skill",
-      "name": "remotion-docs",
-      "aliases": [],
-      "description": "Search Remotion documentation",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "remotion@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/remotion/skills/remotion-docs",
-        "contentHash": "sha256:4b4eb8c41d8093ef7dae431bf18d9ee2e2e7609539c54dc89116e3a518478af1"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/remotion-docs",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:4b4eb8c41d8093ef7dae431bf18d9ee2e2e7609539c54dc89116e3a518478af1",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.remotion.remotion-interactivity",
-      "kind": "plugin_skill",
-      "name": "remotion-interactivity",
-      "aliases": [],
-      "description": "Structure Remotion markup for interactivity",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "remotion@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/remotion/skills/remotion-interactivity",
-        "contentHash": "sha256:97441bf454f062a16ca54b1b5c6a7090e939dae12af55adf590f49f6b7d9d5ff"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/remotion-interactivity",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:97441bf454f062a16ca54b1b5c6a7090e939dae12af55adf590f49f6b7d9d5ff",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.remotion.remotion-maps",
-      "kind": "plugin_skill",
-      "name": "remotion-maps",
-      "aliases": [],
-      "description": "Remotion Map animation knowledge",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "remotion@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/remotion/skills/remotion-maps",
-        "contentHash": "sha256:ff3cad64dca7f2c3f8e18e3a8a1737fd1f5890142318dd31721e82631f8697e4"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/remotion-maps",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:ff3cad64dca7f2c3f8e18e3a8a1737fd1f5890142318dd31721e82631f8697e4",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.remotion.remotion-markup",
-      "kind": "plugin_skill",
-      "name": "remotion-markup",
-      "aliases": [],
-      "description": "Content, animation and effects best practices",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "remotion@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/remotion/skills/remotion-markup",
-        "contentHash": "sha256:e0cc02bf5075c1c2bc0825bc138a37c5efbd1f981645a18111f64d42797e6c21"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/remotion-markup",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:e0cc02bf5075c1c2bc0825bc138a37c5efbd1f981645a18111f64d42797e6c21",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.remotion.remotion-multimedia",
-      "kind": "plugin_skill",
-      "name": "remotion-multimedia",
-      "aliases": [],
-      "description": "Interacting with Mediabunny",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "remotion@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/remotion/skills/remotion-multimedia",
-        "contentHash": "sha256:af8065ddca936b484d8ef2cce3d51764dcdf5472b0e22c677d910990bdc0d451"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/remotion-multimedia",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:af8065ddca936b484d8ef2cce3d51764dcdf5472b0e22c677d910990bdc0d451",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.remotion.remotion-render",
-      "kind": "plugin_skill",
-      "name": "remotion-render",
-      "aliases": [],
-      "description": "Export a Remotion video",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "remotion@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/remotion/skills/remotion-render",
-        "contentHash": "sha256:9c51cee8d71219ad6ed727060c5d4ca83ee7ba88e0fce5cbed6022e87582b1b1"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/remotion-render",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:9c51cee8d71219ad6ed727060c5d4ca83ee7ba88e0fce5cbed6022e87582b1b1",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.remotion.remotion-saas",
-      "kind": "plugin_skill",
-      "name": "remotion-saas",
-      "aliases": [],
-      "description": "Build an app with Remotion",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "remotion@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/remotion/skills/remotion-saas",
-        "contentHash": "sha256:1d9502cf305d0439a936a3ecdae80addea9e4efca7a87988feb0ca827225ce97"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/remotion-saas",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:1d9502cf305d0439a936a3ecdae80addea9e4efca7a87988feb0ca827225ce97",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.remotion.remotion-studio",
-      "kind": "plugin_skill",
-      "name": "remotion-studio",
-      "aliases": [],
-      "description": "Preview a Remotion video",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "remotion@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/remotion/skills/remotion-studio",
-        "contentHash": "sha256:a2a615fbca1c1fe8809841a405e296f4131b80e88e3d52754b77c8b7d1eeeda4"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/remotion-studio",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:a2a615fbca1c1fe8809841a405e296f4131b80e88e3d52754b77c8b7d1eeeda4",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.remotion.remotion-upgrade",
-      "kind": "plugin_skill",
-      "name": "remotion-upgrade",
-      "aliases": [],
-      "description": "Upgrade Remotion, and related packages",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "remotion@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/remotion/skills/remotion-upgrade",
-        "contentHash": "sha256:f48c93b4089f68340a94a8075b52f53afa2174d6068511bf6ce22cd723c35500"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/remotion-upgrade",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:f48c93b4089f68340a94a8075b52f53afa2174d6068511bf6ce22cd723c35500",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15744,7 +14002,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15816,7 +14074,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15888,7 +14146,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15960,7 +14218,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16042,7 +14300,7 @@
           "research"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16121,7 +14379,7 @@
           "research"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16193,7 +14451,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16274,7 +14532,7 @@
           "review-cleaning-sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16355,7 +14613,7 @@
           "review-cleaning-sheet-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16436,7 +14694,7 @@
           "review-screenshot-automation-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16517,7 +14775,7 @@
           "review-screenshot-daily-operations"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16598,7 +14856,7 @@
           "review-screenshot-reflection"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16670,7 +14928,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16751,7 +15009,7 @@
           "sales-deal-lifecycle-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16832,7 +15090,7 @@
           "sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16904,7 +15162,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16976,7 +15234,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17048,7 +15306,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17123,7 +15381,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -17202,7 +15460,7 @@
           "setup-cowork"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17284,7 +15542,7 @@
           "setup-matt-pocock-skills"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17356,7 +15614,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17430,7 +15688,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17504,7 +15762,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17576,79 +15834,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.app-69b31dc2110c8191b8b47dc98fe5a052.share-dropbox-content",
-      "kind": "plugin_skill",
-      "name": "share-dropbox-content",
-      "aliases": [],
-      "description": "Share Dropbox files or folders by creating shared links, inspecting existing shared links, or explaining current shared-link state. Use only when the user explicitly asks to create a shared link, check access, or inspect a Dropbox shared link.",
-      "example": "",
-      "category": "development-ai",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "app-69b31dc2110c8191b8b47dc98fe5a052@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/app-69b31dc2110c8191b8b47dc98fe5a052/skills/share-dropbox-content",
-        "contentHash": "sha256:4b54a3d146d43e7a8f4bb909cf5f32f6bbc16b625b975f89bddae3856a8f18f7"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/share-dropbox-content",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:4b54a3d146d43e7a8f4bb909cf5f32f6bbc16b625b975f89bddae3856a8f18f7",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17720,17 +15906,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
         "sessionCount": 2,
-        "lastUsedAt": "2026-09-07T22:02:35.111Z",
+        "lastUsedAt": "2026-09-07T22:33:27.649Z",
         "environments": {
           "codex": {
             "observed": true,
             "sessionCount": 2,
-            "lastUsedAt": "2026-09-07T22:02:35.111Z"
+            "lastUsedAt": "2026-09-07T22:33:27.649Z"
           },
           "claude": {
             "observed": false,
@@ -17792,7 +15978,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17871,7 +16057,7 @@
           "skill-creator"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -17943,7 +16129,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -18024,7 +16210,7 @@
           "skill-registry-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -18106,7 +16292,7 @@
           "slide-outline-generator"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -18178,17 +16364,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
         "sessionCount": 3,
-        "lastUsedAt": "2026-09-07T03:10:06.476Z",
+        "lastUsedAt": "2026-09-07T22:15:22.003Z",
         "environments": {
           "codex": {
             "observed": true,
             "sessionCount": 3,
-            "lastUsedAt": "2026-09-07T03:10:06.476Z"
+            "lastUsedAt": "2026-09-07T22:15:22.003Z"
           },
           "claude": {
             "observed": false,
@@ -18260,7 +16446,7 @@
           "sso-quick-diagnostics"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -18332,7 +16518,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -18407,7 +16593,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -18479,7 +16665,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -18551,7 +16737,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -18632,7 +16818,7 @@
           "task-collection-daily-brief"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -18704,7 +16890,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -18776,7 +16962,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -18858,7 +17044,7 @@
           "tdd"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -18940,7 +17126,7 @@
           "teach"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -19012,7 +17198,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -19084,7 +17270,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -19156,7 +17342,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -19238,7 +17424,7 @@
           "to-spec"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -19320,7 +17506,7 @@
           "to-tickets"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -19361,7 +17547,7 @@
       },
       "source": {
         "canonicalId": "skills/todo-add",
-        "contentHash": "sha256:c55dbaee7c67a8eb387d83dc635ba38c43712e9709f1429dee44542cf7ee8c50"
+        "contentHash": "sha256:dec9f7fa9255a014ae4e6f2caf77a36538e18d4622e4313d4ec5358e48eb99d4"
       },
       "identity": {
         "frontmatterName": "todo-add"
@@ -19372,7 +17558,7 @@
           "installed": true,
           "invocation": "$todo-add",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:c55dbaee7c67a8eb387d83dc635ba38c43712e9709f1429dee44542cf7ee8c50",
+          "contentHash": "sha256:dec9f7fa9255a014ae4e6f2caf77a36538e18d4622e4313d4ec5358e48eb99d4",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         },
@@ -19381,7 +17567,7 @@
           "installed": true,
           "invocation": "/todo-add",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:c55dbaee7c67a8eb387d83dc635ba38c43712e9709f1429dee44542cf7ee8c50",
+          "contentHash": "sha256:dec9f7fa9255a014ae4e6f2caf77a36538e18d4622e4313d4ec5358e48eb99d4",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         }
@@ -19395,7 +17581,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -19467,7 +17653,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -19539,7 +17725,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -19611,7 +17797,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -19683,7 +17869,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -19755,7 +17941,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -19827,7 +18013,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -19899,7 +18085,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -19971,7 +18157,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -20043,7 +18229,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -20115,7 +18301,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -20187,7 +18373,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -20259,7 +18445,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -20331,7 +18517,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -20403,7 +18589,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -20485,7 +18671,7 @@
           "wayfinder"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -20557,7 +18743,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -20629,7 +18815,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -20708,7 +18894,7 @@
           "xlsx"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -20793,7 +18979,7 @@
           "yuiitsu-ad-reporting"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -20868,7 +19054,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -20953,7 +19139,7 @@
           "yuiitsu-before-after-posts"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21038,7 +19224,7 @@
           "yuiitsu-daily-ads-analysis"
         ]
       },
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -21082,7 +19268,7 @@
       },
       "source": {
         "canonicalId": "claude-scheduled-tasks/yuiitsu-erume-daily-sync",
-        "contentHash": "sha256:4a41d48381f13d443c185a9bb7c32f24b8e9dab7dd89ba2ffdd158a07e529e22"
+        "contentHash": "sha256:b54291646b31e1415328ac05e2cd2cabf6385af1b952d0c85f5592b1046a594c"
       },
       "environments": {
         "codex": {
@@ -21099,7 +19285,7 @@
           "installed": true,
           "invocation": null,
           "detectedBy": "claude-scheduled-task-definition",
-          "contentHash": "sha256:4a41d48381f13d443c185a9bb7c32f24b8e9dab7dd89ba2ffdd158a07e529e22",
+          "contentHash": "sha256:b54291646b31e1415328ac05e2cd2cabf6385af1b952d0c85f5592b1046a594c",
           "availability": "installed_unverified",
           "evidenceType": "definition_file"
         }
@@ -21113,7 +19299,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21185,7 +19371,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21259,7 +19445,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21333,7 +19519,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21407,7 +19593,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21481,7 +19667,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21555,7 +19741,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21629,7 +19815,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21703,7 +19889,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21777,7 +19963,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21851,7 +20037,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21925,7 +20111,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -21999,7 +20185,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22073,7 +20259,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22147,7 +20333,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22221,7 +20407,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22295,7 +20481,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22369,7 +20555,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22443,7 +20629,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22517,7 +20703,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22591,7 +20777,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22665,7 +20851,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22739,7 +20925,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22813,7 +20999,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22887,7 +21073,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -22961,7 +21147,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -23035,7 +21221,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -23109,7 +21295,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -23183,7 +21369,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -23257,7 +21443,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -23331,7 +21517,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -23405,7 +21591,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-07T22:09:52.676Z",
+      "lastVerifiedAt": "2026-09-07T22:42:51.350Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
