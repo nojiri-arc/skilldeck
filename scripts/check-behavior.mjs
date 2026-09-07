@@ -11,6 +11,7 @@ const codex = filter(['codex']);
 const claude = filter(['claude']);
 const both = filter(['codex', 'claude']);
 const categoryCounts = Object.fromEntries(data.categories.map((category) => [category.id, all.filter((record) => record.category === category.id).length]));
+const hallOfFameSkills = all.filter((record) => record.category === 'hall-of-fame');
 const ordered = [...all].sort((a, b) => data.categories.findIndex((category) => category.id === a.category) - data.categories.findIndex((category) => category.id === b.category) || a.name.localeCompare(b.name, 'ja'));
 const origin = (record) => {
   if (record.legacy?.origin === '自作') return '自作';
@@ -35,10 +36,12 @@ const checks = [
   ['Codex選択はCodexの導入・設定証跡がある項目だけ', codex.every((record) => record.environments.codex.configured || record.environments.codex.installed)],
   ['Claude選択はClaudeの導入・設定証跡がある項目だけ', claude.every((record) => record.environments.claude.configured || record.environments.claude.installed)],
   ['両選択は両環境の導入・設定証跡がある項目だけ', both.every((record) => (record.environments.codex.configured || record.environments.codex.installed) && (record.environments.claude.configured || record.environments.claude.installed))],
-  ['全7カテゴリに表示対象がある', data.categories.length === 7 && Object.values(categoryCounts).every((count) => count > 0)],
-  ['第1カテゴリはADV関連', data.categories[0]?.id === 'adv'],
+  ['全8カテゴリに表示対象がある', data.categories.length === 8 && Object.values(categoryCounts).every((count) => count > 0)],
+  ['第1カテゴリは殿堂入り', data.categories[0]?.id === 'hall-of-fame'],
+  ['殿堂入りにはstrict-recheck-and-refineだけを1件登録する', hallOfFameSkills.length === 1 && hallOfFameSkills[0].name === 'strict-recheck-and-refine' && hallOfFameSkills[0].kind === 'skill'],
+  ['第2カテゴリはADV関連', data.categories[1]?.id === 'adv'],
   ['ADVタグのSkillはすべてADV関連', all.filter((record) => record.projectTags.includes('ADV')).every((record) => record.category === 'adv')],
-  ['第2カテゴリは開発・AI管理', data.categories[1]?.id === 'development-ai'],
+  ['第3カテゴリは開発・AI管理', data.categories[2]?.id === 'development-ai'],
   ['由来は自作・公式・他作だけ', all.every((record) => ['自作', '公式', '他作'].includes(origin(record)))],
   ['通常一覧にcommand・agent・自動実行を混在させない', all.every((record) => ['skill', 'builtin_skill', 'plugin_skill'].includes(record.kind))],
   ['共通正本の未配布Skillを通常一覧に混在させない', !all.some((record) => record.id === 'canonical.manage-codex-claude-mirroring')],
@@ -46,7 +49,7 @@ const checks = [
   ['片側Skillに移行可否を設定する', all.filter((record) => record.mirror.status === 'codex_only' || record.mirror.status === 'claude_only').every((record) => ['directly_shareable','adapter_required','functionally_recreatable','mirror_impossible','requires_review'].includes(record.mirror.portability))],
   ['重複候補は正規化した表示名から自動集計する', duplicates.some(([name, group]) => name === 'research' && group.some((record) => record.provider.type === 'user') && group.some((record) => record.provider.type === 'plugin'))],
   ['別名統合済みにgrill-me/grillingを含む', skillLike.some((record) => record.name === 'grilling' && record.aliases.includes('grill-me'))]
-  ,['カテゴリ選択後も7カテゴリの件数を算出できる', data.categories.length === 7 && Object.values(categoryCounts).every((count) => count > 0)]
+  ,['カテゴリ選択後も8カテゴリの件数を算出できる', data.categories.length === 8 && Object.values(categoryCounts).every((count) => count > 0)]
   ,['旧形式と現行Skillの移行候補を自動削除せず保持する', migrationCandidates.length === 3 && migrationCandidates.every((candidate) => candidate.recordIds.length === 2)]
   ,['差分画面では無効な環境フィルターを表示しない', differenceViewHidesEnvironment]
   ,['由来3区分を常時見えるボタンで絞り込める', ['自作','他作','公式'].every((provider) => html.includes(`data-provider="${provider}"`)) && html.includes('originBadge(record)')]

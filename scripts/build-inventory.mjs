@@ -12,6 +12,7 @@ const now = new Date().toISOString();
 const usageEvidence = await collectUsageEvidence({ now: new Date(now), days: 7 });
 
 const CATEGORIES = [
+  { id: 'hall-of-fame', name: '殿堂入り' },
   { id: 'adv', name: 'ADV関連' },
   { id: 'development-ai', name: '開発・AI管理' },
   { id: 'sales-customer', name: '営業・顧客対応' },
@@ -20,6 +21,9 @@ const CATEGORIES = [
   { id: 'meeting-writing-translation', name: '会議・文章・翻訳' },
   { id: 'task-operations', name: 'タスク・業務運用' }
 ];
+
+// トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine']);
 
 const aliases = new Map([['grill-me', 'grilling']]);
 const categoryByName = new Map([
@@ -195,6 +199,7 @@ function projectTags(name, legacy) {
 }
 
 function categoryFor(name, legacy) {
+  if (HALL_OF_FAME_SKILLS.has(name)) return 'hall-of-fame';
   if (isAdvSkill(name, legacy)) return 'adv';
   if (categoryByName.has(name)) return categoryByName.get(name);
   if (name.startsWith('adv-') || name.includes('sales') || name.includes('order') || name.includes('customer')) return 'sales-customer';

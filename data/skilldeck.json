@@ -1,7 +1,11 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-06T14:20:35.463Z",
+  "generatedAt": "2026-09-07T12:13:06.539Z",
   "categories": [
+    {
+      "id": "hall-of-fame",
+      "name": "殿堂入り"
+    },
     {
       "id": "adv",
       "name": "ADV関連"
@@ -18361,6 +18365,81 @@
         "status": "needs_review",
         "actionScope": "plugin_package",
         "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "user.strict-recheck-and-refine",
+      "kind": "skill",
+      "name": "strict-recheck-and-refine",
+      "aliases": [],
+      "description": "After the main agent finishes an update, dispatch a fresh, read-only reviewer subagent that works backward from the ideal end state and gives strict, evidence-based feedback; the main agent then triages that feedback and makes the final adjustments. Use when the user asks for 「リチェックして」「厳しめにチェックして」「サブエージェントで見直して」「最終調整して」 or wants an update double-checked objectively before it is called done; do not use for a first draft or for a routine self-check.",
+      "example": "",
+      "category": "hall-of-fame",
+      "projectTags": [],
+      "provider": {
+        "type": "user",
+        "name": "トシ用に作成"
+      },
+      "source": {
+        "canonicalId": "skills/strict-recheck-and-refine",
+        "contentHash": "sha256:c6cb7b74cf7195943d4e7a1e1d00fe1c6edd1aad9c0ec273fdb76937cd4458f5"
+      },
+      "identity": {
+        "frontmatterName": "strict-recheck-and-refine"
+      },
+      "environments": {
+        "codex": {
+          "configured": true,
+          "installed": true,
+          "invocation": "$strict-recheck-and-refine",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:c6cb7b74cf7195943d4e7a1e1d00fe1c6edd1aad9c0ec273fdb76937cd4458f5",
+          "availability": "verified",
+          "evidenceType": "verified_runtime"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/strict-recheck-and-refine",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:c6cb7b74cf7195943d4e7a1e1d00fe1c6edd1aad9c0ec273fdb76937cd4458f5",
+          "availability": "verified",
+          "evidenceType": "verified_runtime"
+        }
+      },
+      "mirror": {
+        "eligible": true,
+        "status": "synced",
+        "reasonCode": null,
+        "reason": null,
+        "portability": "directly_shareable"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-07T12:13:06.539Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-07T12:13:06.385Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-07T12:13:06.385Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "skill",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
       }
     },
     {

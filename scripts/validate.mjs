@@ -16,7 +16,8 @@ const allowedGovernanceStatuses = new Set(['keep_required', 'keep_recommended', 
 const categoryIds = new Set(data.categories.map((category) => category.id));
 
 if (data.schemaVersion !== 2) errors.push('schemaVersionは2である必要があります。');
-if (data.categories.length !== 7) errors.push(`カテゴリ数は7である必要があります（現在 ${data.categories.length}）。`);
+if (data.categories.length !== 8) errors.push(`カテゴリ数は8である必要があります（現在 ${data.categories.length}）。`);
+if (data.categories[0]?.id !== 'hall-of-fame') errors.push('第1カテゴリは殿堂入りである必要があります。');
 if (data.inventory.legacyCount !== 89) errors.push(`旧データは89件を保持する必要があります（現在 ${data.inventory.legacyCount}）。`);
 
 for (const record of data.records) {
