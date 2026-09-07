@@ -18,7 +18,7 @@ const categoryIds = new Set(data.categories.map((category) => category.id));
 if (data.schemaVersion !== 2) errors.push('schemaVersionは2である必要があります。');
 if (data.categories.length !== 8) errors.push(`カテゴリ数は8である必要があります（現在 ${data.categories.length}）。`);
 if (data.categories[0]?.id !== 'hall-of-fame') errors.push('第1カテゴリは殿堂入りである必要があります。');
-if (data.inventory.legacyCount !== 89) errors.push(`旧データは89件を保持する必要があります（現在 ${data.inventory.legacyCount}）。`);
+if (data.inventory.legacyCount !== legacy.skills.length) errors.push(`旧登録の件数が一致しません（台帳 ${data.inventory.legacyCount}件、正本 ${legacy.skills.length}件）。`);
 
 for (const record of data.records) {
   if (ids.has(record.id)) errors.push(`ID重複: ${record.id}`);
@@ -62,7 +62,7 @@ for (const capability of data.inventory.capabilities ?? []) {
 }
 const representedLegacyNames = new Set(data.records.flatMap((record) => [...(record.legacy?.legacyNames ?? []), ...(record.aliases ?? [])]));
 const missingLegacy = legacy.skills.map((skill) => skill.n).filter((name) => !representedLegacyNames.has(name));
-if (missingLegacy.length) errors.push(`旧89件の保持が不足しています: ${missingLegacy.join(', ')}`);
+if (missingLegacy.length) errors.push(`旧登録の反映が不足しています: ${missingLegacy.join(', ')}`);
 const skillLike = data.records.filter((record) => ['skill', 'canonical_skill', 'builtin_skill', 'plugin_skill'].includes(record.kind));
 for (const record of skillLike.filter((record) => record.kind === 'skill' && record.provider.type === 'user')) {
   if (!record.identity?.frontmatterName || !record.source.contentHash?.startsWith('sha256:')) errors.push(`ユーザーSkillの全体照合情報が不足: ${record.id}`);

@@ -322,14 +322,6 @@
       "e": "このページをもっと洗練されたデザインにして"
     },
     {
-      "n": "artifact-diagramming",
-      "inv": "/artifact-diagramming",
-      "o": "公式",
-      "c": 3,
-      "d": "Artifact内で図解が有効な場面と、両テーマで見やすいSVG図の描き方のノウハウ。",
-      "e": "この仕組みを図解して"
-    },
-    {
       "n": "artifact-capabilities",
       "inv": "/artifact-capabilities",
       "o": "公式",
@@ -544,14 +536,6 @@
       "c": 10,
       "d": "ユーザーの依頼に応じて、Slackを除いた読み取り専用の日次優先ブリーフをまとめる。",
       "e": "今日のTODOをまとめて"
-    },
-    {
-      "n": "morning",
-      "inv": "/morning",
-      "o": "自作",
-      "c": 10,
-      "d": "朝のブリーフをスタイル付きHTMLで表示、または平日の定期タスクとして設定する。",
-      "e": "今日の朝ブリーフを見せて"
     },
     {
       "n": "operating-principles",

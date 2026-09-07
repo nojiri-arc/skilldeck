@@ -57,9 +57,9 @@ const checks = [
   ,['削除候補は実環境未検出・直近利用シグナルなしだけ', all.filter((record) => record.governance?.status === 'delete_candidate').every((record) => record.usage.status === 'no_signal' && !['codex','claude'].some((environment) => record.environments[environment].configured || record.environments[environment].installed))]
   ,['Pluginの必要性判断は個別Skillではなく一式へ集約する', html.includes('function pluginPackageTargets(records)') && html.includes("id:`package:${provider}`") && html.includes("kind:'plugin_package'")]
   ,['精査画面は削除候補を先頭に表示する', html.indexOf("reviewPanel('削除候補'") < html.indexOf("reviewPanel('必要性を要確認'") && html.indexOf("reviewPanel('必要性を要確認'") < html.indexOf("reviewPanel('保持推奨'")]
-  ,['保持・削除依頼は実削除せず判断保存と依頼文コピーに限定する', html.includes('data-review-action="keep"') && html.includes('data-review-action="request_delete"') && html.includes('実削除はトシの承認後に実施') && !html.includes('fetch(\'/api/delete')]
+  ,['保持・削除の判断を保存して、正本更新対象を明確にできる', html.includes('data-review-action="keep"') && html.includes('data-review-action="request_delete"') && html.includes('判断: ${decision === \'keep\' ? \'保持\' : \'削除\'}') && !html.includes('fetch(\'/api/delete')]
   ,['判断一覧はコピーと全消去ができる', html.includes('id="copyReviewQueue"') && html.includes('id="clearReviewQueue"') && html.includes("localStorage.removeItem(reviewStorageKey)")]
-  ,['技術差分の重複表示には判断ボタンを重ねない', html.includes("records.map((record) => diffItem(record,{actions:false}))")]
+  ,['技術差分にも保持・削除ボタンと判断の目安を表示する', html.includes('function technicalGuide(title)') && html.includes('records.map((record) => diffItem(record)).join') && html.includes('function codexAdvice(record)')]
 ];
 const failures = checks.filter(([, result]) => !result);
 if (failures.length) { console.error(failures.map(([name]) => name).join('\n')); process.exit(1); }

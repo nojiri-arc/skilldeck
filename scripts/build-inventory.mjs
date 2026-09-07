@@ -25,6 +25,19 @@ const CATEGORIES = [
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
 const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add']);
 
+// 環境差分の精査でトシが明示的に「保持」を選んだ旧登録。
+// 現在の環境では未検出でも、削除候補には戻さない。
+const governanceOverrides = new Map([
+  ['claude-in-chrome', 'トシが保持を選択。Chrome操作をClaudeで行いたいときのために旧登録を残します。'],
+  ['cowork-plugin', 'トシが保持を選択。Cowork Pluginの作成・調整用途として旧登録を残します。'],
+  ['cowork-plugin-management:cowork-plugin-customizer', 'トシが保持を選択。既存Cowork Pluginのカスタマイズ用途として旧登録を残します。'],
+  ['cowork-plugin-management:create-cowork-plugin', 'トシが保持を選択。Cowork Pluginを新規作成する用途として旧登録を残します。'],
+  ['docx', 'トシが保持を選択。Word文書を扱う用途として旧登録を残します。'],
+  ['explain-usage', 'トシが保持を選択。利用量の説明用途として旧登録を残します。'],
+  ['pptx', 'トシが保持を選択。PowerPoint資料を扱う用途として旧登録を残します。'],
+  ['setup-cowork', 'トシが保持を選択。Coworkの初期設定用途として旧登録を残します。']
+]);
+
 // legacy-skills.json は89件で凍結されているため、新規skillの日本語説明と依頼例はここで補う。
 const userTextOverrides = new Map([
   ['todo-add', {
@@ -240,6 +253,8 @@ function mirrorStatus(record) {
 function governanceFor(record) {
   const usage = record.usage;
   const hasEnvironmentEvidence = ['codex', 'claude'].some((environment) => record.environments[environment].configured || record.environments[environment].installed);
+  const overrideReason = governanceOverrides.get(record.name);
+  if (overrideReason) return { status: 'keep_recommended', actionScope: 'skilldeck_record', reason: overrideReason };
   if (record.kind === 'builtin_skill') {
     return { status: 'keep_required', actionScope: 'none', reason: 'ベンダー提供の組み込みSkillです。個別削除ではなく、環境の標準機能として保持します。' };
   }
