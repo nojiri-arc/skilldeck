@@ -14,6 +14,8 @@ const allowedPortability = new Set(['directly_shareable', 'adapter_required', 'f
 const allowedUsageStatuses = new Set(['recent_signal', 'no_signal']);
 const allowedGovernanceStatuses = new Set(['keep_required', 'keep_recommended', 'needs_review', 'delete_candidate']);
 const categoryIds = new Set(data.categories.map((category) => category.id));
+// 凍結済み旧一覧にだけ残る、実体と公開カードを廃止したSkill。
+const retiredLegacySkillNames = new Set(['business-card-contact-import', 'prompt-engineering-assistant', 'wayfinder']);
 
 if (data.schemaVersion !== 2) errors.push('schemaVersionは2である必要があります。');
 if (data.categories.length !== 8) errors.push(`カテゴリ数は8である必要があります（現在 ${data.categories.length}）。`);
@@ -61,7 +63,7 @@ for (const capability of data.inventory.capabilities ?? []) {
   if (!allowedAvailability.has(capability.availability)) errors.push(`能力台帳の利用状態不正: ${capability.id}`);
 }
 const representedLegacyNames = new Set(data.records.flatMap((record) => [...(record.legacy?.legacyNames ?? []), ...(record.aliases ?? [])]));
-const missingLegacy = legacy.skills.map((skill) => skill.n).filter((name) => !representedLegacyNames.has(name));
+const missingLegacy = legacy.skills.map((skill) => skill.n).filter((name) => !retiredLegacySkillNames.has(name) && !representedLegacyNames.has(name));
 if (missingLegacy.length) errors.push(`旧登録の反映が不足しています: ${missingLegacy.join(', ')}`);
 const skillLike = data.records.filter((record) => ['skill', 'canonical_skill', 'builtin_skill', 'plugin_skill'].includes(record.kind));
 for (const record of skillLike.filter((record) => record.kind === 'skill' && record.provider.type === 'user')) {

@@ -23,7 +23,7 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt']);
 
 // 環境差分の精査でトシが明示的に「保持」を選んだ旧登録。
 // 現在の環境では未検出でも、削除候補には戻さない。
@@ -40,15 +40,36 @@ const governanceOverrides = new Map([
 
 // legacy-skills.json は89件で凍結されているため、新規skillの日本語説明と依頼例はここで補う。
 const userTextOverrides = new Map([
+  ['strict-recheck-and-refine', {
+    description: '検品スキル。作業後に別のAIが厳しめに見直し、必要な修正まで行う最終チェック用のSkillです。',
+    example: '厳しめの再確認をお願い！'
+  }],
+  ['elegant-prompt', {
+    description: '重要なAI依頼を送る前に、目的・成果物・合格／失格条件・証拠・テスト・終了条件・権限の境界を明確にし、制作AI用と独立検品AI用の依頼文を作るSkillです。',
+    example: '依頼文精査お願い！'
+  }],
   ['todo-add', {
     description: 'ADV MyシートのTODOタブへ、会社・大項目・中項目・TODO詳細・対応日を既存の並び順と書式どおりに1行追加する。分類は文脈から推測し、対応日だけ不明なら確認する。',
     example: 'TODO追加！'
   }]
 ]);
 
+// 表示名だけを日本語にし、判定・同期・正本IDにはSkill IDを使い続ける。
+const displayNameOverrides = new Map([
+  ['elegant-prompt', 'エレガント・プロンプト']
+]);
+
+// 同期の事実と実動テストの事実を混同しないための、個別検証状態。
+const userVerificationOverrides = new Map([
+  ['elegant-prompt', {
+    codex: { availability: 'verified', evidenceType: 'clean_room_test' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。実動テストは未実施。' }
+  }]
+]);
+
 const aliases = new Map([['grill-me', 'grilling']]);
 // 実体と登録の両方を廃止したSkill。凍結した旧一覧からも再表示しない。
-const retiredSkillNames = new Set(['business-card-contact-import', 'wayfinder']);
+const retiredSkillNames = new Set(['business-card-contact-import', 'wayfinder', 'prompt-engineering-assistant']);
 const categoryByName = new Map([
   ['ai-workflow-consultant', 'development-ai'], ['artifact-template-adv-1', 'materials-design'],
   ['artifact-template-adv-2', 'materials-design'], ['artifact-template-jra', 'materials-design'],
@@ -69,7 +90,7 @@ const categoryByName = new Map([
   ['implement', 'development-ai'], ['japanese-english-translator', 'meeting-writing-translation'],
   ['japanese-korean-translator', 'meeting-writing-translation'], ['kimono-brain-todo-management', 'task-operations'],
   ['mission-control-daily-brief', 'task-operations'], ['pc-lightening', 'development-ai'],
-  ['plan-landing-page', 'materials-design'], ['prompt-engineering-assistant', 'development-ai'],
+  ['plan-landing-page', 'materials-design'],
   ['prototype', 'development-ai'], ['research', 'ads-analysis'], ['setup-matt-pocock-skills', 'development-ai'],
   ['review-cleaning-sales-sheet-update', 'task-operations'], ['review-cleaning-sheet-setup', 'task-operations'],
   ['review-screenshot-automation-setup', 'task-operations'], ['review-screenshot-daily-operations', 'task-operations'],
@@ -327,22 +348,23 @@ function findUserRecord(skill) {
 }
 
 function makeUserRecord(skill, env) {
-  const name = canonicalName(skill.canonicalId || skill.name || skill.folder);
-  const legacy = legacyByName.get(name);
+  const skillId = canonicalName(skill.canonicalId || skill.name || skill.folder);
+  const displayName = displayNameOverrides.get(skillId) ?? skillId;
+  const legacy = legacyByName.get(skillId);
   const existing = findUserRecord(skill);
-  const rawName = String(existing?.name ?? name).trim().toLocaleLowerCase('ja');
-  const aliasValues = [skill.folder, skill.name, ...(name === 'grilling' ? ['grill-me'] : [])].filter((value) => String(value).trim().toLocaleLowerCase('ja') !== rawName);
+  const rawName = String(existing?.name ?? displayName).trim().toLocaleLowerCase('ja');
+  const aliasValues = [skill.folder, skill.name, ...(skillId === 'grilling' ? ['grill-me'] : [])].filter((value) => String(value).trim().toLocaleLowerCase('ja') !== rawName);
   const record = existing ?? {
-    id: `user.${name}`,
+    id: `user.${skillId}`,
     kind: 'skill',
-    name,
+    name: displayName,
     aliases: [],
-    description: userTextOverrides.get(name)?.description ?? legacy?.d ?? skill.description ?? '説明は要確認です。',
-    example: userTextOverrides.get(name)?.example ?? legacy?.e ?? '',
-    category: categoryFor(name, legacy),
-    projectTags: projectTags(name, legacy),
+    description: userTextOverrides.get(skillId)?.description ?? legacy?.d ?? skill.description ?? '説明は要確認です。',
+    example: userTextOverrides.get(skillId)?.example ?? legacy?.e ?? '',
+    category: categoryFor(skillId, legacy),
+    projectTags: projectTags(skillId, legacy),
     provider: { type: 'user', name: 'トシ用に作成' },
-    source: { canonicalId: userSourceId(skill.canonicalId || name), contentHash: null },
+    source: { canonicalId: userSourceId(skill.canonicalId || skillId), contentHash: null },
     identity: { frontmatterName: skill.name || null },
     environments: { codex: makeEnvironment(), claude: makeEnvironment() },
     mirror: { eligible: true, status: 'needs_review', reasonCode: null, reason: null },
@@ -352,7 +374,10 @@ function makeUserRecord(skill, env) {
   };
   records.set(record.id, record);
   record.aliases = [...new Set([...record.aliases, ...aliasValues])];
-  record.environments[env] = makeEnvironment(true, env === 'codex' ? `$${name}` : `/${name}`, 'user-skill-directory', skill.hash);
+  record.environments[env] = {
+    ...makeEnvironment(true, env === 'codex' ? `$${skillId}` : `/${skillId}`, 'user-skill-directory', skill.hash),
+    ...(userVerificationOverrides.get(skillId)?.[env] ?? {})
+  };
   record.source.contentHash ??= skill.hash;
 }
 

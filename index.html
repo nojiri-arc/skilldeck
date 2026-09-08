@@ -67,6 +67,7 @@
     const state = { view:'skills', envs:new Set(), query:'', category:'', project:'', provider:'' };
     const statusLabel = { synced:'同期済み', codex_only:'Codexのみ', claude_only:'Claudeのみ', not_mirrorable:'ミラー不可', needs_review:'要確認' };
     const availabilityLabel = { verified:'確認済み', installed_unverified:'導入済み・実行要確認', not_distributed:'未配布', 'not-applicable':'対象外' };
+    const evidenceTypeLabel = { clean_room_test:'Clean Room Test合格', file_hash_verified:'ファイル配置・ハッシュ一致（実行未検証）', verified_runtime:'実行確認済み', config_enabled:'設定で有効', remote_install_marker:'導入記録', install_record:'導入記録', install_marker:'導入記録' };
     const portabilityLabel = { directly_shareable:'直接共有可', adapter_required:'変換・接続が必要', functionally_recreatable:'機能再現可', mirror_impossible:'ミラー不可', requires_review:'要確認' };
     const kindLabel = { skill:'Skill', builtin_skill:'組み込みSkill', plugin_skill:'Plugin Skill', plugin_package:'Plugin一式', canonical_skill:'正本候補Skill', command:'command', agent:'agent', automation:'自動実行' };
     const usageLabel = { recent_signal:'直近7日: 利用シグナルあり', no_signal:'直近7日: シグナルなし' };
@@ -90,7 +91,7 @@
     const originClass = (record) => ({ 自作:'origin-self', 公式:'origin-official', 他作:'origin-external' })[originLabel(record)];
     const originBadge = (record) => `<span class="origin ${originClass(record)}">${originLabel(record)}</span>`;
     const japaneseSummaryByName = {
-      'strict-recheck-and-refine':'作業後に別のAIが厳しめに見直し、必要な修正まで行う最終チェック用スキルです。',
+      'strict-recheck-and-refine':'検品スキルです。作業後に別のAIが厳しめに見直し、必要な修正まで行う最終チェック用スキルです。',
       'ads-manager-account-admin':'広告アカウントの利用者・招待・権限・ロゴを管理するスキルです。',
       'ads-manager-actionable-review':'広告アカウントを読み取り専用で点検し、改善案を出すスキルです。',
       'ads-manager-ad-creation':'広告文・画像を用意して、新しい広告を作成するスキルです。',
@@ -118,6 +119,7 @@
       'strict-recheck-and-refine':'厳しめの再確認をお願い！',
       'todo-add':'TODOシートに追加して'
     };
+    const roleBadgeByName = { 'strict-recheck-and-refine':'検品スキル' };
     function isUnknownExample(value = '') { return !value.trim() || /^(依頼例は)?要確認です。?$/.test(value.trim()); }
     function requestExample(record) {
       const supplied = record.example?.trim();
@@ -152,20 +154,26 @@
       byId('categoryList').innerHTML = buttons.join('');
       document.querySelectorAll('[data-category]').forEach((button) => button.addEventListener('click', () => { state.category = button.dataset.category; renderSkills(); }));
     }
+    function environmentAvailabilityLabel(environment) {
+      if (environment.evidenceType === 'clean_room_test') return '実動確認済み';
+      if (environment.evidenceType === 'file_hash_verified') return '配置確認済み・実行未検証';
+      return availabilityLabel[environment.availability] || '要確認';
+    }
     function environmentBadges(record) {
-      return ['codex','claude'].filter((env) => record.environments[env].configured || record.environments[env].installed).map((env) => `<span class="tag">${env === 'codex' ? 'Codex' : 'Claude'} · ${availabilityLabel[record.environments[env].availability] || '要確認'}</span>`).join('') || '<span class="tag">環境 要確認</span>';
+      return ['codex','claude'].filter((env) => record.environments[env].configured || record.environments[env].installed).map((env) => `<span class="tag">${env === 'codex' ? 'Codex' : 'Claude'} · ${environmentAvailabilityLabel(record.environments[env])}</span>`).join('') || '<span class="tag">環境 要確認</span>';
     }
     function detailRows(record) {
       const invocations = ['codex','claude'].filter((env) => record.environments[env].invocation).map((env) => `${env === 'codex' ? 'Codex' : 'Claude'}: <code>${escapeHtml(record.environments[env].invocation)}</code>`).join('<br>') || '要確認';
       const source = record.source.canonicalId ? `<code>${escapeHtml(record.source.canonicalId)}</code>` : '要確認';
-      const evidence = ['codex','claude'].map((env) => record.environments[env].evidenceType && record.environments[env].evidenceType !== 'none' ? `${env === 'codex' ? 'Codex' : 'Claude'}: ${record.environments[env].evidenceType}` : '').filter(Boolean).join(' / ') || '要確認';
+      const evidence = ['codex','claude'].map((env) => { const environment=record.environments[env]; return environment.evidenceType && environment.evidenceType !== 'none' ? `${env === 'codex' ? 'Codex' : 'Claude'}: ${evidenceTypeLabel[environment.evidenceType] || environment.evidenceType}${environment.verificationNote ? ` — ${environment.verificationNote}` : ''}` : ''; }).filter(Boolean).join(' / ') || '要確認';
       const requirements = record.requirements?.length ? escapeHtml(record.requirements.join(' / ')) : '要確認';
       const originalDescription = isEnglishDescription(record.description) ? `<dt>原文の説明</dt><dd>${escapeHtml(record.description)}</dd>` : '';
       return `<details><summary>詳細を表示</summary><dl><dt>案件タグ</dt><dd>${record.projectTags.length ? escapeHtml(record.projectTags.join(' / ')) : '—'}</dd><dt>由来</dt><dd>${originLabel(record)}</dd><dt>提供元</dt><dd>${escapeHtml(record.provider.name)}</dd><dt>必要な連携</dt><dd>${requirements}</dd><dt>呼び出し方</dt><dd>${invocations}</dd><dt>種別</dt><dd>${kindLabel[record.kind] || record.kind}</dd>${originalDescription}<dt>棚卸し証拠</dt><dd>${escapeHtml(evidence)}</dd><dt>同期状態</dt><dd>${statusLabel[record.mirror.status]}${record.mirror.reason ? ` — ${escapeHtml(record.mirror.reason)}` : ''}</dd><dt>移行可否</dt><dd>${portabilityLabel[record.mirror.portability] || '要確認'}</dd><dt>正本ID</dt><dd>${source}</dd><dt>最終確認</dt><dd>${escapeHtml(formatDate(record.lastVerifiedAt))}</dd></dl></details>`;
     }
     function card(record) {
       const example = requestExample(record);
-      return `<article class="card"><div class="card-top"><span class="kind">${kindLabel[record.kind] || record.kind}</span><div class="card-flags">${originBadge(record)}<span class="status ${record.mirror.status}">${statusLabel[record.mirror.status]}</span></div></div><h2 class="card-name">${escapeHtml(record.name)}</h2><div class="badge-row">${environmentBadges(record)}</div><p class="description">${escapeHtml(japaneseSummary(record))}</p><div class="example"><div><span class="example-label">依頼例</span><p class="example-text">${escapeHtml(example)}</p></div><button class="copy" type="button" data-copy="${escapeHtml(example)}">COPY</button></div><div class="card-footer"><span>${escapeHtml(categoryName(record.category))}</span></div>${detailRows(record)}</article>`;
+      const roleBadge = roleBadgeByName[record.name] ? `<span class="kind">${escapeHtml(roleBadgeByName[record.name])}</span>` : '';
+      return `<article class="card"><div class="card-top"><div class="badge-row"><span class="kind">${kindLabel[record.kind] || record.kind}</span>${roleBadge}</div><div class="card-flags">${originBadge(record)}<span class="status ${record.mirror.status}">${statusLabel[record.mirror.status]}</span></div></div><h2 class="card-name">${escapeHtml(record.name)}</h2><div class="badge-row">${environmentBadges(record)}</div><p class="description">${escapeHtml(japaneseSummary(record))}</p><div class="example"><div><span class="example-label">依頼例</span><p class="example-text">${escapeHtml(example)}</p></div><button class="copy" type="button" data-copy="${escapeHtml(example)}">COPY</button></div><div class="card-footer"><span>${escapeHtml(categoryName(record.category))}</span></div>${detailRows(record)}</article>`;
     }
     function bindCopyButtons() {
       document.querySelectorAll('[data-copy]').forEach((button) => button.addEventListener('click', async () => {
