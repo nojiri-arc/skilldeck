@@ -66,6 +66,7 @@ const checks = [
   ,['共通Skill 2件は殿堂入り・AI運用・Codex実動確認済みである', ['strategy-execution-orchestrator', 'initiative-progress-manager'].every((id) => { const record=all.find((item) => item.id === `user.${id}`); return record?.category === 'hall-of-fame' && record.projectTags.includes('AI運用') && record.provider.type === 'user' && /共通正本Skill/.test(record.provider.name) && record.environments.codex.configured && record.environments.codex.evidenceType === 'clean_room_test' && record.environments.claude.configured && record.environments.claude.evidenceType === 'file_hash_verified'; })]
   ,['共通Skillの表示名・依頼例・起動語が正しい', (() => { const strategy=all.find((record) => record.id === 'user.strategy-execution-orchestrator'); const progress=all.find((record) => record.id === 'user.initiative-progress-manager'); return strategy?.name === '戦略→実行 統括' && strategy.example === '施策開始！' && strategy.triggers?.includes('$strategy-execution-orchestrator') && progress?.name === '施策進行マネージャー' && progress.example === '施策進行！' && ['スケジュール調整お願い', '$initiative-progress-manager'].every((trigger) => progress.triggers?.includes(trigger)); })()]
   ,['退役済みのai-workflow-consultantを再表示しない', !all.some((record) => record.name === 'ai-workflow-consultant')]
+  ,['退役済みのskill-registry-updateを再表示しない', !all.some((record) => record.name === 'skill-registry-update')]
 ];
 const failures = checks.filter(([, result]) => !result);
 if (failures.length) { console.error(failures.map(([name]) => name).join('\n')); process.exit(1); }

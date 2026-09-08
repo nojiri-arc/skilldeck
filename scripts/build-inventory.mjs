@@ -109,7 +109,7 @@ const userVerificationOverrides = new Map([
 
 const aliases = new Map([['grill-me', 'grilling']]);
 // 実体と登録の両方を廃止したSkill。凍結した旧一覧からも再表示しない。
-const retiredSkillNames = new Set(['business-card-contact-import', 'wayfinder', 'prompt-engineering-assistant', 'ai-workflow-consultant']);
+const retiredSkillNames = new Set(['business-card-contact-import', 'wayfinder', 'prompt-engineering-assistant', 'ai-workflow-consultant', 'skill-registry-update']);
 const categoryByName = new Map([
   ['artifact-template-adv-1', 'materials-design'],
   ['artifact-template-adv-2', 'materials-design'], ['artifact-template-jra', 'materials-design'],
