@@ -47,13 +47,15 @@ const userTextOverrides = new Map([
 ]);
 
 const aliases = new Map([['grill-me', 'grilling']]);
+// 実体と登録の両方を廃止したSkill。凍結した旧一覧からも再表示しない。
+const retiredSkillNames = new Set(['business-card-contact-import', 'wayfinder']);
 const categoryByName = new Map([
   ['ai-workflow-consultant', 'development-ai'], ['artifact-template-adv-1', 'materials-design'],
   ['artifact-template-adv-2', 'materials-design'], ['artifact-template-jra', 'materials-design'],
   ['adv-business-knowledge', 'development-ai'], ['adv-shiryo-sakusei', 'materials-design'],
   ['adv-shiyo-gijiroku', 'meeting-writing-translation'], ['aso-internal-order-request', 'task-operations'],
   ['aso-simulation-and-order-request', 'task-operations'], ['aso-simulation-intake', 'task-operations'],
-  ['business-card-contact-import', 'sales-customer'], ['catchphrase-ideation', 'meeting-writing-translation'],
+  ['catchphrase-ideation', 'meeting-writing-translation'],
   ['calendar-event-and-meet-link', 'task-operations'], ['customer-icebreaker-research', 'sales-customer'],
   ['code-review', 'development-ai'], ['communication-approval', 'task-operations'],
   ['competitive-service-research', 'ads-analysis'], ['create-chatgpt-project', 'development-ai'],
@@ -75,7 +77,7 @@ const categoryByName = new Map([
   ['sales-sheet-update', 'task-operations'], ['skill-registry-update', 'development-ai'],
   ['slide-outline-generator', 'materials-design'], ['sso-quick-diagnostics', 'ads-analysis'],
   ['task-collection-daily-brief', 'task-operations'], ['tdd', 'development-ai'], ['teach', 'meeting-writing-translation'], ['to-spec', 'development-ai'],
-  ['to-tickets', 'development-ai'], ['wayfinder', 'development-ai'], ['yuiitsu-ad-reporting', 'ads-analysis'],
+  ['to-tickets', 'development-ai'], ['yuiitsu-ad-reporting', 'ads-analysis'],
   ['yuiitsu-before-after-posts', 'materials-design'], ['yuiitsu-daily-ads-analysis', 'ads-analysis']
 ]);
 
@@ -634,6 +636,7 @@ for (const task of claudeAutomation) {
 
 for (const legacy of legacyInput.skills) {
   const name = canonicalName(legacy.n);
+  if (retiredSkillNames.has(name)) continue;
   if ([...records.values()].some((record) => record.name === name || record.aliases?.includes(legacy.n))) continue;
   const kind = name.startsWith('codex:') ? 'command' : 'skill';
   upsert({
