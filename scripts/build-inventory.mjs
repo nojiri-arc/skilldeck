@@ -23,7 +23,7 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'strategy-execution-orchestrator', 'initiative-progress-manager']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'strategy-execution-orchestrator', 'initiative-progress-manager', 'codex-claude-dialogue']);
 
 // 環境差分の精査でトシが明示的に「保持」を選んだ旧登録。
 // 現在の環境では未検出でも、削除候補には戻さない。
@@ -59,22 +59,29 @@ const userTextOverrides = new Map([
   ['todo-add', {
     description: 'ADV MyシートのTODOタブへ、会社・大項目・中項目・TODO詳細・対応日を既存の並び順と書式どおりに1行追加する。分類は文脈から推測し、対応日だけ不明なら確認する。',
     example: 'TODO追加！'
+  }],
+  ['codex-claude-dialogue', {
+    description: 'ClaudeとCodexに同じ議題を渡し、役割を分けて往復させるSkillです。代理モードは2プロセスを外から往復させ、直接モードは実行中のセッション自身が一方の話者になります。ログは~/ai-talk/<日時>/log.mdに残ります。',
+    example: '別aiと会話して'
   }]
 ]);
 
 // 表示名だけを日本語にし、判定・同期・正本IDにはSkill IDを使い続ける。
 const displayNameOverrides = new Map([
+  ['codex-claude-dialogue', 'Codex×Claude間会話'],
   ['elegant-prompt', 'エレガント・プロンプト'],
   ['strategy-execution-orchestrator', '戦略→実行 統括'],
   ['initiative-progress-manager', '施策進行マネージャー']
 ]);
 
 const providerNameOverrides = new Map([
+  ['codex-claude-dialogue', '共通正本Skill（トシ用に作成）'],
   ['strategy-execution-orchestrator', '共通正本Skill（トシ用に作成）'],
   ['initiative-progress-manager', '共通正本Skill（トシ用に作成）']
 ]);
 
 const projectTagOverrides = new Map([
+  ['codex-claude-dialogue', ['AI運用']],
   ['strategy-execution-orchestrator', ['AI運用']],
   ['initiative-progress-manager', ['AI運用']]
 ]);
