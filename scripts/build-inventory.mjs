@@ -68,7 +68,7 @@ const userTextOverrides = new Map([
 
 // 表示名だけを日本語にし、判定・同期・正本IDにはSkill IDを使い続ける。
 const displayNameOverrides = new Map([
-  ['cross-ai-dialogue', 'Codex×Claude間会話'],
+  ['cross-ai-dialogue', 'クロスAIダイアログ'],
   ['elegant-prompt', 'エレガント・プロンプト'],
   ['strategy-execution-orchestrator', '戦略→実行 統括'],
   ['initiative-progress-manager', '施策進行マネージャー']

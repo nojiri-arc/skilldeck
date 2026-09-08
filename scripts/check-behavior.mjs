@@ -38,7 +38,7 @@ const checks = [
   ['両選択は両環境の導入・設定証跡がある項目だけ', both.every((record) => (record.environments.codex.configured || record.environments.codex.installed) && (record.environments.claude.configured || record.environments.claude.installed))],
   ['全8カテゴリに表示対象がある', data.categories.length === 8 && Object.values(categoryCounts).every((count) => count > 0)],
   ['第1カテゴリは殿堂入り', data.categories[0]?.id === 'hall-of-fame'],
-  ['殿堂入りはトシが指定したSkillだけを登録する', hallOfFameSkills.length === 6 && hallOfFameSkills.every((record) => record.kind === 'skill') && ['strict-recheck-and-refine', 'todo-add', 'エレガント・プロンプト', '戦略→実行 統括', '施策進行マネージャー', 'Codex×Claude間会話'].every((name) => hallOfFameSkills.some((record) => record.name === name))],
+  ['殿堂入りはトシが指定したSkillだけを登録する', hallOfFameSkills.length === 6 && hallOfFameSkills.every((record) => record.kind === 'skill') && ['strict-recheck-and-refine', 'todo-add', 'エレガント・プロンプト', '戦略→実行 統括', '施策進行マネージャー', 'クロスAIダイアログ'].every((name) => hallOfFameSkills.some((record) => record.name === name))],
   ['第2カテゴリはADV関連', data.categories[1]?.id === 'adv'],
   ['ADVタグのSkillはすべてADV関連', all.filter((record) => record.projectTags.includes('ADV')).every((record) => record.category === 'adv')],
   ['第3カテゴリは開発・AI管理', data.categories[2]?.id === 'development-ai'],
