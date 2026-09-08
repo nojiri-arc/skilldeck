@@ -16441,7 +16441,7 @@
       },
       "source": {
         "canonicalId": "skills/initiative-progress-manager",
-        "contentHash": "sha256:d1d66dee51a077ba5170b7542c577924ef5e22f8763d1fe01ccfb33093887b42"
+        "contentHash": "sha256:f7365ed731827a5000eaeed075a70c3e0ac4dec8d724204409d316e9679f3d71"
       },
       "identity": {
         "frontmatterName": "initiative-progress-manager"
@@ -16457,17 +16457,17 @@
           "installed": true,
           "invocation": "$initiative-progress-manager",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:d1d66dee51a077ba5170b7542c577924ef5e22f8763d1fe01ccfb33093887b42",
-          "availability": "installed_unverified",
-          "evidenceType": "file_hash_verified",
-          "verificationNote": "共通正本と同一ハッシュ。実動互換性は要確認。"
+          "contentHash": "sha256:f7365ed731827a5000eaeed075a70c3e0ac4dec8d724204409d316e9679f3d71",
+          "availability": "verified",
+          "evidenceType": "clean_room_test",
+          "verificationNote": "Codex Clean Room Testを完了。"
         },
         "claude": {
           "configured": true,
           "installed": true,
           "invocation": "/initiative-progress-manager",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:d1d66dee51a077ba5170b7542c577924ef5e22f8763d1fe01ccfb33093887b42",
+          "contentHash": "sha256:f7365ed731827a5000eaeed075a70c3e0ac4dec8d724204409d316e9679f3d71",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "共通正本と同一ハッシュ。実動互換性は要確認。"
@@ -16486,13 +16486,13 @@
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 1,
-        "lastUsedAt": "2026-09-08T08:49:58.547Z",
+        "sessionCount": 2,
+        "lastUsedAt": "2026-09-08T09:22:05.632Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 1,
-            "lastUsedAt": "2026-09-08T08:49:58.547Z"
+            "sessionCount": 2,
+            "lastUsedAt": "2026-09-08T09:22:05.632Z"
           },
           "claude": {
             "observed": false,
@@ -16500,7 +16500,7 @@
             "lastUsedAt": null
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照2セッション、Claudeで明示呼び出し0セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -16527,7 +16527,7 @@
       },
       "source": {
         "canonicalId": "skills/strategy-execution-orchestrator",
-        "contentHash": "sha256:f26a677fa8e30c137eef2084ab7d425521215feedc21f98e4f88db629b29850b"
+        "contentHash": "sha256:6d3bf1d8245850ebe0aacdcd0f5eccb6a587107226cc1f1624b23244ced7dfab"
       },
       "identity": {
         "frontmatterName": "strategy-execution-orchestrator"
@@ -16542,17 +16542,17 @@
           "installed": true,
           "invocation": "$strategy-execution-orchestrator",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:f26a677fa8e30c137eef2084ab7d425521215feedc21f98e4f88db629b29850b",
-          "availability": "installed_unverified",
-          "evidenceType": "file_hash_verified",
-          "verificationNote": "共通正本と同一ハッシュ。実動互換性は要確認。"
+          "contentHash": "sha256:6d3bf1d8245850ebe0aacdcd0f5eccb6a587107226cc1f1624b23244ced7dfab",
+          "availability": "verified",
+          "evidenceType": "clean_room_test",
+          "verificationNote": "Codex Clean Room Testを完了。"
         },
         "claude": {
           "configured": true,
           "installed": true,
           "invocation": "/strategy-execution-orchestrator",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:f26a677fa8e30c137eef2084ab7d425521215feedc21f98e4f88db629b29850b",
+          "contentHash": "sha256:6d3bf1d8245850ebe0aacdcd0f5eccb6a587107226cc1f1624b23244ced7dfab",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "共通正本と同一ハッシュ。実動互換性は要確認。"
@@ -16571,13 +16571,13 @@
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 1,
-        "lastUsedAt": "2026-09-08T08:49:58.547Z",
+        "sessionCount": 2,
+        "lastUsedAt": "2026-09-08T09:22:05.632Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 1,
-            "lastUsedAt": "2026-09-08T08:49:58.547Z"
+            "sessionCount": 2,
+            "lastUsedAt": "2026-09-08T09:22:05.632Z"
           },
           "claude": {
             "observed": false,
@@ -16585,7 +16585,7 @@
             "lastUsedAt": null
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照2セッション、Claudeで明示呼び出し0セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",

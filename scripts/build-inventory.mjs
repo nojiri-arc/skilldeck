@@ -91,11 +91,11 @@ const userVerificationOverrides = new Map([
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。実動テストは未実施。' }
   }],
   ['strategy-execution-orchestrator', {
-    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: '共通正本と同一ハッシュ。実動互換性は要確認。' },
+    codex: { availability: 'verified', evidenceType: 'clean_room_test', verificationNote: 'Codex Clean Room Testを完了。' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: '共通正本と同一ハッシュ。実動互換性は要確認。' }
   }],
   ['initiative-progress-manager', {
-    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: '共通正本と同一ハッシュ。実動互換性は要確認。' },
+    codex: { availability: 'verified', evidenceType: 'clean_room_test', verificationNote: 'Codex Clean Room Testを完了。' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: '共通正本と同一ハッシュ。実動互換性は要確認。' }
   }]
 ]);
