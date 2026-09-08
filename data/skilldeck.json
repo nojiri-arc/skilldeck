@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-08T13:36:56.817Z",
+  "generatedAt": "2026-09-08T14:14:27.537Z",
   "categories": [
     {
       "id": "hall-of-fame",
@@ -54,15 +54,15 @@
         "duplicateExclusions": 0
       },
       "claude": {
-        "enabledPluginPackages": 1,
-        "installedPluginPackages": 1,
+        "enabledPluginPackages": 2,
+        "installedPluginPackages": 2,
         "installMarkers": 2,
-        "marketplaceSourcePackages": 41,
-        "marketplaceSourceSkillFiles": 34,
+        "marketplaceSourcePackages": 42,
+        "marketplaceSourceSkillFiles": 60,
         "cachePhysicalSkillFiles": 17,
-        "nonRuntimeSkillDefinitions": 3,
+        "nonRuntimeSkillDefinitions": -23,
         "cacheOnlySkillFiles": 0,
-        "pluginSkillFilesConsidered": 14,
+        "pluginSkillFilesConsidered": 40,
         "duplicateExclusions": 0
       }
     },
@@ -74,7 +74,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-08T13:36:56.817Z"
+        "lastVerifiedAt": "2026-09-08T14:14:27.537Z"
       },
       {
         "id": "capability.codex.openai-bundled-browser",
@@ -83,7 +83,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-08T13:36:56.817Z"
+        "lastVerifiedAt": "2026-09-08T14:14:27.537Z"
       },
       {
         "id": "capability.codex.openai-bundled-chrome",
@@ -92,7 +92,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-08T13:36:56.817Z"
+        "lastVerifiedAt": "2026-09-08T14:14:27.537Z"
       },
       {
         "id": "capability.codex.openai-bundled-codex-app-tools",
@@ -101,7 +101,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-08T13:36:56.817Z"
+        "lastVerifiedAt": "2026-09-08T14:14:27.537Z"
       },
       {
         "id": "capability.codex.openai-bundled-computer-use",
@@ -110,7 +110,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-08T13:36:56.817Z"
+        "lastVerifiedAt": "2026-09-08T14:14:27.537Z"
       },
       {
         "id": "capability.codex.openai-bundled-unified-computer-use",
@@ -119,7 +119,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-08T13:36:56.817Z"
+        "lastVerifiedAt": "2026-09-08T14:14:27.537Z"
       },
       {
         "id": "capability.codex.openai-curated-remote-app-69b266168488819199dab47b2ab2e4a7",
@@ -128,7 +128,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-08T13:36:56.817Z"
+        "lastVerifiedAt": "2026-09-08T14:14:27.537Z"
       },
       {
         "id": "capability.codex.openai-curated-remote-gmail",
@@ -137,7 +137,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-08T13:36:56.817Z"
+        "lastVerifiedAt": "2026-09-08T14:14:27.537Z"
       },
       {
         "id": "capability.codex.openai-curated-remote-google-calendar",
@@ -146,7 +146,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-08T13:36:56.817Z"
+        "lastVerifiedAt": "2026-09-08T14:14:27.537Z"
       },
       {
         "id": "capability.codex.openai-curated-remote-slack",
@@ -155,7 +155,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-08T13:36:56.817Z"
+        "lastVerifiedAt": "2026-09-08T14:14:27.537Z"
       },
       {
         "id": "capability.codex.openai-curated-pipedrive",
@@ -164,7 +164,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-08T13:36:56.817Z"
+        "lastVerifiedAt": "2026-09-08T14:14:27.537Z"
       },
       {
         "id": "capability.claude.marker.superdesign-claude-plugins-official",
@@ -173,7 +173,7 @@
         "evidenceType": "install_marker",
         "availability": "installed_unverified",
         "reason": "導入マーカーはありますが、現在のSkillパッケージおよび有効化状態を確認できませんでした。",
-        "lastVerifiedAt": "2026-09-08T13:36:56.817Z"
+        "lastVerifiedAt": "2026-09-08T14:14:27.537Z"
       }
     ],
     "migrationCandidates": [
@@ -257,7 +257,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -329,7 +329,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -401,7 +401,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -473,7 +473,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -545,7 +545,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -617,7 +617,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -689,7 +689,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -761,7 +761,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -833,7 +833,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -905,7 +905,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -986,7 +986,88 @@
           "adv-business-knowledge"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-08T09:01:26.437Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-08T09:01:26.437Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.adv-business-knowledge",
+      "kind": "plugin_skill",
+      "name": "adv-business-knowledge",
+      "aliases": [],
+      "description": "ADVの業務知識を、提供された資料や会話、社内情報をもとに検索・整理・説明し、関連スキルの利用方針を示す。",
+      "example": "この案件では何を確認すべきか教えて",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/adv-business-knowledge",
+        "contentHash": "sha256:315c7ffa2efe1ac5dcc85324246db35aff298bcfb2c2365aaa26ef06578aa107"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/adv-business-knowledge",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:315c7ffa2efe1ac5dcc85324246db35aff298bcfb2c2365aaa26ef06578aa107",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "ADVの業務知識を、提供された資料や会話、社内情報をもとに検索・整理・説明し、関連スキルの利用方針を示す。",
+        "example": "この案件では何を確認すべきか教えて",
+        "origin": "自作",
+        "legacyNames": [
+          "adv-business-knowledge"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1060,7 +1141,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1138,7 +1219,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1219,7 +1300,88 @@
           "adv-shiryo-sakusei"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.adv-shiryo-sakusei",
+      "kind": "plugin_skill",
+      "name": "adv-shiryo-sakusei",
+      "aliases": [],
+      "description": "ADVの標準様式で営業提案資料、サービス概要、ASO・CPD提案、施策レポートなどを作成・編集する。",
+      "example": "ADV仕様で提案資料を作って",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/adv-shiryo-sakusei",
+        "contentHash": "sha256:2010a6e83a360d143a5cff97e65d8cfe546de692c38a1f23280e67e57a9b6e83"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/adv-shiryo-sakusei",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:2010a6e83a360d143a5cff97e65d8cfe546de692c38a1f23280e67e57a9b6e83",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "ADVの標準様式で営業提案資料、サービス概要、ASO・CPD提案、施策レポートなどを作成・編集する。",
+        "example": "ADV仕様で提案資料を作って",
+        "origin": "自作",
+        "legacyNames": [
+          "adv-shiryo-sakusei"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1300,7 +1462,88 @@
           "adv-shiyo-gijiroku"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-07T08:56:46.106Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-07T08:56:46.106Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.adv-shiyo-gijiroku",
+      "kind": "plugin_skill",
+      "name": "adv-shiyo-gijiroku",
+      "aliases": [],
+      "description": "会議の文字起こしをADV指定フォーマットの議事録に整形する。",
+      "example": "この文字起こしをADV議事録の形式にまとめて",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/adv-shiyo-gijiroku",
+        "contentHash": "sha256:328ee7b43db806c935996d99aa20b2f5caf31f26b8114ff12442eab14995f1a7"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/adv-shiyo-gijiroku",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:328ee7b43db806c935996d99aa20b2f5caf31f26b8114ff12442eab14995f1a7",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "会議の文字起こしをADV指定フォーマットの議事録に整形する。",
+        "example": "この文字起こしをADV議事録の形式にまとめて",
+        "origin": "自作",
+        "legacyNames": [
+          "adv-shiyo-gijiroku"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1372,7 +1615,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1451,7 +1694,7 @@
           "artifact-design"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1536,7 +1779,7 @@
           "artifact-template-adv-1"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1621,7 +1864,7 @@
           "artifact-template-adv-2"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1693,7 +1936,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1765,7 +2008,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1837,7 +2080,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1909,7 +2152,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1981,7 +2224,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2053,7 +2296,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2138,7 +2381,7 @@
           "artifact-template-jra"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2210,7 +2453,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2282,7 +2525,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2354,7 +2597,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2426,7 +2669,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2498,7 +2741,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2570,7 +2813,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2642,7 +2885,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2714,7 +2957,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2786,7 +3029,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2858,7 +3101,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2930,7 +3173,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3002,7 +3245,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3074,7 +3317,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3146,7 +3389,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3229,7 +3472,7 @@
           "ask-matt"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3310,7 +3553,88 @@
           "aso-internal-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.aso-internal-order-request",
+      "kind": "plugin_skill",
+      "name": "aso-internal-order-request",
+      "aliases": [],
+      "description": "ASO実施が確定した案件について必要情報を確認し、社内向け新規発注依頼のSlack下書きを準備する。",
+      "example": "このASO案件の社内発注依頼を下書きして",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/aso-internal-order-request",
+        "contentHash": "sha256:872bf70228b42b1473c6d0e52cd1406f71f476c3d4707b62b930ab93b829c0d1"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/aso-internal-order-request",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:872bf70228b42b1473c6d0e52cd1406f71f476c3d4707b62b930ab93b829c0d1",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "ASO実施が確定した案件について必要情報を確認し、社内向け新規発注依頼のSlack下書きを準備する。",
+        "example": "このASO案件の社内発注依頼を下書きして",
+        "origin": "自作",
+        "legacyNames": [
+          "aso-internal-order-request"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3391,7 +3715,88 @@
           "aso-simulation-and-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.aso-simulation-and-order-request",
+      "kind": "plugin_skill",
+      "name": "aso-simulation-and-order-request",
+      "aliases": [],
+      "description": "ADVのASO案件をシミュレーション事前確認、または発注依頼へ段階に応じて振り分ける。",
+      "example": "このASO案件、今どの段階か判断して次に進めて",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/aso-simulation-and-order-request",
+        "contentHash": "sha256:c3d98fb5a2823ad47f6daad499b5be13e72960b75904697d5aedd936072b9543"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/aso-simulation-and-order-request",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:c3d98fb5a2823ad47f6daad499b5be13e72960b75904697d5aedd936072b9543",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "ADVのASO案件をシミュレーション事前確認、または発注依頼へ段階に応じて振り分ける。",
+        "example": "このASO案件、今どの段階か判断して次に進めて",
+        "origin": "自作",
+        "legacyNames": [
+          "aso-simulation-and-order-request"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3472,7 +3877,88 @@
           "aso-simulation-intake"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-05T04:22:26.266Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-05T04:22:26.266Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.aso-simulation-intake",
+      "kind": "plugin_skill",
+      "name": "aso-simulation-intake",
+      "aliases": [],
+      "description": "ASOシミュレーション実施前に必要情報を確認し、担当者や先方への確認文を下書きする。",
+      "example": "ASOシミュレーション前の確認事項をまとめて",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/aso-simulation-intake",
+        "contentHash": "sha256:85ccbf6ff676006874e05fd289b3bbcbb16d69825ff4bed891e41ef7fbaf4388"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/aso-simulation-intake",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:85ccbf6ff676006874e05fd289b3bbcbb16d69825ff4bed891e41ef7fbaf4388",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "ASOシミュレーション実施前に必要情報を確認し、担当者や先方への確認文を下書きする。",
+        "example": "ASOシミュレーション前の確認事項をまとめて",
+        "origin": "自作",
+        "legacyNames": [
+          "aso-simulation-intake"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3544,7 +4030,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3616,7 +4102,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3688,7 +4174,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3760,7 +4246,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3832,7 +4318,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3904,7 +4390,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3985,7 +4471,88 @@
           "calendar-event-and-meet-link"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.calendar-event-and-meet-link",
+      "kind": "plugin_skill",
+      "name": "calendar-event-and-meet-link",
+      "aliases": [],
+      "description": "ADVの命名規則に沿ってGoogleカレンダーに予定を登録し、必要に応じてGoogle Meetリンクを発行する。",
+      "example": "この打ち合わせをカレンダーに登録してMeetリンクも発行して",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/calendar-event-and-meet-link",
+        "contentHash": "sha256:9df39f855373a92384be4023a005520746e275fc388658ad7446a165cc4f55b3"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/calendar-event-and-meet-link",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:9df39f855373a92384be4023a005520746e275fc388658ad7446a165cc4f55b3",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "ADVの命名規則に沿ってGoogleカレンダーに予定を登録し、必要に応じてGoogle Meetリンクを発行する。",
+        "example": "この打ち合わせをカレンダーに登録してMeetリンクも発行して",
+        "origin": "自作",
+        "legacyNames": [
+          "calendar-event-and-meet-link"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4057,7 +4624,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -4129,7 +4696,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4201,7 +4768,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4273,7 +4840,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -4345,7 +4912,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4417,7 +4984,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4489,7 +5056,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4561,7 +5128,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4644,7 +5211,7 @@
           "catchphrase-ideation"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4720,7 +5287,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -4799,7 +5366,7 @@
           "claude-in-chrome"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4875,7 +5442,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -4954,7 +5521,7 @@
           "codex:adversarial-review"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5033,7 +5600,7 @@
           "codex:cancel"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5112,7 +5679,7 @@
           "codex:rescue"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5191,7 +5758,7 @@
           "codex:result"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5270,7 +5837,7 @@
           "codex:review"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5349,7 +5916,7 @@
           "codex:setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5428,7 +5995,7 @@
           "codex:status"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5507,7 +6074,7 @@
           "codex:transfer"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5534,11 +6101,11 @@
       }
     },
     {
-      "id": "user.codex-claude-dialogue",
+      "id": "user.cross-ai-dialogue",
       "kind": "skill",
       "name": "Codex×Claude間会話",
       "aliases": [
-        "codex-claude-dialogue"
+        "cross-ai-dialogue"
       ],
       "description": "ClaudeとCodexに同じ議題を渡し、役割を分けて往復させるSkillです。代理モードは2プロセスを外から往復させ、直接モードは実行中のセッション自身が一方の話者になります。ログは~/ai-talk/<日時>/log.mdに残ります。",
       "example": "別aiと会話して",
@@ -5551,29 +6118,29 @@
         "name": "共通正本Skill（トシ用に作成）"
       },
       "source": {
-        "canonicalId": "skills/codex-claude-dialogue",
-        "contentHash": "sha256:99ed6568c1d96784778836c1b390d717a0a7ab65dcd1609fae96ceb189b32631"
+        "canonicalId": "skills/cross-ai-dialogue",
+        "contentHash": "sha256:7bda35fa09565a23e8ca267d6db14ffda2d22654e2c7b5b1b106949d208b9478"
       },
       "identity": {
-        "frontmatterName": "codex-claude-dialogue"
+        "frontmatterName": "cross-ai-dialogue"
       },
       "triggers": [],
       "environments": {
         "codex": {
           "configured": true,
           "installed": true,
-          "invocation": "$codex-claude-dialogue",
+          "invocation": "$cross-ai-dialogue",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:99ed6568c1d96784778836c1b390d717a0a7ab65dcd1609fae96ceb189b32631",
+          "contentHash": "sha256:7bda35fa09565a23e8ca267d6db14ffda2d22654e2c7b5b1b106949d208b9478",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         },
         "claude": {
           "configured": true,
           "installed": true,
-          "invocation": "/codex-claude-dialogue",
+          "invocation": "/cross-ai-dialogue",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:99ed6568c1d96784778836c1b390d717a0a7ab65dcd1609fae96ceb189b32631",
+          "contentHash": "sha256:7bda35fa09565a23e8ca267d6db14ffda2d22654e2c7b5b1b106949d208b9478",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         }
@@ -5587,17 +6154,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
-        "status": "recent_signal",
+        "status": "no_signal",
         "windowDays": 7,
-        "sessionCount": 1,
-        "lastUsedAt": "2026-09-08T13:08:58.909Z",
+        "sessionCount": 0,
+        "lastUsedAt": null,
         "environments": {
           "codex": {
-            "observed": true,
-            "sessionCount": 1,
-            "lastUsedAt": "2026-09-08T13:08:58.909Z"
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
           },
           "claude": {
             "observed": false,
@@ -5605,12 +6172,12 @@
             "lastUsedAt": null
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
       },
       "governance": {
-        "status": "keep_recommended",
+        "status": "needs_review",
         "actionScope": "skill",
-        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+        "reason": "ユーザー作成Skillのため自動削除しません。役割重複と今後の利用予定を確認して判断します。"
       }
     },
     {
@@ -5663,7 +6230,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -5746,7 +6313,7 @@
           "competitive-service-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -5825,7 +6392,7 @@
           "cowork-plugin"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5904,7 +6471,7 @@
           "cowork-plugin-management:cowork-plugin-customizer"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5983,7 +6550,7 @@
           "cowork-plugin-management:create-cowork-plugin"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6066,7 +6633,7 @@
           "create-chatgpt-project"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6138,7 +6705,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6219,7 +6786,88 @@
           "customer-icebreaker-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-06T05:03:48.870Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-06T05:03:48.870Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.customer-icebreaker-research",
+      "kind": "plugin_skill",
+      "name": "customer-icebreaker-research",
+      "aliases": [],
+      "description": "商談前に見込み客企業を調査し、話のきっかけになる情報とアイスブレイクを準備する。",
+      "example": "この会社との商談前にアイスブレイクのネタを調べて",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/customer-icebreaker-research",
+        "contentHash": "sha256:38e207fdf08a830b95cb668889fae00009bbe66256a19a78a4e00746cd122e97"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/customer-icebreaker-research",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:38e207fdf08a830b95cb668889fae00009bbe66256a19a78a4e00746cd122e97",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "商談前に見込み客企業を調査し、話のきっかけになる情報とアイスブレイクを準備する。",
+        "example": "この会社との商談前にアイスブレイクのネタを調べて",
+        "origin": "自作",
+        "legacyNames": [
+          "customer-icebreaker-research"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6298,7 +6946,7 @@
           "dataviz"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6370,7 +7018,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6442,7 +7090,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6514,7 +7162,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6593,7 +7241,7 @@
           "design"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6665,7 +7313,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6737,7 +7385,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6820,7 +7468,7 @@
           "design-qc"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6892,7 +7540,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6964,7 +7612,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7043,7 +7691,7 @@
           "docx"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7126,7 +7774,7 @@
           "domain-modeling"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7207,7 +7855,88 @@
           "draft-client-proposal"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.draft-client-proposal",
+      "kind": "plugin_skill",
+      "name": "draft-client-proposal",
+      "aliases": [],
+      "description": "過去の議事録やメールのやり取りを踏まえ、クライアント向け提案書の下書きを作成する。",
+      "example": "この案件の提案書のたたき台を作って",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/draft-client-proposal",
+        "contentHash": "sha256:7c7672dd8db1f4405eea132fdbc0d74e9ac90e7a0b6f63020ccc2a36789cc712"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/draft-client-proposal",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:7c7672dd8db1f4405eea132fdbc0d74e9ac90e7a0b6f63020ccc2a36789cc712",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "過去の議事録やメールのやり取りを踏まえ、クライアント向け提案書の下書きを作成する。",
+        "example": "この案件の提案書のたたき台を作って",
+        "origin": "自作",
+        "legacyNames": [
+          "draft-client-proposal"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7288,7 +8017,88 @@
           "draft-sales-email"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-07T02:31:50.710Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-07T02:31:50.710Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.draft-sales-email",
+      "kind": "plugin_skill",
+      "name": "draft-sales-email",
+      "aliases": [],
+      "description": "過去の議事録や直近のメールのやり取りをもとに、相手先の状況に合わせた営業メールの下書きを作成する。",
+      "example": "この会社宛ての営業メールを下書きして",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/draft-sales-email",
+        "contentHash": "sha256:4a007526ed6626ee8b3d0d66f293184e188b040fe1ca50928077fcb7ad963697"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/draft-sales-email",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:4a007526ed6626ee8b3d0d66f293184e188b040fe1ca50928077fcb7ad963697",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "過去の議事録や直近のメールのやり取りをもとに、相手先の状況に合わせた営業メールの下書きを作成する。",
+        "example": "この会社宛ての営業メールを下書きして",
+        "origin": "自作",
+        "legacyNames": [
+          "draft-sales-email"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7360,7 +8170,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7432,7 +8242,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7459,8 +8269,8 @@
       }
     },
     {
-      "id": "legacy.existing-attacker",
-      "kind": "skill",
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.existing-attacker",
+      "kind": "plugin_skill",
       "name": "existing-attacker",
       "aliases": [],
       "description": "「既存更新」の際に、過去に見込みのあった既存顧客を担当別に最大3件ずつ優先度をつけて掘り起こす。",
@@ -7470,12 +8280,12 @@
         "ADV"
       ],
       "provider": {
-        "type": "legacy",
-        "name": "旧SkillDeck登録"
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
       },
       "source": {
-        "canonicalId": null,
-        "contentHash": null
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/existing-attacker",
+        "contentHash": "sha256:b3d76b2db71f03a70a96a7cdb8700ee82809da1f2cbd4f8ed93048824a6513c1"
       },
       "environments": {
         "codex": {
@@ -7484,25 +8294,25 @@
           "invocation": null,
           "detectedBy": null,
           "contentHash": null,
-          "availability": "verified",
+          "availability": "not-applicable",
           "evidenceType": "none"
         },
         "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "verified",
-          "evidenceType": "none"
+          "configured": true,
+          "installed": true,
+          "invocation": "/existing-attacker",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:b3d76b2db71f03a70a96a7cdb8700ee82809da1f2cbd4f8ed93048824a6513c1",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
         }
       },
       "mirror": {
-        "eligible": null,
-        "status": "needs_review",
-        "reasonCode": "registered_only",
-        "reason": "現行の実環境との対応を確認できていません。削除せず要確認として保持します。",
-        "portability": "directly_shareable"
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
       },
       "requirements": [],
       "legacy": {
@@ -7513,7 +8323,7 @@
           "existing-attacker"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7535,7 +8345,7 @@
       },
       "governance": {
         "status": "keep_recommended",
-        "actionScope": "skill",
+        "actionScope": "plugin_package",
         "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
       }
     },
@@ -7592,7 +8402,7 @@
           "explain-usage"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7664,7 +8474,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7736,7 +8546,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7808,7 +8618,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7884,7 +8694,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7956,7 +8766,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8028,7 +8838,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8111,7 +8921,7 @@
           "google-ads-consultant"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8183,7 +8993,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8255,17 +9065,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 4,
-        "lastUsedAt": "2026-09-08T11:24:56.671Z",
+        "sessionCount": 5,
+        "lastUsedAt": "2026-09-08T13:48:44.299Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 4,
-            "lastUsedAt": "2026-09-08T11:24:56.671Z"
+            "sessionCount": 5,
+            "lastUsedAt": "2026-09-08T13:48:44.299Z"
           },
           "claude": {
             "observed": false,
@@ -8273,7 +9083,7 @@
             "lastUsedAt": null
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照4セッション、Claudeで明示呼び出し0セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照5セッション、Claudeで明示呼び出し0セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -8327,7 +9137,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8399,7 +9209,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8471,7 +9281,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8554,7 +9364,7 @@
           "grill-with-docs"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8639,7 +9449,7 @@
           "grilling"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8711,7 +9521,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8783,7 +9593,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8855,7 +9665,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8938,7 +9748,7 @@
           "implement"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9010,7 +9820,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9082,7 +9892,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9165,7 +9975,7 @@
           "japanese-english-translator"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9248,7 +10058,7 @@
           "japanese-korean-translator"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9320,7 +10130,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9406,7 +10216,7 @@
           "kimono-brain-todo-management"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9478,7 +10288,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9559,7 +10369,88 @@
           "makeleaps-client-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.makeleaps-client-registration",
+      "kind": "plugin_skill",
+      "name": "makeleaps-client-registration",
+      "aliases": [],
+      "description": "MakeLeapsに新しい取引先を登録し、登録内容を確認する。",
+      "example": "この取引先をMakeLeapsに登録して",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/makeleaps-client-registration",
+        "contentHash": "sha256:a8780c304ee385d57a2fba03368cdac1192b6666d123021690f6c5c22bd3d38d"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/makeleaps-client-registration",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:a8780c304ee385d57a2fba03368cdac1192b6666d123021690f6c5c22bd3d38d",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "MakeLeapsに新しい取引先を登録し、登録内容を確認する。",
+        "example": "この取引先をMakeLeapsに登録して",
+        "origin": "自作",
+        "legacyNames": [
+          "makeleaps-client-registration"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9640,7 +10531,88 @@
           "makeleaps-orderslip-creation"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-08T01:20:41.783Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-08T01:20:41.783Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.makeleaps-orderslip-creation",
+      "kind": "plugin_skill",
+      "name": "makeleaps-orderslip-creation",
+      "aliases": [],
+      "description": "受注内容からMakeLeapsの発注書（自社宛）を作成し、内容を確認する。",
+      "example": "この受注内容で発注書を作って",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/makeleaps-orderslip-creation",
+        "contentHash": "sha256:5d4af2962fdf88542ab4d1d3f91e438e4114227bd19890500824e00817d0a006"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/makeleaps-orderslip-creation",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:5d4af2962fdf88542ab4d1d3f91e438e4114227bd19890500824e00817d0a006",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "受注内容からMakeLeapsの発注書（自社宛）を作成し、内容を確認する。",
+        "example": "この受注内容で発注書を作って",
+        "origin": "自作",
+        "legacyNames": [
+          "makeleaps-orderslip-creation"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9716,17 +10688,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 14,
-        "lastUsedAt": "2026-09-08T12:38:25.000Z",
+        "sessionCount": 15,
+        "lastUsedAt": "2026-09-08T13:48:32.612Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 9,
-            "lastUsedAt": "2026-09-08T12:38:25.000Z"
+            "sessionCount": 10,
+            "lastUsedAt": "2026-09-08T13:48:32.612Z"
           },
           "claude": {
             "observed": true,
@@ -9734,7 +10706,7 @@
             "lastUsedAt": "2026-09-08T12:33:48.167Z"
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照9セッション、Claudeで明示呼び出し5セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照10セッション、Claudeで明示呼び出し5セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -9788,7 +10760,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9869,7 +10841,88 @@
           "meeting-minutes-notion-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 2,
+        "lastUsedAt": "2026-09-07T08:44:03.321Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 2,
+            "lastUsedAt": "2026-09-07T08:44:03.321Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照2セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.meeting-minutes-notion-registration",
+      "kind": "plugin_skill",
+      "name": "meeting-minutes-notion-registration",
+      "aliases": [],
+      "description": "会議メモや文字起こしをADV標準の議事録形式に整え、確認後にNotionのメモ・議事録ビューへ登録する。",
+      "example": "この議事録をNotionに登録して",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/meeting-minutes-notion-registration",
+        "contentHash": "sha256:19637dc238887bbffcd4c0616cb504499b11e23d67e08ba85e4d674022edb2d4"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/meeting-minutes-notion-registration",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:19637dc238887bbffcd4c0616cb504499b11e23d67e08ba85e4d674022edb2d4",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "会議メモや文字起こしをADV標準の議事録形式に整え、確認後にNotionのメモ・議事録ビューへ登録する。",
+        "example": "この議事録をNotionに登録して",
+        "origin": "自作",
+        "legacyNames": [
+          "meeting-minutes-notion-registration"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9941,7 +10994,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10020,7 +11073,7 @@
           "mission-control-daily-brief"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10101,7 +11154,7 @@
           "mtg-after-automation"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10128,8 +11181,89 @@
       }
     },
     {
-      "id": "legacy.new-attacker",
-      "kind": "skill",
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.mtg-after-automation",
+      "kind": "plugin_skill",
+      "name": "mtg-after-automation",
+      "aliases": [],
+      "description": "会議の文字起こしや議事録を会議後フローで処理し、議事録・Slack文案・CRM整理と根拠ある次アクションを関連スキルへつなぐ。",
+      "example": "議事録を共有したので、以降の対応をお願い",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/mtg-after-automation",
+        "contentHash": "sha256:deb663c7e621b4a332c595c2105791c137a91616db21aa3b149feb4792f1ad21"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/mtg-after-automation",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:deb663c7e621b4a332c595c2105791c137a91616db21aa3b149feb4792f1ad21",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "会議の文字起こしや議事録を会議後フローで処理し、議事録・Slack文案・CRM整理と根拠ある次アクションを関連スキルへつなぐ。",
+        "example": "議事録を共有したので、以降の対応をお願い",
+        "origin": "自作",
+        "legacyNames": [
+          "mtg-after-automation"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-07T08:56:46.106Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-07T08:56:46.106Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.new-attacker",
+      "kind": "plugin_skill",
       "name": "new-attacker",
       "aliases": [],
       "description": "「新規更新」向けに新規アプリの営業候補選定、ストア情報更新、送付準備を根拠付きで整える。",
@@ -10139,12 +11273,12 @@
         "ADV"
       ],
       "provider": {
-        "type": "legacy",
-        "name": "旧SkillDeck登録"
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
       },
       "source": {
-        "canonicalId": null,
-        "contentHash": null
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/new-attacker",
+        "contentHash": "sha256:f2c5f956bdf987bd2c27ca11e48b7b57338f1b51ce5f54cfe1b8b0228bf2ff95"
       },
       "environments": {
         "codex": {
@@ -10153,25 +11287,25 @@
           "invocation": null,
           "detectedBy": null,
           "contentHash": null,
-          "availability": "verified",
+          "availability": "not-applicable",
           "evidenceType": "none"
         },
         "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "verified",
-          "evidenceType": "none"
+          "configured": true,
+          "installed": true,
+          "invocation": "/new-attacker",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:f2c5f956bdf987bd2c27ca11e48b7b57338f1b51ce5f54cfe1b8b0228bf2ff95",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
         }
       },
       "mirror": {
-        "eligible": null,
-        "status": "needs_review",
-        "reasonCode": "registered_only",
-        "reason": "現行の実環境との対応を確認できていません。削除せず要確認として保持します。",
-        "portability": "directly_shareable"
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
       },
       "requirements": [],
       "legacy": {
@@ -10182,7 +11316,7 @@
           "new-attacker"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10204,7 +11338,7 @@
       },
       "governance": {
         "status": "keep_recommended",
-        "actionScope": "skill",
+        "actionScope": "plugin_package",
         "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
       }
     },
@@ -10254,7 +11388,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10326,7 +11460,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10398,7 +11532,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10470,7 +11604,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10542,7 +11676,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10621,7 +11755,7 @@
           "operating-principles"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10704,7 +11838,7 @@
           "pc-lightening"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10783,7 +11917,7 @@
           "pdf"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10864,7 +11998,88 @@
           "pipedrive-manage-sales"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-07T09:34:52.360Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-07T09:34:52.360Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.pipedrive-manage-sales",
+      "kind": "plugin_skill",
+      "name": "pipedrive-manage-sales",
+      "aliases": [],
+      "description": "Pipedriveで組織・担当者・取引の登録や更新、パイプラインのステータス変更、Todo・アクティビティ管理を一貫して行う。",
+      "example": "この商談をPipedriveに登録して",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/pipedrive-manage-sales",
+        "contentHash": "sha256:63cef8368afae0c90c867d20571ef1b858a284736384727c554dde014ebb1177"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/pipedrive-manage-sales",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:63cef8368afae0c90c867d20571ef1b858a284736384727c554dde014ebb1177",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "Pipedriveで組織・担当者・取引の登録や更新、パイプラインのステータス変更、Todo・アクティビティ管理を一貫して行う。",
+        "example": "この商談をPipedriveに登録して",
+        "origin": "自作",
+        "legacyNames": [
+          "pipedrive-manage-sales"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10947,7 +12162,7 @@
           "plan-landing-page"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11019,7 +12234,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11091,7 +12306,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11172,7 +12387,88 @@
           "post-order-operations-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-08T01:20:41.783Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-08T01:20:41.783Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.post-order-operations-router",
+      "kind": "plugin_skill",
+      "name": "post-order-operations-router",
+      "aliases": [],
+      "description": "受注後業務をまとめて進行し、取引先登録・MakeLeaps発注書・売上票・施策シートを案件に応じて計画し、承認後に実行する。",
+      "example": "受注後業務の対応をお願い",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/post-order-operations-router",
+        "contentHash": "sha256:8fc88a7216e52eaedb3b678e89b23f94ed251bf11514069f473111bbef694fb6"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/post-order-operations-router",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:8fc88a7216e52eaedb3b678e89b23f94ed251bf11514069f473111bbef694fb6",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "受注後業務をまとめて進行し、取引先登録・MakeLeaps発注書・売上票・施策シートを案件に応じて計画し、承認後に実行する。",
+        "example": "受注後業務の対応をお願い",
+        "origin": "自作",
+        "legacyNames": [
+          "post-order-operations-router"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11251,7 +12547,7 @@
           "pptx"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11323,7 +12619,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11395,7 +12691,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11467,7 +12763,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11543,7 +12839,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11615,7 +12911,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11687,7 +12983,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11759,7 +13055,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11831,7 +13127,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11903,7 +13199,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11975,7 +13271,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12047,7 +13343,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12126,7 +13422,7 @@
           "research"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12198,7 +13494,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12279,7 +13575,88 @@
           "review-cleaning-sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-07T00:46:37.776Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-07T00:46:37.776Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.review-cleaning-sales-sheet-update",
+      "kind": "plugin_skill",
+      "name": "review-cleaning-sales-sheet-update",
+      "aliases": [],
+      "description": "レビューまたはクリーニング案件について、売上票だけを追加・更新する。",
+      "example": "このクリーニング案件を売上票に記入して",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/review-cleaning-sales-sheet-update",
+        "contentHash": "sha256:18c0a6c81c4407acf25aead6c52c884678828c1997e5f2f4b1f33e50e0ac4783"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/review-cleaning-sales-sheet-update",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:18c0a6c81c4407acf25aead6c52c884678828c1997e5f2f4b1f33e50e0ac4783",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "レビューまたはクリーニング案件について、売上票だけを追加・更新する。",
+        "example": "このクリーニング案件を売上票に記入して",
+        "origin": "自作",
+        "legacyNames": [
+          "review-cleaning-sales-sheet-update"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12360,7 +13737,88 @@
           "review-cleaning-sheet-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.review-cleaning-sheet-setup",
+      "kind": "plugin_skill",
+      "name": "review-cleaning-sheet-setup",
+      "aliases": [],
+      "description": "レビュー施策またはクリーニング施策の受注後に、正式テンプレートからクライアント用スプレッドシートを発行し、必要な設定まで完了する。",
+      "example": "レビュー施策のシートを発行して",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/review-cleaning-sheet-setup",
+        "contentHash": "sha256:9deb8205a50f84498609188e6eb6ef3438ee31c3963fcc4d8d0a02aef64c68ce"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/review-cleaning-sheet-setup",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:9deb8205a50f84498609188e6eb6ef3438ee31c3963fcc4d8d0a02aef64c68ce",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "レビュー施策またはクリーニング施策の受注後に、正式テンプレートからクライアント用スプレッドシートを発行し、必要な設定まで完了する。",
+        "example": "レビュー施策のシートを発行して",
+        "origin": "自作",
+        "legacyNames": [
+          "review-cleaning-sheet-setup"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12441,7 +13899,88 @@
           "review-screenshot-automation-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-06T04:25:11.860Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-06T04:25:11.860Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.review-screenshot-automation-setup",
+      "kind": "plugin_skill",
+      "name": "review-screenshot-automation-setup",
+      "aliases": [],
+      "description": "レビュー施策のスクリーンショット自動化について、新案件追加や設定変更を安全テスト付きで行う。",
+      "example": "レビュー自動化に新しい案件を追加して",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/review-screenshot-automation-setup",
+        "contentHash": "sha256:9fed49f9d500f09f6b40c07ddf6269c03211017c21f2ea6ccfd826eda9198f4c"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/review-screenshot-automation-setup",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:9fed49f9d500f09f6b40c07ddf6269c03211017c21f2ea6ccfd826eda9198f4c",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "レビュー施策のスクリーンショット自動化について、新案件追加や設定変更を安全テスト付きで行う。",
+        "example": "レビュー自動化に新しい案件を追加して",
+        "origin": "自作",
+        "legacyNames": [
+          "review-screenshot-automation-setup"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12522,7 +14061,88 @@
           "review-screenshot-daily-operations"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-06T04:25:11.860Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-06T04:25:11.860Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.review-screenshot-daily-operations",
+      "kind": "plugin_skill",
+      "name": "review-screenshot-daily-operations",
+      "aliases": [],
+      "description": "レビュー施策の日々のスクリーンショット反映、失敗案件対応、残回数通知を確認・運用する。",
+      "example": "今日のレビュースクリーンショットを反映して",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/review-screenshot-daily-operations",
+        "contentHash": "sha256:c186dfd81a645a0cab455c2bb023797bc6bdc3b52314e1df5a0dc470780d65f1"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/review-screenshot-daily-operations",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:c186dfd81a645a0cab455c2bb023797bc6bdc3b52314e1df5a0dc470780d65f1",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "レビュー施策の日々のスクリーンショット反映、失敗案件対応、残回数通知を確認・運用する。",
+        "example": "今日のレビュースクリーンショットを反映して",
+        "origin": "自作",
+        "legacyNames": [
+          "review-screenshot-daily-operations"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12603,7 +14223,88 @@
           "review-screenshot-reflection"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.review-screenshot-reflection",
+      "kind": "plugin_skill",
+      "name": "review-screenshot-reflection",
+      "aliases": [],
+      "description": "レビュー施策のスクリーンショット業務を、日次反映か新規設定かで適切なスキルへ振り分ける。",
+      "example": "このレビュー案件、次は何をすればいい?",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/review-screenshot-reflection",
+        "contentHash": "sha256:1d493410019da2dd1827b1d55e83f45b31ccccac2bb479a1302092a6d1110eea"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/review-screenshot-reflection",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:1d493410019da2dd1827b1d55e83f45b31ccccac2bb479a1302092a6d1110eea",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "レビュー施策のスクリーンショット業務を、日次反映か新規設定かで適切なスキルへ振り分ける。",
+        "example": "このレビュー案件、次は何をすればいい?",
+        "origin": "自作",
+        "legacyNames": [
+          "review-screenshot-reflection"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12684,7 +14385,88 @@
           "sales-deal-lifecycle-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-08T01:03:16.745Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-08T01:03:16.745Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.sales-deal-lifecycle-router",
+      "kind": "plugin_skill",
+      "name": "sales-deal-lifecycle-router",
+      "aliases": [],
+      "description": "初回接点から受注・施策実行までを、資料と会話の文脈から一気通貫で整理・進行する。",
+      "example": "この案件、初回接点から今までの流れをまとめて次を進めて",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/sales-deal-lifecycle-router",
+        "contentHash": "sha256:00d61e682e1a59818582b6fdb946e36c366f410d77fa98b1c040c856ded2f92a"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/sales-deal-lifecycle-router",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:00d61e682e1a59818582b6fdb946e36c366f410d77fa98b1c040c856ded2f92a",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "初回接点から受注・施策実行までを、資料と会話の文脈から一気通貫で整理・進行する。",
+        "example": "この案件、初回接点から今までの流れをまとめて次を進めて",
+        "origin": "自作",
+        "legacyNames": [
+          "sales-deal-lifecycle-router"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12765,7 +14547,88 @@
           "sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-08T01:20:41.783Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-08T01:20:41.783Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.sales-sheet-update",
+      "kind": "plugin_skill",
+      "name": "sales-sheet-update",
+      "aliases": [],
+      "description": "売上票に受注後の案件情報（クライアント・サービス・金額・期間・担当）を追加・更新する。",
+      "example": "この受注内容を売上票に反映して",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/sales-sheet-update",
+        "contentHash": "sha256:1d25032e186fb132e2a6fb09eac26ecfdf583c949fb3f60de8287d78f2fc07bf"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/sales-sheet-update",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:1d25032e186fb132e2a6fb09eac26ecfdf583c949fb3f60de8287d78f2fc07bf",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "売上票に受注後の案件情報（クライアント・サービス・金額・期間・担当）を追加・更新する。",
+        "example": "この受注内容を売上票に反映して",
+        "origin": "自作",
+        "legacyNames": [
+          "sales-sheet-update"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12837,7 +14700,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12909,7 +14772,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12985,7 +14848,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13064,7 +14927,7 @@
           "setup-cowork"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13147,7 +15010,7 @@
           "setup-matt-pocock-skills"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13219,7 +15082,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13291,7 +15154,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13363,7 +15226,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13442,7 +15305,7 @@
           "skill-creator"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13514,7 +15377,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13597,7 +15460,7 @@
           "slide-outline-generator"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13669,7 +15532,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13752,7 +15615,7 @@
           "sso-quick-diagnostics"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13828,17 +15691,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
         "sessionCount": 9,
-        "lastUsedAt": "2026-09-08T13:07:10.007Z",
+        "lastUsedAt": "2026-09-08T14:12:07.006Z",
         "environments": {
           "codex": {
             "observed": true,
             "sessionCount": 9,
-            "lastUsedAt": "2026-09-08T13:07:10.007Z"
+            "lastUsedAt": "2026-09-08T14:12:07.006Z"
           },
           "claude": {
             "observed": false,
@@ -13900,7 +15763,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13972,7 +15835,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14053,7 +15916,88 @@
           "task-collection-daily-brief"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-06T14:10:36.613Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-06T14:10:36.613Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.claude.local-desktop-app-uploads.adv-post-order-operations.task-collection-daily-brief",
+      "kind": "plugin_skill",
+      "name": "task-collection-daily-brief",
+      "aliases": [],
+      "description": "Slack・Gmail・カレンダー・Pipedriveから対応が必要な事項だけを読み取り、重複のない短いTODO候補を作る。",
+      "example": "今日のTODOを集めて",
+      "category": "adv",
+      "projectTags": [
+        "ADV"
+      ],
+      "provider": {
+        "type": "plugin",
+        "name": "adv-post-order-operations@local-desktop-app-uploads"
+      },
+      "source": {
+        "canonicalId": "claude-plugin/local-desktop-app-uploads/adv-post-order-operations/skills/task-collection-daily-brief",
+        "contentHash": "sha256:ea0237215e01658581a36e53effee9b3c2a3f1a40c919aebf5c29eb8a434dbb9"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/task-collection-daily-brief",
+          "detectedBy": "claude-enabled-plugin",
+          "contentHash": "sha256:ea0237215e01658581a36e53effee9b3c2a3f1a40c919aebf5c29eb8a434dbb9",
+          "availability": "installed_unverified",
+          "evidenceType": "config_enabled"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "claude_only",
+        "reasonCode": "plugin_skill",
+        "reason": "Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {
+        "description": "Slack・Gmail・カレンダー・Pipedriveから対応が必要な事項だけを読み取り、重複のない短いTODO候補を作る。",
+        "example": "今日のTODOを集めて",
+        "origin": "自作",
+        "legacyNames": [
+          "task-collection-daily-brief"
+        ]
+      },
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14125,7 +16069,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14197,7 +16141,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14280,7 +16224,7 @@
           "tdd"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14363,7 +16307,7 @@
           "teach"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14435,7 +16379,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14507,7 +16451,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14590,7 +16534,7 @@
           "to-spec"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14673,7 +16617,7 @@
           "to-tickets"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14749,7 +16693,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14821,7 +16765,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14893,7 +16837,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14965,7 +16909,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15037,7 +16981,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15109,7 +17053,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15181,7 +17125,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15253,7 +17197,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15325,7 +17269,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15397,7 +17341,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15469,7 +17413,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15541,7 +17485,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15613,7 +17557,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15685,7 +17629,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15757,7 +17701,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15829,7 +17773,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15908,7 +17852,7 @@
           "xlsx"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15994,7 +17938,7 @@
           "yuiitsu-ad-reporting"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16069,7 +18013,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16113,7 +18057,7 @@
       },
       "source": {
         "canonicalId": "skills/yuiitsu-before-after-posts",
-        "contentHash": "sha256:40bea7fcc1bf094d00d132a8b5b16d4ce9b3d4fc79be0c4f595d502c91a5d1de"
+        "contentHash": "sha256:58be338c93609248ad3872c8f7862a4dd22c9f7fc94e936d9aeca7e8bafe7d5b"
       },
       "identity": {
         "frontmatterName": "yuiitsu-before-after-posts"
@@ -16125,7 +18069,7 @@
           "installed": true,
           "invocation": "$yuiitsu-before-after-posts",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:40bea7fcc1bf094d00d132a8b5b16d4ce9b3d4fc79be0c4f595d502c91a5d1de",
+          "contentHash": "sha256:58be338c93609248ad3872c8f7862a4dd22c9f7fc94e936d9aeca7e8bafe7d5b",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         },
@@ -16134,7 +18078,7 @@
           "installed": true,
           "invocation": "/yuiitsu-before-after-posts",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:40bea7fcc1bf094d00d132a8b5b16d4ce9b3d4fc79be0c4f595d502c91a5d1de",
+          "contentHash": "sha256:58be338c93609248ad3872c8f7862a4dd22c9f7fc94e936d9aeca7e8bafe7d5b",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         }
@@ -16155,17 +18099,17 @@
           "yuiitsu-before-after-posts"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
-        "status": "no_signal",
+        "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
+        "sessionCount": 2,
+        "lastUsedAt": "2026-09-08T13:53:25.297Z",
         "environments": {
           "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
+            "observed": true,
+            "sessionCount": 2,
+            "lastUsedAt": "2026-09-08T13:53:25.297Z"
           },
           "claude": {
             "observed": false,
@@ -16173,12 +18117,12 @@
             "lastUsedAt": null
           }
         },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+        "reason": "直近7日間に、CodexでSkill定義参照2セッション、Claudeで明示呼び出し0セッションを確認しました。"
       },
       "governance": {
-        "status": "needs_review",
+        "status": "keep_recommended",
         "actionScope": "skill",
-        "reason": "ユーザー作成Skillのため自動削除しません。役割重複と今後の利用予定を確認して判断します。"
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
       }
     },
     {
@@ -16241,7 +18185,7 @@
           "yuiitsu-daily-ads-analysis"
         ]
       },
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16316,7 +18260,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16395,7 +18339,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16483,17 +18427,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 2,
-        "lastUsedAt": "2026-09-08T12:51:17.784Z",
+        "sessionCount": 3,
+        "lastUsedAt": "2026-09-08T13:47:39.432Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 2,
-            "lastUsedAt": "2026-09-08T12:51:17.784Z"
+            "sessionCount": 3,
+            "lastUsedAt": "2026-09-08T13:47:39.432Z"
           },
           "claude": {
             "observed": false,
@@ -16501,7 +18445,7 @@
             "lastUsedAt": null
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照2セッション、Claudeで明示呼び出し0セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照3セッション、Claudeで明示呼び出し0セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -16568,17 +18512,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-08T13:36:56.817Z",
+      "lastVerifiedAt": "2026-09-08T14:14:27.537Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 2,
-        "lastUsedAt": "2026-09-08T12:51:17.784Z",
+        "sessionCount": 3,
+        "lastUsedAt": "2026-09-08T13:46:13.358Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 2,
-            "lastUsedAt": "2026-09-08T12:51:17.784Z"
+            "sessionCount": 3,
+            "lastUsedAt": "2026-09-08T13:46:13.358Z"
           },
           "claude": {
             "observed": false,
@@ -16586,7 +18530,7 @@
             "lastUsedAt": null
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照2セッション、Claudeで明示呼び出し0セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照3セッション、Claudeで明示呼び出し0セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
