@@ -5943,7 +5943,7 @@
       "kind": "skill",
       "name": "communication-approval",
       "aliases": [],
-      "description": "Gmailを基本に、指定されたSlack／LINEのやり取りを「確認→返信文案→個別承認後に送信」まで扱うSkillです。対象の会話が指定されている場合は日程調整メッセージも作成しますが、送信やカレンダー登録を勝手に行うことはありません。",
+      "description": "Gmailを基本に、指定されたSlack／LINEのやり取りを「確認→返信文案→個別承認後に送信」まで扱うSkillです。会話内の日程返信案は作成できますが、「スケ調整お願い」「スケジュール調整お願い」だけでは起動せず、送信やカレンダー登録も勝手に行いません。",
       "example": "コミュニケーションツールの横断確認お願い！",
       "category": "task-operations",
       "projectTags": [],
@@ -5953,7 +5953,7 @@
       },
       "source": {
         "canonicalId": "skills/communication-approval",
-        "contentHash": "sha256:2625ddc1819b8fcc992d35aca2fcbac106e735ff41e2c1e16678faf0ad92569d"
+        "contentHash": "sha256:aadcc84ca15ed18f5caeaa0d7ff8ce89da6cd9476651fa04642a580ac284bd04"
       },
       "identity": {
         "frontmatterName": "communication-approval"
@@ -5969,7 +5969,7 @@
           "installed": true,
           "invocation": "$communication-approval",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:2625ddc1819b8fcc992d35aca2fcbac106e735ff41e2c1e16678faf0ad92569d",
+          "contentHash": "sha256:aadcc84ca15ed18f5caeaa0d7ff8ce89da6cd9476651fa04642a580ac284bd04",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         },
@@ -5978,7 +5978,7 @@
           "installed": true,
           "invocation": "/communication-approval",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:2625ddc1819b8fcc992d35aca2fcbac106e735ff41e2c1e16678faf0ad92569d",
+          "contentHash": "sha256:aadcc84ca15ed18f5caeaa0d7ff8ce89da6cd9476651fa04642a580ac284bd04",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         }
@@ -18226,7 +18226,7 @@
       },
       "source": {
         "canonicalId": "skills/initiative-progress-manager",
-        "contentHash": "sha256:a23a0fc74b1eb69ecb012b876caf92386546c33414c3801007017fac06f56ff4"
+        "contentHash": "sha256:a0b3c2f2fe8e9baf9aff53ba9c1d4293ecf7e3a368675677057f6466e7920351"
       },
       "identity": {
         "frontmatterName": "initiative-progress-manager"
@@ -18243,7 +18243,7 @@
           "installed": true,
           "invocation": "$initiative-progress-manager",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:a23a0fc74b1eb69ecb012b876caf92386546c33414c3801007017fac06f56ff4",
+          "contentHash": "sha256:a0b3c2f2fe8e9baf9aff53ba9c1d4293ecf7e3a368675677057f6466e7920351",
           "availability": "verified",
           "evidenceType": "clean_room_test",
           "verificationNote": "Codex Clean Room Testを完了。"
@@ -18253,7 +18253,7 @@
           "installed": true,
           "invocation": "/initiative-progress-manager",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:a23a0fc74b1eb69ecb012b876caf92386546c33414c3801007017fac06f56ff4",
+          "contentHash": "sha256:a0b3c2f2fe8e9baf9aff53ba9c1d4293ecf7e3a368675677057f6466e7920351",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "共通正本と同一ハッシュ。実動互換性は要確認。"

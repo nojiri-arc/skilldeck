@@ -57,7 +57,7 @@ const userTextOverrides = new Map([
     example: '施策進行！'
   }],
   ['communication-approval', {
-    description: 'Gmailを基本に、指定されたSlack／LINEのやり取りを「確認→返信文案→個別承認後に送信」まで扱うSkillです。対象の会話が指定されている場合は日程調整メッセージも作成しますが、送信やカレンダー登録を勝手に行うことはありません。',
+    description: 'Gmailを基本に、指定されたSlack／LINEのやり取りを「確認→返信文案→個別承認後に送信」まで扱うSkillです。会話内の日程返信案は作成できますが、「スケ調整お願い」「スケジュール調整お願い」だけでは起動せず、送信やカレンダー登録も勝手に行いません。',
     example: 'コミュニケーションツールの横断確認お願い！'
   }],
   ['todo-add', {
