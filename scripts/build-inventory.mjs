@@ -56,6 +56,10 @@ const userTextOverrides = new Map([
     description: '承認済み施策を、証拠確認、次タスク作成、判断カード、柔軟な日程調整まで一貫して進めるSkillです。',
     example: '施策進行！'
   }],
+  ['communication-approval', {
+    description: 'Gmailを基本に、指定されたSlack／LINEのやり取りを「確認→返信文案→個別承認後に送信」まで扱うSkillです。対象の会話が指定されている場合は日程調整メッセージも作成しますが、送信やカレンダー登録を勝手に行うことはありません。',
+    example: 'コミュニケーションツールの横断確認お願い！'
+  }],
   ['todo-add', {
     description: 'ADV MyシートのTODOタブへ、会社・大項目・中項目・TODO詳細・対応日を既存の並び順と書式どおりに1行追加する。分類は文脈から推測し、対応日だけ不明なら確認する。',
     example: 'TODO追加！'
@@ -88,7 +92,8 @@ const projectTagOverrides = new Map([
 
 const userTriggerOverrides = new Map([
   ['strategy-execution-orchestrator', ['施策開始！', '$strategy-execution-orchestrator']],
-  ['initiative-progress-manager', ['施策進行！', '今日はここまで。スケ調整お願い！', '施策のスケ調整お願い', '$initiative-progress-manager']]
+  ['initiative-progress-manager', ['施策進行！', '今日はここまで。スケ調整お願い！', '施策のスケ調整お願い', '$initiative-progress-manager']],
+  ['communication-approval', ['コミュニケーションツールの横断確認お願い！', 'チャット系の横断確認お願い！', '$communication-approval']]
 ]);
 
 // 同期の事実と実動テストの事実を混同しないための、個別検証状態。

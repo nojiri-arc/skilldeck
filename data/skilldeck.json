@@ -5943,8 +5943,8 @@
       "kind": "skill",
       "name": "communication-approval",
       "aliases": [],
-      "description": "Handle the user's Gmail as a default responsibility and an explicitly assigned Slack or LINE conversation, from reading through individually approved sends.",
-      "example": "",
+      "description": "Gmailを基本に、指定されたSlack／LINEのやり取りを「確認→返信文案→個別承認後に送信」まで扱うSkillです。対象の会話が指定されている場合は日程調整メッセージも作成しますが、送信やカレンダー登録を勝手に行うことはありません。",
+      "example": "コミュニケーションツールの横断確認お願い！",
       "category": "task-operations",
       "projectTags": [],
       "provider": {
@@ -5953,19 +5953,23 @@
       },
       "source": {
         "canonicalId": "skills/communication-approval",
-        "contentHash": "sha256:c77855fe6186586295ab499db52681864b8945b9b439145f3da26d0dcd067b22"
+        "contentHash": "sha256:2625ddc1819b8fcc992d35aca2fcbac106e735ff41e2c1e16678faf0ad92569d"
       },
       "identity": {
         "frontmatterName": "communication-approval"
       },
-      "triggers": [],
+      "triggers": [
+        "コミュニケーションツールの横断確認お願い！",
+        "チャット系の横断確認お願い！",
+        "$communication-approval"
+      ],
       "environments": {
         "codex": {
           "configured": true,
           "installed": true,
           "invocation": "$communication-approval",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:c77855fe6186586295ab499db52681864b8945b9b439145f3da26d0dcd067b22",
+          "contentHash": "sha256:2625ddc1819b8fcc992d35aca2fcbac106e735ff41e2c1e16678faf0ad92569d",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         },
@@ -5974,7 +5978,7 @@
           "installed": true,
           "invocation": "/communication-approval",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:c77855fe6186586295ab499db52681864b8945b9b439145f3da26d0dcd067b22",
+          "contentHash": "sha256:2625ddc1819b8fcc992d35aca2fcbac106e735ff41e2c1e16678faf0ad92569d",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         }
@@ -5992,13 +5996,13 @@
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 7,
-        "lastUsedAt": "2026-09-08T09:01:26.437Z",
+        "sessionCount": 8,
+        "lastUsedAt": "2026-09-08T22:33:31.338Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 7,
-            "lastUsedAt": "2026-09-08T09:01:26.437Z"
+            "sessionCount": 8,
+            "lastUsedAt": "2026-09-08T22:33:31.338Z"
           },
           "claude": {
             "observed": false,
@@ -6006,7 +6010,7 @@
             "lastUsedAt": null
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照7セッション、Claudeで明示呼び出し0セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照8セッション、Claudeで明示呼び出し0セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
