@@ -84,7 +84,7 @@
       if (record.legacy?.origin === 'もらった' || record.legacy?.origin === 'プラグイン') return '他作';
       if (record.legacy?.origin === '公式') return '公式';
       if (record.provider.type === 'user') return '自作';
-      if (record.provider.type === 'openai' || record.provider.name.includes('OpenAI')) return '公式';
+      if (record.provider.type === 'openai' || record.provider.name.toLowerCase().includes('openai')) return '公式';
       return '他作';
     }
     const originClass = (record) => ({ 自作:'origin-self', 公式:'origin-official', 他作:'origin-external' })[originLabel(record)];
