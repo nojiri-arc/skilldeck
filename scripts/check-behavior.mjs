@@ -38,7 +38,7 @@ const checks = [
   ['両選択は両環境の導入・設定証跡がある項目だけ', both.every((record) => (record.environments.codex.configured || record.environments.codex.installed) && (record.environments.claude.configured || record.environments.claude.installed))],
   ['全8カテゴリに表示対象がある', data.categories.length === 8 && Object.values(categoryCounts).every((count) => count > 0)],
   ['第1カテゴリは殿堂入り', data.categories[0]?.id === 'hall-of-fame'],
-  ['殿堂入りはトシが指定したSkillだけを登録する', hallOfFameSkills.length === 3 && hallOfFameSkills.every((record) => record.kind === 'skill') && ['strict-recheck-and-refine', 'todo-add', 'エレガント・プロンプト'].every((name) => hallOfFameSkills.some((record) => record.name === name))],
+  ['殿堂入りはトシが指定したSkillだけを登録する', hallOfFameSkills.length === 5 && hallOfFameSkills.every((record) => record.kind === 'skill') && ['strict-recheck-and-refine', 'todo-add', 'エレガント・プロンプト', '戦略→実行 統括', '施策進行マネージャー'].every((name) => hallOfFameSkills.some((record) => record.name === name))],
   ['第2カテゴリはADV関連', data.categories[1]?.id === 'adv'],
   ['ADVタグのSkillはすべてADV関連', all.filter((record) => record.projectTags.includes('ADV')).every((record) => record.category === 'adv')],
   ['第3カテゴリは開発・AI管理', data.categories[2]?.id === 'development-ai'],
@@ -60,9 +60,12 @@ const checks = [
   ,['保持・削除の判断を保存して、正本更新対象を明確にできる', html.includes('data-review-action="keep"') && html.includes('data-review-action="request_delete"') && html.includes('判断: ${decision === \'keep\' ? \'保持\' : \'削除\'}') && !html.includes('fetch(\'/api/delete')]
   ,['判断一覧はコピーと全消去ができる', html.includes('id="copyReviewQueue"') && html.includes('id="clearReviewQueue"') && html.includes("localStorage.removeItem(reviewStorageKey)")]
   ,['技術差分は常時表示し、判断ボタンを置かない', html.includes('function technicalGuide(title)') && html.includes('records.map((record) => diffItem(record,{actions:false})).join') && html.includes('technical-details')]
-  ,['検品Skillと実動確認の状態を区別して表示する', html.includes("'strict-recheck-and-refine':'検品スキルです。") && html.includes("roleBadgeByName = { 'strict-recheck-and-refine':'検品スキル' }") && html.includes("environment.evidenceType === 'clean_room_test'") && html.includes("environment.evidenceType === 'file_hash_verified'")]
+  ,['検品Skillと実動確認の状態を区別して表示する', html.includes("'strict-recheck-and-refine':'検品スキルです。") && html.includes("'strict-recheck-and-refine':'検品スキル'") && html.includes("environment.evidenceType === 'clean_room_test'") && html.includes("environment.evidenceType === 'file_hash_verified'")]
   ,['エレガント・プロンプトはClaude実動未検証を記録する', hallOfFameSkills.some((record) => record.id === 'user.elegant-prompt' && record.environments.codex.evidenceType === 'clean_room_test' && record.environments.claude.evidenceType === 'file_hash_verified' && /実動テストは未実施/.test(record.environments.claude.verificationNote || ''))]
   ,['廃止承認済みのprompt-engineering-assistantを再表示しない', !all.some((record) => record.name === 'prompt-engineering-assistant')]
+  ,['共通Skill 2件は殿堂入り・AI運用・両環境配置確認済みである', ['strategy-execution-orchestrator', 'initiative-progress-manager'].every((id) => { const record=all.find((item) => item.id === `user.${id}`); return record?.category === 'hall-of-fame' && record.projectTags.includes('AI運用') && record.provider.type === 'user' && /共通正本Skill/.test(record.provider.name) && ['codex','claude'].every((env) => record.environments[env].configured && record.environments[env].evidenceType === 'file_hash_verified'); })]
+  ,['共通Skillの表示名・依頼例・起動語が正しい', (() => { const strategy=all.find((record) => record.id === 'user.strategy-execution-orchestrator'); const progress=all.find((record) => record.id === 'user.initiative-progress-manager'); return strategy?.name === '戦略→実行 統括' && strategy.example === '施策開始！' && strategy.triggers?.includes('$strategy-execution-orchestrator') && progress?.name === '施策進行マネージャー' && progress.example === '施策進行！' && ['スケジュール調整お願い', '$initiative-progress-manager'].every((trigger) => progress.triggers?.includes(trigger)); })()]
+  ,['退役済みのai-workflow-consultantを再表示しない', !all.some((record) => record.name === 'ai-workflow-consultant')]
 ];
 const failures = checks.filter(([, result]) => !result);
 if (failures.length) { console.error(failures.map(([name]) => name).join('\n')); process.exit(1); }

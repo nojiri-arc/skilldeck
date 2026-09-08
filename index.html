@@ -119,7 +119,7 @@
       'strict-recheck-and-refine':'厳しめの再確認をお願い！',
       'todo-add':'TODOシートに追加して'
     };
-    const roleBadgeByName = { 'strict-recheck-and-refine':'検品スキル' };
+    const roleBadgeByName = { 'strict-recheck-and-refine':'検品スキル', '戦略→実行 統括':'共通Skill・AI運用', '施策進行マネージャー':'共通Skill・AI運用' };
     function isUnknownExample(value = '') { return !value.trim() || /^(依頼例は)?要確認です。?$/.test(value.trim()); }
     function requestExample(record) {
       const supplied = record.example?.trim();
@@ -167,8 +167,9 @@
       const source = record.source.canonicalId ? `<code>${escapeHtml(record.source.canonicalId)}</code>` : '要確認';
       const evidence = ['codex','claude'].map((env) => { const environment=record.environments[env]; return environment.evidenceType && environment.evidenceType !== 'none' ? `${env === 'codex' ? 'Codex' : 'Claude'}: ${evidenceTypeLabel[environment.evidenceType] || environment.evidenceType}${environment.verificationNote ? ` — ${environment.verificationNote}` : ''}` : ''; }).filter(Boolean).join(' / ') || '要確認';
       const requirements = record.requirements?.length ? escapeHtml(record.requirements.join(' / ')) : '要確認';
+      const triggers = record.triggers?.length ? escapeHtml(record.triggers.join(' / ')) : '';
       const originalDescription = isEnglishDescription(record.description) ? `<dt>原文の説明</dt><dd>${escapeHtml(record.description)}</dd>` : '';
-      return `<details><summary>詳細を表示</summary><dl><dt>案件タグ</dt><dd>${record.projectTags.length ? escapeHtml(record.projectTags.join(' / ')) : '—'}</dd><dt>由来</dt><dd>${originLabel(record)}</dd><dt>提供元</dt><dd>${escapeHtml(record.provider.name)}</dd><dt>必要な連携</dt><dd>${requirements}</dd><dt>呼び出し方</dt><dd>${invocations}</dd><dt>種別</dt><dd>${kindLabel[record.kind] || record.kind}</dd>${originalDescription}<dt>棚卸し証拠</dt><dd>${escapeHtml(evidence)}</dd><dt>同期状態</dt><dd>${statusLabel[record.mirror.status]}${record.mirror.reason ? ` — ${escapeHtml(record.mirror.reason)}` : ''}</dd><dt>移行可否</dt><dd>${portabilityLabel[record.mirror.portability] || '要確認'}</dd><dt>正本ID</dt><dd>${source}</dd><dt>最終確認</dt><dd>${escapeHtml(formatDate(record.lastVerifiedAt))}</dd></dl></details>`;
+      return `<details><summary>詳細を表示</summary><dl><dt>案件タグ</dt><dd>${record.projectTags.length ? escapeHtml(record.projectTags.join(' / ')) : '—'}</dd><dt>由来</dt><dd>${originLabel(record)}</dd><dt>提供元</dt><dd>${escapeHtml(record.provider.name)}</dd><dt>必要な連携</dt><dd>${requirements}</dd><dt>呼び出し方</dt><dd>${invocations}</dd>${triggers ? `<dt>起動語</dt><dd>${triggers}</dd>` : ''}<dt>種別</dt><dd>${kindLabel[record.kind] || record.kind}</dd>${originalDescription}<dt>棚卸し証拠</dt><dd>${escapeHtml(evidence)}</dd><dt>同期状態</dt><dd>${statusLabel[record.mirror.status]}${record.mirror.reason ? ` — ${escapeHtml(record.mirror.reason)}` : ''}</dd><dt>移行可否</dt><dd>${portabilityLabel[record.mirror.portability] || '要確認'}</dd><dt>正本ID</dt><dd>${source}</dd><dt>最終確認</dt><dd>${escapeHtml(formatDate(record.lastVerifiedAt))}</dd></dl></details>`;
     }
     function card(record) {
       const example = requestExample(record);

@@ -23,7 +23,7 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'strategy-execution-orchestrator', 'initiative-progress-manager']);
 
 // 環境差分の精査でトシが明示的に「保持」を選んだ旧登録。
 // 現在の環境では未検出でも、削除候補には戻さない。
@@ -48,6 +48,14 @@ const userTextOverrides = new Map([
     description: '重要なAI依頼を送る前に、目的・成果物・合格／失格条件・証拠・テスト・終了条件・権限の境界を明確にし、制作AI用と独立検品AI用の依頼文を作るSkillです。',
     example: '依頼文精査お願い！'
   }],
+  ['strategy-execution-orchestrator', {
+    description: '施策・方針・目標を、担当、実行場所、合格条件、承認点、最初のTODOへ落とし込む統括Skillです。',
+    example: '施策開始！'
+  }],
+  ['initiative-progress-manager', {
+    description: '承認済み施策を、証拠確認、次タスク作成、判断カード、柔軟な日程調整まで一貫して進めるSkillです。',
+    example: '施策進行！'
+  }],
   ['todo-add', {
     description: 'ADV MyシートのTODOタブへ、会社・大項目・中項目・TODO詳細・対応日を既存の並び順と書式どおりに1行追加する。分類は文脈から推測し、対応日だけ不明なら確認する。',
     example: 'TODO追加！'
@@ -56,7 +64,24 @@ const userTextOverrides = new Map([
 
 // 表示名だけを日本語にし、判定・同期・正本IDにはSkill IDを使い続ける。
 const displayNameOverrides = new Map([
-  ['elegant-prompt', 'エレガント・プロンプト']
+  ['elegant-prompt', 'エレガント・プロンプト'],
+  ['strategy-execution-orchestrator', '戦略→実行 統括'],
+  ['initiative-progress-manager', '施策進行マネージャー']
+]);
+
+const providerNameOverrides = new Map([
+  ['strategy-execution-orchestrator', '共通正本Skill（トシ用に作成）'],
+  ['initiative-progress-manager', '共通正本Skill（トシ用に作成）']
+]);
+
+const projectTagOverrides = new Map([
+  ['strategy-execution-orchestrator', ['AI運用']],
+  ['initiative-progress-manager', ['AI運用']]
+]);
+
+const userTriggerOverrides = new Map([
+  ['strategy-execution-orchestrator', ['施策開始！', '$strategy-execution-orchestrator']],
+  ['initiative-progress-manager', ['施策進行！', 'スケジュール調整お願い', '$initiative-progress-manager']]
 ]);
 
 // 同期の事実と実動テストの事実を混同しないための、個別検証状態。
@@ -64,14 +89,22 @@ const userVerificationOverrides = new Map([
   ['elegant-prompt', {
     codex: { availability: 'verified', evidenceType: 'clean_room_test' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。実動テストは未実施。' }
+  }],
+  ['strategy-execution-orchestrator', {
+    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: '共通正本と同一ハッシュ。実動互換性は要確認。' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: '共通正本と同一ハッシュ。実動互換性は要確認。' }
+  }],
+  ['initiative-progress-manager', {
+    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: '共通正本と同一ハッシュ。実動互換性は要確認。' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: '共通正本と同一ハッシュ。実動互換性は要確認。' }
   }]
 ]);
 
 const aliases = new Map([['grill-me', 'grilling']]);
 // 実体と登録の両方を廃止したSkill。凍結した旧一覧からも再表示しない。
-const retiredSkillNames = new Set(['business-card-contact-import', 'wayfinder', 'prompt-engineering-assistant']);
+const retiredSkillNames = new Set(['business-card-contact-import', 'wayfinder', 'prompt-engineering-assistant', 'ai-workflow-consultant']);
 const categoryByName = new Map([
-  ['ai-workflow-consultant', 'development-ai'], ['artifact-template-adv-1', 'materials-design'],
+  ['artifact-template-adv-1', 'materials-design'],
   ['artifact-template-adv-2', 'materials-design'], ['artifact-template-jra', 'materials-design'],
   ['adv-business-knowledge', 'development-ai'], ['adv-shiryo-sakusei', 'materials-design'],
   ['adv-shiyo-gijiroku', 'meeting-writing-translation'], ['aso-internal-order-request', 'task-operations'],
@@ -362,10 +395,11 @@ function makeUserRecord(skill, env) {
     description: userTextOverrides.get(skillId)?.description ?? legacy?.d ?? skill.description ?? '説明は要確認です。',
     example: userTextOverrides.get(skillId)?.example ?? legacy?.e ?? '',
     category: categoryFor(skillId, legacy),
-    projectTags: projectTags(skillId, legacy),
-    provider: { type: 'user', name: 'トシ用に作成' },
+    projectTags: projectTagOverrides.get(skillId) ?? projectTags(skillId, legacy),
+    provider: { type: 'user', name: providerNameOverrides.get(skillId) ?? 'トシ用に作成' },
     source: { canonicalId: userSourceId(skill.canonicalId || skillId), contentHash: null },
     identity: { frontmatterName: skill.name || null },
+    triggers: userTriggerOverrides.get(skillId) ?? [],
     environments: { codex: makeEnvironment(), claude: makeEnvironment() },
     mirror: { eligible: true, status: 'needs_review', reasonCode: null, reason: null },
     requirements: [],

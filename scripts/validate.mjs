@@ -15,7 +15,7 @@ const allowedUsageStatuses = new Set(['recent_signal', 'no_signal']);
 const allowedGovernanceStatuses = new Set(['keep_required', 'keep_recommended', 'needs_review', 'delete_candidate']);
 const categoryIds = new Set(data.categories.map((category) => category.id));
 // 凍結済み旧一覧にだけ残る、実体と公開カードを廃止したSkill。
-const retiredLegacySkillNames = new Set(['business-card-contact-import', 'prompt-engineering-assistant', 'wayfinder']);
+const retiredLegacySkillNames = new Set(['ai-workflow-consultant', 'business-card-contact-import', 'prompt-engineering-assistant', 'wayfinder']);
 
 if (data.schemaVersion !== 2) errors.push('schemaVersionは2である必要があります。');
 if (data.categories.length !== 8) errors.push(`カテゴリ数は8である必要があります（現在 ${data.categories.length}）。`);
@@ -33,6 +33,7 @@ for (const record of data.records) {
   if (!allowedUsageStatuses.has(record.usage?.status)) errors.push(`利用状況不正: ${record.id}`);
   if (!allowedGovernanceStatuses.has(record.governance?.status) || !record.governance?.reason) errors.push(`必要性判定不正: ${record.id}`);
   if (!Array.isArray(record.requirements)) errors.push(`必要な連携の形式不正: ${record.id}`);
+  if (record.triggers !== undefined && !Array.isArray(record.triggers)) errors.push(`起動語の形式不正: ${record.id}`);
   for (const env of ['codex', 'claude']) {
     if (typeof record.environments[env].installed !== 'boolean') errors.push(`導入状態不正: ${record.id}/${env}`);
     if (!allowedAvailability.has(record.environments[env].availability)) errors.push(`利用状態不正: ${record.id}/${env}`);
