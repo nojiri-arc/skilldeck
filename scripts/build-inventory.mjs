@@ -88,7 +88,7 @@ const projectTagOverrides = new Map([
 
 const userTriggerOverrides = new Map([
   ['strategy-execution-orchestrator', ['施策開始！', '$strategy-execution-orchestrator']],
-  ['initiative-progress-manager', ['施策進行！', '今日はここまで。スケ調整お願い！', 'スケ調整お願い', 'スケジュール調整お願い', '$initiative-progress-manager']]
+  ['initiative-progress-manager', ['施策進行！', '今日はここまで。スケ調整お願い！', '施策のスケ調整お願い', '$initiative-progress-manager']]
 ]);
 
 // 同期の事実と実動テストの事実を混同しないための、個別検証状態。
