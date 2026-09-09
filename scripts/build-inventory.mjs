@@ -594,6 +594,21 @@ function addClaudePluginSkill(key, install, skill) {
   const name = canonicalName(skill.name);
   const legacy = legacyByName.get(name);
   const configured = claudeSettings.enabledPlugins?.[key] === true;
+  const claudeEnvironment = makeEnvironment(configured, `/${name}`, configured ? 'claude-enabled-plugin' : 'claude-install-record', skill.hash, 'installed_unverified', true, configured ? 'config_enabled' : 'install_record');
+  // 同じPlugin名・Skill名でCodex版がある場合は、環境別の複製ではなく1枚のカードに統合する。
+  // 同名でも別Plugin（例: index）は統合しない。
+  const codexCounterpart = [...records.values()].find((record) => record.kind === 'plugin_skill'
+    && record.name === name
+    && record.provider.type === 'plugin'
+    && record.provider.name.startsWith(`${plugin}@`)
+    && (record.environments.codex.configured || record.environments.codex.installed));
+  if (codexCounterpart) {
+    codexCounterpart.environments.claude = claudeEnvironment;
+    codexCounterpart.provider = { type: 'plugin', name: `${plugin}（Codex / Claude）` };
+    codexCounterpart.source.canonicalId = `plugin/${plugin}/skills/${name}`;
+    codexCounterpart.mirror = { eligible: true, status: 'needs_review', reasonCode: 'plugin_cross_environment', reason: 'CodexとClaudeの同名Plugin Skillを1枚に統合しています。内容ハッシュと実行可否は環境ごとに確認します。', portability: makePortability('adapter_required') };
+    return;
+  }
   upsert({
     id: `plugin.claude.${marketplace}.${plugin}.${name}`.replace(/[^a-z0-9.-]+/gi, '-'),
     kind: 'plugin_skill',
@@ -607,7 +622,7 @@ function addClaudePluginSkill(key, install, skill) {
     source: { canonicalId: `claude-plugin/${marketplace}/${plugin}/skills/${name}`, contentHash: skill.hash },
     environments: {
       codex: makeEnvironment(false, null, null, null, 'not-applicable'),
-      claude: makeEnvironment(configured, `/${name}`, configured ? 'claude-enabled-plugin' : 'claude-install-record', skill.hash, 'installed_unverified', true, configured ? 'config_enabled' : 'install_record')
+      claude: claudeEnvironment
     },
     mirror: { eligible: false, status: 'claude_only', reasonCode: 'plugin_skill', reason: configured ? 'Claude設定で有効化されたPlugin由来です。実行可否はこの棚卸しでは未確認です。' : '導入記録はありますが、Claude設定での有効化・実行可否は未確認です。', portability: makePortability('adapter_required') },
     requirements: [],
