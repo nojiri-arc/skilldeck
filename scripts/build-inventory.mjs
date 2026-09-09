@@ -12,11 +12,14 @@ const now = new Date().toISOString();
 const usageEvidence = await collectUsageEvidence({ now: new Date(now), days: 7 });
 
 const CATEGORIES = [
-  { id: 'recommended', name: 'おすすめ' },
-  { id: 'business-operations', name: '事業運用' },
-  { id: 'growth-analytics', name: '集客・分析' },
-  { id: 'creation-communication', name: '制作・コミュニケーション' },
-  { id: 'ai-development', name: 'AI・開発' }
+  { id: 'hall-of-fame', name: '殿堂入り' },
+  { id: 'adv', name: 'ADV関連' },
+  { id: 'development-ai', name: '開発・AI管理' },
+  { id: 'sales-customer', name: '営業・顧客対応' },
+  { id: 'ads-analysis', name: '広告・分析' },
+  { id: 'materials-design', name: '資料・デザイン' },
+  { id: 'meeting-writing-translation', name: '会議・文章・翻訳' },
+  { id: 'task-operations', name: 'タスク・業務運用' }
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
@@ -282,13 +285,15 @@ function projectTags(name, legacy) {
 }
 
 function categoryFor(name, legacy) {
-  if (HALL_OF_FAME_SKILLS.has(name)) return 'recommended';
-  if (isAdvSkill(name, legacy)) return 'business-operations';
-  const priorCategory = categoryByName.get(name);
-  if (priorCategory === 'ads-analysis' || name.includes('ads') || name.includes('report') || name.includes('research') || name.includes('analysis')) return 'growth-analytics';
-  if (priorCategory === 'materials-design' || priorCategory === 'meeting-writing-translation' || name.includes('template') || name.includes('design') || name.includes('slide') || name.includes('gif') || name.includes('meeting') || name.includes('minutes') || name.includes('translation') || name.includes('email') || legacy?.c === 11) return 'creation-communication';
-  if (priorCategory === 'sales-customer' || priorCategory === 'task-operations' || name.startsWith('adv-') || name.includes('sales') || name.includes('order') || name.includes('customer') || name.includes('task') || name.includes('daily') || name.includes('approval') || name.includes('calendar')) return 'business-operations';
-  return 'ai-development';
+  if (HALL_OF_FAME_SKILLS.has(name)) return 'hall-of-fame';
+  if (isAdvSkill(name, legacy)) return 'adv';
+  if (categoryByName.has(name)) return categoryByName.get(name);
+  if (name.startsWith('adv-') || name.includes('sales') || name.includes('order') || name.includes('customer')) return 'sales-customer';
+  if (name.includes('ads') || name.includes('report') || name.includes('research') || name.includes('analysis')) return 'ads-analysis';
+  if (name.includes('template') || name.includes('design') || name.includes('slide') || name.includes('gif')) return 'materials-design';
+  if (name.includes('meeting') || name.includes('minutes') || name.includes('translation') || name.includes('email')) return 'meeting-writing-translation';
+  if (name.includes('task') || name.includes('daily') || name.includes('approval') || name.includes('calendar')) return 'task-operations';
+  return 'development-ai';
 }
 
 function legacyDetails(legacy) {
@@ -458,7 +463,7 @@ if (distributedMirroringRecord) {
     aliases: [],
     description: canonicalMirroringMeta.description || 'CodexとClaude間のSkill・共通指示の配布状態を管理する共通正本です。',
     example: '',
-    category: 'ai-development',
+    category: 'development-ai',
     projectTags: [],
     provider: { type: 'user', name: 'トシ用に作成' },
     source: { canonicalId: 'canonical/skills/manage-codex-claude-mirroring', contentHash: canonicalMirroringHash },
@@ -551,7 +556,7 @@ for (const skill of codexBuiltinSkills) {
     aliases: [],
     description: legacy?.d ?? skill.description ?? 'Codex組み込みSkillです。',
     example: legacy?.e ?? '',
-    category: 'ai-development',
+    category: 'development-ai',
     projectTags: [],
     provider: { type: 'openai', name: 'OpenAI' },
     source: { canonicalId: `codex-system/${name}`, contentHash: skill.hash },
@@ -643,7 +648,7 @@ for (const command of await scanMarkdownDirectory(commandDir)) {
     aliases: [],
     description: legacy?.d ?? command.description ?? 'ClaudeのPlugin commandです。',
     example: legacy?.e ?? '',
-    category: 'ai-development',
+    category: 'development-ai',
     projectTags: [],
     provider: { type: 'plugin', name: 'OpenAI Codex Plugin経由' },
     source: { canonicalId: `claude-plugin/codex/commands/${command.name}`, contentHash: command.hash },
@@ -667,7 +672,7 @@ for (const agent of await scanMarkdownDirectory(agentDir)) {
     aliases: [],
     description: agent.description || 'Claude Plugin由来のagentです。',
     example: '',
-    category: 'ai-development',
+    category: 'development-ai',
     projectTags: [],
     provider: { type: 'plugin', name: 'OpenAI Codex Plugin経由' },
     source: { canonicalId: `claude-plugin/codex/agents/${agent.name}`, contentHash: agent.hash },

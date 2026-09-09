@@ -18,8 +18,9 @@ const categoryIds = new Set(data.categories.map((category) => category.id));
 const retiredLegacySkillNames = new Set(['ai-workflow-consultant', 'business-card-contact-import', 'calendar-event-and-meet-link', 'prompt-engineering-assistant', 'skill-registry-update', 'wayfinder']);
 
 if (data.schemaVersion !== 2) errors.push('schemaVersionは2である必要があります。');
-if (data.categories.length !== 5) errors.push(`カテゴリ数は5である必要があります（現在 ${data.categories.length}）。`);
-if (data.categories[0]?.id !== 'recommended') errors.push('第1カテゴリはおすすめである必要があります。');
+if (data.categories.length !== 8) errors.push(`カテゴリ数は8である必要があります（現在 ${data.categories.length}）。`);
+if (data.categories[0]?.id !== 'hall-of-fame') errors.push('第1カテゴリは殿堂入りである必要があります。');
+if (data.categories[1]?.id !== 'adv') errors.push('第2カテゴリはADV関連である必要があります。');
 if (data.inventory.legacyCount !== legacy.skills.length) errors.push(`旧登録の件数が一致しません（台帳 ${data.inventory.legacyCount}件、正本 ${legacy.skills.length}件）。`);
 
 for (const record of data.records) {

@@ -111,7 +111,7 @@
       'ads-manager-start-agent':'広告アカウントを定期的に点検し、改善提案を出す仕組みを設定するスキルです。',
       'analyze-data-quality':'データや分析結果が信頼できるかを点検するスキルです。'
     };
-    const categoryPurpose = { recommended:'おすすめの作業手順', 'business-operations':'事業運用', 'growth-analytics':'集客・分析', 'creation-communication':'制作・コミュニケーション', 'ai-development':'AI・開発' };
+    const categoryPurpose = { adv:'ADVの案件・業務運用', 'development-ai':'開発・AI運用', 'sales-customer':'営業・顧客対応', 'ads-analysis':'広告・分析', 'materials-design':'資料・デザイン', 'meeting-writing-translation':'会議・文章・翻訳', 'task-operations':'タスク・業務運用', 'hall-of-fame':'おすすめの作業手順' };
     const isEnglishDescription = (value = '') => /[A-Za-z]{4,}/.test(value) && !/[ぁ-んァ-ン一-龯]/.test(value);
     function japaneseSummary(record) {
       if (japaneseSummaryByName[record.name]) return japaneseSummaryByName[record.name];
