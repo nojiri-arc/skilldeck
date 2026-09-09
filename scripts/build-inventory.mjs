@@ -12,14 +12,11 @@ const now = new Date().toISOString();
 const usageEvidence = await collectUsageEvidence({ now: new Date(now), days: 7 });
 
 const CATEGORIES = [
-  { id: 'hall-of-fame', name: '殿堂入り' },
-  { id: 'adv', name: 'ADV関連' },
-  { id: 'development-ai', name: '開発・AI管理' },
-  { id: 'sales-customer', name: '営業・顧客対応' },
-  { id: 'ads-analysis', name: '広告・分析' },
-  { id: 'materials-design', name: '資料・デザイン' },
-  { id: 'meeting-writing-translation', name: '会議・文章・翻訳' },
-  { id: 'task-operations', name: 'タスク・業務運用' }
+  { id: 'recommended', name: 'おすすめ' },
+  { id: 'business-operations', name: '事業運用' },
+  { id: 'growth-analytics', name: '集客・分析' },
+  { id: 'creation-communication', name: '制作・コミュニケーション' },
+  { id: 'ai-development', name: 'AI・開発' }
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
@@ -97,11 +94,15 @@ const userVerificationOverrides = new Map([
   }],
   ['strategy-execution-orchestrator', {
     codex: { availability: 'verified', evidenceType: 'clean_room_test', verificationNote: 'Codex Clean Room Testを完了。' },
-    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: '共通正本と同一ハッシュ。実動互換性は要確認。' }
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。実動テストは未実施。' }
   }],
   ['initiative-progress-manager', {
     codex: { availability: 'verified', evidenceType: 'clean_room_test', verificationNote: 'Codex Clean Room Testを完了。' },
-    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: '共通正本と同一ハッシュ。実動互換性は要確認。' }
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。実動テストは未実施。' }
+  }],
+  ['manage-codex-claude-mirroring', {
+    codex: { availability: 'verified', evidenceType: 'verified_runtime' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。実動テストは未実施。' }
   }]
 ]);
 
@@ -281,16 +282,13 @@ function projectTags(name, legacy) {
 }
 
 function categoryFor(name, legacy) {
-  if (HALL_OF_FAME_SKILLS.has(name)) return 'hall-of-fame';
-  if (isAdvSkill(name, legacy)) return 'adv';
-  if (categoryByName.has(name)) return categoryByName.get(name);
-  if (name.startsWith('adv-') || name.includes('sales') || name.includes('order') || name.includes('customer')) return 'sales-customer';
-  if (name.includes('ads') || name.includes('report') || name.includes('research') || name.includes('analysis')) return 'ads-analysis';
-  if (name.includes('template') || name.includes('design') || name.includes('slide') || name.includes('gif')) return 'materials-design';
-  if (name.includes('meeting') || name.includes('minutes') || name.includes('translation') || name.includes('email')) return 'meeting-writing-translation';
-  if (name.includes('task') || name.includes('daily') || name.includes('approval') || name.includes('calendar')) return 'task-operations';
-  if (legacy?.c === 11) return 'meeting-writing-translation';
-  return 'development-ai';
+  if (HALL_OF_FAME_SKILLS.has(name)) return 'recommended';
+  if (isAdvSkill(name, legacy)) return 'business-operations';
+  const priorCategory = categoryByName.get(name);
+  if (priorCategory === 'ads-analysis' || name.includes('ads') || name.includes('report') || name.includes('research') || name.includes('analysis')) return 'growth-analytics';
+  if (priorCategory === 'materials-design' || priorCategory === 'meeting-writing-translation' || name.includes('template') || name.includes('design') || name.includes('slide') || name.includes('gif') || name.includes('meeting') || name.includes('minutes') || name.includes('translation') || name.includes('email') || legacy?.c === 11) return 'creation-communication';
+  if (priorCategory === 'sales-customer' || priorCategory === 'task-operations' || name.startsWith('adv-') || name.includes('sales') || name.includes('order') || name.includes('customer') || name.includes('task') || name.includes('daily') || name.includes('approval') || name.includes('calendar')) return 'business-operations';
+  return 'ai-development';
 }
 
 function legacyDetails(legacy) {
@@ -342,13 +340,22 @@ const legacyInput = JSON.parse(await readFile(legacyPath, 'utf8'));
 const legacyByName = new Map(legacyInput.skills.map((skill) => [canonicalName(skill.n), skill]));
 const records = new Map();
 const capabilities = [];
+let capabilitySequence = 0;
+const capabilitySequences = new Map([['MCP', 0], ['App', 0], ['能力', 0]]);
 const evidenceSummary = {
   codex: { enabledPluginPackages: 0, remoteInstallMarkers: 0, marketplaceSourcePackages: 0, marketplaceSourceSkillFiles: 0, cachePhysicalSkillFiles: 0, nonRuntimeSkillDefinitions: 0, cacheOnlySkillFiles: 0, pluginSkillFilesConsidered: 0, duplicateExclusions: 0 },
   claude: { enabledPluginPackages: 0, installedPluginPackages: 0, installMarkers: 0, marketplaceSourcePackages: 0, marketplaceSourceSkillFiles: 0, cachePhysicalSkillFiles: 0, nonRuntimeSkillDefinitions: 0, cacheOnlySkillFiles: 0, pluginSkillFilesConsidered: 0, duplicateExclusions: 0 }
 };
 
 function addCapability({ id, name, environment, evidenceType, availability, reason }) {
-  capabilities.push({ id, name, environment, evidenceType, availability, reason, lastVerifiedAt: now });
+  // 元のPluginキーや外部IDは棚卸し判定にのみ使い、公開データには出さない。
+  capabilitySequence += 1;
+  const normalized = String(name).toLocaleLowerCase('en');
+  const type = normalized.includes('mcp') ? 'MCP' : /browser|chrome|computer-use|gmail|slack|calendar|pipedrive/.test(normalized) ? 'App' : '能力';
+  const number = (capabilitySequences.get(type) ?? 0) + 1;
+  capabilitySequences.set(type, number);
+  const safeLabel = `${type}記録 ${String(number).padStart(2, '0')}`;
+  capabilities.push({ id: `capability-${capabilitySequence}`, name: safeLabel, type, environment, evidenceType, availability, reason, lastVerifiedAt: now });
 }
 
 function upsert(record) {
@@ -451,7 +458,7 @@ if (distributedMirroringRecord) {
     aliases: [],
     description: canonicalMirroringMeta.description || 'CodexとClaude間のSkill・共通指示の配布状態を管理する共通正本です。',
     example: '',
-    category: 'development-ai',
+    category: 'ai-development',
     projectTags: [],
     provider: { type: 'user', name: 'トシ用に作成' },
     source: { canonicalId: 'canonical/skills/manage-codex-claude-mirroring', contentHash: canonicalMirroringHash },
@@ -544,7 +551,7 @@ for (const skill of codexBuiltinSkills) {
     aliases: [],
     description: legacy?.d ?? skill.description ?? 'Codex組み込みSkillです。',
     example: legacy?.e ?? '',
-    category: 'development-ai',
+    category: 'ai-development',
     projectTags: [],
     provider: { type: 'openai', name: 'OpenAI' },
     source: { canonicalId: `codex-system/${name}`, contentHash: skill.hash },
@@ -636,7 +643,7 @@ for (const command of await scanMarkdownDirectory(commandDir)) {
     aliases: [],
     description: legacy?.d ?? command.description ?? 'ClaudeのPlugin commandです。',
     example: legacy?.e ?? '',
-    category: 'development-ai',
+    category: 'ai-development',
     projectTags: [],
     provider: { type: 'plugin', name: 'OpenAI Codex Plugin経由' },
     source: { canonicalId: `claude-plugin/codex/commands/${command.name}`, contentHash: command.hash },
@@ -660,7 +667,7 @@ for (const agent of await scanMarkdownDirectory(agentDir)) {
     aliases: [],
     description: agent.description || 'Claude Plugin由来のagentです。',
     example: '',
-    category: 'development-ai',
+    category: 'ai-development',
     projectTags: [],
     provider: { type: 'plugin', name: 'OpenAI Codex Plugin経由' },
     source: { canonicalId: `claude-plugin/codex/agents/${agent.name}`, contentHash: agent.hash },

@@ -15,7 +15,7 @@
     .wrap { max-width:1380px; margin:0 auto; padding:0 28px 64px; } .top { display:flex; justify-content:space-between; gap:24px; align-items:flex-end; border-bottom:1px solid var(--line); padding:28px 0 0; } .brand { min-width:220px; } h1 { font-family:"Zen Old Mincho",serif; font-size:30px; line-height:1.2; margin:0; font-weight:600; letter-spacing:.02em; } .sub { color:var(--muted); font-size:13px; margin:6px 0 16px; }
     .tabs { display:flex; gap:20px; align-items:flex-end; } .tab { appearance:none; border:0; border-bottom:3px solid transparent; background:transparent; color:var(--muted); padding:9px 2px 13px; font-weight:600; } .tab[aria-selected="true"] { border-color:var(--accent); color:var(--text); } .tab-count { color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:12px; margin-left:4px; }
     .filter-rail { display:grid; gap:8px; padding:16px 0; } .environment-row,.origin-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; } .environment-row strong,.origin-row strong { min-width:64px; font-size:13px; color:var(--muted); margin-right:2px; } .env-toggle,.provider-toggle,.filter-button { border:1px solid var(--line); background:var(--surface); color:var(--muted); border-radius:999px; padding:5px 11px; font-size:13px; } .env-toggle[aria-pressed="true"],.provider-toggle[aria-pressed="true"] { color:var(--accent-deep); border-color:var(--accent); background:var(--accent-soft); font-weight:700; }
-    .screen { display:none; } .screen.active { display:block; } .filters { display:grid; grid-template-columns:minmax(220px,1fr) 220px; gap:10px; margin-bottom:18px; } .input,.select { width:100%; border:1px solid var(--line); border-radius:9px; background:var(--surface); color:var(--text); padding:10px 12px; min-height:44px; }
+    .screen { display:none; } .screen.active { display:block; } .filters { display:grid; grid-template-columns:minmax(220px,1fr) 220px 220px; gap:10px; margin-bottom:18px; } .input,.select { width:100%; border:1px solid var(--line); border-radius:9px; background:var(--surface); color:var(--text); padding:10px 12px; min-height:44px; }
     .layout { display:grid; grid-template-columns:250px minmax(0,1fr); gap:24px; align-items:start; } .panel { background:var(--surface); border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow); padding:15px; } .panel + .panel { margin-top:14px; } .panel-title { color:var(--subtle); font-size:12px; font-weight:700; letter-spacing:.05em; margin:0 0 8px; } .category-list { display:grid; gap:3px; }
     .category-button { width:100%; display:flex; justify-content:space-between; align-items:center; border:0; border-radius:8px; background:transparent; color:var(--muted); text-align:left; padding:8px 9px; } .category-button:hover { background:var(--surface-quiet); } .category-button[aria-pressed="true"] { background:var(--accent); color:#fff; font-weight:700; } .category-button small { font-family:"JetBrains Mono",monospace; font-size:11px; } .status-note { color:var(--muted); font-size:12px; margin:0; }
     .toolbar { display:flex; justify-content:space-between; align-items:center; gap:12px; min-height:36px; margin-bottom:12px; flex-wrap:wrap; } .count { color:var(--muted); font-size:13px; } .count b { color:var(--text); font-family:"JetBrains Mono",monospace; } .active-filter { color:var(--accent-deep); background:var(--accent-soft); border-radius:999px; padding:4px 10px; font-size:12px; } .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:14px; }
@@ -31,21 +31,24 @@
 <body>
   <div class="wrap">
     <header class="top">
-      <div class="brand"><h1>SkillDeck</h1><p class="sub">CodexとClaudeのスキル構成を、用途と環境差分から確認する。</p></div>
+      <div class="brand"><h1>SkillDeck</h1><p class="sub">正本ではなく、スキル・連携・検証状態を判断するための表示です。</p></div>
       <nav class="tabs" aria-label="画面切り替え" role="tablist">
-        <button class="tab" id="skillsTab" role="tab" aria-selected="true" aria-controls="skillsScreen">スキル一覧 <span class="tab-count" id="tabCount">–</span></button>
-        <button class="tab" id="diffTab" role="tab" aria-selected="false" aria-controls="diffScreen">環境差分</button>
+        <button class="tab" id="skillsTab" role="tab" aria-selected="true" aria-controls="skillsScreen">スキル <span class="tab-count" id="tabCount">–</span></button>
+        <button class="tab" id="integrationsTab" role="tab" aria-selected="false" aria-controls="integrationsScreen">連携・MCP <span class="tab-count" id="integrationCount">–</span></button>
+        <button class="tab" id="diagnosticsTab" role="tab" aria-selected="false" aria-controls="diagnosticsScreen">診断</button>
       </nav>
     </header>
     <main>
       <section class="screen active" id="skillsScreen" role="tabpanel" aria-labelledby="skillsTab">
-        <div class="filter-rail" id="environmentControls">
-          <div class="environment-row" aria-label="利用環境で絞り込む"><strong>利用環境</strong><button class="env-toggle" type="button" data-env="codex" aria-pressed="false">Codex</button><button class="env-toggle" type="button" data-env="claude" aria-pressed="false">Claude</button><span class="status-note">未選択: 全件 / 両方: 両環境で導入・設定の証跡がある項目</span></div>
-          <div class="origin-row" aria-label="由来で絞り込む"><strong>由来</strong><button class="provider-toggle" type="button" data-provider="" aria-pressed="true">すべて</button><button class="provider-toggle" type="button" data-provider="自作" aria-pressed="false">自作</button><button class="provider-toggle" type="button" data-provider="他作" aria-pressed="false">他作</button><button class="provider-toggle" type="button" data-provider="公式" aria-pressed="false">公式</button></div>
-        </div>
         <div class="filters" aria-label="スキル一覧の絞り込み">
           <label><span class="sr-only">キーワード検索</span><input class="input" id="search" type="search" placeholder="検索: 議事録、スライド、広告など"></label>
+          <label><span class="sr-only">用途</span><select class="select" id="purposeFilter"><option value="">用途: すべて</option></select></label>
           <label><span class="sr-only">案件タグ</span><select class="select" id="projectFilter"><option value="">案件タグ: すべて</option></select></label>
+        </div>
+        <div class="filter-rail" id="environmentControls">
+          <div class="environment-row" aria-label="利用環境で絞り込む"><strong>利用環境</strong><button class="env-toggle" type="button" data-env="codex" aria-pressed="false">Codex</button><button class="env-toggle" type="button" data-env="claude" aria-pressed="false">Claude</button></div>
+          <div class="environment-row" aria-label="利用可否で絞り込む"><strong>利用可否</strong><button class="env-toggle" type="button" data-availability="verified" aria-pressed="false">実動確認済み</button><button class="env-toggle" type="button" data-availability="installed_unverified" aria-pressed="false">配置・設定確認</button><button class="env-toggle" type="button" data-availability="not_distributed" aria-pressed="false">未配布</button></div>
+          <div class="origin-row" aria-label="提供元で絞り込む"><strong>提供元</strong><button class="provider-toggle" type="button" data-provider="" aria-pressed="true">すべて</button><button class="provider-toggle" type="button" data-provider="自作" aria-pressed="false">自作</button><button class="provider-toggle" type="button" data-provider="他作" aria-pressed="false">他作</button><button class="provider-toggle" type="button" data-provider="公式" aria-pressed="false">公式</button></div>
         </div>
         <div class="layout">
           <aside>
@@ -55,7 +58,11 @@
           <section aria-live="polite"><div class="toolbar"><div class="count"><b id="resultCount">–</b> 件を表示中</div><div id="activeFilter" class="active-filter" hidden></div></div><div class="grid" id="cardGrid"><div class="loading">棚卸しデータを読み込んでいます。</div></div></section>
         </div>
       </section>
-      <section class="screen" id="diffScreen" role="tabpanel" aria-labelledby="diffTab">
+      <section class="screen" id="integrationsScreen" role="tabpanel" aria-labelledby="integrationsTab">
+        <div class="difference-head"><div><h2>連携・MCP</h2><p class="status-note">導入・設定の証跡を表示します。ここにあることは、現在の実行可否や認証済みを意味しません。</p></div><div class="date" id="integrationGeneratedAt">–</div></div>
+        <div class="grid" id="integrationGrid"><div class="loading">連携情報を読み込んでいます。</div></div>
+      </section>
+      <section class="screen" id="diagnosticsScreen" role="tabpanel" aria-labelledby="diagnosticsTab">
         <div class="difference-head"><div><h2>デクの見直し候補</h2><p class="status-note">デクが「本当に必要？」と考えたものだけを表示します。ここにない項目は保持扱いです。シグナルなしは未使用の断定ではありません。</p></div><div><div class="date" id="generatedAt">–</div><div class="review-head-actions"><button class="queue-copy" id="copyReviewQueue" type="button">判断一覧をコピー</button><button class="queue-copy" id="clearReviewQueue" type="button">判断を全消去</button></div></div></div>
         <div id="differenceGrid"></div>
       </section>
@@ -64,7 +71,7 @@
   </div>
   <div class="sr-only" id="announcer" aria-live="polite"></div>
   <script type="module">
-    const state = { view:'skills', envs:new Set(), query:'', category:'', project:'', provider:'' };
+    const state = { view:'skills', envs:new Set(), query:'', category:'', project:'', availability:'', provider:'' };
     const statusLabel = { synced:'同期済み', codex_only:'Codexのみ', claude_only:'Claudeのみ', not_mirrorable:'ミラー不可', needs_review:'要確認' };
     const availabilityLabel = { verified:'確認済み', installed_unverified:'導入済み・実行要確認', not_distributed:'未配布', 'not-applicable':'対象外' };
     const evidenceTypeLabel = { clean_room_test:'Clean Room Test合格', file_hash_verified:'ファイル配置・ハッシュ一致（実行未検証）', verified_runtime:'実行確認済み', config_enabled:'設定で有効', remote_install_marker:'導入記録', install_record:'導入記録', install_marker:'導入記録' };
@@ -104,7 +111,7 @@
       'ads-manager-start-agent':'広告アカウントを定期的に点検し、改善提案を出す仕組みを設定するスキルです。',
       'analyze-data-quality':'データや分析結果が信頼できるかを点検するスキルです。'
     };
-    const categoryPurpose = { adv:'ADVの案件・業務運用', 'development-ai':'開発・AI運用', 'sales-customer':'営業・顧客対応', 'ads-analysis':'広告・分析', 'materials-design':'資料・デザイン', 'meeting-writing-translation':'会議・文章・翻訳', 'task-operations':'タスク・業務運用', 'hall-of-fame':'おすすめの作業手順' };
+    const categoryPurpose = { recommended:'おすすめの作業手順', 'business-operations':'事業運用', 'growth-analytics':'集客・分析', 'creation-communication':'制作・コミュニケーション', 'ai-development':'AI・開発' };
     const isEnglishDescription = (value = '') => /[A-Za-z]{4,}/.test(value) && !/[ぁ-んァ-ン一-龯]/.test(value);
     function japaneseSummary(record) {
       if (japaneseSummaryByName[record.name]) return japaneseSummaryByName[record.name];
@@ -140,9 +147,13 @@
     const isEnvironmentMatch = (record) => !state.envs.size || [...state.envs].every((env) => record.environments[env].configured || record.environments[env].installed);
     const visibleRecords = ({ ignoreCategory = false } = {}) => skillRecords().filter((record) => {
       const searchable = [record.name,...(record.aliases || []),record.description,record.example,...(record.projectTags || []),record.provider.name].join(' ').toLocaleLowerCase('ja');
-      return isEnvironmentMatch(record) && (!state.query || searchable.includes(state.query.toLocaleLowerCase('ja'))) && (ignoreCategory || !state.category || record.category === state.category) && (!state.project || record.projectTags.includes(state.project)) && (!state.provider || originLabel(record) === state.provider);
+      const availabilityEnvironments = state.envs.size ? [...state.envs] : ['codex','claude'];
+      const availabilityMatch = !state.availability || availabilityEnvironments.some((env) => record.environments[env].availability === state.availability);
+      return isEnvironmentMatch(record) && availabilityMatch && (!state.query || searchable.includes(state.query.toLocaleLowerCase('ja'))) && (ignoreCategory || !state.category || record.category === state.category) && (!state.project || record.projectTags.includes(state.project)) && (!state.provider || originLabel(record) === state.provider);
     }).sort((a,b) => data.categories.findIndex((category) => category.id === a.category) - data.categories.findIndex((category) => category.id === b.category) || a.name.localeCompare(b.name,'ja'));
     function renderOptionFilters() {
+      const purposes = data.categories.map((category) => `<option value="${escapeHtml(category.id)}">用途: ${escapeHtml(category.name)}</option>`).join('');
+      byId('purposeFilter').insertAdjacentHTML('beforeend', purposes);
       const projects = [...new Set(skillRecords().flatMap((record) => record.projectTags))].sort((a,b) => a.localeCompare(b,'ja'));
       byId('projectFilter').insertAdjacentHTML('beforeend', projects.map((tag) => `<option value="${escapeHtml(tag)}">案件タグ: ${escapeHtml(tag)}</option>`).join(''));
     }
@@ -156,7 +167,7 @@
     }
     function environmentAvailabilityLabel(environment) {
       if (environment.evidenceType === 'clean_room_test') return '実動確認済み';
-      if (environment.evidenceType === 'file_hash_verified') return '配置確認済み・実行未検証';
+      if (environment.evidenceType === 'file_hash_verified') return '配置・設定確認（実行未検証）';
       return availabilityLabel[environment.availability] || '要確認';
     }
     function environmentBadges(record) {
@@ -165,11 +176,13 @@
     function detailRows(record) {
       const invocations = ['codex','claude'].filter((env) => record.environments[env].invocation).map((env) => `${env === 'codex' ? 'Codex' : 'Claude'}: <code>${escapeHtml(record.environments[env].invocation)}</code>`).join('<br>') || '要確認';
       const source = record.source.canonicalId ? `<code>${escapeHtml(record.source.canonicalId)}</code>` : '要確認';
+      const scope = ['codex','claude'].filter((env) => record.environments[env].configured || record.environments[env].installed).map((env) => env === 'codex' ? 'Codex' : 'Claude').join(' / ') || '未配布・要確認';
+      const availability = ['codex','claude'].map((env) => { const environment=record.environments[env]; return environment.configured || environment.installed ? `${env === 'codex' ? 'Codex' : 'Claude'}: ${environmentAvailabilityLabel(environment)}` : ''; }).filter(Boolean).join(' / ') || '要確認';
       const evidence = ['codex','claude'].map((env) => { const environment=record.environments[env]; return environment.evidenceType && environment.evidenceType !== 'none' ? `${env === 'codex' ? 'Codex' : 'Claude'}: ${evidenceTypeLabel[environment.evidenceType] || environment.evidenceType}${environment.verificationNote ? ` — ${environment.verificationNote}` : ''}` : ''; }).filter(Boolean).join(' / ') || '要確認';
       const requirements = record.requirements?.length ? escapeHtml(record.requirements.join(' / ')) : '要確認';
       const triggers = record.triggers?.length ? escapeHtml(record.triggers.join(' / ')) : '';
       const originalDescription = isEnglishDescription(record.description) ? `<dt>原文の説明</dt><dd>${escapeHtml(record.description)}</dd>` : '';
-      return `<details><summary>詳細を表示</summary><dl><dt>案件タグ</dt><dd>${record.projectTags.length ? escapeHtml(record.projectTags.join(' / ')) : '—'}</dd><dt>由来</dt><dd>${originLabel(record)}</dd><dt>提供元</dt><dd>${escapeHtml(record.provider.name)}</dd><dt>必要な連携</dt><dd>${requirements}</dd><dt>呼び出し方</dt><dd>${invocations}</dd>${triggers ? `<dt>起動語</dt><dd>${triggers}</dd>` : ''}<dt>種別</dt><dd>${kindLabel[record.kind] || record.kind}</dd>${originalDescription}<dt>棚卸し証拠</dt><dd>${escapeHtml(evidence)}</dd><dt>同期状態</dt><dd>${statusLabel[record.mirror.status]}${record.mirror.reason ? ` — ${escapeHtml(record.mirror.reason)}` : ''}</dd><dt>移行可否</dt><dd>${portabilityLabel[record.mirror.portability] || '要確認'}</dd><dt>正本ID</dt><dd>${source}</dd><dt>最終確認</dt><dd>${escapeHtml(formatDate(record.lastVerifiedAt))}</dd></dl></details>`;
+      return `<details><summary>詳細を表示</summary><dl><dt>案件タグ</dt><dd>${record.projectTags.length ? escapeHtml(record.projectTags.join(' / ')) : '—'}</dd><dt>環境範囲</dt><dd>${scope}</dd><dt>利用可否</dt><dd>${escapeHtml(availability)}</dd><dt>由来</dt><dd>${originLabel(record)}</dd><dt>提供元</dt><dd>${escapeHtml(record.provider.name)}</dd><dt>必要な連携</dt><dd>${requirements}</dd><dt>呼び出し方</dt><dd>${invocations}</dd>${triggers ? `<dt>起動語</dt><dd>${triggers}</dd>` : ''}<dt>種別</dt><dd>${kindLabel[record.kind] || record.kind}</dd>${originalDescription}<dt>棚卸し証拠</dt><dd>${escapeHtml(evidence)}</dd><dt>同期状態</dt><dd>${statusLabel[record.mirror.status]}${record.mirror.reason ? ` — ${escapeHtml(record.mirror.reason)}` : ''}</dd><dt>移行可否</dt><dd>${portabilityLabel[record.mirror.portability] || '要確認'}</dd><dt>正本ID</dt><dd>${source}</dd><dt>最終確認</dt><dd>${escapeHtml(formatDate(record.lastVerifiedAt))}</dd></dl></details>`;
     }
     function card(record) {
       const example = requestExample(record);
@@ -185,7 +198,7 @@
     }
     function renderSkills() {
       const records = visibleRecords(); byId('resultCount').textContent=records.length; byId('tabCount').textContent=skillRecords().length;
-      const label = [state.category && categoryName(state.category),state.project,state.provider,state.query && `「${state.query}」`].filter(Boolean).join(' / ');
+      const label = [state.category && categoryName(state.category),state.project,state.availability && availabilityLabel[state.availability],state.provider,state.query && `「${state.query}」`].filter(Boolean).join(' / ');
       byId('activeFilter').hidden=!label; byId('activeFilter').textContent=label;
       byId('cardGrid').innerHTML=records.length ? records.map(card).join('') : '<div class="empty">該当するスキルがありません。条件を変えてお試しください。</div>';
       renderCategories(); bindCopyButtons();
@@ -243,7 +256,7 @@
       }).sort((a,b) => a.name.localeCompare(b.name,'ja'));
     }
     function pluginPackagePurpose(provider,members) {
-      const known = { 'ads-manager@openai-curated-remote':'広告アカウントの作成・管理・広告作成・分析・改善提案を行うPluginです。', 'app-69b31dc2110c8191b8b47dc98fe5a052@openai-curated-remote':'Dropbox上のファイルを集める・探す・確認する・整理する・共有する・削除するPluginです。', 'data-analytics@openai-curated-remote':'データの信頼性確認、分析、レポート・ダッシュボード・KPI設計を行うPluginです。', 'codex-security@openai-curated-remote':'コードやリポジトリのセキュリティを調査・評価・修正確認するPluginです。', 'canva@openai-curated-remote':'Canvaの資料作成・編集・量産・フィードバック反映を行うPluginです。', 'openai-templates@openai-curated-remote':'用途別テンプレートを使って資料・表・レポートを作るPluginです。', 'zoom@openai-curated-remote':'Zoom向けボットや連携アプリを開発するPluginです。' };
+      const known = { 'ads-manager@openai-curated-remote':'広告アカウントの作成・管理・広告作成・分析・改善提案を行うPluginです。', 'data-analytics@openai-curated-remote':'データの信頼性確認、分析、レポート・ダッシュボード・KPI設計を行うPluginです。', 'codex-security@openai-curated-remote':'コードやリポジトリのセキュリティを調査・評価・修正確認するPluginです。', 'canva@openai-curated-remote':'Canvaの資料作成・編集・量産・フィードバック反映を行うPluginです。', 'openai-templates@openai-curated-remote':'用途別テンプレートを使って資料・表・レポートを作るPluginです。', 'zoom@openai-curated-remote':'Zoom向けボットや連携アプリを開発するPluginです。' };
       if (known[provider]) return known[provider];
       const purposes=[...new Set(members.map((member) => japaneseSummary(member)).filter((value) => value && !value.includes('用途は不明')))];
       return purposes.length ? `主な用途: ${purposes.slice(0,3).join(' / ')}` : '用途は不明です。同梱Skillの説明や実行内容を確認してから判断してください。';
@@ -254,6 +267,19 @@
     function duplicatePanel(groups) { return `<section class="panel"><h3 class="panel-title">重複候補 <span>(${groups.length})</span></h3><p class="status-note">表示名が同じ候補です。自動統合・削除はしていません。</p><div class="diff-list">${groups.length ? groups.map((group) => `<div class="diff-item"><b>${escapeHtml(group.name)}</b>${group.records.map(identityItem).join('')}</div>`).join('') : '<p class="status-note">該当なし</p>'}</div></section>`; }
     function aliasPanel(records) { const aliasCount=records.reduce((total, record) => total + record.aliases.length, 0); return `<section class="panel"><h3 class="panel-title">別名統合済み <span>(${aliasCount})</span></h3><p class="status-note">検索用に統合済みの旧名・別名です。</p><div class="diff-list">${records.length ? records.map((record) => `<div class="diff-item"><b>${escapeHtml(record.name)}</b><span>${escapeHtml(record.aliases.join(' / '))}</span><span><span class="identity-label">正本ID:</span> ${escapeHtml(record.source.canonicalId || '要確認')}</span></div>`).join('') : '<p class="status-note">該当なし</p>'}</div></section>`; }
     function migrationPanel(candidates) { const byRecordId=new Map(data.records.map((record) => [record.id,record])); return `<section class="panel"><h3 class="panel-title">同一能力の移行候補 <span>(${candidates.length})</span></h3><p class="status-note">旧カードと現行Skillの対応候補です。自動統合・削除はしていません。</p><div class="diff-list">${candidates.length ? candidates.map((candidate) => `<div class="diff-item"><b>${escapeHtml(candidate.label)}</b><span>${escapeHtml(candidate.reason)}</span>${candidate.recordIds.map((id) => byRecordId.get(id)).filter(Boolean).map(identityItem).join('')}</div>`).join('') : '<p class="status-note">該当なし</p>'}</div></section>`; }
+    function integrationCard(item) {
+      const environment = item.environment === 'codex' ? 'Codex' : 'Claude';
+      const availability = availabilityLabel[item.availability] || '要確認';
+      const evidence = evidenceTypeLabel[item.evidenceType] || item.evidenceType || '要確認';
+      return `<article class="card"><div class="card-top"><div class="badge-row"><span class="kind">${escapeHtml(item.type || '能力')}</span><span class="tag">${escapeHtml(environment)}</span></div><span class="status needs_review">${escapeHtml(availability)}</span></div><h2 class="card-name">${escapeHtml(item.name)}</h2><p class="description">${escapeHtml(item.reason || '導入・設定の証跡を確認しています。')}</p><details><summary>証跡を表示</summary><dl><dt>種別</dt><dd>${escapeHtml(item.type || '能力')}</dd><dt>環境</dt><dd>${escapeHtml(environment)}</dd><dt>利用可否</dt><dd>${escapeHtml(availability)}</dd><dt>証拠種別</dt><dd>${escapeHtml(evidence)}</dd><dt>最終確認</dt><dd>${escapeHtml(formatDate(item.lastVerifiedAt || data.generatedAt))}</dd></dl></details></article>`;
+    }
+    function renderIntegrations() {
+      const items = data.inventory.capabilities || [];
+      byId('integrationCount').textContent = items.length;
+      byId('integrationGeneratedAt').textContent = `最終棚卸し: ${formatDate(data.generatedAt)}`;
+      const groups = ['MCP','App','能力'].map((type) => ({ type, items:items.filter((item) => item.type === type) })).filter((group) => group.items.length);
+      byId('integrationGrid').innerHTML = groups.length ? groups.map((group) => `<section><h2 class="panel-title">${group.type} <span>(${group.items.length})</span></h2><div class="grid">${group.items.map(integrationCard).join('')}</div></section>`).join('') : '<div class="empty">連携・MCPの証跡はありません。</div>';
+    }
     function renderDifference() {
       const capabilityRecords = data.records.filter((record) => ['skill','builtin_skill','plugin_skill'].includes(record.kind));
       byId('generatedAt').textContent=`最終棚卸し: ${formatDate(data.generatedAt)}`;
@@ -268,7 +294,6 @@
       for (const record of skillLike) { const key=normalizeSkillName(record.name); duplicateMap.set(key,[...(duplicateMap.get(key) || []),record]); }
       const duplicateGroups=[...duplicateMap.values()].filter((group) => group.length > 1).map((records) => ({ name:records[0].name, records }));
       const aliasedRecords=skillLike.filter((record) => record.aliases?.length);
-      const capabilityItems=(data.inventory.capabilities || []).map((item) => ({ name:item.name, kind:'連携・能力', mirror:{reason:item.reason,status:'needs_review'} }));
       const packageTargets=pluginPackageTargets(capabilityRecords);
       const individualTargets=capabilityRecords.filter((record) => record.kind !== 'plugin_skill');
       const reviewTargets=[...packageTargets,...individualTargets];
@@ -281,18 +306,19 @@
         return target.kind === 'plugin_package' && target.usage?.status === 'no_signal' && dekuQuestionablePackageReasons.has(target.provider.name);
       }).map((target) => dekuQuestionablePackageReasons.has(target.provider.name) ? { ...target, governance:{...target.governance,reason:dekuQuestionablePackageReasons.get(target.provider.name)} } : target);
       const targetSkillCount=(targets) => targets.reduce((total,target) => total + (target.memberCount || 1),0);
-      const technicalMarkup=`<section class="technical-details"><div class="technical-details-head">技術的な差分・重複の詳細</div><div class="difference-grid">${[duplicatePanel(duplicateGroups),aliasPanel(aliasedRecords),migrationPanel(data.inventory.migrationCandidates || []),diffPanel('内容ハッシュ不一致',hashMismatch),diffPanel('登録済みだが実環境で未検出',registeredOnly),diffPanel('実環境で検出・旧一覧に未登録',environmentOnly),diffPanel('正本登録済み・両環境未配布・要確認',canonicalPending),diffPanel('導入証跡のみの連携・能力',capabilityItems,'該当なし'),diffPanel('ミラー不可',data.records.filter((record) => record.mirror.status === 'not_mirrorable')),diffPanel('同期状態が要確認',data.records.filter((record) => record.mirror.status === 'needs_review' && record.kind !== 'canonical_skill')),diffPanel('Skill以外の種別',nonSkills,'command・agent・自動実行タスクは未検出です。')].join('')}</div></section>`;
+      const technicalMarkup=`<section class="technical-details"><div class="technical-details-head">技術的な差分・重複の詳細</div><div class="difference-grid">${[duplicatePanel(duplicateGroups),aliasPanel(aliasedRecords),migrationPanel(data.inventory.migrationCandidates || []),diffPanel('内容ハッシュ不一致',hashMismatch),diffPanel('登録済みだが実環境で未検出',registeredOnly),diffPanel('実環境で検出・旧一覧に未登録',environmentOnly),diffPanel('正本登録済み・両環境未配布・要確認',canonicalPending),diffPanel('ミラー不可',data.records.filter((record) => record.mirror.status === 'not_mirrorable')),diffPanel('同期状態が要確認',data.records.filter((record) => record.mirror.status === 'needs_review' && record.kind !== 'canonical_skill')),diffPanel('Skill以外の種別',nonSkills,'command・agent・自動実行タスクは未検出です。')].join('')}</div></section>`;
       byId('differenceGrid').innerHTML=reviewPanel('デクの見直し候補',reviewCandidates,{note:'トシが削除を選んだもの、または直近利用がなく役割の重なり・用途の限定からデクが不要かもしれないと判断したものだけです。ほかは保持扱いです。',skillCount:targetSkillCount(reviewCandidates)}) + technicalMarkup;
     }
-    function selectView(view) { const isSkills=view === 'skills'; byId('skillsScreen').classList.toggle('active',isSkills); byId('diffScreen').classList.toggle('active',!isSkills); byId('environmentControls').hidden=!isSkills; byId('skillsTab').setAttribute('aria-selected',String(isSkills)); byId('diffTab').setAttribute('aria-selected',String(!isSkills)); }
+    function selectView(view) { state.view=view; const isSkills=view === 'skills'; byId('skillsScreen').classList.toggle('active',isSkills); byId('integrationsScreen').classList.toggle('active',view === 'integrations'); byId('diagnosticsScreen').classList.toggle('active',view === 'diagnostics'); byId('environmentControls').hidden=!isSkills; [['skillsTab','skills'],['integrationsTab','integrations'],['diagnosticsTab','diagnostics']].forEach(([id,name]) => byId(id).setAttribute('aria-selected',String(view === name))); }
     async function initialise() {
-      try { const response=await fetch('./data/skilldeck.json',{cache:'no-store'}); if (!response.ok) throw new Error(`データの取得に失敗しました (${response.status})`); data=await response.json(); renderOptionFilters(); renderSkills(); renderDifference(); }
+      try { const response=await fetch('./data/skilldeck.json',{cache:'no-store'}); if (!response.ok) throw new Error(`データの取得に失敗しました (${response.status})`); data=await response.json(); renderOptionFilters(); renderSkills(); renderIntegrations(); renderDifference(); }
       catch (error) { byId('cardGrid').innerHTML=`<div class="empty">棚卸しデータを読み込めませんでした。<br>${escapeHtml(error.message)}</div>`; }
     }
     document.querySelectorAll('[data-env]').forEach((button) => button.addEventListener('click', () => { const env=button.dataset.env; state.envs.has(env) ? state.envs.delete(env) : state.envs.add(env); button.setAttribute('aria-pressed',String(state.envs.has(env))); renderSkills(); }));
+    document.querySelectorAll('[data-availability]').forEach((button) => button.addEventListener('click', () => { state.availability = state.availability === button.dataset.availability ? '' : button.dataset.availability; document.querySelectorAll('[data-availability]').forEach((item) => item.setAttribute('aria-pressed',String(item.dataset.availability === state.availability))); renderSkills(); }));
     document.querySelectorAll('[data-provider]').forEach((button) => button.addEventListener('click', () => { state.provider=button.dataset.provider; document.querySelectorAll('[data-provider]').forEach((item) => item.setAttribute('aria-pressed',String(item === button))); renderSkills(); }));
-    byId('search').addEventListener('input',(event) => { state.query=event.target.value.trim(); renderSkills(); }); byId('projectFilter').addEventListener('change',(event) => { state.project=event.target.value; renderSkills(); });
-    byId('skillsTab').addEventListener('click',() => selectView('skills')); byId('diffTab').addEventListener('click',() => selectView('diff'));
+    byId('search').addEventListener('input',(event) => { state.query=event.target.value.trim(); renderSkills(); }); byId('purposeFilter').addEventListener('change',(event) => { state.category=event.target.value; renderSkills(); }); byId('projectFilter').addEventListener('change',(event) => { state.project=event.target.value; renderSkills(); });
+    byId('skillsTab').addEventListener('click',() => selectView('skills')); byId('integrationsTab').addEventListener('click',() => selectView('integrations')); byId('diagnosticsTab').addEventListener('click',() => selectView('diagnostics'));
     byId('differenceGrid').addEventListener('click', async (event) => {
       const button=event.target.closest('[data-review-action]'); if (!button) return;
       const target=currentReviewTargets.get(button.dataset.reviewId); if (!target) return;
@@ -303,7 +329,7 @@
     });
     byId('copyReviewQueue').addEventListener('click', async () => { const decisions=reviewDecisions(); const targets=Object.entries(decisions).map(([id,decision]) => ({target:currentReviewTargets.get(id),decision})).filter((item) => item.target); const text=targets.length ? targets.map(({target,decision}) => reviewRequest(target,decision.decision)).join('\n\n---\n\n') : 'SkillDeckの判断はまだありません。'; try { await navigator.clipboard.writeText(text); } catch { /* 読み取り専用表示を維持 */ } byId('announcer').textContent='SkillDeckの判断一覧をコピーしました。'; });
     byId('clearReviewQueue').addEventListener('click', () => { localStorage.removeItem(reviewStorageKey); byId('announcer').textContent='SkillDeckの判断を全消去しました。'; renderDifference(); });
-    document.querySelector('[role="tablist"]').addEventListener('keydown',(event) => { if (!['ArrowLeft','ArrowRight'].includes(event.key)) return; event.preventDefault(); const next=event.key === 'ArrowRight' ? byId('diffTab') : byId('skillsTab'); next.focus(); next.click(); });
+    document.querySelector('[role="tablist"]').addEventListener('keydown',(event) => { if (!['ArrowLeft','ArrowRight'].includes(event.key)) return; event.preventDefault(); const tabs=[byId('skillsTab'),byId('integrationsTab'),byId('diagnosticsTab')]; const current=tabs.indexOf(document.activeElement); const next=tabs[(current + (event.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length]; next.focus(); next.click(); });
     initialise();
   </script>
 </body>

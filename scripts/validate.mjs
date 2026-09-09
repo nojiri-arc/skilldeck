@@ -18,8 +18,8 @@ const categoryIds = new Set(data.categories.map((category) => category.id));
 const retiredLegacySkillNames = new Set(['ai-workflow-consultant', 'business-card-contact-import', 'calendar-event-and-meet-link', 'prompt-engineering-assistant', 'skill-registry-update', 'wayfinder']);
 
 if (data.schemaVersion !== 2) errors.push('schemaVersionは2である必要があります。');
-if (data.categories.length !== 8) errors.push(`カテゴリ数は8である必要があります（現在 ${data.categories.length}）。`);
-if (data.categories[0]?.id !== 'hall-of-fame') errors.push('第1カテゴリは殿堂入りである必要があります。');
+if (data.categories.length !== 5) errors.push(`カテゴリ数は5である必要があります（現在 ${data.categories.length}）。`);
+if (data.categories[0]?.id !== 'recommended') errors.push('第1カテゴリはおすすめである必要があります。');
 if (data.inventory.legacyCount !== legacy.skills.length) errors.push(`旧登録の件数が一致しません（台帳 ${data.inventory.legacyCount}件、正本 ${legacy.skills.length}件）。`);
 
 for (const record of data.records) {
@@ -60,8 +60,14 @@ else {
   }
 }
 for (const capability of data.inventory.capabilities ?? []) {
-  if (!capability.id || !capability.name || !['codex', 'claude'].includes(capability.environment)) errors.push(`能力台帳の形式不正: ${capability.id ?? '名前なし'}`);
+  if (!capability.id || !capability.name || !['MCP', 'App', '能力'].includes(capability.type) || !['codex', 'claude'].includes(capability.environment)) errors.push(`能力台帳の形式不正: ${capability.id ?? '名前なし'}`);
   if (!allowedAvailability.has(capability.availability)) errors.push(`能力台帳の利用状態不正: ${capability.id}`);
+}
+const runtimeUnverifiedClaudeSkills = new Set(['strategy-execution-orchestrator', 'initiative-progress-manager', 'elegant-prompt', 'manage-codex-claude-mirroring']);
+for (const name of runtimeUnverifiedClaudeSkills) {
+  const record = data.records.find((item) => item.name === name || item.id === `user.${name}` || item.id === `canonical.${name}`);
+  const environment = record?.environments?.claude;
+  if (!environment || environment.availability !== 'installed_unverified' || environment.evidenceType !== 'file_hash_verified' || !/実動テストは未実施/.test(environment.verificationNote || '')) errors.push(`Claude実動未検証の表示根拠が不足: ${name}`);
 }
 const representedLegacyNames = new Set(data.records.flatMap((record) => [...(record.legacy?.legacyNames ?? []), ...(record.aliases ?? [])]));
 const missingLegacy = legacy.skills.map((skill) => skill.n).filter((name) => !retiredLegacySkillNames.has(name) && !representedLegacyNames.has(name));

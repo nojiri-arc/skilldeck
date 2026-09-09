@@ -1,38 +1,26 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-09T08:14:32.493Z",
+  "generatedAt": "2026-09-09T08:21:54.030Z",
   "categories": [
     {
-      "id": "hall-of-fame",
-      "name": "殿堂入り"
+      "id": "recommended",
+      "name": "おすすめ"
     },
     {
-      "id": "adv",
-      "name": "ADV関連"
+      "id": "business-operations",
+      "name": "事業運用"
     },
     {
-      "id": "development-ai",
-      "name": "開発・AI管理"
+      "id": "growth-analytics",
+      "name": "集客・分析"
     },
     {
-      "id": "sales-customer",
-      "name": "営業・顧客対応"
+      "id": "creation-communication",
+      "name": "制作・コミュニケーション"
     },
     {
-      "id": "ads-analysis",
-      "name": "広告・分析"
-    },
-    {
-      "id": "materials-design",
-      "name": "資料・デザイン"
-    },
-    {
-      "id": "meeting-writing-translation",
-      "name": "会議・文章・翻訳"
-    },
-    {
-      "id": "task-operations",
-      "name": "タスク・業務運用"
+      "id": "ai-development",
+      "name": "AI・開発"
     }
   ],
   "inventory": {
@@ -68,112 +56,124 @@
     },
     "capabilities": [
       {
-        "id": "capability.codex.created-by-me-remote-dev-6a8bdb37b4fc81919626d89f9cc9635d",
-        "name": "created-by-me-remote/dev-6a8bdb37b4fc81919626d89f9cc9635d",
+        "id": "capability-1",
+        "name": "App記録 01",
+        "type": "App",
+        "environment": "codex",
+        "evidenceType": "config_enabled",
+        "availability": "installed_unverified",
+        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
+        "lastVerifiedAt": "2026-09-09T08:21:54.030Z"
+      },
+      {
+        "id": "capability-2",
+        "name": "App記録 02",
+        "type": "App",
+        "environment": "codex",
+        "evidenceType": "config_enabled",
+        "availability": "installed_unverified",
+        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
+        "lastVerifiedAt": "2026-09-09T08:21:54.030Z"
+      },
+      {
+        "id": "capability-3",
+        "name": "App記録 03",
+        "type": "App",
+        "environment": "codex",
+        "evidenceType": "config_enabled",
+        "availability": "installed_unverified",
+        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
+        "lastVerifiedAt": "2026-09-09T08:21:54.030Z"
+      },
+      {
+        "id": "capability-5",
+        "name": "App記録 04",
+        "type": "App",
+        "environment": "codex",
+        "evidenceType": "config_enabled",
+        "availability": "installed_unverified",
+        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
+        "lastVerifiedAt": "2026-09-09T08:21:54.030Z"
+      },
+      {
+        "id": "capability-6",
+        "name": "App記録 05",
+        "type": "App",
+        "environment": "codex",
+        "evidenceType": "config_enabled",
+        "availability": "installed_unverified",
+        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
+        "lastVerifiedAt": "2026-09-09T08:21:54.030Z"
+      },
+      {
+        "id": "capability-9",
+        "name": "App記録 06",
+        "type": "App",
         "environment": "codex",
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-09T08:14:32.493Z"
+        "lastVerifiedAt": "2026-09-09T08:21:54.030Z"
       },
       {
-        "id": "capability.codex.openai-bundled-browser",
-        "name": "openai-bundled/browser",
-        "environment": "codex",
-        "evidenceType": "config_enabled",
-        "availability": "installed_unverified",
-        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-09T08:14:32.493Z"
-      },
-      {
-        "id": "capability.codex.openai-bundled-chrome",
-        "name": "openai-bundled/chrome",
-        "environment": "codex",
-        "evidenceType": "config_enabled",
-        "availability": "installed_unverified",
-        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-09T08:14:32.493Z"
-      },
-      {
-        "id": "capability.codex.openai-bundled-codex-app-tools",
-        "name": "openai-bundled/codex-app-tools",
-        "environment": "codex",
-        "evidenceType": "config_enabled",
-        "availability": "installed_unverified",
-        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-09T08:14:32.493Z"
-      },
-      {
-        "id": "capability.codex.openai-bundled-computer-use",
-        "name": "openai-bundled/computer-use",
-        "environment": "codex",
-        "evidenceType": "config_enabled",
-        "availability": "installed_unverified",
-        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-09T08:14:32.493Z"
-      },
-      {
-        "id": "capability.codex.openai-bundled-unified-computer-use",
-        "name": "openai-bundled/unified-computer-use",
-        "environment": "codex",
-        "evidenceType": "config_enabled",
-        "availability": "installed_unverified",
-        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-09T08:14:32.493Z"
-      },
-      {
-        "id": "capability.codex.openai-curated-remote-app-69b266168488819199dab47b2ab2e4a7",
-        "name": "openai-curated-remote/app-69b266168488819199dab47b2ab2e4a7",
+        "id": "capability-10",
+        "name": "App記録 07",
+        "type": "App",
         "environment": "codex",
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-09T08:14:32.493Z"
+        "lastVerifiedAt": "2026-09-09T08:21:54.030Z"
       },
       {
-        "id": "capability.codex.openai-curated-remote-gmail",
-        "name": "openai-curated-remote/gmail",
+        "id": "capability-11",
+        "name": "App記録 08",
+        "type": "App",
         "environment": "codex",
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-09T08:14:32.493Z"
+        "lastVerifiedAt": "2026-09-09T08:21:54.030Z"
       },
       {
-        "id": "capability.codex.openai-curated-remote-google-calendar",
-        "name": "openai-curated-remote/google-calendar",
-        "environment": "codex",
-        "evidenceType": "remote_install_marker",
-        "availability": "installed_unverified",
-        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-09T08:14:32.493Z"
-      },
-      {
-        "id": "capability.codex.openai-curated-remote-slack",
-        "name": "openai-curated-remote/slack",
-        "environment": "codex",
-        "evidenceType": "remote_install_marker",
-        "availability": "installed_unverified",
-        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-09T08:14:32.493Z"
-      },
-      {
-        "id": "capability.codex.openai-curated-pipedrive",
-        "name": "openai-curated/pipedrive",
+        "id": "capability-4",
+        "name": "能力記録 01",
+        "type": "能力",
         "environment": "codex",
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-09T08:14:32.493Z"
+        "lastVerifiedAt": "2026-09-09T08:21:54.030Z"
       },
       {
-        "id": "capability.claude.marker.superdesign-claude-plugins-official",
-        "name": "superdesign@claude-plugins-official",
+        "id": "capability-7",
+        "name": "能力記録 02",
+        "type": "能力",
+        "environment": "codex",
+        "evidenceType": "remote_install_marker",
+        "availability": "installed_unverified",
+        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
+        "lastVerifiedAt": "2026-09-09T08:21:54.030Z"
+      },
+      {
+        "id": "capability-8",
+        "name": "能力記録 03",
+        "type": "能力",
+        "environment": "codex",
+        "evidenceType": "remote_install_marker",
+        "availability": "installed_unverified",
+        "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
+        "lastVerifiedAt": "2026-09-09T08:21:54.030Z"
+      },
+      {
+        "id": "capability-12",
+        "name": "能力記録 04",
+        "type": "能力",
         "environment": "claude",
         "evidenceType": "install_marker",
         "availability": "installed_unverified",
         "reason": "導入マーカーはありますが、現在のSkillパッケージおよび有効化状態を確認できませんでした。",
-        "lastVerifiedAt": "2026-09-09T08:14:32.493Z"
+        "lastVerifiedAt": "2026-09-09T08:21:54.030Z"
       }
     ],
     "migrationCandidates": [
@@ -218,7 +218,7 @@
       "aliases": [],
       "description": "Manage an existing Ads Manager account's users, pending invitations, roles, removals, and logo replacement through a confirmed, read-back-verified workflow. Use when the user asks to invite, grant, change, or remove account access, inspect active users or pending invitations as part of that workflow, or replace an existing account logo. Do not use for new-account onboarding, ad creation, campaign/ad-group/ad changes, reporting, or delivery diagnosis.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -257,17 +257,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
         "sessionCount": 1,
-        "lastUsedAt": "2026-09-09T06:49:45.665Z",
+        "lastUsedAt": "2026-09-09T08:21:17.355Z",
         "environments": {
           "codex": {
             "observed": true,
             "sessionCount": 1,
-            "lastUsedAt": "2026-09-09T06:49:45.665Z"
+            "lastUsedAt": "2026-09-09T08:21:17.355Z"
           },
           "claude": {
             "observed": false,
@@ -290,7 +290,7 @@
       "aliases": [],
       "description": "Run a manual, read-only Ads Manager review and, when supported recommendations emerge, offer exact changes for explicit user approval before delegating accepted writes to their owning skills. Use only when the user explicitly invokes $ads-manager-actionable-review to test this workflow. Do not use for scheduled reviews, implicit routing, account setup, or direct changes without an approved proposal.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -329,7 +329,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -362,7 +362,7 @@
       "aliases": [],
       "description": "Create one or more new Ads Manager ads end-to-end when the user asks to create, make, or build an ad or copy variants, or supplies a product or landing-page URL. Own website extraction and image discovery, manual intake, coordinated multi-ad copy variation, campaign-aware image selection or generation, draft preview, creative upload, and save or publish. Use for new ads even when no account exists yet; do not use for account onboarding, existing-ad updates, reporting, or delivery troubleshooting.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -401,7 +401,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -434,7 +434,7 @@
       "aliases": [],
       "description": "Diagnose why an existing Ads Manager account, campaign, ad group, or ad is not delivering or scaling, then produce a prioritized read-only recovery plan grounded in live connector evidence and official Help Center guidance. Use when the user reports low or zero impressions, spend, clicks, or conversions; delivery drops; limited delivery; serving issues; or uncertainty about what is blocking expansion.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -473,7 +473,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -506,7 +506,7 @@
       "aliases": [],
       "description": "Create or update existing Ads Manager campaigns and ad groups, and update existing ads, through a minimal-diff, confirmed, read-back-verified workflow. Use when the user explicitly asks for campaign-only or ad-group-only creation and does not want ads created yet, or asks to edit, pause, activate, archive, or otherwise change an existing campaign, ad group, or ad. Do not interpret a vague “create a campaign” request as campaign-only work. Do not use for new-ad creation, account onboarding, account administration, reporting, or delivery diagnosis.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -545,7 +545,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -578,7 +578,7 @@
       "aliases": [],
       "description": "Help users understand and troubleshoot Ads Manager by combining live read-only Ads Manager connector evidence, official Ads Manager Help Center guidance, and safe remediation steps. Use when the user asks Ads Manager how-to questions, has onboarding or readiness problems, reports campaign, ad group, or ad delivery issues, asks spend or performance questions, has conversion-reporting problems, or wants a prioritized diagnosis without changing Ads Manager state.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -617,7 +617,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -650,7 +650,7 @@
       "aliases": [],
       "description": "Report Ads Manager performance, rankings, comparisons, trends, conversion totals, current conversion-source or event-setting inventory, or recent raw conversion-event diagnostics for an existing account, campaign, ad group, or ad. Use when the user asks what happened or how metrics compare. Do not use for delivery diagnosis, recommendations, recurring review setup, or mutations.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -689,7 +689,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -722,7 +722,7 @@
       "aliases": [],
       "description": "Create one new self-serve Ads Manager business account end-to-end, including business intake, ownership resolution, an optional attached, linked, or generated logo, terms acceptance, and account creation. Use when the user asks to set up Ads Manager or create a new ad account, has no account and confirms setup, or requests unsupported individual or agency onboarding. Use before list_onboarding_tenants, account-logo uploads for account creation, create_self_serve_ad_account, or onboarding status for account creation. Do not use for existing-account troubleshooting, campaign creation, or ad creation.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -761,7 +761,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -794,7 +794,7 @@
       "aliases": [],
       "description": "Analyze an existing Ads Manager account, campaign set, campaign, ad group, or ad and return concise, evidence-backed CMO recommendations in plain language. Use when the user asks for manual or scheduled health checks and reviews of delivery, measurement, performance efficiency, spend, targeting, or ad creative, including broad one-time requests to improve or optimize an account or portfolio. Do not use for account setup, ad creation, live changes, or approvals.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -833,7 +833,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -866,7 +866,7 @@
       "aliases": [],
       "description": "Set up recommendation-only recurring Ads Manager reviews. Use when a user asks for recurring, periodic, daily, weekly, ongoing, or scheduled recommendations for an account, campaign, ad group, or ad. Do not use for one-time recommendations or health reviews, including broad requests to improve or optimize Ads Manager; route those directly to $ads-manager-review. Do not use for direct ad changes, account setup, ad creation, or pure delivery troubleshooting that belongs to ads-manager-delivery-recovery.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -905,7 +905,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -938,7 +938,7 @@
       "aliases": [],
       "description": "ADVの業務知識を、提供された資料や会話、社内情報をもとに検索・整理・説明し、関連スキルの利用方針を示す。",
       "example": "この案件では何を確認すべきか教えて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -986,7 +986,7 @@
           "adv-business-knowledge"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1019,7 +1019,7 @@
       "aliases": [],
       "description": "ADVの業務知識を、提供された資料や会話、社内情報をもとに検索・整理・説明し、関連スキルの利用方針を示す。",
       "example": "この案件では何を確認すべきか教えて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -1067,7 +1067,7 @@
           "adv-business-knowledge"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1100,7 +1100,7 @@
       "aliases": [],
       "description": "野尻・植木所有のPipedrive取引を母集団に、3か月以上接点のない既存先を掘り起こし、担当別最大3件ずつの候補と文面案を既存🎯タブへ自動追記する（メール送信・CRM更新・Slack投稿はしない）",
       "example": "",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -1141,7 +1141,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1174,7 +1174,7 @@
       "aliases": [],
       "description": "Operate ADV's new-attacker workflow for the 新規🎯 sheet, including the mandatory strict recheck and final adjustment after the weekday 17:00 action. Use for 「新規更新」, the new-attacker daily run, or its post-run verification; do not use for existing customers or FB work.",
       "example": "",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -1219,7 +1219,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1252,7 +1252,7 @@
       "aliases": [],
       "description": "ADVの標準様式で営業提案資料、サービス概要、ASO・CPD提案、施策レポートなどを作成・編集する。",
       "example": "ADV仕様で提案資料を作って",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -1300,7 +1300,7 @@
           "adv-shiryo-sakusei"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1333,7 +1333,7 @@
       "aliases": [],
       "description": "ADVの標準様式で営業提案資料、サービス概要、ASO・CPD提案、施策レポートなどを作成・編集する。",
       "example": "ADV仕様で提案資料を作って",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -1381,7 +1381,7 @@
           "adv-shiryo-sakusei"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1414,7 +1414,7 @@
       "aliases": [],
       "description": "会議の文字起こしをADV指定フォーマットの議事録に整形する。",
       "example": "この文字起こしをADV議事録の形式にまとめて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -1462,7 +1462,7 @@
           "adv-shiyo-gijiroku"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1495,7 +1495,7 @@
       "aliases": [],
       "description": "会議の文字起こしをADV指定フォーマットの議事録に整形する。",
       "example": "この文字起こしをADV議事録の形式にまとめて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -1543,7 +1543,7 @@
           "adv-shiyo-gijiroku"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1576,7 +1576,7 @@
       "aliases": [],
       "description": "Assess whether structured data, query results, dashboards, or analytical evidence are trustworthy enough to use. Use when the task is to check data quality, reconcile conflicting sources or metric definitions, or decide whether evidence is safe to cite.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -1615,7 +1615,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1648,7 +1648,7 @@
       "aliases": [],
       "description": "Artifactを書く前に読む、デザインの基本方針ガイド。",
       "example": "このページをもっと洗練されたデザインにして",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -1694,7 +1694,7 @@
           "artifact-design"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1727,7 +1727,7 @@
       "aliases": [],
       "description": "ADV仕様資料作成パターン1のテンプレートを使ってプレゼン資料を作成する。",
       "example": "パターン1のADV仕様で資料を作って",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -1779,7 +1779,7 @@
           "artifact-template-adv-1"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1812,7 +1812,7 @@
       "aliases": [],
       "description": "ADV仕様資料作成パターン2の構成・配色・タイポグラフィに沿ってプレゼン資料を作成する。",
       "example": "パターン2のADV仕様で資料を作って",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -1864,7 +1864,7 @@
           "artifact-template-adv-2"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1897,7 +1897,7 @@
       "aliases": [],
       "description": "Create a spreadsheet using the Analytics Dashboard template and its retained reference file. Use when the user selects or names Analytics Dashboard. Monitor acquisition, engagement, retention, revenue, and conversion funnel KPIs with charts.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -1936,7 +1936,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1969,7 +1969,7 @@
       "aliases": [],
       "description": "Create a presentation using the Business Review template and its retained reference file. Use when the user selects or names Business Review. Review business performance, KPIs, segment results, strategic priorities, decisions, and outlook.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2008,7 +2008,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2041,7 +2041,7 @@
       "aliases": [],
       "description": "Create a document using the Design Report template and its retained reference file. Use when the user selects or names Design Report. Produce design reports with an executive summary, key findings, implications, recommendations, and appendix.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2080,7 +2080,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2113,7 +2113,7 @@
       "aliases": [],
       "description": "Create a document using the Experiment Analysis template and its retained reference file. Use when the user selects or names Experiment Analysis. Analyze experiments with hypotheses, methodology, results, interpretation, limitations, and next steps.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2152,7 +2152,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2185,7 +2185,7 @@
       "aliases": [],
       "description": "Create a spreadsheet using the Financial Budget template and its retained reference file. Use when the user selects or names Financial Budget. Model actuals, budget and scenario forecasts, variances, cash runway, and departmental plans.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2224,7 +2224,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2257,7 +2257,7 @@
       "aliases": [],
       "description": "Create a document using the Investment Committee Memo template and its retained reference file. Use when the user selects or names Investment Committee Memo. Prepare investment committee memos with the thesis, transaction details, financial analysis, risks, and recommendation.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2296,7 +2296,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2329,7 +2329,7 @@
       "aliases": [],
       "description": "アドウェイズ提案資料フォーマット（JRA提案ベース）でプレゼン資料を作成する。",
       "example": "JRAベースのフォーマットで提案資料を作って",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -2381,7 +2381,7 @@
           "artifact-template-jra"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2414,7 +2414,7 @@
       "aliases": [],
       "description": "Create a document using the Legal Memorandum template and its retained reference file. Use when the user selects or names Legal Memorandum. Draft legal memoranda with the issue, brief answer, relevant facts, analysis, and conclusion.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2453,7 +2453,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2486,7 +2486,7 @@
       "aliases": [],
       "description": "Create a presentation using the Market Trends Report template and its retained reference file. Use when the user selects or names Market Trends Report. Communicate market or industry trends, supporting evidence, implications, and recommended responses.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2525,7 +2525,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2558,7 +2558,7 @@
       "aliases": [],
       "description": "Create a document using the Minimal Letterhead template and its retained reference file. Use when the user selects or names Minimal Letterhead. Write professional business letters with sender, recipient, message, and signature fields in a minimal letterhead layout.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2597,7 +2597,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2630,7 +2630,7 @@
       "aliases": [],
       "description": "Create a spreadsheet using the Operating Calendar template and its retained reference file. Use when the user selects or names Operating Calendar. Plan annual and monthly operating milestones, campaigns, launches, deadlines, and recurring events.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2669,7 +2669,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2702,7 +2702,7 @@
       "aliases": [],
       "description": "Create a presentation using the Operating Review template and its retained reference file. Use when the user selects or names Operating Review. Run weekly operating reviews with scorecards, functional updates, risks, decisions, and action items.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2741,7 +2741,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2774,7 +2774,7 @@
       "aliases": [],
       "description": "Create a presentation using the Project Kickoff template and its retained reference file. Use when the user selects or names Project Kickoff. Align teams on project goals, scope, roles, milestones, risks, and the working model.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2813,7 +2813,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2846,7 +2846,7 @@
       "aliases": [],
       "description": "Create a spreadsheet using the Project Tracker template and its retained reference file. Use when the user selects or names Project Tracker. Manage workstreams, tasks, owners, status, priority, dates, launch pulse, and a Gantt schedule.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2885,7 +2885,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2918,7 +2918,7 @@
       "aliases": [],
       "description": "Create a spreadsheet using the Sales Pipeline template and its retained reference file. Use when the user selects or names Sales Pipeline. Track opportunities, stages, owners, deal sizes, probabilities, forecasts, next steps, and risks.",
       "example": "",
-      "category": "sales-customer",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -2957,7 +2957,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2990,7 +2990,7 @@
       "aliases": [],
       "description": "Create a presentation using the Simple Dark Mode template and its retained reference file. Use when the user selects or names Simple Dark Mode. Create clean dark-mode presentations with bold typography, simple sections, charts, and imagery.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -3029,7 +3029,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3062,7 +3062,7 @@
       "aliases": [],
       "description": "Create a presentation using the Simple Light Mode template and its retained reference file. Use when the user selects or names Simple Light Mode. Create clean light-mode presentations with spacious typography, simple sections, charts, and imagery.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -3101,7 +3101,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3134,7 +3134,7 @@
       "aliases": [],
       "description": "Create a document using the Strategy Memorandum template and its retained reference file. Use when the user selects or names Strategy Memorandum. Present strategic context, choices, rationale, risks, milestones, and a clear recommendation.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -3173,7 +3173,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3206,7 +3206,7 @@
       "aliases": [],
       "description": "Create a document using the System Design template and its retained reference file. Use when the user selects or names System Design. Document system architecture, requirements, components, data flows, APIs, tradeoffs, and operational considerations.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -3245,7 +3245,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3278,7 +3278,7 @@
       "aliases": [],
       "description": "Create a presentation using the Team Alignment template and its retained reference file. Use when the user selects or names Team Alignment. Facilitate team offsites and planning with context, goals, priorities, decisions, and action items.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -3317,7 +3317,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3350,7 +3350,7 @@
       "aliases": [],
       "description": "Create a spreadsheet using the Three-Statement Forecast template and its retained reference file. Use when the user selects or names Three-Statement Forecast. Build an integrated income statement, balance sheet, and cash flow forecast with assumptions, checks, and an executive summary.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -3389,7 +3389,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3422,7 +3422,7 @@
       "aliases": [],
       "description": "状況に合った進め方（設計の壁打ち、試作、仕様・チケット化、実装、TDD、レビュー）を案内するルータースキル。",
       "example": "今の状況にどのスキルが合うか教えて",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -3472,7 +3472,7 @@
           "ask-matt"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3505,7 +3505,7 @@
       "aliases": [],
       "description": "ASO実施が確定した案件について必要情報を確認し、社内向け新規発注依頼のSlack下書きを準備する。",
       "example": "このASO案件の社内発注依頼を下書きして",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -3553,7 +3553,7 @@
           "aso-internal-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3586,7 +3586,7 @@
       "aliases": [],
       "description": "ASO実施が確定した案件について必要情報を確認し、社内向け新規発注依頼のSlack下書きを準備する。",
       "example": "このASO案件の社内発注依頼を下書きして",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -3634,7 +3634,7 @@
           "aso-internal-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3667,7 +3667,7 @@
       "aliases": [],
       "description": "ADVのASO案件をシミュレーション事前確認、または発注依頼へ段階に応じて振り分ける。",
       "example": "このASO案件、今どの段階か判断して次に進めて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -3715,7 +3715,7 @@
           "aso-simulation-and-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3748,7 +3748,7 @@
       "aliases": [],
       "description": "ADVのASO案件をシミュレーション事前確認、または発注依頼へ段階に応じて振り分ける。",
       "example": "このASO案件、今どの段階か判断して次に進めて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -3796,7 +3796,7 @@
           "aso-simulation-and-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3829,7 +3829,7 @@
       "aliases": [],
       "description": "ASOシミュレーション実施前に必要情報を確認し、担当者や先方への確認文を下書きする。",
       "example": "ASOシミュレーション前の確認事項をまとめて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -3877,7 +3877,7 @@
           "aso-simulation-intake"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3910,7 +3910,7 @@
       "aliases": [],
       "description": "ASOシミュレーション実施前に必要情報を確認し、担当者や先方への確認文を下書きする。",
       "example": "ASOシミュレーション前の確認事項をまとめて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -3958,7 +3958,7 @@
           "aso-simulation-intake"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3991,7 +3991,7 @@
       "aliases": [],
       "description": "Assess an immutable patch artifact's program impact, regression risk, and auto-merge eligibility. Use for generated patch files, provider pull-request diffs, or commit ranges when reviewers need evidence about affected runtime paths, contracts, tests, and recoverability. This skill is read-only and does not generate, edit, apply, push, or merge the patch.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4030,7 +4030,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4063,7 +4063,7 @@
       "aliases": [],
       "description": "Use when Codex is already in the attack-path-analysis phase of a security scan or the user explicitly asks to trace a security finding from source to sink and calibrate severity. Do not use as the primary trigger for full PR, commit, branch, patch, or repository scans.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4102,7 +4102,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4135,7 +4135,7 @@
       "aliases": [],
       "description": "Audit or critique a product flow, journey, workflow, funnel, onboarding path, checkout path, settings path, screen, or multi-step product experience by capturing screenshots first, then reporting UX, design, and accessibility findings from that evidence. Default to an inline report; use a canvas for a visual walkthrough when requested or clearly implied by the ongoing task. Use when the user asks to audit, review, critique, inspect, assess, analyze, evaluate, or give feedback on a product experience.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4174,7 +4174,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -4207,7 +4207,7 @@
       "aliases": [],
       "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4246,7 +4246,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -4279,7 +4279,7 @@
       "aliases": [],
       "description": "Build source-backed dashboards for monitoring performance, exploring drivers, or acting on product and business metrics. Use when the task needs a dashboard, scorecard, or monitoring view with clear metrics, filters, source definitions, and QA.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4318,7 +4318,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4351,7 +4351,7 @@
       "aliases": [],
       "description": "Build polished analytical reports for executive, product, business, or technical audiences. Use when the task needs a durable answer-first narrative with evidence-backed findings, visuals or tables, caveats, and source context.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4390,7 +4390,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4423,7 +4423,7 @@
       "aliases": [],
       "description": "Check a Canva design against a brand kit and report where it diverges — off-palette colors, non-brand fonts, logo misuse, and off-tone copy. Read-only; makes no changes. Use when the user asks \"is this on brand\", \"check this against our brand kit\", \"do a brand review\", \"does this match our brand guidelines\", or \"brand-check my design\".",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4462,7 +4462,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4495,7 +4495,7 @@
       "aliases": [],
       "description": "Create on-brand Canva presentations from an outline or brief. Use when the user asks to create a branded presentation, make an on-brand deck, turn an outline into slides, or generate a presentation from a brief. Input can be text directly in the message, a Canva design ID, a reference to a Canva doc by name, or a Canva design link (e.g., https://www.canva.com/design/...).",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4534,7 +4534,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4567,7 +4567,7 @@
       "aliases": [],
       "description": "Bulk-create Canva designs from tabular data using a brand template with autofill fields, producing one design per row. Use when users say \"bulk create designs from this CSV\", \"generate one design per row\", \"create a design for each product\", \"batch generate from a template\", or \"autofill a template from a spreadsheet\". Accepts any tabular data source — uploaded files, pasted tables, JSON, or URLs.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4606,7 +4606,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4639,7 +4639,7 @@
       "aliases": [],
       "description": "Read a Canva design and return structured, actionable design feedback — visual hierarchy, copy/messaging, layout & spacing, consistency, readability, and accessibility. Read-only; makes no changes to the design. Use when the user asks to \"review my design\", \"give me feedback on this\", \"critique my deck/poster/flyer\", \"how can I improve this design\", or \"what's wrong with this slide\".",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4678,7 +4678,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4711,7 +4711,7 @@
       "aliases": [],
       "description": "Make edits to an existing Canva design — change or fix text, replace/insert/delete images and videos, reformat text (size, weight, style, color, alignment, lists, line height), reposition or resize elements, and update the title. Use when the user wants to change, edit, update, fix, translate, replace, or reformat content in a specific Canva design. This is the safe edit engine that other Canva skills (e.g. implement-feedback) build on.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4750,7 +4750,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4783,7 +4783,7 @@
       "aliases": [],
       "description": "Implement reviewer feedback on a Canva design. Reads all comment threads, synthesises what reviewers want, makes the clear-cut changes directly, and flags anything that needs a human decision. Use when the user asks to \"implement feedback on my deck\", \"address comments on a design\", \"apply review feedback\", \"fix the comments on my presentation\", or \"implement the feedback\".",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4822,7 +4822,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4855,7 +4855,7 @@
       "aliases": [],
       "description": "Resize a Canva design into multiple social media formats (Facebook post, Facebook story, Instagram post, Instagram story, LinkedIn post). Use this skill when users want to resize Canva designs specifically for multiple social media platforms in one operation, rather than resizing to a single format manually.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4894,7 +4894,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4927,7 +4927,7 @@
       "aliases": [],
       "description": "Translate all text in a Canva design to another language, creating a translated copy. Faster than manually copying and editing each text box in Canva's editor. Use when users say \"translate my design to [language]\", \"make a Spanish/French/etc version\", or \"localize my Canva design\".",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -4966,7 +4966,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4999,7 +4999,7 @@
       "aliases": [],
       "description": "商品・サービス・企画のキャッチコピーを、ターゲットや悩み、解決価値を整理したうえで複数案考案する。",
       "example": "このサービスのキャッチコピーを考えて",
-      "category": "meeting-writing-translation",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -5049,7 +5049,7 @@
           "catchphrase-ideation"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5082,7 +5082,7 @@
       "aliases": [],
       "description": "Reply as Chad in a configured internal Slack channel or thread after understanding its full context and verified operational data. Use when the user asks Chad to handle or configure Slack responses; do not use for unassigned channels, DMs, or external shared channels.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -5125,7 +5125,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -5158,7 +5158,7 @@
       "aliases": [],
       "description": "Chromeブラウザを自動操作し、クリック・フォーム入力・スクリーンショット・コンソール確認・サイト巡回を行う。",
       "example": "このサイトの操作を自動化して",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -5204,7 +5204,7 @@
           "claude-in-chrome"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5237,7 +5237,7 @@
       "aliases": [],
       "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -5280,7 +5280,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -5313,7 +5313,7 @@
       "aliases": [],
       "description": "設計判断ごと疑わせる挑戦レビュー。",
       "example": "コデックスで設計を厳しくレビューして",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -5359,7 +5359,7 @@
           "codex:adversarial-review"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5392,7 +5392,7 @@
       "aliases": [],
       "description": "ジョブ中止。",
       "example": "コデックスのジョブを中止して",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -5438,7 +5438,7 @@
           "codex:cancel"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5471,7 +5471,7 @@
       "aliases": [],
       "description": "バグ調査・修正をCodexに委譲(--model 指定可)。",
       "example": "このバグ調査をコデックスに任せて",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -5517,7 +5517,7 @@
           "codex:rescue"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5550,7 +5550,7 @@
       "aliases": [],
       "description": "完了ジョブの結果。",
       "example": "コデックスのジョブ結果を見せて",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -5596,7 +5596,7 @@
           "codex:result"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5629,7 +5629,7 @@
       "aliases": [],
       "description": "現在の変更をレビュー(--base main / --background)。",
       "example": "今の変更をコデックスでレビューして",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -5675,7 +5675,7 @@
           "codex:review"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5708,7 +5708,7 @@
       "aliases": [],
       "description": "点検(まず最初にこれ)。",
       "example": "コデックスの動作確認をして",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -5754,7 +5754,7 @@
           "codex:setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5787,7 +5787,7 @@
       "aliases": [],
       "description": "実行中ジョブの進捗。",
       "example": "コデックスのジョブ進捗を確認して",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -5833,7 +5833,7 @@
           "codex:status"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5866,7 +5866,7 @@
       "aliases": [],
       "description": "今の会話をCodexの継続セッションへ引っ越し。",
       "example": "この会話をコデックスに引き継いで",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -5912,7 +5912,7 @@
           "codex:transfer"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5945,7 +5945,7 @@
       "aliases": [],
       "description": "Gmailを基本に、指定されたSlack／LINEのやり取りを「確認→返信文案→個別承認後に送信」まで扱うSkillです。会話内の日程返信案は作成できますが、「スケ調整お願い」「スケジュール調整お願い」だけでは起動せず、送信やカレンダー登録も勝手に行いません。",
       "example": "コミュニケーションツールの横断確認お願い！",
-      "category": "task-operations",
+      "category": "business-operations",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -5992,7 +5992,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6025,7 +6025,7 @@
       "aliases": [],
       "description": "競合サービスや代替製品を公式サイト・料金ページなどの一次情報に基づいて調査し、機能・料金・強み弱みを比較する。",
       "example": "この分野の競合サービスを比較して",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -6075,7 +6075,7 @@
           "competitive-service-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6108,7 +6108,7 @@
       "aliases": [],
       "description": "新しいCoworkプラグインをゼロから作成、またはインストール済みプラグインを組織向けにカスタマイズする。",
       "example": "新しいプラグインを作りたい",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -6154,7 +6154,7 @@
           "cowork-plugin"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6187,7 +6187,7 @@
       "aliases": [],
       "description": "組織のツールやワークフローに合わせて、既存のCoworkプラグインをカスタマイズする。",
       "example": "このプラグインを自社のワークフローに合わせて調整して",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -6233,7 +6233,7 @@
           "cowork-plugin-management:cowork-plugin-customizer"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6266,7 +6266,7 @@
       "aliases": [],
       "description": "ゼロから新しいCoworkプラグインを作成する手順をガイドする。",
       "example": "新しいプラグインを一から作りたい",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -6312,7 +6312,7 @@
           "cowork-plugin-management:create-cowork-plugin"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6345,7 +6345,7 @@
       "aliases": [],
       "description": "案件ごとの専用作業スペースを作成し、名前・案件概要・進捗タスクを設定してその中で作業を開始する。",
       "example": "この案件をプロジェクト化して進めて",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -6395,7 +6395,7 @@
           "create-chatgpt-project"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6428,7 +6428,7 @@
       "aliases": [],
       "description": "Create, update, inspect, or repair Data Analytics semantic layers. Use when the user asks to save data context or create a semantic layer that future Data Analytics work can inspect and cite.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -6467,7 +6467,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6500,7 +6500,7 @@
       "aliases": [],
       "description": "商談前に見込み客企業を調査し、話のきっかけになる情報とアイスブレイクを準備する。",
       "example": "この会社との商談前にアイスブレイクのネタを調べて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -6548,7 +6548,7 @@
           "customer-icebreaker-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6581,7 +6581,7 @@
       "aliases": [],
       "description": "商談前に見込み客企業を調査し、話のきっかけになる情報とアイスブレイクを準備する。",
       "example": "この会社との商談前にアイスブレイクのネタを調べて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -6629,7 +6629,7 @@
           "customer-icebreaker-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6662,7 +6662,7 @@
       "aliases": [],
       "description": "チャート・グラフ・ダッシュボードなど、あらゆるデータ可視化を作る前に読む配色・レイアウトのガイド。",
       "example": "この売上データを分かりやすいグラフにして",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -6708,7 +6708,7 @@
           "dataviz"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6741,7 +6741,7 @@
       "aliases": [],
       "description": "Use only when the user asks for deep research (or a clear equivalent), invokes $deep-research, or selects Deep Research in Work mode. Produce a comprehensive, cited artifact. Skip ordinary research requests.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -6780,7 +6780,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6813,7 +6813,7 @@
       "aliases": [],
       "description": "Use when the user asks for a deep, exhaustive, multi-pass, or variance-reducing repository-wide or scoped-path Codex Security scan. Run repeated complete independent Standard scans with the Codex Security deep-scan tool, which aggregates their validated findings and prepares the canonical artifacts; then complete the same scan once. Do not use for PRs, commits, branch diffs, or working-tree diffs.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -6852,7 +6852,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6885,7 +6885,7 @@
       "aliases": [],
       "description": "Define, review, or update SECURITY.md guidance for a repository or component. Use when the user wants to clarify what Codex Security should review, what is out of scope, which security properties must hold, or whether existing guidance still matches the code.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -6924,7 +6924,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6957,7 +6957,7 @@
       "aliases": [],
       "description": "UIモックアップ、LP、広告・SNSクリエイティブ、印刷物などを複数アートボードのデザインキャンバスとして作成する。",
       "example": "このサービスのLPをデザインして",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -7003,7 +7003,7 @@
           "design"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7036,7 +7036,7 @@
       "aliases": [],
       "description": "Design KPI frameworks, metric definitions, targets, guardrails, and measurement plans for product or business decisions. Use when success metrics, drivers, guardrails, targets, or the measurement approach need to be defined or improved.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -7075,7 +7075,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7108,7 +7108,7 @@
       "aliases": [],
       "description": "Internal prototype QA helper. Use only after a Product Design prototype, URL-to-code build, or image-to-code build has a source visual target and a rendered implementation to compare before handoff. Do not use for broad UX critique, design critique, product audits, or flow reviews; route those user-facing requests to audit.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -7147,7 +7147,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7180,7 +7180,7 @@
       "aliases": [],
       "description": "LP・広告・SNS投稿・メール・スライドなど各種クリエイティブの視覚品質、分かりやすさ、コンバージョン適性をレビューする。",
       "example": "このバナーをデザインチェックして",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -7230,7 +7230,7 @@
           "design-qc"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7263,7 +7263,7 @@
       "aliases": [],
       "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -7302,7 +7302,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7335,7 +7335,7 @@
       "aliases": [],
       "description": "Create, edit, redline, and comment on `.docx`, Word, and Google Docs-targeted document artifacts inside the container, with a strict render-and-verify workflow. Use `render_docx.py` to generate page PNGs (and optional PDF) for visual QA, then iterate until layout is flawless before delivering the final document.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -7374,7 +7374,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7407,7 +7407,7 @@
       "aliases": [],
       "description": "Word文書（.docx）の作成・読み取り・編集を行う。目次やページ番号などの整形にも対応する。",
       "example": "この内容をWord文書にまとめて",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -7453,7 +7453,7 @@
           "docx"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7486,7 +7486,7 @@
       "aliases": [],
       "description": "プロジェクトのドメインモデルを構築・洗練し、用語集やアーキテクチャ決定を記録する。",
       "example": "このプロジェクトの用語を整理して",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -7536,7 +7536,7 @@
           "domain-modeling"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7569,7 +7569,7 @@
       "aliases": [],
       "description": "過去の議事録やメールのやり取りを踏まえ、クライアント向け提案書の下書きを作成する。",
       "example": "この案件の提案書のたたき台を作って",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -7617,7 +7617,7 @@
           "draft-client-proposal"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7650,7 +7650,7 @@
       "aliases": [],
       "description": "過去の議事録やメールのやり取りを踏まえ、クライアント向け提案書の下書きを作成する。",
       "example": "この案件の提案書のたたき台を作って",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -7698,7 +7698,7 @@
           "draft-client-proposal"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7731,7 +7731,7 @@
       "aliases": [],
       "description": "過去の議事録や直近のメールのやり取りをもとに、相手先の状況に合わせた営業メールの下書きを作成する。",
       "example": "この会社宛ての営業メールを下書きして",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -7779,7 +7779,7 @@
           "draft-sales-email"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7812,7 +7812,7 @@
       "aliases": [],
       "description": "過去の議事録や直近のメールのやり取りをもとに、相手先の状況に合わせた営業メールの下書きを作成する。",
       "example": "この会社宛ての営業メールを下書きして",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -7860,7 +7860,7 @@
           "draft-sales-email"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7893,7 +7893,7 @@
       "aliases": [],
       "description": "Control an open or active Microsoft Excel workbook through the ChatGPT add-in or connected session. Use when the user tags the Microsoft Excel app in Codex or follows up on an established live Excel task. Do not use for standalone spreadsheet files or Google Sheets.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -7932,7 +7932,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7965,7 +7965,7 @@
       "aliases": [],
       "description": "Use when you have a written implementation plan to execute in a separate session with review checkpoints",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -8004,7 +8004,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8037,7 +8037,7 @@
       "aliases": [],
       "description": "「既存更新」の際に、過去に見込みのあった既存顧客を担当別に最大3件ずつ優先度をつけて掘り起こす。",
       "example": "既存更新の対象を担当ごとに提案して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -8085,7 +8085,7 @@
           "existing-attacker"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8118,7 +8118,7 @@
       "aliases": [],
       "description": "このセッションのトークンがどこで使われたかを、簡単なグラフと分かりやすい言葉で説明する。",
       "example": "今回のトークン使用量を教えて",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -8164,7 +8164,7 @@
           "explain-usage"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8197,7 +8197,7 @@
       "aliases": [],
       "description": "Use when Codex is already in the finding-discovery phase of a security scan or the user explicitly asks to discover candidate security findings in a repository or code change. Do not use as the primary trigger for full PR, commit, branch, patch, or repository scans.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -8236,7 +8236,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8269,7 +8269,7 @@
       "aliases": [],
       "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -8308,7 +8308,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8341,7 +8341,7 @@
       "aliases": [],
       "description": "Use when the user explicitly asks to fix and verify a validated or plausible security finding. Do not use as the primary trigger for full PR, commit, branch, patch, or repository scans.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -8380,7 +8380,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8413,7 +8413,7 @@
       "aliases": [],
       "description": "Create a short, playful animated GIF from a user-supplied image when they ask for a funny image transformation.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -8456,7 +8456,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8489,7 +8489,7 @@
       "aliases": [],
       "description": "Gather business context from connected or provided sources so downstream analysis starts with the right framing. Use when an analytical question depends on missing context, such as what a metric means, what changed recently, or which sources should be checked. If the same prompt asks for diagnosis, recommendation, or a deliverable, gather context first and continue to the focused skill.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -8528,7 +8528,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8561,7 +8561,7 @@
       "aliases": [],
       "description": "Mandatory design-brief gate for clarifying the product and outcome. Use before ideation, image-to-code builds, redesigns, or product UI work to clarify missing product information and play back the brief before proceeding.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -8600,7 +8600,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8633,7 +8633,7 @@
       "aliases": [],
       "description": "Google広告データを分析し、単発の監査または承認制の日次改善提案を行う。",
       "example": "このアカウントのGoogle広告を分析して",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -8683,7 +8683,7 @@
           "google-ads-consultant"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8716,7 +8716,7 @@
       "aliases": [],
       "description": "Prompt- and template-complete Google Docs creation and editing with explicit-instruction-authoritative structural preservation, including semantic roles, relationships, comparison dimensions, and instructed extensions; full-topology native-copy routing; source-grounded per-tab adaptation for past/example references; style-preserving hyperlink and table edits; canonical smart-chip-first authoring for dates and relevant supported people or Google resources; a file-backed advisory trusted read before existing-document writes; automatic protected-control awareness; direct connector APIs by default; DOCX-first import only when no supplied Google Doc template/reference constrains the output; and checked-in code mode only for exact native dropdown mutation. Use when Codex must create, edit, fill, adapt, redesign, or verify Google Docs without overriding explicit user/template instructions, adding unrequested document scope, or carrying stale reference facts into a new deliverable.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -8755,7 +8755,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8788,7 +8788,7 @@
       "aliases": [],
       "description": "Use connected Google Drive as the single entrypoint for Drive, Docs, Sheets, and Slides work. Use when the user wants to find, fetch, organize, share, export, copy, or delete Drive files, or summarize and edit Google Docs, Google Sheets, and Google Slides through one unified Google Drive plugin.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -8827,7 +8827,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8860,7 +8860,7 @@
       "aliases": [],
       "description": "Write, reply to, and resolve Google Drive comments on Docs, Sheets, Slides, and Drive files with evidence-backed location context. Use when the user asks to leave comments, review a file with comments, respond to comment threads, or resolve Drive comments.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -8899,7 +8899,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8932,7 +8932,7 @@
       "aliases": [],
       "description": "Analyze and edit connected Google Sheets with range precision. Use when the user wants to create Google Sheets, find a spreadsheet, inspect tabs or ranges, search rows, plan formulas, create or repair charts, clean or restructure tables, write concise summaries, or make explicit cell-range updates.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -8971,7 +8971,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9004,7 +9004,7 @@
       "aliases": [],
       "description": "Route Google Slides authoring requests and derive a design system from a native template or reference deck. Use this skill when the user provides an existing native Google Slides deck as a template, reference, or prior-period source, or asks to edit, update, repair, restyle, or clean up an existing native Google Slides deck. Use the Presentations skill instead for net-new presentation creation when no existing native Google Slides deck must be followed.",
       "example": "",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -9043,7 +9043,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9076,7 +9076,7 @@
       "aliases": [],
       "description": "壁打ちインタビューと同時に、ADRや用語集などのドキュメントも作成していく。",
       "example": "このプランを壁打ちしながらドキュメント化して",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -9126,7 +9126,7 @@
           "grill-with-docs"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9161,7 +9161,7 @@
       ],
       "description": "計画・決定・アイデアについてユーザーを容赦なく問い詰め、思考を鍛える。",
       "example": "この決定について厳しく突っ込んで",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -9211,7 +9211,7 @@
           "grilling"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9244,7 +9244,7 @@
       "aliases": [],
       "description": "Generate image-based alternatives, remixes, or new design directions from a Product Design brief. Use when the user asks for design variants, visual exploration, remixes, or image-generated approaches from provided context.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -9283,7 +9283,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9316,7 +9316,7 @@
       "aliases": [],
       "description": "Implement a selected image, screenshot, mockup, or Image Gen reference as a faithful, responsive frontend.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -9355,7 +9355,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9388,7 +9388,7 @@
       "aliases": [],
       "description": "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "openai",
@@ -9427,7 +9427,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9460,7 +9460,7 @@
       "aliases": [],
       "description": "仕様書やチケット一式をもとに、実際の実装作業を行う。",
       "example": "このチケットの内容を実装して",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -9510,7 +9510,7 @@
           "implement"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9543,7 +9543,7 @@
       "aliases": [],
       "description": "Route Data Analytics plugin-level requests and broad analytics work to the right focused workflow. Use when Data Analytics is at-mentioned, or for analytics requests involving data, metrics, dashboards, reports, charts, notebooks, spreadsheets, KPIs, market sizing, or semantic layers.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -9582,7 +9582,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9615,7 +9615,7 @@
       "aliases": [],
       "description": "Use when Product Design is explicitly invoked, or when the user's main goal is to explore a design, research UX, audit or critique a flow, faithfully clone a visual source, check a built design, or share a prototype. Do not use Product Design for ordinary implementation unless the user explicitly asks for it.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -9654,7 +9654,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9687,7 +9687,7 @@
       "aliases": [],
       "description": "日本語と英語を自然で正確な表現に校正・翻訳する。",
       "example": "この文章を自然な英語に翻訳して",
-      "category": "meeting-writing-translation",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -9737,7 +9737,7 @@
           "japanese-english-translator"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9770,7 +9770,7 @@
       "aliases": [],
       "description": "日本語と韓国語を自然で正確な表現に校正・翻訳する。",
       "example": "この文章を自然な韓国語に翻訳して",
-      "category": "meeting-writing-translation",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -9820,7 +9820,7 @@
           "japanese-korean-translator"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9853,7 +9853,7 @@
       "aliases": [],
       "description": "Create, edit, or validate reproducible SQL or Python notebooks. Use for notebooks, SQL/Python scratchpads, reproducible exploration, audit trails, or runnable companions where the analysis should be reviewable or rerunnable.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -9892,7 +9892,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9925,7 +9925,7 @@
       "aliases": [],
       "description": "きものブレイン支援シートの既存フォーマットに合わせて、ゆいいつ・ItoguchiのTODOを確認・追記・更新する。",
       "example": "きものブレインのTODOを更新して",
-      "category": "task-operations",
+      "category": "business-operations",
       "projectTags": [
         "ゆいいつ",
         "きものブレイン"
@@ -9978,7 +9978,7 @@
           "kimono-brain-todo-management"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10011,7 +10011,7 @@
       "aliases": [],
       "description": "Prepare KPI readouts, scorecards, WBR/MBR/QBR updates, and executive summaries from quantitative business or product metrics; use when the task is to report status, compare against targets, explain validated drivers, and state operating implications.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -10050,7 +10050,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10083,7 +10083,7 @@
       "aliases": [],
       "description": "MakeLeapsに新しい取引先を登録し、登録内容を確認する。",
       "example": "この取引先をMakeLeapsに登録して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -10131,7 +10131,7 @@
           "makeleaps-client-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10164,7 +10164,7 @@
       "aliases": [],
       "description": "MakeLeapsに新しい取引先を登録し、登録内容を確認する。",
       "example": "この取引先をMakeLeapsに登録して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -10212,7 +10212,7 @@
           "makeleaps-client-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10245,7 +10245,7 @@
       "aliases": [],
       "description": "受注内容からMakeLeapsの発注書（自社宛）を作成し、内容を確認する。",
       "example": "この受注内容で発注書を作って",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -10293,7 +10293,7 @@
           "makeleaps-orderslip-creation"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10326,7 +10326,7 @@
       "aliases": [],
       "description": "受注内容からMakeLeapsの発注書（自社宛）を作成し、内容を確認する。",
       "example": "この受注内容で発注書を作って",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -10374,7 +10374,7 @@
           "makeleaps-orderslip-creation"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10407,7 +10407,7 @@
       "aliases": [],
       "description": "Manage, reconcile, and safely distribute user-authored skills and shared instructions between Codex and Claude through one canonical source. Use for ANY request to create, edit, rename, or retire a user-authored skill in Codex or Claude - including 「スキルを作って」「スキル化して」「スキルを更新して」 - and when importing, auditing, or mirroring cross-environment AI configuration.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -10437,8 +10437,9 @@
           "invocation": "/manage-codex-claude-mirroring",
           "detectedBy": "user-skill-directory",
           "contentHash": "sha256:08792e22fc0d9bb52f4c94b0cf9d7b2065f0b0f0d3a13776fa040767133e3736",
-          "availability": "verified",
-          "evidenceType": "verified_runtime"
+          "availability": "installed_unverified",
+          "evidenceType": "file_hash_verified",
+          "verificationNote": "ファイル配置・ハッシュ一致を確認。実動テストは未実施。"
         }
       },
       "mirror": {
@@ -10450,7 +10451,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10483,7 +10484,7 @@
       "aliases": [],
       "description": "Estimate market, segment, or opportunity size with transparent assumptions and uncertainty. Use for TAM/SAM/SOM, sizing scenarios, or comparing the scale of possible opportunities.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -10522,7 +10523,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10555,7 +10556,7 @@
       "aliases": [],
       "description": "会議メモや文字起こしをADV標準の議事録形式に整え、確認後にNotionのメモ・議事録ビューへ登録する。",
       "example": "この議事録をNotionに登録して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -10603,7 +10604,7 @@
           "meeting-minutes-notion-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10636,7 +10637,7 @@
       "aliases": [],
       "description": "会議メモや文字起こしをADV標準の議事録形式に整え、確認後にNotionのメモ・議事録ビューへ登録する。",
       "example": "この議事録をNotionに登録して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -10684,7 +10685,7 @@
           "meeting-minutes-notion-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10717,7 +10718,7 @@
       "aliases": [],
       "description": "Diagnose why a metric changed or differs from expectation. Use when the task is to identify likely drivers of a metric movement, anomaly, gap, or discrepancy.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -10756,7 +10757,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10789,7 +10790,7 @@
       "aliases": [],
       "description": "ユーザーの依頼に応じて、Slackを除いた読み取り専用の日次優先ブリーフをまとめる。",
       "example": "今日のTODOをまとめて",
-      "category": "task-operations",
+      "category": "business-operations",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -10835,7 +10836,7 @@
           "mission-control-daily-brief"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10868,7 +10869,7 @@
       "aliases": [],
       "description": "会議の文字起こしや議事録を会議後フローで処理し、議事録・Slack文案・CRM整理と根拠ある次アクションを関連スキルへつなぐ。",
       "example": "議事録を共有したので、以降の対応をお願い",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -10916,7 +10917,7 @@
           "mtg-after-automation"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10949,7 +10950,7 @@
       "aliases": [],
       "description": "会議の文字起こしや議事録を会議後フローで処理し、議事録・Slack文案・CRM整理と根拠ある次アクションを関連スキルへつなぐ。",
       "example": "議事録を共有したので、以降の対応をお願い",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -10997,7 +10998,7 @@
           "mtg-after-automation"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11030,7 +11031,7 @@
       "aliases": [],
       "description": "「新規更新」向けに新規アプリの営業候補選定、ストア情報更新、送付準備を根拠付きで整える。",
       "example": "新規開拓の候補を提案して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -11078,7 +11079,7 @@
           "new-attacker"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11111,7 +11112,7 @@
       "aliases": [],
       "description": "Capture conversations and decisions into structured Notion pages; use when turning chats/notes into wiki entries, how-tos, decisions, or FAQs with proper linking.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -11150,7 +11151,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11183,7 +11184,7 @@
       "aliases": [],
       "description": "Prepare meeting materials with Notion context and supplemental research; use when gathering context, drafting agendas/pre-reads, and tailoring materials to attendees.",
       "example": "",
-      "category": "meeting-writing-translation",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -11222,7 +11223,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11255,7 +11256,7 @@
       "aliases": [],
       "description": "Research across Notion and synthesize into structured documentation; use when gathering info from multiple Notion sources to produce briefs, comparisons, or reports with citations.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -11294,7 +11295,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11327,7 +11328,7 @@
       "aliases": [],
       "description": "Turn Notion specs into implementation plans, tasks, and progress tracking; use when implementing PRDs/feature specs and creating Notion plans + tasks from them.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -11366,7 +11367,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11399,7 +11400,7 @@
       "aliases": [],
       "description": "Use for Codex models/pricing, scheduled tasks, skills, settings, setup, troubleshooting, customization, automations, and self-knowledge—including 'you,' 'your,' 'this app,' or 'this coding agent' when they refer to Codex—and for OpenAI APIs/products and ChatGPT Work. Also use for model choice/migration, prompting, SDKs, Responses, Realtime, agents, evals, and Chat/Work/Codex comparisons. Do not use for generic app/software tasks that merely mention Codex.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "openai",
@@ -11438,7 +11439,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11471,7 +11472,7 @@
       "aliases": [],
       "description": "ほぼ全てのタスクで基準となる判断基準・手段選定・確認要否・表現スタイルなどの運用方針。",
       "example": "(他のスキルが内部的に参照する基盤方針)",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -11517,7 +11518,7 @@
           "operating-principles"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11550,7 +11551,7 @@
       "aliases": [],
       "description": "Macの動作や容量を安全に診断し、不要なローカルデータの整理を支援する。",
       "example": "PCを軽量化したい",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -11600,7 +11601,7 @@
           "pc-lightening"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11633,7 +11634,7 @@
       "aliases": [],
       "description": "PDFの読み取り・結合・分割・回転・透かし追加・フォーム入力・OCRなど、あらゆる操作を行う。",
       "example": "このPDFを結合して",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -11679,7 +11680,7 @@
           "pdf"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11712,7 +11713,7 @@
       "aliases": [],
       "description": "Pipedriveで組織・担当者・取引の登録や更新、パイプラインのステータス変更、Todo・アクティビティ管理を一貫して行う。",
       "example": "この商談をPipedriveに登録して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -11760,7 +11761,7 @@
           "pipedrive-manage-sales"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11793,7 +11794,7 @@
       "aliases": [],
       "description": "Pipedriveで組織・担当者・取引の登録や更新、パイプラインのステータス変更、Todo・アクティビティ管理を一貫して行う。",
       "example": "この商談をPipedriveに登録して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -11841,7 +11842,7 @@
           "pipedrive-manage-sales"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11874,7 +11875,7 @@
       "aliases": [],
       "description": "サービスや商品のランディングページの構成・訴求・キャッチコピー・CTA・必要素材を設計する。",
       "example": "このサービスのLP構成を考えて",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -11924,7 +11925,7 @@
           "plan-landing-page"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11957,7 +11958,7 @@
       "aliases": [],
       "description": "Create and scaffold plugin directories for Codex with a required `.codex-plugin/plugin.json`, optional plugin folders/files, valid manifest defaults, and personal-marketplace entries by default. Use when Codex needs to create a new personal plugin, add optional plugin structure, generate or update marketplace entries for plugin ordering and availability metadata, or update an existing local plugin during development with the CLI-driven cachebuster and reinstall flow.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "openai",
@@ -11996,7 +11997,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12029,7 +12030,7 @@
       "aliases": [],
       "description": "Discover and suggest relevant plugins, inspect app permissions and dependencies, and manage plugin connections or removal. Use when the user asks about plugins or when a task would materially benefit from an external app, account, service, or data source that available tools cannot access.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -12068,7 +12069,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12101,7 +12102,7 @@
       "aliases": [],
       "description": "受注後業務をまとめて進行し、取引先登録・MakeLeaps発注書・売上票・施策シートを案件に応じて計画し、承認後に実行する。",
       "example": "受注後業務の対応をお願い",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -12149,7 +12150,7 @@
           "post-order-operations-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12182,7 +12183,7 @@
       "aliases": [],
       "description": "受注後業務をまとめて進行し、取引先登録・MakeLeaps発注書・売上票・施策シートを案件に応じて計画し、承認後に実行する。",
       "example": "受注後業務の対応をお願い",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -12230,7 +12231,7 @@
           "post-order-operations-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12263,7 +12264,7 @@
       "aliases": [],
       "description": "PowerPoint（.pptx）の作成・読み取り・編集を行う。テンプレートやレイアウトにも対応する。",
       "example": "この内容でスライドを作って",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -12309,7 +12310,7 @@
           "pptx"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12342,7 +12343,7 @@
       "aliases": [],
       "description": "Read, create or edit PowerPoint or Google Slides decks. Use for presentation, slide deck, PowerPoint, PPT, PPTX, or Google Slides requests.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -12381,7 +12382,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12414,7 +12415,7 @@
       "aliases": [],
       "description": "Analyze product or business data to support a decision or recommendation. Use when a decision depends on metric-backed evidence, such as choosing a direction, prioritizing an opportunity, evaluating a change, segmenting users, sizing tradeoffs, or deciding what to do next.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -12453,7 +12454,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12486,7 +12487,7 @@
       "aliases": [],
       "description": "Develop evidence-backed structural and architectural security hardening proposals from vulnerability disclosures, supplied findings, incident or assessment documents, source code, or a completed Codex Security scan. Use when a user asks for systemic improvements, alternatives beyond per-finding patches, before-and-after security architecture views, engineering tradeoff analysis, or an implementation-ready plan for a selected hardening option. Also use automatically after a Codex Security scan with reportable findings when the top-level scan workflow requests final-report hardening guidance.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -12525,7 +12526,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12558,7 +12559,7 @@
       "aliases": [],
       "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -12601,7 +12602,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12634,7 +12635,7 @@
       "aliases": [],
       "description": "Publish a validated Data Analytics report or dashboard artifact through Sites. Use automatically for durable artifacts in any positively identified Work Mode when the full Sites lifecycle is callable, or in ChatGPT Desktop outside Work Mode only after an explicit Sites request or acceptance of the optional post-handoff sharing offer.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -12673,7 +12674,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12706,7 +12707,7 @@
       "aliases": [],
       "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -12745,7 +12746,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12778,7 +12779,7 @@
       "aliases": [],
       "description": "Record the user's actions on their Mac with Record & Replay, and turn it into a reusable ChatGPT skill from the captured event stream.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -12817,7 +12818,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12850,7 +12851,7 @@
       "aliases": [],
       "description": "Narrow conversion skill. Invoke only when the user explicitly asks to convert an existing local or blob-hosted HTML analytics report into a Google Doc, DOCX, or shareable document.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -12889,7 +12890,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12922,7 +12923,7 @@
       "aliases": [],
       "description": "Narrow conversion skill. Invoke only when the user explicitly asks to convert an existing HTML analytics report into a native Google Slides deck.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -12961,7 +12962,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12994,7 +12995,7 @@
       "aliases": [],
       "description": "Narrow conversion skill. Invoke only when the user explicitly asks to convert an existing Data Analytics report, dashboard, or inline chart export into a PDF artifact.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -13033,7 +13034,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13066,7 +13067,7 @@
       "aliases": [],
       "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -13105,7 +13106,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13138,7 +13139,7 @@
       "aliases": [],
       "description": "信頼できる一次情報をもとに調査し、結果をMarkdownファイルとして記録する。",
       "example": "このテーマについて調べてまとめて",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -13184,7 +13185,7 @@
           "research"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13217,7 +13218,7 @@
       "aliases": [],
       "description": "Perform a read-only, defect-first review of a specified code change and return every actionable finding. Use when another agent delegates review of uncommitted changes, a base-branch diff, a commit, or custom review instructions.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "openai",
@@ -13256,7 +13257,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13289,7 +13290,7 @@
       "aliases": [],
       "description": "レビューまたはクリーニング案件について、売上票だけを追加・更新する。",
       "example": "このクリーニング案件を売上票に記入して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -13337,7 +13338,7 @@
           "review-cleaning-sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13370,7 +13371,7 @@
       "aliases": [],
       "description": "レビューまたはクリーニング案件について、売上票だけを追加・更新する。",
       "example": "このクリーニング案件を売上票に記入して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -13418,7 +13419,7 @@
           "review-cleaning-sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13451,7 +13452,7 @@
       "aliases": [],
       "description": "レビュー施策またはクリーニング施策の受注後に、正式テンプレートからクライアント用スプレッドシートを発行し、必要な設定まで完了する。",
       "example": "レビュー施策のシートを発行して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -13499,7 +13500,7 @@
           "review-cleaning-sheet-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13532,7 +13533,7 @@
       "aliases": [],
       "description": "レビュー施策またはクリーニング施策の受注後に、正式テンプレートからクライアント用スプレッドシートを発行し、必要な設定まで完了する。",
       "example": "レビュー施策のシートを発行して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -13580,7 +13581,7 @@
           "review-cleaning-sheet-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13613,7 +13614,7 @@
       "aliases": [],
       "description": "レビュー施策のスクリーンショット自動化について、新案件追加や設定変更を安全テスト付きで行う。",
       "example": "レビュー自動化に新しい案件を追加して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -13661,7 +13662,7 @@
           "review-screenshot-automation-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13694,7 +13695,7 @@
       "aliases": [],
       "description": "レビュー施策のスクリーンショット自動化について、新案件追加や設定変更を安全テスト付きで行う。",
       "example": "レビュー自動化に新しい案件を追加して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -13742,7 +13743,7 @@
           "review-screenshot-automation-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13775,7 +13776,7 @@
       "aliases": [],
       "description": "レビュー施策の日々のスクリーンショット反映、失敗案件対応、残回数通知を確認・運用する。",
       "example": "今日のレビュースクリーンショットを反映して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -13823,7 +13824,7 @@
           "review-screenshot-daily-operations"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13856,7 +13857,7 @@
       "aliases": [],
       "description": "レビュー施策の日々のスクリーンショット反映、失敗案件対応、残回数通知を確認・運用する。",
       "example": "今日のレビュースクリーンショットを反映して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -13904,7 +13905,7 @@
           "review-screenshot-daily-operations"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13937,7 +13938,7 @@
       "aliases": [],
       "description": "レビュー施策のスクリーンショット業務を、日次反映か新規設定かで適切なスキルへ振り分ける。",
       "example": "このレビュー案件、次は何をすればいい?",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -13985,7 +13986,7 @@
           "review-screenshot-reflection"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14018,7 +14019,7 @@
       "aliases": [],
       "description": "レビュー施策のスクリーンショット業務を、日次反映か新規設定かで適切なスキルへ振り分ける。",
       "example": "このレビュー案件、次は何をすればいい?",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -14066,7 +14067,7 @@
           "review-screenshot-reflection"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14099,7 +14100,7 @@
       "aliases": [],
       "description": "初回接点から受注・施策実行までを、資料と会話の文脈から一気通貫で整理・進行する。",
       "example": "この案件、初回接点から今までの流れをまとめて次を進めて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -14147,7 +14148,7 @@
           "sales-deal-lifecycle-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14180,7 +14181,7 @@
       "aliases": [],
       "description": "初回接点から受注・施策実行までを、資料と会話の文脈から一気通貫で整理・進行する。",
       "example": "この案件、初回接点から今までの流れをまとめて次を進めて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -14228,7 +14229,7 @@
           "sales-deal-lifecycle-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14261,7 +14262,7 @@
       "aliases": [],
       "description": "売上票に受注後の案件情報（クライアント・サービス・金額・期間・担当）を追加・更新する。",
       "example": "この受注内容を売上票に反映して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -14309,7 +14310,7 @@
           "sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14342,7 +14343,7 @@
       "aliases": [],
       "description": "売上票に受注後の案件情報（クライアント・サービス・金額・期間・担当）を追加・更新する。",
       "example": "この受注内容を売上票に反映して",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -14390,7 +14391,7 @@
           "sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14423,7 +14424,7 @@
       "aliases": [],
       "description": "Review a pull request, commit, branch diff, or working-tree patch for security vulnerabilities.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -14462,7 +14463,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14495,7 +14496,7 @@
       "aliases": [],
       "description": "Use for a standard, single-pass security audit of an entire repository or a scoped path, package, folder, or submodule with no diff to review. This is the default repository scan. Do not use for PR, commit, branch, or working-tree diffs, or for deep, multi-pass scans.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -14534,7 +14535,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14567,7 +14568,7 @@
       "aliases": [],
       "description": "Maintain and execute an explicitly approved TODO queue one item at a time, preserving request order, merging related additions, and requiring user confirmation before completion. Use when the user asks an AI COO or execution owner to keep advancing a queue until empty; do not use for an ordinary single task.",
       "example": "",
-      "category": "task-operations",
+      "category": "business-operations",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -14610,7 +14611,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14643,7 +14644,7 @@
       "aliases": [],
       "description": "プラグイン導入・スキル体験・ツール接続までを案内するCoworkの初期セットアップ。",
       "example": "Coworkの初期設定を手伝って",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -14689,7 +14690,7 @@
           "setup-cowork"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14722,7 +14723,7 @@
       "aliases": [],
       "description": "他のエンジニアリングスキル群を使う前に、課題管理・トリアージ用語・ドキュメント構成を初期設定する。",
       "example": "エンジニアリングスキル群の初期設定をして",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -14772,7 +14773,7 @@
           "setup-matt-pocock-skills"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14805,7 +14806,7 @@
       "aliases": [],
       "description": "Share a runnable prototype using the user's preferred deployment tool.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -14844,7 +14845,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14877,7 +14878,7 @@
       "aliases": [],
       "description": "Use Sites to build websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Always use Sites when the project contains `.openai/hosting.json`.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -14916,7 +14917,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14949,7 +14950,7 @@
       "aliases": [],
       "description": "Host websites with Sites. Always use after `sites-building`, and use for website publishing, deployment, hosting management, or projects containing `.openai/hosting.json`.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -14988,7 +14989,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15021,7 +15022,7 @@
       "aliases": [],
       "description": "新しいスキルの作成、既存スキルの編集・最適化、性能評価を行う。",
       "example": "新しいスキルを作りたい",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "openai",
@@ -15067,7 +15068,7 @@
           "skill-creator"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15100,7 +15101,7 @@
       "aliases": [],
       "description": "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos).",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "openai",
@@ -15139,7 +15140,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15172,7 +15173,7 @@
       "aliases": [],
       "description": "提供された資料から、10枚以内のビジネスプレゼン用アウトラインを作成する。",
       "example": "この資料でスライドの構成案を作って",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -15222,7 +15223,7 @@
           "slide-outline-generator"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15255,7 +15256,7 @@
       "aliases": [],
       "description": "Use skill when user requests to create, modify, analyze, visualize, or work with spreadsheet files (`.xlsx`, `.xls`, `.csv`, `.tsv`) or Google Sheets with formulas, formatting, charts, tables, and recalculation. Do not use for live controlling Microsoft Excel app or a live Excel session.",
       "example": "",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -15294,7 +15295,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15327,7 +15328,7 @@
       "aliases": [],
       "description": "YouTube・TikTokなどの動画・SNSチャンネルのソーシャル検索最適化を評価し、改善案を提案する。",
       "example": "このYouTubeチャンネルの発見されやすさを調べて",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -15377,7 +15378,7 @@
           "sso-quick-diagnostics"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15410,7 +15411,7 @@
       "aliases": [],
       "description": "検品スキル。作業後に別のAIが厳しめに見直し、必要な修正まで行う最終チェック用のSkillです。",
       "example": "厳しめの再確認をお願い！",
-      "category": "hall-of-fame",
+      "category": "recommended",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -15453,7 +15454,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15486,7 +15487,7 @@
       "aliases": [],
       "description": "Use when executing implementation plans with independent tasks in the current session",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -15525,7 +15526,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15558,7 +15559,7 @@
       "aliases": [],
       "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -15597,7 +15598,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15630,7 +15631,7 @@
       "aliases": [],
       "description": "Slack・Gmail・カレンダー・Pipedriveから対応が必要な事項だけを読み取り、重複のない短いTODO候補を作る。",
       "example": "今日のTODOを集めて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -15678,7 +15679,7 @@
           "task-collection-daily-brief"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15711,7 +15712,7 @@
       "aliases": [],
       "description": "Slack・Gmail・カレンダー・Pipedriveから対応が必要な事項だけを読み取り、重複のない短いTODO候補を作る。",
       "example": "今日のTODOを集めて",
-      "category": "adv",
+      "category": "business-operations",
       "projectTags": [
         "ADV"
       ],
@@ -15759,7 +15760,7 @@
           "task-collection-daily-brief"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15792,7 +15793,7 @@
       "aliases": [],
       "description": "タスクデポの日次収集とPipedrive/スプシ反映を平日7:00に実行する",
       "example": "",
-      "category": "task-operations",
+      "category": "business-operations",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -15831,7 +15832,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15864,7 +15865,7 @@
       "aliases": [],
       "description": "Slack・Gmail・Calendar・Pipedriveの収集、Pipedriveへの双方向反映、ADV Myシートの取り込みと取り込み済み行の削除、Driveバックアップを平日7:00に実行する",
       "example": "",
-      "category": "task-operations",
+      "category": "business-operations",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -15903,7 +15904,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15936,7 +15937,7 @@
       "aliases": [],
       "description": "テスト駆動開発でRed-Greenサイクルを回しながら機能開発やバグ修正を行う。",
       "example": "TDDでこの機能を作って",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -15986,7 +15987,7 @@
           "tdd"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16019,7 +16020,7 @@
       "aliases": [],
       "description": "状態を保持する作業ディレクトリの中で、複数セッションにわたり新しいスキルや概念を教える。",
       "example": "このテーマについて教えて",
-      "category": "meeting-writing-translation",
+      "category": "creation-communication",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -16069,7 +16070,7 @@
           "teach"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16102,7 +16103,7 @@
       "aliases": [],
       "description": "Use when implementing any feature or bugfix, before writing implementation code",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -16141,7 +16142,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16174,7 +16175,7 @@
       "aliases": [],
       "description": "Use when Codex is already in the threat-modeling phase of a security scan, the user explicitly invokes $threat-model, or the user explicitly asks to create, update, or persist a repository threat model. Do not use as the primary trigger for full PR, commit, branch, patch, or repository scans.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -16213,7 +16214,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16246,7 +16247,7 @@
       "aliases": [],
       "description": "これまでの会話をそのまま仕様書にまとめ、課題管理ツールへ公開する。",
       "example": "この会話を仕様書にして登録して",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -16296,7 +16297,7 @@
           "to-spec"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16329,7 +16330,7 @@
       "aliases": [],
       "description": "計画や仕様、会話の内容を、依存関係を明示した実装チケット群に分解して公開する。",
       "example": "この計画をチケットに分解して",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -16379,7 +16380,7 @@
           "to-tickets"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16412,7 +16413,7 @@
       "aliases": [],
       "description": "ADV MyシートのTODOタブへ、会社・大項目・中項目・TODO詳細・対応日を既存の並び順と書式どおりに1行追加する。分類は文脈から推測し、対応日だけ不明なら確認する。",
       "example": "TODO追加！",
-      "category": "hall-of-fame",
+      "category": "recommended",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -16455,7 +16456,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16488,7 +16489,7 @@
       "aliases": [],
       "description": "Track validated Codex Security findings in Linear, Jira, GitHub issues, or draft GitHub security advisories. Use it for one finding or an explicitly selected batch of up to 25 findings tracked as Linear, Jira, or GitHub issues. Includes duplicate checks, exact previews, approval-gated writes, and readback. Do not use it for scans or fixes.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -16527,7 +16528,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16560,7 +16561,7 @@
       "aliases": [],
       "description": "Use when the user supplies or imports existing security findings, vulnerability reports, or security/vulnerability Jira/Linear tickets from scanners, advisories, GitHub, Atlassian Rovo, Linear, or similar backlog sources and wants static repo-impact triage. Do not use for discovery, duplicate-bug triage, validation, or fixes.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -16599,7 +16600,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16632,7 +16633,7 @@
       "aliases": [],
       "description": "Clone a live URL as a runnable frontend-only local app.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -16671,7 +16672,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16704,7 +16705,7 @@
       "aliases": [],
       "description": "Load or manage Product Design's saved user context. Use when the user asks to set up Product Design, get started, onboard, save product or design sources, see what Product Design remembers, update saved context, or remember Product Design preferences. Examples include product URLs, Figma files, screenshots, reference images, codebase paths, Storybook, tokens, design systems, brand assets, and general product/design notes.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -16743,7 +16744,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16776,7 +16777,7 @@
       "aliases": [],
       "description": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -16815,7 +16816,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16848,7 +16849,7 @@
       "aliases": [],
       "description": "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -16887,7 +16888,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16920,7 +16921,7 @@
       "aliases": [],
       "description": "Validate whether an analysis is accurate, well-supported, and ready to share or use for a decision. Use when reviewing methodology, calculations, comparisons, visuals, caveats, or conclusions.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -16959,7 +16960,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16992,7 +16993,7 @@
       "aliases": [],
       "description": "Use when Codex is already in the validation phase of a security scan or the user explicitly asks to determine whether one or more candidate security findings are valid. Do not use as the primary trigger for full PR, commit, branch, patch, or repository scans.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -17031,7 +17032,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17064,7 +17065,7 @@
       "aliases": [],
       "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -17103,7 +17104,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17136,7 +17137,7 @@
       "aliases": [],
       "description": "Use when the user asks whether an existing security fix, patch, finding, or completed issue actually remediates the original vulnerability without modifying the repository. Do not use to validate candidate findings, implement patches, or run full repository scans.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -17175,7 +17176,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17208,7 +17209,7 @@
       "aliases": [],
       "description": "Create visualizations and interactive tools directly in conversation. Proactively use to show how something works; explore 'what happens when', 'what changes', or 'help me understand'; compare or inspect; create simulations, maps, charts, graphs, and mockups. Use standard tools for static scientific figures.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -17247,7 +17248,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -17280,7 +17281,7 @@
       "aliases": [],
       "description": "Design, build, revise, or QA quantitative charts and figures. Use when an analytical answer needs visual judgment, whether for an inline answer, report, dashboard, notebook, or artifact.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -17319,7 +17320,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17352,7 +17353,7 @@
       "aliases": [],
       "description": "Turn vulnerability notes, disclosure reports, PoCs, source code, or Codex Security findings into self-contained, sceptically validated, natural-sounding vulnerability reports. Use for one vulnerability or a disclosure campaign; a Codex Security scan is optional.",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -17391,7 +17392,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17424,7 +17425,7 @@
       "aliases": [],
       "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -17463,7 +17464,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -17496,7 +17497,7 @@
       "aliases": [],
       "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "plugin",
@@ -17535,7 +17536,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17568,7 +17569,7 @@
       "aliases": [],
       "description": "スプレッドシート（.xlsx/.csv等）の作成・編集・数式計算・グラフ作成・データ整形を行う。",
       "example": "このデータを表にまとめて",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [],
       "provider": {
         "type": "legacy",
@@ -17614,7 +17615,7 @@
           "xlsx"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -17647,7 +17648,7 @@
       "aliases": [],
       "description": "ゆいいつGoogle広告について、データに基づく週次Slack下書きや隔週レポート更新、承認済み日次確認を行う。",
       "example": "ゆいいつの週次レポートを作って",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [
         "ゆいいつ",
         "きものブレイン"
@@ -17700,7 +17701,7 @@
           "yuiitsu-ad-reporting"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -17733,7 +17734,7 @@
       "aliases": [],
       "description": "8月登録分の30日窓が9/30に閉じたあと、30日以内申込を一度だけ丁寧に照合する",
       "example": "",
-      "category": "development-ai",
+      "category": "ai-development",
       "projectTags": [
         "ゆいいつ",
         "きものブレイン"
@@ -17775,7 +17776,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -17808,7 +17809,7 @@
       "aliases": [],
       "description": "ゆいいつの着物ビフォアフター施策で、素材確認から投稿一式作成、社内確認、投稿後管理までを進める。",
       "example": "着物ビフォアフターの投稿を準備して",
-      "category": "materials-design",
+      "category": "creation-communication",
       "projectTags": [
         "ゆいいつ",
         "きものブレイン"
@@ -17861,7 +17862,7 @@
           "yuiitsu-before-after-posts"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -17894,7 +17895,7 @@
       "aliases": [],
       "description": "ゆいいつGoogle広告の承認制デイリー分析を実行する。",
       "example": "デイリー分析開始",
-      "category": "ads-analysis",
+      "category": "growth-analytics",
       "projectTags": [
         "ゆいいつ",
         "きものブレイン"
@@ -17947,7 +17948,7 @@
           "yuiitsu-daily-ads-analysis"
         ]
       },
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -17980,7 +17981,7 @@
       "aliases": [],
       "description": "エルメMCPから前日分を取得してBA:BIへ追記し、直近30日の行を再評価し、人単位の原票A:Qを最新化する",
       "example": "",
-      "category": "task-operations",
+      "category": "business-operations",
       "projectTags": [
         "ゆいいつ",
         "きものブレイン"
@@ -17991,7 +17992,7 @@
       },
       "source": {
         "canonicalId": "claude-scheduled-tasks/yuiitsu-erume-daily-sync",
-        "contentHash": "sha256:43ca7ee62ca6a1f2423264bdf9b21e85a9747bd67e31e87609113b8fcd35fe28"
+        "contentHash": "sha256:85fbf45f6bee59dc4e1c01ce2e742e56dd34c57aa6e780ca67dd5837f89500bc"
       },
       "environments": {
         "codex": {
@@ -18008,7 +18009,7 @@
           "installed": true,
           "invocation": null,
           "detectedBy": "claude-scheduled-task-definition",
-          "contentHash": "sha256:43ca7ee62ca6a1f2423264bdf9b21e85a9747bd67e31e87609113b8fcd35fe28",
+          "contentHash": "sha256:85fbf45f6bee59dc4e1c01ce2e742e56dd34c57aa6e780ca67dd5837f89500bc",
           "availability": "installed_unverified",
           "evidenceType": "definition_file"
         }
@@ -18022,7 +18023,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -18057,7 +18058,7 @@
       ],
       "description": "重要なAI依頼を送る前に、目的・成果物・合格／失格条件・証拠・テスト・終了条件・権限の境界を明確にし、制作AI用と独立検品AI用の依頼文を作るSkillです。",
       "example": "依頼文精査お願い！",
-      "category": "hall-of-fame",
+      "category": "recommended",
       "projectTags": [],
       "provider": {
         "type": "user",
@@ -18101,7 +18102,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -18136,7 +18137,7 @@
       ],
       "description": "承認済み施策を、証拠確認、次タスク作成、判断カード、柔軟な日程調整まで一貫して進めるSkillです。",
       "example": "施策進行！",
-      "category": "hall-of-fame",
+      "category": "recommended",
       "projectTags": [
         "AI運用"
       ],
@@ -18176,7 +18177,7 @@
           "contentHash": "sha256:9e6a39a78bb91d435b721c5a07f35ad7691447bd42d727b7fd46d3d950fd016b",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
-          "verificationNote": "共通正本と同一ハッシュ。実動互換性は要確認。"
+          "verificationNote": "ファイル配置・ハッシュ一致を確認。実動テストは未実施。"
         }
       },
       "mirror": {
@@ -18188,7 +18189,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -18223,7 +18224,7 @@
       ],
       "description": "施策・方針・目標を、担当、実行場所、合格条件、承認点、最初のTODOへ落とし込む統括Skillです。",
       "example": "施策開始！",
-      "category": "hall-of-fame",
+      "category": "recommended",
       "projectTags": [
         "AI運用"
       ],
@@ -18261,7 +18262,7 @@
           "contentHash": "sha256:8723e214cf67b4444452a68eba6a7a5dffcaeaba41db262d25e120464ca5fb5a",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
-          "verificationNote": "共通正本と同一ハッシュ。実動互換性は要確認。"
+          "verificationNote": "ファイル配置・ハッシュ一致を確認。実動テストは未実施。"
         }
       },
       "mirror": {
@@ -18273,7 +18274,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-09T08:14:32.493Z",
+      "lastVerifiedAt": "2026-09-09T08:21:54.030Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
