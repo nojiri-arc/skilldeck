@@ -25,6 +25,9 @@ const CATEGORIES = [
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
 const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'strategy-execution-orchestrator', 'initiative-progress-manager', 'discord-ai-relay', 'communication-approval']);
 
+// トシが公開対象から除外するよう指定したレコード。実体の削除や自動化の停止は行わない。
+const PUBLIC_RECORD_EXCLUSIONS = new Set(['automation.claude.yuiitsu-offline-cv-import-check']);
+
 // 環境差分の精査でトシが明示的に「保持」を選んだ旧登録。
 // 現在の環境では未検出でも、削除候補には戻さない。
 const governanceOverrides = new Map([
@@ -765,7 +768,7 @@ const finalRecords = [...records.values()].map((record) => {
   record.usage = usageEvidence.forRecord(record);
   record.governance = governanceFor(record);
   return record;
-}).sort((a, b) => a.name.localeCompare(b.name, 'ja'));
+}).filter((record) => !PUBLIC_RECORD_EXCLUSIONS.has(record.id)).sort((a, b) => a.name.localeCompare(b.name, 'ja'));
 
 const capabilityMigrationDefinitions = [
   { legacyName: 'docx', currentName: 'documents', label: '文書作成（docx ⇄ Documents）' },
