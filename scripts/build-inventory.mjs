@@ -23,7 +23,7 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'strategy-execution-orchestrator', 'initiative-progress-manager', 'discord-ai-relay']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'strategy-execution-orchestrator', 'initiative-progress-manager', 'discord-ai-relay', 'communication-approval']);
 
 // 環境差分の精査でトシが明示的に「保持」を選んだ旧登録。
 // 現在の環境では未検出でも、削除候補には戻さない。
@@ -57,7 +57,7 @@ const userTextOverrides = new Map([
     example: '施策進行！'
   }],
   ['communication-approval', {
-    description: 'Gmailを基本に、指定されたSlack／LINEのやり取りを「確認→返信文案→個別承認後に送信」まで扱うSkillです。会話内の日程返信案は作成できますが、「スケ調整お願い」「スケジュール調整お願い」だけでは起動せず、送信やカレンダー登録も勝手に行いません。',
+    description: 'Gmailを基本に、指定されたSlack／LINEのやり取りを「確認→返信文案→個別承認後に送信」まで扱うSkillです。社外Slackでは、メンションと宛名を重ねず、既決条件を再掲せず、目的を添えた日程提案・読みやすい段落構成・明確な締めまで整えます。会話内の日程返信案は作成できますが、「スケ調整お願い」「スケジュール調整お願い」だけでは起動せず、送信やカレンダー登録も勝手に行いません。',
     example: 'コミュニケーションツールの横断確認お願い！'
   }],
   ['todo-add', {
@@ -66,8 +66,8 @@ const userTextOverrides = new Map([
   }]
 ]);
 
-// 表示名だけを日本語にし、判定・同期・正本IDにはSkill IDを使い続ける。
-const displayNameOverrides = new Map([
+// メイン表示は英語のSkill IDに統一し、日本語名がある場合だけ補助表示する。
+const japaneseNameOverrides = new Map([
   ['elegant-prompt', 'エレガント・プロンプト'],
   ['strategy-execution-orchestrator', '戦略→実行 統括'],
   ['initiative-progress-manager', '施策進行マネージャー']
@@ -399,7 +399,7 @@ function findUserRecord(skill) {
 
 function makeUserRecord(skill, env) {
   const skillId = canonicalName(skill.canonicalId || skill.name || skill.folder);
-  const displayName = displayNameOverrides.get(skillId) ?? skillId;
+  const displayName = skillId;
   const legacy = legacyByName.get(skillId);
   const existing = findUserRecord(skill);
   const rawName = String(existing?.name ?? displayName).trim().toLocaleLowerCase('ja');
@@ -408,6 +408,7 @@ function makeUserRecord(skill, env) {
     id: `user.${skillId}`,
     kind: 'skill',
     name: displayName,
+    ...(japaneseNameOverrides.has(skillId) ? { japaneseName: japaneseNameOverrides.get(skillId) } : {}),
     aliases: [],
     description: userTextOverrides.get(skillId)?.description ?? legacy?.d ?? skill.description ?? '説明は要確認です。',
     example: userTextOverrides.get(skillId)?.example ?? legacy?.e ?? '',
@@ -424,6 +425,9 @@ function makeUserRecord(skill, env) {
     lastVerifiedAt: now
   };
   records.set(record.id, record);
+  record.name = displayName;
+  if (japaneseNameOverrides.has(skillId)) record.japaneseName = japaneseNameOverrides.get(skillId);
+  else delete record.japaneseName;
   record.aliases = [...new Set([...record.aliases, ...aliasValues])];
   record.environments[env] = {
     ...makeEnvironment(true, env === 'codex' ? `$${skillId}` : `/${skillId}`, 'user-skill-directory', skill.hash),
