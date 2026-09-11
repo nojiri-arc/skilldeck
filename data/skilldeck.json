@@ -9417,7 +9417,7 @@
       "name": "initiative-progress-manager",
       "japaneseName": "施策進行マネージャー",
       "aliases": [],
-      "description": "承認済み施策を、証拠確認、次タスク作成、判断カード、柔軟な日程調整まで一貫して進めるSkillです。",
+      "description": "承認済みで進行中の施策を、次の1件の実行、証拠確認、正本更新、次タスク作成まで一貫して進めるSkillです。必要な判断だけをトシへ上げ、施策文脈がある場合に限って日程も組み直します。",
       "example": "施策進行！",
       "category": "hall-of-fame",
       "projectTags": [
@@ -9429,7 +9429,7 @@
       },
       "source": {
         "canonicalId": "skills/initiative-progress-manager",
-        "contentHash": "sha256:9e6a39a78bb91d435b721c5a07f35ad7691447bd42d727b7fd46d3d950fd016b"
+        "contentHash": "sha256:2af99c329aab6c42eb6c5be572e84914b00d3889e17854b222e13c480eeacb46"
       },
       "identity": {
         "frontmatterName": "initiative-progress-manager"
@@ -9446,7 +9446,7 @@
           "installed": true,
           "invocation": "$initiative-progress-manager",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:9e6a39a78bb91d435b721c5a07f35ad7691447bd42d727b7fd46d3d950fd016b",
+          "contentHash": "sha256:2af99c329aab6c42eb6c5be572e84914b00d3889e17854b222e13c480eeacb46",
           "availability": "verified",
           "evidenceType": "clean_room_test",
           "verificationNote": "Codex Clean Room Testを完了。"
@@ -9456,7 +9456,7 @@
           "installed": true,
           "invocation": "/initiative-progress-manager",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:9e6a39a78bb91d435b721c5a07f35ad7691447bd42d727b7fd46d3d950fd016b",
+          "contentHash": "sha256:2af99c329aab6c42eb6c5be572e84914b00d3889e17854b222e13c480eeacb46",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "ファイル配置・ハッシュ一致を確認。実動テストは未実施。"
@@ -9471,7 +9471,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
+      "lastVerifiedAt": "2026-09-11T13:51:16.938Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10955,6 +10955,92 @@
       "governance": {
         "status": "keep_recommended",
         "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "user.obsidian-record",
+      "kind": "skill",
+      "name": "obsidian-record",
+      "japaneseName": "Obsidian記録",
+      "aliases": [],
+      "description": "議事録・メモ・方針を、Obsidian Vaultのルールどおりの場所・項目で保存するSkillです。議事録ではToDoを表で示し、承認後だけtodo-addでタスクデポへ登録します。",
+      "example": "議事録保存して",
+      "category": "meeting-writing-translation",
+      "projectTags": [
+        "AI運用"
+      ],
+      "provider": {
+        "type": "user",
+        "name": "トシ用に作成"
+      },
+      "source": {
+        "canonicalId": "skills/obsidian-record",
+        "contentHash": "sha256:90c8b25861c33f42e167dc7e8a86804eb401ab17cd3e41da93e72222ff16ec7a"
+      },
+      "identity": {
+        "frontmatterName": "obsidian-record"
+      },
+      "triggers": [
+        "議事録保存して",
+        "メモしといて",
+        "方針更新して",
+        "$obsidian-record"
+      ],
+      "environments": {
+        "codex": {
+          "configured": true,
+          "installed": true,
+          "invocation": "$obsidian-record",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:90c8b25861c33f42e167dc7e8a86804eb401ab17cd3e41da93e72222ff16ec7a",
+          "availability": "installed_unverified",
+          "evidenceType": "file_hash_verified",
+          "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/obsidian-record",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:90c8b25861c33f42e167dc7e8a86804eb401ab17cd3e41da93e72222ff16ec7a",
+          "availability": "installed_unverified",
+          "evidenceType": "file_hash_verified",
+          "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
+        }
+      },
+      "mirror": {
+        "eligible": true,
+        "status": "synced",
+        "reasonCode": null,
+        "reason": null,
+        "portability": "directly_shareable"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-11T13:51:16.938Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 2,
+        "lastUsedAt": "2026-09-11T13:46:10.333Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-11T13:46:10.333Z"
+          },
+          "claude": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-11T13:43:47.276Z"
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し1セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "skill",
         "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
       }
     },
@@ -14462,7 +14548,7 @@
       "name": "strategy-execution-orchestrator",
       "japaneseName": "戦略→実行 統括",
       "aliases": [],
-      "description": "施策・方針・目標を、担当、実行場所、合格条件、承認点、最初のTODOへ落とし込む統括Skillです。",
+      "description": "これから始める施策・方針・目標を、担当、実行場所、合格条件、承認点、最初のTODOへ落とし込む設計用の統括Skillです。実行はせず、承認済み施策の進行はinitiative-progress-managerで扱います。",
       "example": "施策開始！",
       "category": "hall-of-fame",
       "projectTags": [
@@ -14474,7 +14560,7 @@
       },
       "source": {
         "canonicalId": "skills/strategy-execution-orchestrator",
-        "contentHash": "sha256:8723e214cf67b4444452a68eba6a7a5dffcaeaba41db262d25e120464ca5fb5a"
+        "contentHash": "sha256:298b990f1e328007758cc7846a2ee0520a216f81d9f2b711834297ff6fa1ec04"
       },
       "identity": {
         "frontmatterName": "strategy-execution-orchestrator"
@@ -14489,7 +14575,7 @@
           "installed": true,
           "invocation": "$strategy-execution-orchestrator",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:8723e214cf67b4444452a68eba6a7a5dffcaeaba41db262d25e120464ca5fb5a",
+          "contentHash": "sha256:298b990f1e328007758cc7846a2ee0520a216f81d9f2b711834297ff6fa1ec04",
           "availability": "verified",
           "evidenceType": "clean_room_test",
           "verificationNote": "Codex Clean Room Testを完了。"
@@ -14499,7 +14585,7 @@
           "installed": true,
           "invocation": "/strategy-execution-orchestrator",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:8723e214cf67b4444452a68eba6a7a5dffcaeaba41db262d25e120464ca5fb5a",
+          "contentHash": "sha256:298b990f1e328007758cc7846a2ee0520a216f81d9f2b711834297ff6fa1ec04",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "ファイル配置・ハッシュ一致を確認。実動テストは未実施。"
@@ -14514,7 +14600,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
+      "lastVerifiedAt": "2026-09-11T13:51:16.938Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15611,6 +15697,82 @@
         "status": "keep_recommended",
         "actionScope": "skill",
         "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "user.todo-share-table",
+      "kind": "skill",
+      "name": "todo-share-table",
+      "aliases": [],
+      "description": "TODO・ToDo・次のアクションをチャットで共有するとき、「担当｜やること｜期限」の表形式で示す。「TODO共有して」「TODOを表にして」「次のアクションを表で見せて」と頼まれたとき、または会議や作業の完了報告の最後にToDoを示すときに使う。TODOの登録（todo-add）、Task Depotの収集（task-depot-sync-now）、きものブレイン支援シートの更新には使わない。",
+      "example": "",
+      "category": "task-operations",
+      "projectTags": [],
+      "provider": {
+        "type": "user",
+        "name": "トシ用に作成"
+      },
+      "source": {
+        "canonicalId": "skills/todo-share-table",
+        "contentHash": "sha256:0da8d2354f75e1a877621b32339624a7a8ef363419a3a6c8b45b2ee1f3d9e70c"
+      },
+      "identity": {
+        "frontmatterName": "todo-share-table"
+      },
+      "triggers": [],
+      "environments": {
+        "codex": {
+          "configured": true,
+          "installed": true,
+          "invocation": "$todo-share-table",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:0da8d2354f75e1a877621b32339624a7a8ef363419a3a6c8b45b2ee1f3d9e70c",
+          "availability": "verified",
+          "evidenceType": "verified_runtime"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/todo-share-table",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:0da8d2354f75e1a877621b32339624a7a8ef363419a3a6c8b45b2ee1f3d9e70c",
+          "availability": "verified",
+          "evidenceType": "verified_runtime"
+        }
+      },
+      "mirror": {
+        "eligible": true,
+        "status": "synced",
+        "reasonCode": null,
+        "reason": null,
+        "portability": "directly_shareable"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-11T13:51:16.938Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "skill",
+        "reason": "ユーザー作成Skillのため自動削除しません。役割重複と今後の利用予定を確認して判断します。"
       }
     },
     {
