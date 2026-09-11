@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-10T14:52:17.250Z",
+  "generatedAt": "2026-09-11T01:08:11.008Z",
   "categories": [
     {
       "id": "hall-of-fame",
@@ -44,13 +44,13 @@
     "evidence": {
       "codex": {
         "enabledPluginPackages": 14,
-        "remoteInstallMarkers": 15,
+        "remoteInstallMarkers": 16,
         "marketplaceSourcePackages": 3,
         "marketplaceSourceSkillFiles": 0,
-        "cachePhysicalSkillFiles": 124,
+        "cachePhysicalSkillFiles": 129,
         "nonRuntimeSkillDefinitions": 0,
         "cacheOnlySkillFiles": 0,
-        "pluginSkillFilesConsidered": 124,
+        "pluginSkillFilesConsidered": 129,
         "duplicateExclusions": 0
       },
       "claude": {
@@ -75,7 +75,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-10T14:52:17.250Z"
+        "lastVerifiedAt": "2026-09-11T01:08:11.008Z"
       },
       {
         "id": "capability-2",
@@ -85,7 +85,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-10T14:52:17.250Z"
+        "lastVerifiedAt": "2026-09-11T01:08:11.008Z"
       },
       {
         "id": "capability-3",
@@ -95,7 +95,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-10T14:52:17.250Z"
+        "lastVerifiedAt": "2026-09-11T01:08:11.008Z"
       },
       {
         "id": "capability-5",
@@ -105,7 +105,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-10T14:52:17.250Z"
+        "lastVerifiedAt": "2026-09-11T01:08:11.008Z"
       },
       {
         "id": "capability-6",
@@ -115,7 +115,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-10T14:52:17.250Z"
+        "lastVerifiedAt": "2026-09-11T01:08:11.008Z"
       },
       {
         "id": "capability-9",
@@ -125,7 +125,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-10T14:52:17.250Z"
+        "lastVerifiedAt": "2026-09-11T01:08:11.008Z"
       },
       {
         "id": "capability-10",
@@ -135,7 +135,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-10T14:52:17.250Z"
+        "lastVerifiedAt": "2026-09-11T01:08:11.008Z"
       },
       {
         "id": "capability-11",
@@ -145,7 +145,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-10T14:52:17.250Z"
+        "lastVerifiedAt": "2026-09-11T01:08:11.008Z"
       },
       {
         "id": "capability-4",
@@ -155,7 +155,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-10T14:52:17.250Z"
+        "lastVerifiedAt": "2026-09-11T01:08:11.008Z"
       },
       {
         "id": "capability-7",
@@ -165,7 +165,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-10T14:52:17.250Z"
+        "lastVerifiedAt": "2026-09-11T01:08:11.008Z"
       },
       {
         "id": "capability-8",
@@ -175,7 +175,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-10T14:52:17.250Z"
+        "lastVerifiedAt": "2026-09-11T01:08:11.008Z"
       },
       {
         "id": "capability-12",
@@ -185,7 +185,7 @@
         "evidenceType": "install_marker",
         "availability": "installed_unverified",
         "reason": "導入マーカーはありますが、現在のSkillパッケージおよび有効化状態を確認できませんでした。",
-        "lastVerifiedAt": "2026-09-10T14:52:17.250Z"
+        "lastVerifiedAt": "2026-09-11T01:08:11.008Z"
       }
     ],
     "migrationCandidates": [
@@ -269,7 +269,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -310,7 +310,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/ads-manager/skills/ads-manager-actionable-review",
-        "contentHash": "sha256:2adcc7e98b06ccf5e43ad2386010f1b9d4e19009a6821ba5e6973ab04fee55a8"
+        "contentHash": "sha256:0aecc6b7da11034d5ab1d1562e7c3c67bf41bfa37d5e50150f111c28b42790c3"
       },
       "environments": {
         "codex": {
@@ -318,7 +318,7 @@
           "installed": true,
           "invocation": "/ads-manager-actionable-review",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:2adcc7e98b06ccf5e43ad2386010f1b9d4e19009a6821ba5e6973ab04fee55a8",
+          "contentHash": "sha256:0aecc6b7da11034d5ab1d1562e7c3c67bf41bfa37d5e50150f111c28b42790c3",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -341,7 +341,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -382,7 +382,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/ads-manager/skills/ads-manager-ad-creation",
-        "contentHash": "sha256:c0e915404279933f1a40e1980d7303d182839f23d85e2a598f5c48b68526abab"
+        "contentHash": "sha256:fdc1a9e47854d4cb604bccf72518b04fee7251e3e859f0cd0a11cc42890a5f42"
       },
       "environments": {
         "codex": {
@@ -390,7 +390,7 @@
           "installed": true,
           "invocation": "/ads-manager-ad-creation",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:c0e915404279933f1a40e1980d7303d182839f23d85e2a598f5c48b68526abab",
+          "contentHash": "sha256:fdc1a9e47854d4cb604bccf72518b04fee7251e3e859f0cd0a11cc42890a5f42",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -413,7 +413,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -485,7 +485,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -526,7 +526,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/ads-manager/skills/ads-manager-entity-management",
-        "contentHash": "sha256:ea2e44deb9e826d642fc7bef9349726c02b51c390ef0c0e68edbe08523407cf6"
+        "contentHash": "sha256:ac9de4b7ab14d2a9ddfea599bfadb6f5c755dc84686e85ec89092431c41e5a16"
       },
       "environments": {
         "codex": {
@@ -534,7 +534,7 @@
           "installed": true,
           "invocation": "/ads-manager-entity-management",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:ea2e44deb9e826d642fc7bef9349726c02b51c390ef0c0e68edbe08523407cf6",
+          "contentHash": "sha256:ac9de4b7ab14d2a9ddfea599bfadb6f5c755dc84686e85ec89092431c41e5a16",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -557,7 +557,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -588,7 +588,7 @@
       "kind": "plugin_skill",
       "name": "ads-manager-help",
       "aliases": [],
-      "description": "Help users understand and troubleshoot Ads Manager by combining live read-only Ads Manager connector evidence, official Ads Manager Help Center guidance, and safe remediation steps. Use when the user asks Ads Manager how-to questions, has onboarding or readiness problems, reports campaign, ad group, or ad delivery issues, asks spend or performance questions, has conversion-reporting problems, or wants a prioritized diagnosis without changing Ads Manager state.",
+      "description": "Help users understand and troubleshoot Ads Manager through read-only connector evidence, official Help Center guidance, and shared playbooks. Use for standalone campaign planning, reviews of supplied context hints, product-feed suitability, how-to and targeting-support questions, onboarding or readiness problems, delivery issues, spend or performance questions, and conversion-reporting problems without changing Ads Manager state.",
       "example": "",
       "category": "ads-analysis",
       "projectTags": [],
@@ -598,7 +598,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/ads-manager/skills/ads-manager-help",
-        "contentHash": "sha256:6df1975dcab6156f51ad06599517d27d639fb3492c080fa01c08291c8b36cb1f"
+        "contentHash": "sha256:f775a7111b59dbcbc42d824b8585633b62834e12e4e31a1c852db6bb8b5b269b"
       },
       "environments": {
         "codex": {
@@ -606,7 +606,7 @@
           "installed": true,
           "invocation": "/ads-manager-help",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:6df1975dcab6156f51ad06599517d27d639fb3492c080fa01c08291c8b36cb1f",
+          "contentHash": "sha256:f775a7111b59dbcbc42d824b8585633b62834e12e4e31a1c852db6bb8b5b269b",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -629,7 +629,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -701,7 +701,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -773,7 +773,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -814,7 +814,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/ads-manager/skills/ads-manager-review",
-        "contentHash": "sha256:02497260449a41bab91366ca90d2ea7c05f187087dcd2828e8844d0d572975fb"
+        "contentHash": "sha256:aeb75d76179a488234ed12d750ce59b6aba94c9c686c7e5108c39fbbf5f3814f"
       },
       "environments": {
         "codex": {
@@ -822,7 +822,7 @@
           "installed": true,
           "invocation": "/ads-manager-review",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:02497260449a41bab91366ca90d2ea7c05f187087dcd2828e8844d0d572975fb",
+          "contentHash": "sha256:aeb75d76179a488234ed12d750ce59b6aba94c9c686c7e5108c39fbbf5f3814f",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -845,7 +845,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -917,7 +917,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -998,7 +998,7 @@
           "adv-business-knowledge"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1072,7 +1072,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1150,7 +1150,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1224,7 +1224,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1305,7 +1305,7 @@
           "adv-shiryo-sakusei"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1386,7 +1386,7 @@
           "adv-shiyo-gijiroku"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1417,7 +1417,7 @@
       "kind": "plugin_skill",
       "name": "analyze-data-quality",
       "aliases": [],
-      "description": "Assess whether structured data, query results, dashboards, or analytical evidence are trustworthy enough to use. Use when the task is to check data quality, reconcile conflicting sources or metric definitions, or decide whether evidence is safe to cite.",
+      "description": "Investigate whether structured datasets and query results are trustworthy enough to use. Use for underlying data-quality risks such as freshness, grain, missingness, duplicates, broken joins, schema drift, and conflicting source results.",
       "example": "",
       "category": "development-ai",
       "projectTags": [],
@@ -1427,7 +1427,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/analyze-data-quality",
-        "contentHash": "sha256:9a3c994f87da0c7a8c5ce37bbf08a59fc6f5b4f368475d3d7438f622b753d5f0"
+        "contentHash": "sha256:b55f1fea16306899bc28060d2a46c5318e15f85da62f3f533926861458a6dc15"
       },
       "environments": {
         "codex": {
@@ -1435,7 +1435,7 @@
           "installed": true,
           "invocation": "/analyze-data-quality",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:9a3c994f87da0c7a8c5ce37bbf08a59fc6f5b4f368475d3d7438f622b753d5f0",
+          "contentHash": "sha256:b55f1fea16306899bc28060d2a46c5318e15f85da62f3f533926861458a6dc15",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -1458,7 +1458,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1537,12 +1537,12 @@
           "artifact-design"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 6,
-        "lastUsedAt": "2026-09-09T04:50:43.522Z",
+        "sessionCount": 7,
+        "lastUsedAt": "2026-09-10T15:14:55.844Z",
         "environments": {
           "codex": {
             "observed": false,
@@ -1551,11 +1551,11 @@
           },
           "claude": {
             "observed": true,
-            "sessionCount": 6,
-            "lastUsedAt": "2026-09-09T04:50:43.522Z"
+            "sessionCount": 7,
+            "lastUsedAt": "2026-09-10T15:14:55.844Z"
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照0セッション、Claudeで明示呼び出し6セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照0セッション、Claudeで明示呼び出し7セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -1622,7 +1622,7 @@
           "artifact-template-adv-1"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1707,7 +1707,7 @@
           "artifact-template-adv-2"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1779,7 +1779,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1851,7 +1851,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1923,7 +1923,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1995,7 +1995,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2067,7 +2067,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2139,7 +2139,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2224,7 +2224,7 @@
           "artifact-template-jra"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2296,7 +2296,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2368,7 +2368,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2440,7 +2440,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2512,7 +2512,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2584,7 +2584,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2656,7 +2656,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2728,7 +2728,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2800,7 +2800,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2872,7 +2872,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2944,7 +2944,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3016,7 +3016,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3088,7 +3088,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3160,7 +3160,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3232,7 +3232,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3315,7 +3315,7 @@
           "ask-matt"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3396,7 +3396,7 @@
           "aso-internal-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3477,7 +3477,7 @@
           "aso-simulation-and-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3558,7 +3558,7 @@
           "aso-simulation-intake"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3630,7 +3630,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3702,7 +3702,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3774,7 +3774,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3846,7 +3846,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3877,7 +3877,7 @@
       "kind": "plugin_skill",
       "name": "build-dashboard",
       "aliases": [],
-      "description": "Build source-backed dashboards for monitoring performance, exploring drivers, or acting on product and business metrics. Use when the task needs a dashboard, scorecard, or monitoring view with clear metrics, filters, source definitions, and QA.",
+      "description": "Build or update a source-backed interactive dashboard for monitoring, exploration, and operational decisions from connected data, uploaded spreadsheets, CSVs, or other structured sources.",
       "example": "",
       "category": "development-ai",
       "projectTags": [],
@@ -3887,7 +3887,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/build-dashboard",
-        "contentHash": "sha256:c453ef3e1187477f696aae9a68b116d0e7e0bd6f665ab03a9d1634d13482aaaa"
+        "contentHash": "sha256:d3d3f4a3daf77c5a099e6fc13b7ab6d975688f80a6a927e731dc32e118f705f0"
       },
       "environments": {
         "codex": {
@@ -3895,7 +3895,7 @@
           "installed": true,
           "invocation": "/build-dashboard",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:c453ef3e1187477f696aae9a68b116d0e7e0bd6f665ab03a9d1634d13482aaaa",
+          "contentHash": "sha256:d3d3f4a3daf77c5a099e6fc13b7ab6d975688f80a6a927e731dc32e118f705f0",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -3918,7 +3918,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3949,7 +3949,7 @@
       "kind": "plugin_skill",
       "name": "build-report",
       "aliases": [],
-      "description": "Build polished analytical reports for executive, product, business, or technical audiences. Use when the task needs a durable answer-first narrative with evidence-backed findings, visuals or tables, caveats, and source context.",
+      "description": "Build polished analytical reports for executive, product, business, or technical audiences. Use when the task needs a durable narrative answer supported by inspectable evidence.",
       "example": "",
       "category": "ads-analysis",
       "projectTags": [],
@@ -3959,7 +3959,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/build-report",
-        "contentHash": "sha256:03db47974dc400b026d9268730de1ef317b5446a7a6bc9906ad471bfb117fd22"
+        "contentHash": "sha256:a464dc6bcda8bf5659ba951a9ccba52020cf9c5d6f5f40e05d0e6a42149b51cf"
       },
       "environments": {
         "codex": {
@@ -3967,7 +3967,7 @@
           "installed": true,
           "invocation": "/build-report",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:03db47974dc400b026d9268730de1ef317b5446a7a6bc9906ad471bfb117fd22",
+          "contentHash": "sha256:a464dc6bcda8bf5659ba951a9ccba52020cf9c5d6f5f40e05d0e6a42149b51cf",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -3990,7 +3990,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4062,7 +4062,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4134,7 +4134,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4206,7 +4206,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4278,7 +4278,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4350,7 +4350,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -4422,7 +4422,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4494,7 +4494,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4566,7 +4566,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4649,7 +4649,7 @@
           "catchphrase-ideation"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4725,7 +4725,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -4804,7 +4804,7 @@
           "claude-in-chrome"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4880,7 +4880,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -4959,7 +4959,7 @@
           "codex:adversarial-review"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5038,7 +5038,7 @@
           "codex:cancel"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5117,7 +5117,7 @@
           "codex:rescue"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5196,7 +5196,7 @@
           "codex:result"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5275,7 +5275,7 @@
           "codex:review"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5354,7 +5354,7 @@
           "codex:setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5433,7 +5433,7 @@
           "codex:status"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5512,7 +5512,7 @@
           "codex:transfer"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5592,7 +5592,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -5668,7 +5668,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -5751,7 +5751,7 @@
           "competitive-service-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5775,6 +5775,150 @@
         "status": "needs_review",
         "actionScope": "skill",
         "reason": "ユーザー作成Skillのため自動削除しません。役割重複と今後の利用予定を確認して判断します。"
+      }
+    },
+    {
+      "id": "plugin.codex.openai-curated-remote.data-analytics.convert-to-doc",
+      "kind": "plugin_skill",
+      "name": "convert-to-doc",
+      "aliases": [],
+      "description": "Create a polished DOCX or Google Doc from an existing Data app.",
+      "example": "",
+      "category": "development-ai",
+      "projectTags": [],
+      "provider": {
+        "type": "plugin",
+        "name": "data-analytics@openai-curated-remote"
+      },
+      "source": {
+        "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/convert-to-doc",
+        "contentHash": "sha256:71a4616d6e111c4e8e570b0c986ad62631fb39aff26ba08837961eedff4fe2a2"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": true,
+          "invocation": "/convert-to-doc",
+          "detectedBy": "codex-remote-install-marker",
+          "contentHash": "sha256:71a4616d6e111c4e8e570b0c986ad62631fb39aff26ba08837961eedff4fe2a2",
+          "availability": "installed_unverified",
+          "evidenceType": "remote_install_marker"
+        },
+        "claude": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "codex_only",
+        "reasonCode": "plugin_skill",
+        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.codex.openai-curated-remote.data-analytics.convert-to-slides",
+      "kind": "plugin_skill",
+      "name": "convert-to-slides",
+      "aliases": [],
+      "description": "Create a polished PowerPoint or Google Slides deck from an existing Data app.",
+      "example": "",
+      "category": "materials-design",
+      "projectTags": [],
+      "provider": {
+        "type": "plugin",
+        "name": "data-analytics@openai-curated-remote"
+      },
+      "source": {
+        "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/convert-to-slides",
+        "contentHash": "sha256:5708f54bd5674d3c92ae96c52c85ea3bd0d42b5699eb12df10e5591945f178b7"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": true,
+          "invocation": "/convert-to-slides",
+          "detectedBy": "codex-remote-install-marker",
+          "contentHash": "sha256:5708f54bd5674d3c92ae96c52c85ea3bd0d42b5699eb12df10e5591945f178b7",
+          "availability": "installed_unverified",
+          "evidenceType": "remote_install_marker"
+        },
+        "claude": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "codex_only",
+        "reasonCode": "plugin_skill",
+        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
       }
     },
     {
@@ -5830,7 +5974,7 @@
           "cowork-plugin"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5909,7 +6053,7 @@
           "cowork-plugin-management:cowork-plugin-customizer"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5988,7 +6132,7 @@
           "cowork-plugin-management:create-cowork-plugin"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6071,7 +6215,7 @@
           "create-chatgpt-project"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6102,7 +6246,7 @@
       "kind": "plugin_skill",
       "name": "create-data-context",
       "aliases": [],
-      "description": "Create, update, inspect, or repair Data Analytics semantic layers. Use when the user asks to save data context or create a semantic layer that future Data Analytics work can inspect and cite.",
+      "description": "Create, update, or share reusable context for analysis, reports, and dashboards, including tool preferences, look and feel, analysis practices, and data definitions. Use when asked to remember a working instruction for future tasks, save conventions, or maintain existing context.",
       "example": "",
       "category": "development-ai",
       "projectTags": [],
@@ -6112,7 +6256,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/create-data-context",
-        "contentHash": "sha256:b004f792fa63e639dbce197562c97230eb58250e639b6bbe926085e3a44b0c2b"
+        "contentHash": "sha256:dd46e2acf43bf3fd0e7290ddee9ed4f4b97eea23c27a7f031af225a1c71c88e8"
       },
       "environments": {
         "codex": {
@@ -6120,7 +6264,7 @@
           "installed": true,
           "invocation": "/create-data-context",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:b004f792fa63e639dbce197562c97230eb58250e639b6bbe926085e3a44b0c2b",
+          "contentHash": "sha256:dd46e2acf43bf3fd0e7290ddee9ed4f4b97eea23c27a7f031af225a1c71c88e8",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -6143,7 +6287,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6224,7 +6368,7 @@
           "customer-icebreaker-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6303,7 +6447,7 @@
           "dataviz"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6375,7 +6519,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6447,7 +6591,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6519,7 +6663,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6598,7 +6742,7 @@
           "design"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6639,7 +6783,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/design-kpis",
-        "contentHash": "sha256:fcefdecacd1d64f847fbb7c45e93a6bd49c679dff66b8966ebc74c4dc39b8f21"
+        "contentHash": "sha256:6f3f3841371e4269d8bc6be406537145de3e86d7ca8d34d65af21548dfff2d46"
       },
       "environments": {
         "codex": {
@@ -6647,7 +6791,7 @@
           "installed": true,
           "invocation": "/design-kpis",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:fcefdecacd1d64f847fbb7c45e93a6bd49c679dff66b8966ebc74c4dc39b8f21",
+          "contentHash": "sha256:6f3f3841371e4269d8bc6be406537145de3e86d7ca8d34d65af21548dfff2d46",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -6670,7 +6814,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6742,7 +6886,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6825,7 +6969,7 @@
           "design-qc"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6856,7 +7000,7 @@
       "kind": "skill",
       "name": "discord-ai-relay",
       "aliases": [],
-      "description": "実行中のClaudeチャットが駆動役となり、Discordを介してCodexスレッドと1ターンずつ往復を続け、記録をDiscordとローカル正本の両方へ残す。相手はChatGPT.appで普段使っている役割スレッド（ファイル経由）でも、CLIで作った専用スレッドでもよい。ユーザーが「AIリレーして」「AIリレー開始」「リレー開始」「リレー継続」「Discord経由でCodexとつないで」「開発AIとつないで」「統括Codexに報告して次の指示をもらって」と依頼したときに使う。役割は案件ごとに自由に決められ（統括／開発、相談役／社長など）、どちらが主導してもよい。相手スレッド・受け渡し方法・作業ディレクトリ・役割・書き込み許可・完了条件は起動後に聞く。",
+      "description": "実行中のClaudeチャットが駆動役となり、Discordを介してCodexスレッドと1ターンずつ往復を続け、記録をDiscordとローカル正本の両方へ残す。相手はChatGPT.appで普段使っている役割スレッド（ファイル経由）でも、CLIで作った専用スレッドでもよい。ユーザーが「AIリレーして」「AIリレー開始」「リレー開始」「リレー継続」「Discord経由でCodexとつないで」「開発AIとつないで」「統括Codexに報告して次の指示をもらって」と依頼したとき、および相手のCodexから話しかけてもらうための「リレー待ち受け」「待ち受けて」で使う。役割は案件ごとに自由に決められ（統括／開発、相談役／社長など）、どちらが主導してもよい。相手スレッド・受け渡し方法・作業ディレクトリ・役割・書き込み許可・完了条件は起動後に聞く。",
       "example": "",
       "category": "hall-of-fame",
       "projectTags": [],
@@ -6866,7 +7010,7 @@
       },
       "source": {
         "canonicalId": "skills/discord-ai-relay",
-        "contentHash": "sha256:4a54f7727bfff0df2c421ee6beaebd427d27fa54fd3541b8057b55e5591bed6b"
+        "contentHash": "sha256:4e3df541582680bb726a6b6f23c93c090d1a2fd5a64cd3b5151afae171ca7e7e"
       },
       "identity": {
         "frontmatterName": "discord-ai-relay"
@@ -6878,7 +7022,7 @@
           "installed": true,
           "invocation": "$discord-ai-relay",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:4a54f7727bfff0df2c421ee6beaebd427d27fa54fd3541b8057b55e5591bed6b",
+          "contentHash": "sha256:4e3df541582680bb726a6b6f23c93c090d1a2fd5a64cd3b5151afae171ca7e7e",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         },
@@ -6887,7 +7031,7 @@
           "installed": true,
           "invocation": "/discord-ai-relay",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:4a54f7727bfff0df2c421ee6beaebd427d27fa54fd3541b8057b55e5591bed6b",
+          "contentHash": "sha256:4e3df541582680bb726a6b6f23c93c090d1a2fd5a64cd3b5151afae171ca7e7e",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         }
@@ -6901,25 +7045,25 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 6,
-        "lastUsedAt": "2026-09-10T08:28:30.658Z",
+        "sessionCount": 7,
+        "lastUsedAt": "2026-09-10T16:02:13.107Z",
         "environments": {
           "codex": {
             "observed": true,
             "sessionCount": 3,
-            "lastUsedAt": "2026-09-10T08:28:30.658Z"
+            "lastUsedAt": "2026-09-10T16:02:13.107Z"
           },
           "claude": {
             "observed": true,
-            "sessionCount": 3,
-            "lastUsedAt": "2026-09-10T07:12:58.958Z"
+            "sessionCount": 4,
+            "lastUsedAt": "2026-09-10T15:47:15.598Z"
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照3セッション、Claudeで明示呼び出し3セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照3セッション、Claudeで明示呼び出し4セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -6973,7 +7117,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7045,7 +7189,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7124,7 +7268,7 @@
           "docx"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7207,7 +7351,7 @@
           "domain-modeling"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7288,7 +7432,7 @@
           "draft-client-proposal"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7369,7 +7513,7 @@
           "draft-sales-email"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7447,17 +7591,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
         "sessionCount": 4,
-        "lastUsedAt": "2026-09-10T07:03:47.059Z",
+        "lastUsedAt": "2026-09-10T15:14:16.124Z",
         "environments": {
           "codex": {
             "observed": true,
             "sessionCount": 4,
-            "lastUsedAt": "2026-09-10T07:03:47.059Z"
+            "lastUsedAt": "2026-09-10T15:14:16.124Z"
           },
           "claude": {
             "observed": false,
@@ -7519,7 +7663,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7591,7 +7735,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7672,7 +7816,7 @@
           "existing-attacker"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7751,7 +7895,7 @@
           "explain-usage"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7823,7 +7967,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7895,7 +8039,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7967,7 +8111,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8043,17 +8187,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
-        "status": "recent_signal",
+        "status": "no_signal",
         "windowDays": 7,
-        "sessionCount": 1,
-        "lastUsedAt": "2026-09-04T13:25:01.113Z",
+        "sessionCount": 0,
+        "lastUsedAt": null,
         "environments": {
           "codex": {
-            "observed": true,
-            "sessionCount": 1,
-            "lastUsedAt": "2026-09-04T13:25:01.113Z"
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
           },
           "claude": {
             "observed": false,
@@ -8061,12 +8205,12 @@
             "lastUsedAt": null
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
       },
       "governance": {
-        "status": "keep_recommended",
+        "status": "needs_review",
         "actionScope": "skill",
-        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+        "reason": "ユーザー作成Skillのため自動削除しません。役割重複と今後の利用予定を確認して判断します。"
       }
     },
     {
@@ -8084,7 +8228,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/gather-business-context",
-        "contentHash": "sha256:e8a1e917b8c4d03248987f33ca49fb7b1d6ed533328c39a02cafcc5b88b4577c"
+        "contentHash": "sha256:c61aaab29796c5c5a101f8d802a9ab0d1c4366e31a5acadddec56ca4849d7237"
       },
       "environments": {
         "codex": {
@@ -8092,7 +8236,7 @@
           "installed": true,
           "invocation": "/gather-business-context",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:e8a1e917b8c4d03248987f33ca49fb7b1d6ed533328c39a02cafcc5b88b4577c",
+          "contentHash": "sha256:c61aaab29796c5c5a101f8d802a9ab0d1c4366e31a5acadddec56ca4849d7237",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -8115,7 +8259,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8187,7 +8331,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8270,7 +8414,7 @@
           "google-ads-consultant"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8342,7 +8486,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8414,7 +8558,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8486,7 +8630,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8558,7 +8702,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8630,7 +8774,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8713,7 +8857,7 @@
           "grill-with-docs"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8798,7 +8942,7 @@
           "grilling"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8870,7 +9014,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8942,7 +9086,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9014,16 +9158,16 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 2,
+        "sessionCount": 1,
         "lastUsedAt": "2026-09-09T14:46:28.993Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 2,
+            "sessionCount": 1,
             "lastUsedAt": "2026-09-09T14:46:28.993Z"
           },
           "claude": {
@@ -9032,7 +9176,7 @@
             "lastUsedAt": null
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照2セッション、Claudeで明示呼び出し0セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
       },
       "governance": {
         "status": "keep_required",
@@ -9097,7 +9241,7 @@
           "implement"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9128,7 +9272,7 @@
       "kind": "plugin_skill",
       "name": "index",
       "aliases": [],
-      "description": "Route Data Analytics plugin-level requests and broad analytics work to the right focused workflow. Use when Data Analytics is at-mentioned, or for analytics requests involving data, metrics, dashboards, reports, charts, notebooks, spreadsheets, KPIs, market sizing, or semantic layers.",
+      "description": "Answer product and business questions with data and route data-related work to the right focused workflow. Use for requests involving data, metrics, trends, comparisons, drivers, KPIs, analysis, dashboards, reports, charts, tables, SQL, notebooks, spreadsheets, market sizing, data quality, reusable data context, data definitions, or working preferences, whether or not Data is at-mentioned. Dashboards can use uploaded spreadsheets, CSVs, or TSVs as source data without making the deliverable a spreadsheet.",
       "example": "",
       "category": "development-ai",
       "projectTags": [],
@@ -9138,7 +9282,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/index",
-        "contentHash": "sha256:2239188d6ac667a9e4b546ffb441f17ac3cfe90fe7683ac68506789ef8dabeb3"
+        "contentHash": "sha256:c308ba26903aad1f84080fcf6932c5e8f77a29231da2d68282d718cbc67cbcf0"
       },
       "environments": {
         "codex": {
@@ -9146,7 +9290,7 @@
           "installed": true,
           "invocation": "/index",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:2239188d6ac667a9e4b546ffb441f17ac3cfe90fe7683ac68506789ef8dabeb3",
+          "contentHash": "sha256:c308ba26903aad1f84080fcf6932c5e8f77a29231da2d68282d718cbc67cbcf0",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -9169,7 +9313,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9241,7 +9385,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9327,7 +9471,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9399,7 +9543,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9482,7 +9626,7 @@
           "japanese-english-translator"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9565,7 +9709,7 @@
           "japanese-korean-translator"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9606,7 +9750,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/jupyter-notebooks",
-        "contentHash": "sha256:8303d33041a5d5ccbfbb5addbb60bd8b0559027f01a586f98b7728e58c4127ed"
+        "contentHash": "sha256:91a1a7f03544d4136544a60ef98e750ed694ab85768815861bbc7c4eec08a987"
       },
       "environments": {
         "codex": {
@@ -9614,7 +9758,7 @@
           "installed": true,
           "invocation": "/jupyter-notebooks",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:8303d33041a5d5ccbfbb5addbb60bd8b0559027f01a586f98b7728e58c4127ed",
+          "contentHash": "sha256:91a1a7f03544d4136544a60ef98e750ed694ab85768815861bbc7c4eec08a987",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -9637,7 +9781,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9723,7 +9867,7 @@
           "kimono-brain-todo-management"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9764,7 +9908,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/kpi-reporting",
-        "contentHash": "sha256:a4ee918f3c87af4db8bb007cf8fefec444cd47b96b76de711349f11d7232861a"
+        "contentHash": "sha256:e790badb05ee3d77b68815d57658e350d26737b10e1b9bb8d2d30d1ad335b3e5"
       },
       "environments": {
         "codex": {
@@ -9772,7 +9916,7 @@
           "installed": true,
           "invocation": "/kpi-reporting",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:a4ee918f3c87af4db8bb007cf8fefec444cd47b96b76de711349f11d7232861a",
+          "contentHash": "sha256:e790badb05ee3d77b68815d57658e350d26737b10e1b9bb8d2d30d1ad335b3e5",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -9795,7 +9939,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9876,7 +10020,7 @@
           "makeleaps-client-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9957,7 +10101,7 @@
           "makeleaps-orderslip-creation"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10034,12 +10178,12 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 16,
-        "lastUsedAt": "2026-09-10T08:27:43.277Z",
+        "sessionCount": 17,
+        "lastUsedAt": "2026-09-11T01:02:59.423Z",
         "environments": {
           "codex": {
             "observed": true,
@@ -10048,11 +10192,11 @@
           },
           "claude": {
             "observed": true,
-            "sessionCount": 7,
-            "lastUsedAt": "2026-09-09T12:12:19.218Z"
+            "sessionCount": 8,
+            "lastUsedAt": "2026-09-11T01:02:59.423Z"
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照9セッション、Claudeで明示呼び出し7セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照9セッション、Claudeで明示呼び出し8セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -10075,7 +10219,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/market-sizing",
-        "contentHash": "sha256:dd353ab8c7229d3bc831234725db7d02ceeb1a889ee781103f90997879ac1951"
+        "contentHash": "sha256:ed8661862b1ed7d0da1dc5d0d418cc8e631df81345af087e40eedcdf4e0b2a9b"
       },
       "environments": {
         "codex": {
@@ -10083,7 +10227,7 @@
           "installed": true,
           "invocation": "/market-sizing",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:dd353ab8c7229d3bc831234725db7d02ceeb1a889ee781103f90997879ac1951",
+          "contentHash": "sha256:ed8661862b1ed7d0da1dc5d0d418cc8e631df81345af087e40eedcdf4e0b2a9b",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -10106,7 +10250,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10187,7 +10331,7 @@
           "meeting-minutes-notion-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10228,7 +10372,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/metric-diagnostics",
-        "contentHash": "sha256:c9293227b592328c06cb9f6a2f23c0114ddcd1ca456a42f1ceebfe5981007314"
+        "contentHash": "sha256:e3a591bf256a84cfdb59efdc4ff5a1e6938d7e2a2a42f43144e5ad204bf054b2"
       },
       "environments": {
         "codex": {
@@ -10236,7 +10380,7 @@
           "installed": true,
           "invocation": "/metric-diagnostics",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:c9293227b592328c06cb9f6a2f23c0114ddcd1ca456a42f1ceebfe5981007314",
+          "contentHash": "sha256:e3a591bf256a84cfdb59efdc4ff5a1e6938d7e2a2a42f43144e5ad204bf054b2",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -10259,7 +10403,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10338,7 +10482,7 @@
           "mission-control-daily-brief"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10419,7 +10563,7 @@
           "mtg-after-automation"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10500,7 +10644,7 @@
           "new-attacker"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10572,7 +10716,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10644,7 +10788,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10716,7 +10860,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10788,7 +10932,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10860,17 +11004,17 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 10,
-        "lastUsedAt": "2026-09-10T14:38:51.705Z",
+        "sessionCount": 9,
+        "lastUsedAt": "2026-09-10T15:20:30.486Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 10,
-            "lastUsedAt": "2026-09-10T14:38:51.705Z"
+            "sessionCount": 9,
+            "lastUsedAt": "2026-09-10T15:20:30.486Z"
           },
           "claude": {
             "observed": false,
@@ -10878,7 +11022,7 @@
             "lastUsedAt": null
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照10セッション、Claudeで明示呼び出し0セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照9セッション、Claudeで明示呼び出し0セッションを確認しました。"
       },
       "governance": {
         "status": "keep_required",
@@ -10939,12 +11083,12 @@
           "operating-principles"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 6,
-        "lastUsedAt": "2026-09-06T00:51:06.693Z",
+        "sessionCount": 7,
+        "lastUsedAt": "2026-09-10T15:40:39.926Z",
         "environments": {
           "codex": {
             "observed": false,
@@ -10953,11 +11097,11 @@
           },
           "claude": {
             "observed": true,
-            "sessionCount": 6,
-            "lastUsedAt": "2026-09-06T00:51:06.693Z"
+            "sessionCount": 7,
+            "lastUsedAt": "2026-09-10T15:40:39.926Z"
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照0セッション、Claudeで明示呼び出し6セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照0セッション、Claudeで明示呼び出し7セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -11022,7 +11166,7 @@
           "pc-lightening"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11101,7 +11245,7 @@
           "pdf"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11182,7 +11326,7 @@
           "pipedrive-manage-sales"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11265,7 +11409,7 @@
           "plan-landing-page"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11337,7 +11481,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11409,7 +11553,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11490,7 +11634,7 @@
           "post-order-operations-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11569,7 +11713,7 @@
           "pptx"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11641,7 +11785,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -11682,7 +11826,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/product-business-analysis",
-        "contentHash": "sha256:3e6b684ace151bbf777afd88fe34758b337ac0d6ff2bf332958d7a495d624a4b"
+        "contentHash": "sha256:036b89f9cc9c982fad224cd17e3d93339e5eef8080bbe3d8d2b28731a0a62113"
       },
       "environments": {
         "codex": {
@@ -11690,7 +11834,7 @@
           "installed": true,
           "invocation": "/product-business-analysis",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:3e6b684ace151bbf777afd88fe34758b337ac0d6ff2bf332958d7a495d624a4b",
+          "contentHash": "sha256:036b89f9cc9c982fad224cd17e3d93339e5eef8080bbe3d8d2b28731a0a62113",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -11713,7 +11857,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11785,7 +11929,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11861,7 +12005,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11892,7 +12036,7 @@
       "kind": "plugin_skill",
       "name": "publish-artifact-to-sites",
       "aliases": [],
-      "description": "Publish a validated Data Analytics report or dashboard artifact through Sites. Use automatically for durable artifacts in any positively identified Work Mode when the full Sites lifecycle is callable, or in ChatGPT Desktop outside Work Mode only after an explicit Sites request or acceptance of the optional post-handoff sharing offer.",
+      "description": "Publish an existing Data report or dashboard to Sites, automatically for web/cloud tasks or when the user requests publication.",
       "example": "",
       "category": "development-ai",
       "projectTags": [],
@@ -11902,7 +12046,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/publish-artifact-to-sites",
-        "contentHash": "sha256:26b3846191d1c5237262a26da61694aa67bef38c4ed03eb3167e39f39c6f07a3"
+        "contentHash": "sha256:2e40006cc5a697e2546bd2b1a3eeec3e6c38501229999117c92ff4ff94d534b3"
       },
       "environments": {
         "codex": {
@@ -11910,7 +12054,7 @@
           "installed": true,
           "invocation": "/publish-artifact-to-sites",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:26b3846191d1c5237262a26da61694aa67bef38c4ed03eb3167e39f39c6f07a3",
+          "contentHash": "sha256:2e40006cc5a697e2546bd2b1a3eeec3e6c38501229999117c92ff4ff94d534b3",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -11933,7 +12077,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12005,7 +12149,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12077,151 +12221,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.data-analytics.report-to-google-doc",
-      "kind": "plugin_skill",
-      "name": "report-to-google-doc",
-      "aliases": [],
-      "description": "Narrow conversion skill. Invoke only when the user explicitly asks to convert an existing local or blob-hosted HTML analytics report into a Google Doc, DOCX, or shareable document.",
-      "example": "",
-      "category": "ads-analysis",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "data-analytics@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/report-to-google-doc",
-        "contentHash": "sha256:0fac3acf39e180a8ee398c837cd40289c5e0f72473ef3788be623cb68e703a1f"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/report-to-google-doc",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:0fac3acf39e180a8ee398c837cd40289c5e0f72473ef3788be623cb68e703a1f",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
-      "usage": {
-        "status": "no_signal",
-        "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
-        "environments": {
-          "codex": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          },
-          "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
-          }
-        },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
-      },
-      "governance": {
-        "status": "needs_review",
-        "actionScope": "plugin_package",
-        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
-      }
-    },
-    {
-      "id": "plugin.codex.openai-curated-remote.data-analytics.report-to-google-slides",
-      "kind": "plugin_skill",
-      "name": "report-to-google-slides",
-      "aliases": [],
-      "description": "Narrow conversion skill. Invoke only when the user explicitly asks to convert an existing HTML analytics report into a native Google Slides deck.",
-      "example": "",
-      "category": "ads-analysis",
-      "projectTags": [],
-      "provider": {
-        "type": "plugin",
-        "name": "data-analytics@openai-curated-remote"
-      },
-      "source": {
-        "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/report-to-google-slides",
-        "contentHash": "sha256:4dd1c74a3fc5284c3bf69500ff82213c0849663d15b79579e1e950cfa2558d2d"
-      },
-      "environments": {
-        "codex": {
-          "configured": false,
-          "installed": true,
-          "invocation": "/report-to-google-slides",
-          "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:4dd1c74a3fc5284c3bf69500ff82213c0849663d15b79579e1e950cfa2558d2d",
-          "availability": "installed_unverified",
-          "evidenceType": "remote_install_marker"
-        },
-        "claude": {
-          "configured": false,
-          "installed": false,
-          "invocation": null,
-          "detectedBy": null,
-          "contentHash": null,
-          "availability": "not-applicable",
-          "evidenceType": "none"
-        }
-      },
-      "mirror": {
-        "eligible": false,
-        "status": "codex_only",
-        "reasonCode": "plugin_skill",
-        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
-        "portability": "adapter_required"
-      },
-      "requirements": [],
-      "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12252,7 +12252,7 @@
       "kind": "plugin_skill",
       "name": "report-to-pdf",
       "aliases": [],
-      "description": "Narrow conversion skill. Invoke only when the user explicitly asks to convert an existing Data Analytics report, dashboard, or inline chart export into a PDF artifact.",
+      "description": "Create a polished PDF from an existing Data dashboard or report.",
       "example": "",
       "category": "ads-analysis",
       "projectTags": [],
@@ -12262,7 +12262,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/report-to-pdf",
-        "contentHash": "sha256:ef65a78de9ca425698b529cbdaea7e6323ec6a704cbc10f070920ee6e8d11d57"
+        "contentHash": "sha256:02fa85b9bbd2859203c0e7ad5b952ad3f81ef1a96840a5b897c42bfe81108999"
       },
       "environments": {
         "codex": {
@@ -12270,7 +12270,7 @@
           "installed": true,
           "invocation": "/report-to-pdf",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:ef65a78de9ca425698b529cbdaea7e6323ec6a704cbc10f070920ee6e8d11d57",
+          "contentHash": "sha256:02fa85b9bbd2859203c0e7ad5b952ad3f81ef1a96840a5b897c42bfe81108999",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -12293,7 +12293,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12365,7 +12365,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12444,7 +12444,7 @@
           "research"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12516,7 +12516,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12597,7 +12597,7 @@
           "review-cleaning-sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12678,7 +12678,7 @@
           "review-cleaning-sheet-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12759,7 +12759,7 @@
           "review-screenshot-automation-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12840,7 +12840,7 @@
           "review-screenshot-daily-operations"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12921,7 +12921,7 @@
           "review-screenshot-reflection"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13002,7 +13002,7 @@
           "sales-deal-lifecycle-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13083,7 +13083,79 @@
           "sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.codex.openai-curated-remote.data-analytics.schedule-refresh-jobs",
+      "kind": "plugin_skill",
+      "name": "schedule-refresh-jobs",
+      "aliases": [],
+      "description": "Create or update recurring cloud refresh jobs for an existing Data dashboard or report, including requests to keep it up to date.",
+      "example": "",
+      "category": "development-ai",
+      "projectTags": [],
+      "provider": {
+        "type": "plugin",
+        "name": "data-analytics@openai-curated-remote"
+      },
+      "source": {
+        "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/schedule-refresh-jobs",
+        "contentHash": "sha256:6166180cd0fa05f9f761862a15e6ccb12aa8e1edbec3af52c4479123e02cb362"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": true,
+          "invocation": "/schedule-refresh-jobs",
+          "detectedBy": "codex-remote-install-marker",
+          "contentHash": "sha256:6166180cd0fa05f9f761862a15e6ccb12aa8e1edbec3af52c4479123e02cb362",
+          "availability": "installed_unverified",
+          "evidenceType": "remote_install_marker"
+        },
+        "claude": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "codex_only",
+        "reasonCode": "plugin_skill",
+        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13155,7 +13227,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13227,7 +13299,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13303,7 +13375,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13382,7 +13454,7 @@
           "setup-cowork"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13465,7 +13537,7 @@
           "setup-matt-pocock-skills"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13537,7 +13609,79 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.codex.openai-curated-remote.data-analytics.share-artifact-summary",
+      "kind": "plugin_skill",
+      "name": "share-artifact-summary",
+      "aliases": [],
+      "description": "Share or provide a concise Data dashboard, report, chart, or component summary.",
+      "example": "",
+      "category": "development-ai",
+      "projectTags": [],
+      "provider": {
+        "type": "plugin",
+        "name": "data-analytics@openai-curated-remote"
+      },
+      "source": {
+        "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/share-artifact-summary",
+        "contentHash": "sha256:793e661b277a0bea0a4c3a6d147b33db3a14a8794f09f9d156d12444a84d5317"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": true,
+          "invocation": "/share-artifact-summary",
+          "detectedBy": "codex-remote-install-marker",
+          "contentHash": "sha256:793e661b277a0bea0a4c3a6d147b33db3a14a8794f09f9d156d12444a84d5317",
+          "availability": "installed_unverified",
+          "evidenceType": "remote_install_marker"
+        },
+        "claude": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "codex_only",
+        "reasonCode": "plugin_skill",
+        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13609,7 +13753,79 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 2,
+        "lastUsedAt": "2026-09-09T12:56:50.715Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 2,
+            "lastUsedAt": "2026-09-09T12:56:50.715Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照2セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "plugin_package",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "plugin.codex.openai-curated-remote.sites.sites-building",
+      "kind": "plugin_skill",
+      "name": "sites-building",
+      "aliases": [],
+      "description": "Use Sites to build websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Always use Sites when the project contains `.openai/hosting.json`.",
+      "example": "",
+      "category": "development-ai",
+      "projectTags": [],
+      "provider": {
+        "type": "plugin",
+        "name": "sites@openai-curated-remote"
+      },
+      "source": {
+        "canonicalId": "codex-plugin/openai-curated-remote/sites/skills/sites-building",
+        "contentHash": "sha256:a928732d8a85472fcb8c493c35f871338b08c3e3b85bc1ff0b2fa1cae42a6f65"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": true,
+          "invocation": "/sites-building",
+          "detectedBy": "codex-remote-install-marker",
+          "contentHash": "sha256:a928732d8a85472fcb8c493c35f871338b08c3e3b85bc1ff0b2fa1cae42a6f65",
+          "availability": "installed_unverified",
+          "evidenceType": "remote_install_marker"
+        },
+        "claude": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "codex_only",
+        "reasonCode": "plugin_skill",
+        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13681,7 +13897,151 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.codex.openai-curated-remote.sites.sites-hosting",
+      "kind": "plugin_skill",
+      "name": "sites-hosting",
+      "aliases": [],
+      "description": "Host websites with Sites. Use after `sites-building` to privately publish a Site created in this flow or for requested publishing or deployment, and for hosting management or projects containing `.openai/hosting.json`.",
+      "example": "",
+      "category": "development-ai",
+      "projectTags": [],
+      "provider": {
+        "type": "plugin",
+        "name": "sites@openai-curated-remote"
+      },
+      "source": {
+        "canonicalId": "codex-plugin/openai-curated-remote/sites/skills/sites-hosting",
+        "contentHash": "sha256:15d07f36050e0a64293f3cc18b26e76cd0e07e25134ce692798289a4221635cb"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": true,
+          "invocation": "/sites-hosting",
+          "detectedBy": "codex-remote-install-marker",
+          "contentHash": "sha256:15d07f36050e0a64293f3cc18b26e76cd0e07e25134ce692798289a4221635cb",
+          "availability": "installed_unverified",
+          "evidenceType": "remote_install_marker"
+        },
+        "claude": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "codex_only",
+        "reasonCode": "plugin_skill",
+        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "plugin_package",
+        "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "plugin.codex.openai-curated-remote.sites.sites-preview-troubleshooting",
+      "kind": "plugin_skill",
+      "name": "sites-preview-troubleshooting",
+      "aliases": [],
+      "description": "Diagnose and recover failed supervised sites-preview sessions after sites-building. Applies only to the managed-linux execution profile, not portable previews.",
+      "example": "",
+      "category": "development-ai",
+      "projectTags": [],
+      "provider": {
+        "type": "plugin",
+        "name": "sites@openai-curated-remote"
+      },
+      "source": {
+        "canonicalId": "codex-plugin/openai-curated-remote/sites/skills/sites-preview-troubleshooting",
+        "contentHash": "sha256:2244a9ac6059101480ef150b8e057b7183015a8d4fa0f11e20fddfb8865ec309"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": true,
+          "invocation": "/sites-preview-troubleshooting",
+          "detectedBy": "codex-remote-install-marker",
+          "contentHash": "sha256:2244a9ac6059101480ef150b8e057b7183015a8d4fa0f11e20fddfb8865ec309",
+          "availability": "installed_unverified",
+          "evidenceType": "remote_install_marker"
+        },
+        "claude": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "codex_only",
+        "reasonCode": "plugin_skill",
+        "reason": "リモート導入記録はありますが、Codex設定での有効化・実行可否は未確認です。",
+        "portability": "adapter_required"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13760,16 +14120,16 @@
           "skill-creator"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 5,
+        "sessionCount": 4,
         "lastUsedAt": "2026-09-09T10:16:02.895Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 5,
+            "sessionCount": 4,
             "lastUsedAt": "2026-09-09T10:16:02.895Z"
           },
           "claude": {
@@ -13778,7 +14138,7 @@
             "lastUsedAt": null
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照5セッション、Claudeで明示呼び出し0セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照4セッション、Claudeで明示呼び出し0セッションを確認しました。"
       },
       "governance": {
         "status": "keep_required",
@@ -13832,7 +14192,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13915,7 +14275,7 @@
           "slide-outline-generator"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13987,7 +14347,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14070,7 +14430,7 @@
           "sso-quick-diagnostics"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14154,7 +14514,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14230,7 +14590,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14302,7 +14662,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14374,7 +14734,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14455,7 +14815,7 @@
           "task-collection-daily-brief"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14527,7 +14887,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14599,7 +14959,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14675,7 +15035,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14758,7 +15118,7 @@
           "tdd"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14841,7 +15201,7 @@
           "teach"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14913,7 +15273,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14985,7 +15345,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15068,7 +15428,7 @@
           "to-spec"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15151,7 +15511,7 @@
           "to-tickets"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15227,25 +15587,25 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 3,
-        "lastUsedAt": "2026-09-10T05:58:00.773Z",
+        "sessionCount": 4,
+        "lastUsedAt": "2026-09-10T15:59:05.177Z",
         "environments": {
           "codex": {
             "observed": true,
             "sessionCount": 2,
-            "lastUsedAt": "2026-09-10T05:58:00.773Z"
+            "lastUsedAt": "2026-09-10T15:56:47.308Z"
           },
           "claude": {
             "observed": true,
-            "sessionCount": 1,
-            "lastUsedAt": "2026-09-07T14:48:23.203Z"
+            "sessionCount": 2,
+            "lastUsedAt": "2026-09-10T15:59:05.177Z"
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照2セッション、Claudeで明示呼び出し1セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照2セッション、Claudeで明示呼び出し2セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -15299,7 +15659,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15371,7 +15731,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15443,7 +15803,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15515,7 +15875,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15587,7 +15947,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15659,7 +16019,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15690,7 +16050,7 @@
       "kind": "plugin_skill",
       "name": "validate-data",
       "aliases": [],
-      "description": "Validate whether an analysis is accurate, well-supported, and ready to share or use for a decision. Use when reviewing methodology, calculations, comparisons, visuals, caveats, or conclusions.",
+      "description": "Validate analysis methodology, sources, calculations, visuals, and conclusions, including report and dashboard completeness, usability, and supported repairs.",
       "example": "",
       "category": "development-ai",
       "projectTags": [],
@@ -15700,7 +16060,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/validate-data",
-        "contentHash": "sha256:7aa5c77b22b9e5bf1b054e4ab6320a12dfd5342aa6cb18f8e497b46c713be20e"
+        "contentHash": "sha256:8f67c4ccd8fe55555a3d0f1d0a1d798279d08ef40473b19c228422123ae587dd"
       },
       "environments": {
         "codex": {
@@ -15708,7 +16068,7 @@
           "installed": true,
           "invocation": "/validate-data",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:7aa5c77b22b9e5bf1b054e4ab6320a12dfd5342aa6cb18f8e497b46c713be20e",
+          "contentHash": "sha256:8f67c4ccd8fe55555a3d0f1d0a1d798279d08ef40473b19c228422123ae587dd",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -15731,7 +16091,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15803,7 +16163,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15875,7 +16235,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15947,7 +16307,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16019,7 +16379,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16050,7 +16410,7 @@
       "kind": "plugin_skill",
       "name": "visualize-data",
       "aliases": [],
-      "description": "Design, build, revise, or QA quantitative charts and figures. Use when an analytical answer needs visual judgment, whether for an inline answer, report, dashboard, notebook, or artifact.",
+      "description": "Design, build, revise, and verify quantitative charts and figures while authoring reports, dashboards, notebooks, and other durable artifacts. Do not use for inline chat charts.",
       "example": "",
       "category": "development-ai",
       "projectTags": [],
@@ -16060,7 +16420,7 @@
       },
       "source": {
         "canonicalId": "codex-plugin/openai-curated-remote/data-analytics/skills/visualize-data",
-        "contentHash": "sha256:ff2601669022a2ef43524e0225eb4833acc03260db90b996a2d6f74fbbce7b12"
+        "contentHash": "sha256:91868fdcc816e487ad65f188c4911ce98f400692cd5024157e7ddcb37cc1912b"
       },
       "environments": {
         "codex": {
@@ -16068,7 +16428,7 @@
           "installed": true,
           "invocation": "/visualize-data",
           "detectedBy": "codex-remote-install-marker",
-          "contentHash": "sha256:ff2601669022a2ef43524e0225eb4833acc03260db90b996a2d6f74fbbce7b12",
+          "contentHash": "sha256:91868fdcc816e487ad65f188c4911ce98f400692cd5024157e7ddcb37cc1912b",
           "availability": "installed_unverified",
           "evidenceType": "remote_install_marker"
         },
@@ -16091,7 +16451,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16163,7 +16523,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16235,7 +16595,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16307,7 +16667,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16386,7 +16746,7 @@
           "xlsx"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16472,7 +16832,7 @@
           "yuiitsu-ad-reporting"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16547,7 +16907,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16633,7 +16993,7 @@
           "yuiitsu-before-after-posts"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16719,7 +17079,7 @@
           "yuiitsu-daily-ads-analysis"
         ]
       },
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -16763,7 +17123,7 @@
       },
       "source": {
         "canonicalId": "claude-scheduled-tasks/yuiitsu-erume-daily-sync",
-        "contentHash": "sha256:88faa4d747e035b545c63a555123362c91413424362e7de2f64c0eff09ab4e67"
+        "contentHash": "sha256:cf6d36155406f1ec74ea860ccfeae06626773218ef8ea6d548f1192cc750434e"
       },
       "environments": {
         "codex": {
@@ -16780,7 +17140,7 @@
           "installed": true,
           "invocation": null,
           "detectedBy": "claude-scheduled-task-definition",
-          "contentHash": "sha256:88faa4d747e035b545c63a555123362c91413424362e7de2f64c0eff09ab4e67",
+          "contentHash": "sha256:cf6d36155406f1ec74ea860ccfeae06626773218ef8ea6d548f1192cc750434e",
           "availability": "installed_unverified",
           "evidenceType": "definition_file"
         }
@@ -16794,7 +17154,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -16869,7 +17229,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-10T14:52:17.250Z",
+      "lastVerifiedAt": "2026-09-11T01:08:11.008Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
