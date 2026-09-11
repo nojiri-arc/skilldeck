@@ -52,16 +52,12 @@ const userTextOverrides = new Map([
     example: '依頼文精査お願い！'
   }],
   ['strategy-execution-orchestrator', {
-    description: 'これから始める施策・方針・目標を、担当、実行場所、合格条件、承認点、最初のTODOへ落とし込む設計用の統括Skillです。実行はせず、承認済み施策の進行はinitiative-progress-managerで扱います。',
+    description: '施策・方針・目標を、担当、実行場所、合格条件、承認点、最初のTODOへ落とし込む統括Skillです。',
     example: '施策開始！'
   }],
   ['initiative-progress-manager', {
-    description: '承認済みで進行中の施策を、次の1件の実行、証拠確認、正本更新、次タスク作成まで一貫して進めるSkillです。必要な判断だけをトシへ上げ、施策文脈がある場合に限って日程も組み直します。',
+    description: '承認済み施策を、証拠確認、次タスク作成、判断カード、柔軟な日程調整まで一貫して進めるSkillです。',
     example: '施策進行！'
-  }],
-  ['obsidian-record', {
-    description: '議事録・メモ・方針を、Obsidian Vaultのルールどおりの場所・項目で保存するSkillです。議事録ではToDoを表で示し、承認後だけtodo-addでタスクデポへ登録します。',
-    example: '議事録保存して'
   }],
   ['communication-approval', {
     description: 'Gmailを基本に、指定されたSlack／LINEのやり取りを「確認→返信文案→個別承認後に送信」まで扱うSkillです。社外Slackでは、メンションと宛名を重ねず、既決条件を再掲せず、目的を添えた日程提案・読みやすい段落構成・明確な締めまで整えます。会話内の日程返信案は作成できますが、「スケ調整お願い」「スケジュール調整お願い」だけでは起動せず、送信やカレンダー登録も勝手に行いません。',
@@ -77,8 +73,7 @@ const userTextOverrides = new Map([
 const japaneseNameOverrides = new Map([
   ['elegant-prompt', 'エレガント・プロンプト'],
   ['strategy-execution-orchestrator', '戦略→実行 統括'],
-  ['initiative-progress-manager', '施策進行マネージャー'],
-  ['obsidian-record', 'Obsidian記録']
+  ['initiative-progress-manager', '施策進行マネージャー']
 ]);
 
 const providerNameOverrides = new Map([
@@ -88,15 +83,13 @@ const providerNameOverrides = new Map([
 
 const projectTagOverrides = new Map([
   ['strategy-execution-orchestrator', ['AI運用']],
-  ['initiative-progress-manager', ['AI運用']],
-  ['obsidian-record', ['AI運用']]
+  ['initiative-progress-manager', ['AI運用']]
 ]);
 
 const userTriggerOverrides = new Map([
   ['strategy-execution-orchestrator', ['施策開始！', '$strategy-execution-orchestrator']],
   ['initiative-progress-manager', ['施策進行！', '今日はここまで。スケ調整お願い！', '施策のスケ調整お願い', '$initiative-progress-manager']],
-  ['communication-approval', ['コミュニケーションツールの横断確認お願い！', 'チャット系の横断確認お願い！', '$communication-approval']],
-  ['obsidian-record', ['議事録保存して', 'メモしといて', '方針更新して', '$obsidian-record']]
+  ['communication-approval', ['コミュニケーションツールの横断確認お願い！', 'チャット系の横断確認お願い！', '$communication-approval']]
 ]);
 
 // 同期の事実と実動テストの事実を混同しないための、個別検証状態。
@@ -116,10 +109,6 @@ const userVerificationOverrides = new Map([
   ['manage-codex-claude-mirroring', {
     codex: { availability: 'verified', evidenceType: 'verified_runtime' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。実動テストは未実施。' }
-  }],
-  ['obsidian-record', {
-    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
-    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' }
   }]
 ]);
 
@@ -133,7 +122,6 @@ const categoryByName = new Map([
   ['adv-shiyo-gijiroku', 'meeting-writing-translation'], ['aso-internal-order-request', 'task-operations'],
   ['aso-simulation-and-order-request', 'task-operations'], ['aso-simulation-intake', 'task-operations'],
   ['catchphrase-ideation', 'meeting-writing-translation'],
-  ['obsidian-record', 'meeting-writing-translation'],
   ['calendar-event-and-meet-link', 'task-operations'], ['customer-icebreaker-research', 'sales-customer'],
   ['code-review', 'development-ai'], ['communication-approval', 'task-operations'],
   ['competitive-service-research', 'ads-analysis'], ['create-chatgpt-project', 'development-ai'],
@@ -155,7 +143,6 @@ const categoryByName = new Map([
   ['sales-sheet-update', 'task-operations'], ['skill-registry-update', 'development-ai'],
   ['slide-outline-generator', 'materials-design'], ['sso-quick-diagnostics', 'ads-analysis'],
   ['task-collection-daily-brief', 'task-operations'], ['tdd', 'development-ai'], ['teach', 'meeting-writing-translation'], ['to-spec', 'development-ai'],
-  ['todo-share-table', 'task-operations'],
   ['to-tickets', 'development-ai'], ['yuiitsu-ad-reporting', 'ads-analysis'],
   ['yuiitsu-before-after-posts', 'materials-design'], ['yuiitsu-daily-ads-analysis', 'ads-analysis']
 ]);
