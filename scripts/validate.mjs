@@ -15,7 +15,7 @@ const allowedUsageStatuses = new Set(['recent_signal', 'no_signal']);
 const allowedGovernanceStatuses = new Set(['keep_required', 'keep_recommended', 'needs_review', 'delete_candidate']);
 const categoryIds = new Set(data.categories.map((category) => category.id));
 // 凍結済み旧一覧にだけ残る、実体と公開カードを廃止したSkill。
-const retiredLegacySkillNames = new Set(['ai-workflow-consultant', 'business-card-contact-import', 'calendar-event-and-meet-link', 'prompt-engineering-assistant', 'skill-registry-update', 'wayfinder']);
+const retiredLegacySkillNames = new Set(['ai-workflow-consultant', 'business-card-contact-import', 'calendar-event-and-meet-link', 'prompt-engineering-assistant', 'skill-registry-update', 'wayfinder', 'codex:setup', 'codex:review', 'codex:adversarial-review', 'codex:rescue', 'codex:transfer', 'codex:status', 'codex:result', 'codex:cancel', 'mission-control-daily-brief', 'discord-ai-relay', 'create-chatgpt-project', 'sequential-task-execution', 'grill-me', 'grill-with-docs', 'ask-matt', 'setup-matt-pocock-skills', 'to-spec', 'to-tickets', 'implement', 'tdd', 'teach', 'prototype', 'slide-outline-generator', 'funny-gif', 'japanese-english-translator', 'japanese-korean-translator', 'artifact-template-adv-2', 'sso-quick-diagnostics', 'communication-detection']);
 
 if (data.schemaVersion !== 2) errors.push('schemaVersionは2である必要があります。');
 if (data.categories.length !== 8) errors.push(`カテゴリ数は8である必要があります（現在 ${data.categories.length}）。`);

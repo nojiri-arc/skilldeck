@@ -23,10 +23,10 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'strategy-execution-orchestrator', 'initiative-progress-manager', 'discord-ai-relay', 'communication-approval', 'shiryo-slides']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'strategy-execution-orchestrator', 'initiative-progress-manager', 'communication-approval', 'shiryo-slides', 'cloudflare-web-publish']);
 
 // トシが公開対象から除外するよう指定したレコード。実体の削除や自動化の停止は行わない。
-const PUBLIC_RECORD_EXCLUSIONS = new Set(['automation.claude.yuiitsu-offline-cv-import-check']);
+const PUBLIC_RECORD_EXCLUSIONS = new Set(['automation.claude.yuiitsu-offline-cv-import-check', 'automation.claude.yuiitsu-offline-cv-import-recheck-0915', 'automation.claude.zz-flowtest-child', 'automation.claude.zz-flowtest-parent', 'automation.claude.zz-flowtest-parent2']);
 
 // 環境差分の精査でトシが明示的に「保持」を選んだ旧登録。
 // 現在の環境では未検出でも、削除候補には戻さない。
@@ -71,6 +71,10 @@ const userTextOverrides = new Map([
     description: 'ADV MyシートのTODOタブへ、会社・大項目・中項目・TODO詳細・対応日を既存の並び順と書式どおりに1行追加する。分類は文脈から推測し、対応日だけ不明なら確認する。',
     example: 'TODO追加！'
   }],
+  ['cloudflare-web-publish', {
+    description: 'このMacで作った静的サイト・HTMLアプリを、GitHubリポジトリとCloudflare PagesのGit連携で初めてWeb公開するSkillです。以降はpushするだけで自動で反映されます。トークンをURLに埋め込まず、公開範囲とGitHub Appの認可は事前に確認します。公開済みサイトの更新だけならサイト専用の更新手順を使います。',
+    example: 'Cloudflareでweb化して'
+  }],
   ['shiryo-slides', {
     description: '議事録やメモから、社内資料・提案資料を16:9のHTMLスライドで作るSkillです。最初にスタイル・用途・5テーマを選び、Playwrightで撮影して崩れを直します。既存スライドの修正とPDF化にも対応します。ADV仕様やPPTXが必要なときはADV系Skillを使います。',
     example: 'この議事録から提案資料を作って'
@@ -82,7 +86,8 @@ const japaneseNameOverrides = new Map([
   ['elegant-prompt', 'エレガント・プロンプト'],
   ['strategy-execution-orchestrator', '戦略→実行 統括'],
   ['initiative-progress-manager', '施策進行マネージャー'],
-  ['obsidian-record', 'Obsidian記録']
+  ['obsidian-record', 'Obsidian記録'],
+  ['cloudflare-web-publish', 'Cloudflare Web公開']
 ]);
 
 const providerNameOverrides = new Map([
@@ -131,15 +136,21 @@ const userVerificationOverrides = new Map([
     codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' }
   }],
+  ['cloudflare-web-publish', {
+    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' }
+  }],
   ['shiryo-slides', {
     codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' }
   }]
 ]);
 
-const aliases = new Map([['grill-me', 'grilling']]);
+const aliases = new Map();
 // 実体と登録の両方を廃止したSkill。凍結した旧一覧からも再表示しない。
-const retiredSkillNames = new Set(['business-card-contact-import', 'wayfinder', 'prompt-engineering-assistant', 'ai-workflow-consultant', 'skill-registry-update', 'calendar-event-and-meet-link']);
+const retiredSkillNames = new Set(['business-card-contact-import', 'wayfinder', 'prompt-engineering-assistant', 'ai-workflow-consultant', 'skill-registry-update', 'calendar-event-and-meet-link',
+  // 2026-09-14 トシ承認で退役（SkillDeck精査で不要と判断）。
+  'codex:setup', 'codex:review', 'codex:adversarial-review', 'codex:rescue', 'codex:transfer', 'codex:status', 'codex:result', 'codex:cancel', 'mission-control-daily-brief', 'discord-ai-relay', 'create-chatgpt-project', 'sequential-task-execution', 'grill-me', 'grill-with-docs', 'ask-matt', 'setup-matt-pocock-skills', 'to-spec', 'to-tickets', 'implement', 'tdd', 'teach', 'prototype', 'slide-outline-generator', 'funny-gif', 'japanese-english-translator', 'japanese-korean-translator', 'artifact-template-adv-2', 'sso-quick-diagnostics', 'communication-detection']);
 const categoryByName = new Map([
   ['artifact-template-adv-1', 'materials-design'],
   ['artifact-template-adv-2', 'materials-design'], ['artifact-template-jra', 'materials-design'],
@@ -433,7 +444,7 @@ function makeUserRecord(skill, env) {
   const legacy = legacyByName.get(skillId);
   const existing = findUserRecord(skill);
   const rawName = String(existing?.name ?? displayName).trim().toLocaleLowerCase('ja');
-  const aliasValues = [skill.folder, skill.name, ...(skillId === 'grilling' ? ['grill-me'] : [])].filter((value) => String(value).trim().toLocaleLowerCase('ja') !== rawName);
+  const aliasValues = [skill.folder, skill.name].filter((value) => String(value).trim().toLocaleLowerCase('ja') !== rawName);
   const record = existing ?? {
     id: `user.${skillId}`,
     kind: 'skill',
