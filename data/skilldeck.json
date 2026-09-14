@@ -4,7 +4,7 @@
   "categories": [
     {
       "id": "hall-of-fame",
-      "name": "殿堂入り"
+      "name": "お気に入り"
     },
     {
       "id": "adv",
@@ -14302,6 +14302,90 @@
         "status": "keep_required",
         "actionScope": "none",
         "reason": "ベンダー提供の組み込みSkillです。個別削除ではなく、環境の標準機能として保持します。"
+      }
+    },
+    {
+      "id": "user.shiryo-slides",
+      "kind": "skill",
+      "name": "shiryo-slides",
+      "aliases": [],
+      "description": "議事録やメモから、社内資料・提案資料を16:9のHTMLスライドで作るSkillです。最初にスタイル・用途・5テーマを選び、Playwrightで撮影して崩れを直します。既存スライドの修正とPDF化にも対応します。ADV仕様やPPTXが必要なときはADV系Skillを使います。",
+      "example": "この議事録から提案資料を作って",
+      "category": "hall-of-fame",
+      "projectTags": [],
+      "provider": {
+        "type": "external",
+        "name": "code4biz/shiryo-slides-kit"
+      },
+      "source": {
+        "canonicalId": "skills/shiryo-slides",
+        "contentHash": "sha256:9e8b4c7a58b82e71d7ece616a7bf132a2a3d828ba449c81719f39b72e6a7bb52"
+      },
+      "identity": {
+        "frontmatterName": "shiryo-slides"
+      },
+      "triggers": [
+        "資料を作って",
+        "提案書を作って",
+        "スライドにして",
+        "議事録から資料に",
+        "$shiryo-slides"
+      ],
+      "environments": {
+        "codex": {
+          "configured": true,
+          "installed": true,
+          "invocation": "$shiryo-slides",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:9e8b4c7a58b82e71d7ece616a7bf132a2a3d828ba449c81719f39b72e6a7bb52",
+          "availability": "installed_unverified",
+          "evidenceType": "file_hash_verified",
+          "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/shiryo-slides",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:9e8b4c7a58b82e71d7ece616a7bf132a2a3d828ba449c81719f39b72e6a7bb52",
+          "availability": "installed_unverified",
+          "evidenceType": "file_hash_verified",
+          "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
+        }
+      },
+      "mirror": {
+        "eligible": true,
+        "status": "synced",
+        "reasonCode": null,
+        "reason": null,
+        "portability": "directly_shareable"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-14T10:48:54.000Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "skill",
+        "reason": "利用履歴だけでは不要と断定できません。提供元・依存関係・代替機能を確認して判断します。"
       }
     },
     {

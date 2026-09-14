@@ -12,7 +12,7 @@ const now = new Date().toISOString();
 const usageEvidence = await collectUsageEvidence({ now: new Date(now), days: 7 });
 
 const CATEGORIES = [
-  { id: 'hall-of-fame', name: '殿堂入り' },
+  { id: 'hall-of-fame', name: 'お気に入り' },
   { id: 'adv', name: 'ADV関連' },
   { id: 'development-ai', name: '開発・AI管理' },
   { id: 'sales-customer', name: '営業・顧客対応' },
@@ -23,7 +23,7 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'strategy-execution-orchestrator', 'initiative-progress-manager', 'discord-ai-relay', 'communication-approval']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'strategy-execution-orchestrator', 'initiative-progress-manager', 'discord-ai-relay', 'communication-approval', 'shiryo-slides']);
 
 // トシが公開対象から除外するよう指定したレコード。実体の削除や自動化の停止は行わない。
 const PUBLIC_RECORD_EXCLUSIONS = new Set(['automation.claude.yuiitsu-offline-cv-import-check']);
@@ -70,6 +70,10 @@ const userTextOverrides = new Map([
   ['todo-add', {
     description: 'ADV MyシートのTODOタブへ、会社・大項目・中項目・TODO詳細・対応日を既存の並び順と書式どおりに1行追加する。分類は文脈から推測し、対応日だけ不明なら確認する。',
     example: 'TODO追加！'
+  }],
+  ['shiryo-slides', {
+    description: '議事録やメモから、社内資料・提案資料を16:9のHTMLスライドで作るSkillです。最初にスタイル・用途・5テーマを選び、Playwrightで撮影して崩れを直します。既存スライドの修正とPDF化にも対応します。ADV仕様やPPTXが必要なときはADV系Skillを使います。',
+    example: 'この議事録から提案資料を作って'
   }]
 ]);
 
@@ -86,6 +90,11 @@ const providerNameOverrides = new Map([
   ['initiative-progress-manager', '共通正本Skill（トシ用に作成）']
 ]);
 
+// 外部提供のSkillは、配布先がトシの環境でも由来を自作として表示しない。
+const providerOverrides = new Map([
+  ['shiryo-slides', { type: 'external', name: 'code4biz/shiryo-slides-kit' }]
+]);
+
 const projectTagOverrides = new Map([
   ['strategy-execution-orchestrator', ['AI運用']],
   ['initiative-progress-manager', ['AI運用']],
@@ -96,7 +105,8 @@ const userTriggerOverrides = new Map([
   ['strategy-execution-orchestrator', ['施策開始！', '$strategy-execution-orchestrator']],
   ['initiative-progress-manager', ['施策進行！', '今日はここまで。スケ調整お願い！', '施策のスケ調整お願い', '$initiative-progress-manager']],
   ['communication-approval', ['コミュニケーションツールの横断確認お願い！', 'チャット系の横断確認お願い！', '$communication-approval']],
-  ['obsidian-record', ['議事録保存して', 'メモしといて', '方針更新して', '$obsidian-record']]
+  ['obsidian-record', ['議事録保存して', 'メモしといて', '方針更新して', '$obsidian-record']],
+  ['shiryo-slides', ['資料を作って', '提案書を作って', 'スライドにして', '議事録から資料に', '$shiryo-slides']]
 ]);
 
 // 同期の事実と実動テストの事実を混同しないための、個別検証状態。
@@ -118,6 +128,10 @@ const userVerificationOverrides = new Map([
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。実動テストは未実施。' }
   }],
   ['obsidian-record', {
+    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' }
+  }],
+  ['shiryo-slides', {
     codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' }
   }]
@@ -397,7 +411,7 @@ const normalizeUserToken = (value = '') => canonicalName(String(value).trim()).t
 const userSourceId = (value) => `skills/${canonicalName(String(value).trim().replace(/^skills\//, ''))}`;
 
 function findUserRecord(skill) {
-  const candidates = [...records.values()].filter((record) => record.kind === 'skill' && record.provider.type === 'user');
+  const candidates = [...records.values()].filter((record) => record.kind === 'skill');
   const canonicalId = skill.canonicalId ? userSourceId(skill.canonicalId) : null;
   if (canonicalId) {
     const match = candidates.find((record) => record.source.canonicalId === canonicalId);
@@ -430,7 +444,7 @@ function makeUserRecord(skill, env) {
     example: userTextOverrides.get(skillId)?.example ?? legacy?.e ?? '',
     category: categoryFor(skillId, legacy),
     projectTags: projectTagOverrides.get(skillId) ?? projectTags(skillId, legacy),
-    provider: { type: 'user', name: providerNameOverrides.get(skillId) ?? 'トシ用に作成' },
+    provider: providerOverrides.get(skillId) ?? { type: 'user', name: providerNameOverrides.get(skillId) ?? 'トシ用に作成' },
     source: { canonicalId: userSourceId(skill.canonicalId || skillId), contentHash: null },
     identity: { frontmatterName: skill.name || null },
     triggers: userTriggerOverrides.get(skillId) ?? [],
@@ -442,6 +456,7 @@ function makeUserRecord(skill, env) {
   };
   records.set(record.id, record);
   record.name = displayName;
+  record.provider = providerOverrides.get(skillId) ?? { type: 'user', name: providerNameOverrides.get(skillId) ?? 'トシ用に作成' };
   if (japaneseNameOverrides.has(skillId)) record.japaneseName = japaneseNameOverrides.get(skillId);
   else delete record.japaneseName;
   record.aliases = [...new Set([...record.aliases, ...aliasValues])];

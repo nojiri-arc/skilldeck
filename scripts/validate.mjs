@@ -19,7 +19,7 @@ const retiredLegacySkillNames = new Set(['ai-workflow-consultant', 'business-car
 
 if (data.schemaVersion !== 2) errors.push('schemaVersionは2である必要があります。');
 if (data.categories.length !== 8) errors.push(`カテゴリ数は8である必要があります（現在 ${data.categories.length}）。`);
-if (data.categories[0]?.id !== 'hall-of-fame') errors.push('第1カテゴリは殿堂入りである必要があります。');
+if (data.categories[0]?.id !== 'hall-of-fame' || data.categories[0]?.name !== 'お気に入り') errors.push('第1カテゴリはID hall-of-fame・表示名 お気に入り である必要があります。');
 if (data.categories[1]?.id !== 'adv') errors.push('第2カテゴリはADV関連である必要があります。');
 if (data.inventory.legacyCount !== legacy.skills.length) errors.push(`旧登録の件数が一致しません（台帳 ${data.inventory.legacyCount}件、正本 ${legacy.skills.length}件）。`);
 
