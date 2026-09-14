@@ -15,7 +15,7 @@ const allowedUsageStatuses = new Set(['recent_signal', 'no_signal']);
 const allowedGovernanceStatuses = new Set(['keep_required', 'keep_recommended', 'needs_review', 'delete_candidate']);
 const categoryIds = new Set(data.categories.map((category) => category.id));
 // 凍結済み旧一覧にだけ残る、実体と公開カードを廃止したSkill。
-const retiredLegacySkillNames = new Set(['ai-workflow-consultant', 'business-card-contact-import', 'calendar-event-and-meet-link', 'prompt-engineering-assistant', 'skill-registry-update', 'wayfinder', 'codex:setup', 'codex:review', 'codex:adversarial-review', 'codex:rescue', 'codex:transfer', 'codex:status', 'codex:result', 'codex:cancel', 'mission-control-daily-brief', 'discord-ai-relay', 'create-chatgpt-project', 'sequential-task-execution', 'grill-me', 'grill-with-docs', 'ask-matt', 'setup-matt-pocock-skills', 'to-spec', 'to-tickets', 'implement', 'tdd', 'teach', 'prototype', 'slide-outline-generator', 'funny-gif', 'japanese-english-translator', 'japanese-korean-translator', 'artifact-template-adv-2', 'sso-quick-diagnostics', 'communication-detection']);
+const retiredLegacySkillNames = new Set(['ai-workflow-consultant', 'business-card-contact-import', 'calendar-event-and-meet-link', 'prompt-engineering-assistant', 'skill-registry-update', 'wayfinder', 'codex:setup', 'codex:review', 'codex:adversarial-review', 'codex:rescue', 'codex:transfer', 'codex:status', 'codex:result', 'codex:cancel', 'mission-control-daily-brief', 'discord-ai-relay', 'create-chatgpt-project', 'sequential-task-execution', 'grill-me', 'grill-with-docs', 'ask-matt', 'setup-matt-pocock-skills', 'to-spec', 'to-tickets', 'implement', 'tdd', 'teach', 'prototype', 'slide-outline-generator', 'funny-gif', 'japanese-english-translator', 'japanese-korean-translator', 'artifact-template-adv-2', 'sso-quick-diagnostics', 'communication-detection', 'strategy-execution-orchestrator', 'initiative-progress-manager']);
 
 if (data.schemaVersion !== 2) errors.push('schemaVersionは2である必要があります。');
 if (data.categories.length !== 8) errors.push(`カテゴリ数は8である必要があります（現在 ${data.categories.length}）。`);
@@ -64,7 +64,7 @@ for (const capability of data.inventory.capabilities ?? []) {
   if (!capability.id || !capability.name || !['MCP', 'App', '能力'].includes(capability.type) || !['codex', 'claude'].includes(capability.environment)) errors.push(`能力台帳の形式不正: ${capability.id ?? '名前なし'}`);
   if (!allowedAvailability.has(capability.availability)) errors.push(`能力台帳の利用状態不正: ${capability.id}`);
 }
-const runtimeUnverifiedClaudeSkills = new Set(['strategy-execution-orchestrator', 'initiative-progress-manager', 'elegant-prompt', 'manage-codex-claude-mirroring']);
+const runtimeUnverifiedClaudeSkills = new Set(['elegant-prompt', 'manage-codex-claude-mirroring']);
 for (const name of runtimeUnverifiedClaudeSkills) {
   const record = data.records.find((item) => item.name === name || item.id === `user.${name}` || item.id === `canonical.${name}`);
   const environment = record?.environments?.claude;

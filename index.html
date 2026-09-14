@@ -126,7 +126,7 @@
       'strict-recheck-and-refine':'厳しめの再確認をお願い！',
       'todo-add':'TODOシートに追加して'
     };
-    const roleBadgeByName = { 'strict-recheck-and-refine':'検品スキル', 'strategy-execution-orchestrator':'共通Skill・AI運用', 'initiative-progress-manager':'共通Skill・AI運用' };
+    const roleBadgeByName = { 'strict-recheck-and-refine':'検品スキル' };
     function isUnknownExample(value = '') { return !value.trim() || /^(依頼例は)?要確認です。?$/.test(value.trim()); }
     function requestExample(record) {
       const supplied = record.example?.trim();

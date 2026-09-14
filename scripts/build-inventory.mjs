@@ -23,7 +23,7 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'strategy-execution-orchestrator', 'initiative-progress-manager', 'communication-approval', 'shiryo-slides', 'cloudflare-web-publish']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'cloudflare-web-publish']);
 
 // トシが公開対象から除外するよう指定したレコード。実体の削除や自動化の停止は行わない。
 const PUBLIC_RECORD_EXCLUSIONS = new Set(['automation.claude.yuiitsu-offline-cv-import-check', 'automation.claude.yuiitsu-offline-cv-import-recheck-0915', 'automation.claude.zz-flowtest-child', 'automation.claude.zz-flowtest-parent', 'automation.claude.zz-flowtest-parent2']);
@@ -51,14 +51,6 @@ const userTextOverrides = new Map([
     description: '重要なAI依頼を送る前に、目的・成果物・合格／失格条件・証拠・テスト・終了条件・権限の境界を明確にし、制作AI用と独立検品AI用の依頼文を作るSkillです。',
     example: '依頼文精査お願い！'
   }],
-  ['strategy-execution-orchestrator', {
-    description: 'これから始める施策・方針・目標を、担当、実行場所、合格条件、承認点、最初のTODOへ落とし込む設計用の統括Skillです。実行はせず、承認済み施策の進行はinitiative-progress-managerで扱います。',
-    example: '施策開始！'
-  }],
-  ['initiative-progress-manager', {
-    description: '承認済みで進行中の施策を、次の1件の実行、証拠確認、正本更新、次タスク作成まで一貫して進めるSkillです。必要な判断だけをトシへ上げ、施策文脈がある場合に限って日程も組み直します。',
-    example: '施策進行！'
-  }],
   ['obsidian-record', {
     description: '議事録・メモ・方針を、Obsidian Vaultのルールどおりの場所・項目で保存するSkillです。議事録ではToDoを表で示し、承認後だけtodo-addでタスクデポへ登録します。',
     example: '議事録保存して'
@@ -84,16 +76,11 @@ const userTextOverrides = new Map([
 // メイン表示は英語のSkill IDに統一し、日本語名がある場合だけ補助表示する。
 const japaneseNameOverrides = new Map([
   ['elegant-prompt', 'エレガント・プロンプト'],
-  ['strategy-execution-orchestrator', '戦略→実行 統括'],
-  ['initiative-progress-manager', '施策進行マネージャー'],
   ['obsidian-record', 'Obsidian記録'],
   ['cloudflare-web-publish', 'Cloudflare Web公開']
 ]);
 
-const providerNameOverrides = new Map([
-  ['strategy-execution-orchestrator', '共通正本Skill（トシ用に作成）'],
-  ['initiative-progress-manager', '共通正本Skill（トシ用に作成）']
-]);
+const providerNameOverrides = new Map();
 
 // 外部提供のSkillは、配布先がトシの環境でも由来を自作として表示しない。
 const providerOverrides = new Map([
@@ -101,14 +88,10 @@ const providerOverrides = new Map([
 ]);
 
 const projectTagOverrides = new Map([
-  ['strategy-execution-orchestrator', ['AI運用']],
-  ['initiative-progress-manager', ['AI運用']],
   ['obsidian-record', ['AI運用']]
 ]);
 
 const userTriggerOverrides = new Map([
-  ['strategy-execution-orchestrator', ['施策開始！', '$strategy-execution-orchestrator']],
-  ['initiative-progress-manager', ['施策進行！', '今日はここまで。スケ調整お願い！', '施策のスケ調整お願い', '$initiative-progress-manager']],
   ['communication-approval', ['コミュニケーションツールの横断確認お願い！', 'チャット系の横断確認お願い！', '$communication-approval']],
   ['obsidian-record', ['議事録保存して', 'メモしといて', '方針更新して', '$obsidian-record']],
   ['shiryo-slides', ['資料を作って', '提案書を作って', 'スライドにして', '議事録から資料に', '$shiryo-slides']]
@@ -118,14 +101,6 @@ const userTriggerOverrides = new Map([
 const userVerificationOverrides = new Map([
   ['elegant-prompt', {
     codex: { availability: 'verified', evidenceType: 'clean_room_test' },
-    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。実動テストは未実施。' }
-  }],
-  ['strategy-execution-orchestrator', {
-    codex: { availability: 'verified', evidenceType: 'clean_room_test', verificationNote: 'Codex Clean Room Testを完了。' },
-    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。実動テストは未実施。' }
-  }],
-  ['initiative-progress-manager', {
-    codex: { availability: 'verified', evidenceType: 'clean_room_test', verificationNote: 'Codex Clean Room Testを完了。' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。実動テストは未実施。' }
   }],
   ['manage-codex-claude-mirroring', {
@@ -150,7 +125,9 @@ const aliases = new Map();
 // 実体と登録の両方を廃止したSkill。凍結した旧一覧からも再表示しない。
 const retiredSkillNames = new Set(['business-card-contact-import', 'wayfinder', 'prompt-engineering-assistant', 'ai-workflow-consultant', 'skill-registry-update', 'calendar-event-and-meet-link',
   // 2026-09-14 トシ承認で退役（SkillDeck精査で不要と判断）。
-  'codex:setup', 'codex:review', 'codex:adversarial-review', 'codex:rescue', 'codex:transfer', 'codex:status', 'codex:result', 'codex:cancel', 'mission-control-daily-brief', 'discord-ai-relay', 'create-chatgpt-project', 'sequential-task-execution', 'grill-me', 'grill-with-docs', 'ask-matt', 'setup-matt-pocock-skills', 'to-spec', 'to-tickets', 'implement', 'tdd', 'teach', 'prototype', 'slide-outline-generator', 'funny-gif', 'japanese-english-translator', 'japanese-korean-translator', 'artifact-template-adv-2', 'sso-quick-diagnostics', 'communication-detection']);
+  'codex:setup', 'codex:review', 'codex:adversarial-review', 'codex:rescue', 'codex:transfer', 'codex:status', 'codex:result', 'codex:cancel', 'mission-control-daily-brief', 'discord-ai-relay', 'create-chatgpt-project', 'sequential-task-execution', 'grill-me', 'grill-with-docs', 'ask-matt', 'setup-matt-pocock-skills', 'to-spec', 'to-tickets', 'implement', 'tdd', 'teach', 'prototype', 'slide-outline-generator', 'funny-gif', 'japanese-english-translator', 'japanese-korean-translator', 'artifact-template-adv-2', 'sso-quick-diagnostics', 'communication-detection',
+  // 2026-09-15 トシ承認で退役（統括AI・案件長が前提の旧体制の施策スキル）。
+  'strategy-execution-orchestrator', 'initiative-progress-manager']);
 const categoryByName = new Map([
   ['artifact-template-adv-1', 'materials-design'],
   ['artifact-template-adv-2', 'materials-design'], ['artifact-template-jra', 'materials-design'],
