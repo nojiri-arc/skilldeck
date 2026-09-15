@@ -36,12 +36,14 @@ const checks = [
   ['Codex選択はCodexの導入・設定証跡がある項目だけ', codex.every((record) => record.environments.codex.configured || record.environments.codex.installed)],
   ['Claude選択はClaudeの導入・設定証跡がある項目だけ', claude.every((record) => record.environments.claude.configured || record.environments.claude.installed)],
   ['両選択は両環境の導入・設定証跡がある項目だけ', both.every((record) => (record.environments.codex.configured || record.environments.codex.installed) && (record.environments.claude.configured || record.environments.claude.installed))],
-  ['全8カテゴリに表示対象がある', data.categories.length === 8 && Object.values(categoryCounts).every((count) => count > 0)],
+  ['全9カテゴリに表示対象がある', data.categories.length === 9 && Object.values(categoryCounts).every((count) => count > 0)],
   ['第1カテゴリはお気に入り', data.categories[0]?.id === 'hall-of-fame' && data.categories[0]?.name === 'お気に入り'],
   ['お気に入りには現行指定Skillを登録する', hallOfFameSkills.length === 6 && hallOfFameSkills.every((record) => record.kind === 'skill') && ['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'cloudflare-web-publish'].every((name) => hallOfFameSkills.some((record) => record.name === name))],
-  ['第2カテゴリはADV関連', data.categories[1]?.id === 'adv'],
-  ['ADVタグのSkillはADV関連', all.filter((record) => record.projectTags.includes('ADV')).every((record) => record.category === 'adv')],
-  ['第3カテゴリは開発・AI管理', data.categories[2]?.id === 'development-ai'],
+  ['第2カテゴリは担当業務特化', data.categories[1]?.id === 'specialized-work' && data.categories[1]?.name === '担当業務特化'],
+  ['ゆいいつ・業務導線Skillは担当業務特化', ['adv-new-attacker', 'task-depot-sync-now', 'todo-share-table', 'yuiitsu-ad-reporting', 'yuiitsu-before-after-posts', 'yuiitsu-daily-ads-analysis'].every((name) => all.some((record) => record.name === name && record.category === 'specialized-work'))],
+  ['既存のADV関連カテゴリに表示対象がある', all.some((record) => record.category === 'adv')],
+  ['第3カテゴリはADV関連', data.categories[2]?.id === 'adv'],
+  ['第4カテゴリは開発・AI管理', data.categories[3]?.id === 'development-ai'],
   ['由来は自作・公式・他作だけ', all.every((record) => ['自作', '公式', '他作'].includes(origin(record)))],
   ['通常一覧にcommand・agent・自動実行を混在させない', all.every((record) => ['skill', 'builtin_skill', 'plugin_skill'].includes(record.kind))],
   ['共通正本の未配布Skillを通常一覧に混在させない', !all.some((record) => record.id === 'canonical.manage-codex-claude-mirroring')],
@@ -50,7 +52,7 @@ const checks = [
   ['researchは公式Plugin版だけを表示する', all.filter((record) => record.name === 'research').length === 1 && all.some((record) => record.name === 'research' && record.provider.type === 'plugin') && !duplicates.some(([name]) => name === 'research')],
   ['ADV Plugin Skillの環境別複製を1カードへ統合する', ['adv-business-knowledge','adv-shiryo-sakusei','adv-shiyo-gijiroku','aso-internal-order-request','aso-simulation-and-order-request','aso-simulation-intake','customer-icebreaker-research','draft-client-proposal','draft-sales-email','makeleaps-client-registration','makeleaps-orderslip-creation','meeting-minutes-notion-registration','mtg-after-automation','pipedrive-manage-sales','post-order-operations-router','review-cleaning-sales-sheet-update','review-cleaning-sheet-setup','review-screenshot-automation-setup','review-screenshot-daily-operations','review-screenshot-reflection','sales-deal-lifecycle-router','sales-sheet-update','task-collection-daily-brief'].every((name) => { const matches=all.filter((record) => record.name === name); return matches.length === 1 && matches[0].environments.codex.installed && matches[0].environments.claude.installed; })],
   ['2026-09-14に退役したSkill・旧コマンドを再表示しない', !['codex:setup', 'codex:review', 'codex:adversarial-review', 'codex:rescue', 'codex:transfer', 'codex:status', 'codex:result', 'codex:cancel', 'mission-control-daily-brief', 'discord-ai-relay', 'create-chatgpt-project', 'sequential-task-execution', 'grill-me', 'grill-with-docs', 'ask-matt', 'setup-matt-pocock-skills', 'to-spec', 'to-tickets', 'implement', 'tdd', 'teach', 'prototype', 'slide-outline-generator', 'funny-gif', 'japanese-english-translator', 'japanese-korean-translator', 'artifact-template-adv-2', 'sso-quick-diagnostics', 'communication-detection'].some((name) => all.some((record) => record.name === name || record.aliases?.includes(name)))]
-  ,['カテゴリ選択後も8カテゴリの件数を算出できる', data.categories.length === 8 && Object.values(categoryCounts).every((count) => count > 0)]
+  ,['カテゴリ選択後も9カテゴリの件数を算出できる', data.categories.length === 9 && Object.values(categoryCounts).every((count) => count > 0)]
   ,['旧形式と現行Skillの移行候補を自動削除せず保持する', migrationCandidates.length === 3 && migrationCandidates.every((candidate) => candidate.recordIds.length === 2)]
   ,['スキル以外の画面では環境フィルターを表示しない', differenceViewHidesEnvironment]
   ,['由来3区分を常時見えるボタンで絞り込める', ['自作','他作','公式'].every((provider) => html.includes(`data-provider="${provider}"`)) && html.includes('originBadge(record)')]

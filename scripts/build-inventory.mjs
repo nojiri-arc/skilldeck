@@ -13,6 +13,7 @@ const usageEvidence = await collectUsageEvidence({ now: new Date(now), days: 7 }
 
 const CATEGORIES = [
   { id: 'hall-of-fame', name: 'お気に入り' },
+  { id: 'specialized-work', name: '担当業務特化' },
   { id: 'adv', name: 'ADV関連' },
   { id: 'development-ai', name: '開発・AI管理' },
   { id: 'sales-customer', name: '営業・顧客対応' },
@@ -302,8 +303,22 @@ function projectTags(name, legacy) {
   return [];
 }
 
+const SPECIALIZED_WORK_SKILLS = new Set([
+  'adv-new-attacker',
+  'task-depot-sync-now',
+  'todo-share-table',
+  'yuiitsu-ad-reporting',
+  'yuiitsu-before-after-posts',
+  'yuiitsu-daily-ads-analysis',
+]);
+
+function isSpecializedWorkSkill(name) {
+  return SPECIALIZED_WORK_SKILLS.has(name);
+}
+
 function categoryFor(name, legacy) {
   if (HALL_OF_FAME_SKILLS.has(name)) return 'hall-of-fame';
+  if (isSpecializedWorkSkill(name)) return 'specialized-work';
   if (isAdvSkill(name, legacy)) return 'adv';
   if (categoryByName.has(name)) return categoryByName.get(name);
   if (name.startsWith('adv-') || name.includes('sales') || name.includes('order') || name.includes('customer')) return 'sales-customer';

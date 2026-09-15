@@ -18,9 +18,10 @@ const categoryIds = new Set(data.categories.map((category) => category.id));
 const retiredLegacySkillNames = new Set(['ai-workflow-consultant', 'business-card-contact-import', 'calendar-event-and-meet-link', 'prompt-engineering-assistant', 'skill-registry-update', 'wayfinder', 'codex:setup', 'codex:review', 'codex:adversarial-review', 'codex:rescue', 'codex:transfer', 'codex:status', 'codex:result', 'codex:cancel', 'mission-control-daily-brief', 'discord-ai-relay', 'create-chatgpt-project', 'sequential-task-execution', 'grill-me', 'grill-with-docs', 'ask-matt', 'setup-matt-pocock-skills', 'to-spec', 'to-tickets', 'implement', 'tdd', 'teach', 'prototype', 'slide-outline-generator', 'funny-gif', 'japanese-english-translator', 'japanese-korean-translator', 'artifact-template-adv-2', 'sso-quick-diagnostics', 'communication-detection', 'strategy-execution-orchestrator', 'initiative-progress-manager']);
 
 if (data.schemaVersion !== 2) errors.push('schemaVersionは2である必要があります。');
-if (data.categories.length !== 8) errors.push(`カテゴリ数は8である必要があります（現在 ${data.categories.length}）。`);
+if (data.categories.length !== 9) errors.push(`カテゴリ数は9である必要があります（現在 ${data.categories.length}）。`);
 if (data.categories[0]?.id !== 'hall-of-fame' || data.categories[0]?.name !== 'お気に入り') errors.push('第1カテゴリはID hall-of-fame・表示名 お気に入り である必要があります。');
-if (data.categories[1]?.id !== 'adv') errors.push('第2カテゴリはADV関連である必要があります。');
+if (data.categories[1]?.id !== 'specialized-work' || data.categories[1]?.name !== '担当業務特化') errors.push('第2カテゴリはID specialized-work・表示名 担当業務特化である必要があります。');
+if (data.categories[2]?.id !== 'adv') errors.push('第3カテゴリはADV関連である必要があります。');
 if (data.inventory.legacyCount !== legacy.skills.length) errors.push(`旧登録の件数が一致しません（台帳 ${data.inventory.legacyCount}件、正本 ${legacy.skills.length}件）。`);
 
 for (const record of data.records) {
