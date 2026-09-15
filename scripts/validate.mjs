@@ -4,6 +4,7 @@ import { resolve } from 'node:path';
 const root = resolve(import.meta.dirname, '..');
 const data = JSON.parse(await readFile(resolve(root, 'data/skilldeck.json'), 'utf8'));
 const legacy = JSON.parse(await readFile(resolve(root, 'data/legacy-skills.json'), 'utf8'));
+const recipes = JSON.parse(await readFile(resolve(root, 'data/request-recipes.json'), 'utf8'));
 const errors = [];
 const ids = new Set();
 const names = new Set();
@@ -14,6 +15,7 @@ const allowedPortability = new Set(['directly_shareable', 'adapter_required', 'f
 const allowedUsageStatuses = new Set(['recent_signal', 'no_signal']);
 const allowedGovernanceStatuses = new Set(['keep_required', 'keep_recommended', 'needs_review', 'delete_candidate']);
 const categoryIds = new Set(data.categories.map((category) => category.id));
+const recipeCategoryIds = new Set(recipes.categories.map((category) => category.id));
 // 凍結済み旧一覧にだけ残る、実体と公開カードを廃止したSkill。
 const retiredLegacySkillNames = new Set(['ai-workflow-consultant', 'business-card-contact-import', 'calendar-event-and-meet-link', 'prompt-engineering-assistant', 'skill-registry-update', 'wayfinder', 'codex:setup', 'codex:review', 'codex:adversarial-review', 'codex:rescue', 'codex:transfer', 'codex:status', 'codex:result', 'codex:cancel', 'mission-control-daily-brief', 'discord-ai-relay', 'create-chatgpt-project', 'sequential-task-execution', 'grill-me', 'grill-with-docs', 'ask-matt', 'setup-matt-pocock-skills', 'to-spec', 'to-tickets', 'implement', 'tdd', 'teach', 'prototype', 'slide-outline-generator', 'funny-gif', 'japanese-english-translator', 'japanese-korean-translator', 'artifact-template-adv-2', 'sso-quick-diagnostics', 'communication-detection', 'strategy-execution-orchestrator', 'initiative-progress-manager']);
 
@@ -23,6 +25,17 @@ if (data.categories[0]?.id !== 'hall-of-fame' || data.categories[0]?.name !== '�
 if (data.categories[1]?.id !== 'specialized-work' || data.categories[1]?.name !== '担当業務特化') errors.push('第2カテゴリはID specialized-work・表示名 担当業務特化である必要があります。');
 if (data.categories[2]?.id !== 'adv') errors.push('第3カテゴリはADV関連である必要があります。');
 if (data.inventory.legacyCount !== legacy.skills.length) errors.push(`旧登録の件数が一致しません（台帳 ${data.inventory.legacyCount}件、正本 ${legacy.skills.length}件）。`);
+if (recipes.schemaVersion !== 1) errors.push('依頼レシピのschemaVersionは1である必要があります。');
+const recipeIds = new Set();
+const availableSkillNames = new Set(data.records.filter((record) => ['skill', 'builtin_skill', 'plugin_skill'].includes(record.kind)).map((record) => record.name));
+for (const recipe of recipes.recipes) {
+  if (!recipe.id || recipeIds.has(recipe.id)) errors.push(`依頼レシピID不正・重複: ${recipe.id ?? '名前なし'}`);
+  recipeIds.add(recipe.id);
+  if (!recipeCategoryIds.has(recipe.category)) errors.push(`依頼レシピのカテゴリ不正: ${recipe.id}`);
+  if (!recipe.title || !recipe.need || !recipe.prompt) errors.push(`依頼レシピの説明不足: ${recipe.id}`);
+  if (!Array.isArray(recipe.skills) || !recipe.skills.length || recipe.skills.some((name) => !availableSkillNames.has(name))) errors.push(`依頼レシピのSkill参照不正: ${recipe.id}`);
+  if (!Array.isArray(recipe.outputs) || !recipe.outputs.length) errors.push(`依頼レシピの成果物不足: ${recipe.id}`);
+}
 
 for (const record of data.records) {
   if (ids.has(record.id)) errors.push(`ID重複: ${record.id}`);
@@ -110,4 +123,5 @@ console.log(JSON.stringify({
   normalSkills: normalSkills.length,
   evidence: data.inventory.evidence,
   statuses: Object.fromEntries([...allowedStatuses].map((status) => [status, data.records.filter((record) => record.mirror.status === status).length]))
+  ,recipes: recipes.recipes.length
 }, null, 2));

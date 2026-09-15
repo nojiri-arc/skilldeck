@@ -5,6 +5,7 @@ const publicFiles = [
   'index.html',
   'data/legacy-skills.json',
   'data/skilldeck.json',
+  'data/request-recipes.json',
   'scripts/build-inventory.mjs',
   'scripts/extract-legacy.mjs',
   'scripts/inventory-utils.mjs'

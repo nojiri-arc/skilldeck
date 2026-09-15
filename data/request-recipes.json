@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-15",
+  "categories": [
+    { "id": "summarize", "name": "まとめる・伝える" },
+    { "id": "analyze", "name": "数字を読む" },
+    { "id": "create", "name": "作る・改善する" },
+    { "id": "operate", "name": "業務を片づける" },
+    { "id": "check", "name": "点検する" }
+  ],
+  "recipes": [
+    {
+      "id": "report-clear-summary",
+      "category": "summarize",
+      "title": "長いレポートを、3分で分かる形にする",
+      "need": "レポートはあるけれど、結論や重要な数字が伝わりにくい",
+      "prompt": "このレポートを、経営側が3分で理解できる形にまとめて。結論を先に置き、重要な数字は比較が分かるグラフにして、判断事項と次のアクションまで整理して。",
+      "skills": ["build-report", "visualize-data"],
+      "outputs": ["結論先行の要約", "根拠が追えるグラフ", "判断事項と次のアクション"]
+    },
+    {
+      "id": "report-to-slides",
+      "category": "summarize",
+      "title": "レポートを、そのまま会議用スライドにする",
+      "need": "分析結果を、説明しやすい資料へ整えたい",
+      "prompt": "このレポートを会議用の8枚のスライドにして。1枚1メッセージで、重要な数値はグラフ化し、元データの意味を変えずにデザインも整えて。",
+      "skills": ["build-report", "visualize-data", "Presentations"],
+      "outputs": ["編集可能なスライド", "要点が伝わる構成", "表・グラフと出典"]
+    },
+    {
+      "id": "competitive-decision-report",
+      "category": "summarize",
+      "title": "競合調査を、選ぶための比較資料にする",
+      "need": "競合を調べるだけでなく、自社がどう動くか決めたい",
+      "prompt": "このサービスの主要競合を公式情報で調べて。料金、機能、強み、弱みを比較し、どの顧客にどれが合うかと、自社が取るべき方針をレポートにして。",
+      "skills": ["competitive-service-research", "build-report"],
+      "outputs": ["一次情報ベースの比較", "選定基準", "推奨方針と未確認事項"]
+    },
+    {
+      "id": "meeting-to-proposal",
+      "category": "summarize",
+      "title": "商談メモから、提案書のたたき台を作る",
+      "need": "打ち合わせ内容を、相手に伝わる提案へ進めたい",
+      "prompt": "この商談メモと過去のやり取りから、相手の課題、提案内容、導入効果、進め方を整理して、ADVの形式で提案書のたたき台を作って。",
+      "skills": ["draft-client-proposal", "adv-shiryo-sakusei"],
+      "outputs": ["提案の論理構成", "相手向けの説明文", "編集可能な提案資料"]
+    },
+    {
+      "id": "important-request-refinement",
+      "category": "summarize",
+      "title": "大事なAI依頼を、抜けのない指示に整える",
+      "need": "やりたいことはあるが、AIへの頼み方が曖昧なまま",
+      "prompt": "この依頼をエレガント・プロンプトにして。目的、完了条件、参照情報、制約、確認が必要な操作を整理し、そのまま別のAIへ渡せる文章にして。",
+      "skills": ["elegant-prompt"],
+      "outputs": ["そのまま使える依頼文", "不足情報の整理", "完了条件と制約"]
+    },
+    {
+      "id": "spreadsheet-dashboard",
+      "category": "analyze",
+      "title": "スプレッドシートを、見えるダッシュボードにする",
+      "need": "表の数字を眺めても、変化や問題点がつかめない",
+      "prompt": "このスプレッドシートの数値と定義を確認して、重要指標、推移、内訳、異常がひと目で分かるダッシュボードを作って。データの欠損や不整合も先に確認して。",
+      "skills": ["google-sheets", "analyze-data-quality", "build-dashboard", "visualize-data"],
+      "outputs": ["データ品質の確認結果", "主要KPIとグラフ", "絞り込み可能なダッシュボード"]
+    },
+    {
+      "id": "metric-change-diagnosis",
+      "category": "analyze",
+      "title": "落ちた数字の原因候補を、根拠つきで絞る",
+      "need": "売上やCV率が変化したが、どこから見るべきか分からない",
+      "prompt": "先月からCV率が落ちた理由を調べて。期間、流入経路、端末、ページ別に分け、変化への寄与が大きい順に示して。断定できない点と次に必要なデータも分けて。",
+      "skills": ["metric-diagnostics", "visualize-data", "build-report"],
+      "outputs": ["変化の寄与分解", "原因候補の優先順位", "追加で確認すべきデータ"]
+    },
+    {
+      "id": "google-ads-improvement",
+      "category": "analyze",
+      "title": "Google広告の数字から、次の改善を決める",
+      "need": "管理画面の数値を、具体的な改善案につなげたい",
+      "prompt": "Google広告の直近30日を前期間と比較して分析して。成果が伸びた要因と落ちた要因を分け、予算を変える前に確認すべき点と、優先度の高い改善案をまとめて。",
+      "skills": ["google-ads-consultant", "visualize-data"],
+      "outputs": ["期間比較と要因整理", "改善案の優先順位", "実行前の確認事項"]
+    },
+    {
+      "id": "yuiitsu-ads-update",
+      "category": "analyze",
+      "title": "ゆいいつの広告状況を、共有文までまとめる",
+      "need": "広告データを確認し、社内へ簡潔に共有したい",
+      "prompt": "ゆいいつの最新広告データを確認して、前期間との変化、良かった点、懸念点、次に見るべき点をまとめて。共有用のSlack文案も作って。",
+      "skills": ["yuiitsu-ad-reporting", "yuiitsu-daily-ads-analysis"],
+      "outputs": ["数値に基づく所見", "懸念と確認事項", "社内共有用の文案"]
+    },
+    {
+      "id": "landing-page-plan",
+      "category": "create",
+      "title": "商品メモから、LPの構成とコピーを作る",
+      "need": "伝えたい内容はあるが、LPの順番や言葉にできていない",
+      "prompt": "この商品メモからLPを設計して。ターゲット、悩み、提供価値、根拠、CTAを整理し、ファーストビューのキャッチコピー案も複数出して。",
+      "skills": ["plan-landing-page", "catchphrase-ideation"],
+      "outputs": ["LPのセクション構成", "訴求メッセージ", "キャッチコピーとCTA案"]
+    },
+    {
+      "id": "canva-review-fix",
+      "category": "create",
+      "title": "Canva資料を点検して、そのまま直す",
+      "need": "資料の違和感はあるが、どこを直せばよいか分からない",
+      "prompt": "このCanva資料をブランドと読みやすさの観点で確認して。問題点を重要度順に整理し、承認済みのブランドルールに合わせて修正まで反映して。",
+      "skills": ["canva-brand-check", "canva-implement-feedback"],
+      "outputs": ["ブランド違反の一覧", "読みやすさの改善点", "修正済みCanvaデザイン"]
+    },
+    {
+      "id": "screenshot-to-site",
+      "category": "create",
+      "title": "参考画面から、動くWebページを作る",
+      "need": "スクリーンショットやデザイン案を、実際に触れる形にしたい",
+      "prompt": "このスクリーンショットを参考に、見た目と操作感を再現したレスポンシブなWebページを作って。表示崩れがないか確認し、ローカルで試せる状態にして。",
+      "skills": ["image-to-code", "sites-building"],
+      "outputs": ["動作するWebページ", "スマホ対応", "確認できるローカル版"]
+    },
+    {
+      "id": "claude-idea-to-plan",
+      "category": "create",
+      "title": "曖昧な企画を、Claudeで実行計画まで詰める",
+      "need": "アイデアはあるが、前提や弱点を整理できていない",
+      "prompt": "この企画をブレストしたあと、弱い前提や見落としを厳しく質問して。回答を踏まえて、実行順、確認ポイント、完了条件が分かる計画にして。",
+      "skills": ["brainstorming", "grilling", "writing-plans"],
+      "outputs": ["論点と選択肢", "見落としへの質問", "実行可能な計画"]
+    },
+    {
+      "id": "claude-feature-development",
+      "category": "create",
+      "title": "Claudeで実装計画から検品まで通して進める",
+      "need": "機能追加を、工程を飛ばさず安全に進めたい",
+      "prompt": "この要件から実装計画を作り、独立した単位に分けて実装して。完了前にコードレビューを依頼し、指摘を反映したうえで検証結果までまとめて。",
+      "skills": ["writing-plans", "subagent-driven-development", "requesting-code-review", "verification-before-completion"],
+      "outputs": ["実装計画", "レビュー済みの変更", "検証結果と残課題"]
+    },
+    {
+      "id": "meeting-follow-up",
+      "category": "operate",
+      "title": "会議後の議事録・連絡・案件整理をまとめて進める",
+      "need": "会議後の記録やフォロー漏れをなくしたい",
+      "prompt": "この文字起こしを会議後フローで処理して。決定事項、未決事項、担当別TODOを整理し、Slack共有文案とCRM更新候補まで準備して。外部送信や更新は確認前に止めて。",
+      "skills": ["mtg-after-automation"],
+      "outputs": ["構造化した議事録", "担当別TODO", "Slack・CRMの更新案"]
+    },
+    {
+      "id": "daily-action-brief",
+      "category": "operate",
+      "title": "今日やることだけを、複数ツールから拾う",
+      "need": "Slack、メール、予定、案件管理に対応事項が散らばっている",
+      "prompt": "Slackの後で、Gmail、Googleカレンダー、Pipedriveを確認して、今日対応が必要なことだけを拾って。担当、やること、期限の表にして、重複はまとめて。",
+      "skills": ["task-collection-daily-brief", "todo-share-table"],
+      "outputs": ["今日の対応事項", "担当・内容・期限の表", "重複を除いた優先順"]
+    },
+    {
+      "id": "notes-to-obsidian",
+      "category": "operate",
+      "title": "会話やメモを、あとで探せる正式記録にする",
+      "need": "決まったことやTODOを、案件の記録として残したい",
+      "prompt": "この会話を正式な記録にして。決定事項、背景、未決事項、TODOを分け、既存ルールに合う場所とファイル名でObsidianへ保存して。",
+      "skills": ["obsidian-record", "todo-share-table"],
+      "outputs": ["読みやすい案件記録", "決定事項と背景", "担当・内容・期限のTODO"]
+    },
+    {
+      "id": "communication-cross-check",
+      "category": "operate",
+      "title": "メールやチャットから、返信が必要なものだけ拾う",
+      "need": "連絡が複数ツールに散らばり、対応漏れが心配",
+      "prompt": "コミュニケーションツールの横断確認お願い！返信や判断が必要なものだけを整理し、相手と会話の流れに合う返信文案を作って。送信はせず確認待ちにして。",
+      "skills": ["communication-approval"],
+      "outputs": ["対応が必要な会話一覧", "文脈に合う返信案", "送信前の確認事項"]
+    },
+    {
+      "id": "code-security-review",
+      "category": "check",
+      "title": "コード変更を、品質とセキュリティの両面で点検する",
+      "need": "公開やマージ前に、見落としや危険な変更がないか確認したい",
+      "prompt": "この変更差分をレビューして。動作不良、既存機能への影響、セキュリティ上の問題を重要度順に示し、根拠となる箇所と修正案もまとめて。",
+      "skills": ["code-review", "security-diff-scan"],
+      "outputs": ["重要度つきの指摘", "該当箇所と影響", "具体的な修正案"]
+    },
+    {
+      "id": "claude-systematic-debugging",
+      "category": "check",
+      "title": "Claudeで不具合の原因を順番に切り分ける",
+      "need": "修正を試しても直らず、原因が分からなくなっている",
+      "prompt": "この不具合を体系的にデバッグして。再現条件、観測できる事実、原因候補、切り分け結果を残し、修正後は同じ条件で再検証して。",
+      "skills": ["systematic-debugging", "verification-before-completion"],
+      "outputs": ["再現条件と原因", "根拠のある修正", "修正後の検証結果"]
+    },
+    {
+      "id": "final-independent-check",
+      "category": "check",
+      "title": "完成した成果物を、別の視点でもう一度厳しく見る",
+      "need": "作った本人の見落としを減らしてから提出したい",
+      "prompt": "この成果物を厳しめに再確認して。目的とのずれ、事実誤認、抜け、読みづらさ、表示崩れを独立した視点で確認し、必要な修正まで行って。",
+      "skills": ["strict-recheck-and-refine"],
+      "outputs": ["見落としの指摘", "修正済み成果物", "実施済み・未確認の区別"]
+    }
+  ]
+}
