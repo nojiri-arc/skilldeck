@@ -24,7 +24,7 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'cloudflare-web-publish']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'shiryo-slides-hub', 'cloudflare-web-publish']);
 
 // トシが公開対象から除外するよう指定したレコード。実体の削除や自動化の停止は行わない。
 const PUBLIC_RECORD_EXCLUSIONS = new Set(['automation.claude.yuiitsu-offline-cv-import-check', 'automation.claude.yuiitsu-offline-cv-import-recheck-0915', 'automation.claude.zz-flowtest-child', 'automation.claude.zz-flowtest-parent', 'automation.claude.zz-flowtest-parent2']);
@@ -71,6 +71,10 @@ const userTextOverrides = new Map([
   ['shiryo-slides', {
     description: '議事録やメモから、社内資料・提案資料を16:9のHTMLスライドで作るSkillです。最初にスタイル・用途・5テーマを選び、Playwrightで撮影して崩れを直します。既存スライドの修正とPDF化にも対応します。ADV仕様やPPTXが必要なときはADV系Skillを使います。',
     example: 'この議事録から提案資料を作って'
+  }],
+  ['shiryo-slides-hub', {
+    description: '資料作成の共通入口です。ADV標準を先頭に6テーマから選び、ADV資料を含む社内資料・提案資料を16:9のHTMLスライドで作ります。PPTXやGoogle Slidesを明示された場合は、それぞれの資料Skillへ振り分けます。',
+    example: 'ADV資料をHTMLで作って'
   }]
 ]);
 
@@ -78,7 +82,8 @@ const userTextOverrides = new Map([
 const japaneseNameOverrides = new Map([
   ['elegant-prompt', 'エレガント・プロンプト'],
   ['obsidian-record', 'Obsidian記録'],
-  ['cloudflare-web-publish', 'Cloudflare Web公開']
+  ['cloudflare-web-publish', 'Cloudflare Web公開'],
+  ['shiryo-slides-hub', '資料作成キット（ADV対応）']
 ]);
 
 const providerNameOverrides = new Map();
@@ -95,7 +100,8 @@ const projectTagOverrides = new Map([
 const userTriggerOverrides = new Map([
   ['communication-approval', ['コミュニケーションツールの横断確認お願い！', 'チャット系の横断確認お願い！', '$communication-approval']],
   ['obsidian-record', ['議事録保存して', 'メモしといて', '方針更新して', '$obsidian-record']],
-  ['shiryo-slides', ['資料を作って', '提案書を作って', 'スライドにして', '議事録から資料に', '$shiryo-slides']]
+  ['shiryo-slides', ['資料を作って', '提案書を作って', 'スライドにして', '議事録から資料に', '$shiryo-slides']],
+  ['shiryo-slides-hub', ['資料を作って', '提案書を作って', 'ADV資料をHTMLで作って', '議事録から資料に', '$shiryo-slides-hub']]
 ]);
 
 // 同期の事実と実動テストの事実を混同しないための、個別検証状態。
@@ -117,6 +123,10 @@ const userVerificationOverrides = new Map([
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' }
   }],
   ['shiryo-slides', {
+    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' }
+  }],
+  ['shiryo-slides-hub', {
     codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' }
   }]
