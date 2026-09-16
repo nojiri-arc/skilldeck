@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "categories": [
     { "id": "summarize", "name": "まとめる・伝える" },
     { "id": "analyze", "name": "数字を読む" },
@@ -21,11 +21,20 @@
     {
       "id": "report-to-slides",
       "category": "summarize",
-      "title": "レポートを、そのまま会議用スライドにする",
+      "title": "レポートを、ページ形式のHTML資料にする",
       "need": "分析結果を、説明しやすい資料へ整えたい",
-      "prompt": "このレポートを会議用の8枚のスライドにして。1枚1メッセージで、重要な数値はグラフ化し、元データの意味を変えずにデザインも整えて。",
-      "skills": ["build-report", "visualize-data", "Presentations"],
-      "outputs": ["編集可能なスライド", "要点が伝わる構成", "表・グラフと出典"]
+      "prompt": "このレポートを会議用の8ページのHTML資料にして。1ページ1メッセージで、重要な数値はグラフ化し、元データの意味を変えずにデザインも整えて。完成後はHTMLライブラリの未整理へ下書き登録して。",
+      "skills": ["build-report", "visualize-data", "shiryo-slides-hub"],
+      "outputs": ["ページ形式のHTML資料", "要点が伝わる構成", "HTMLライブラリの下書き"]
+    },
+    {
+      "id": "product-visual-management-board",
+      "category": "summarize",
+      "title": "プロダクト状態や方針を、スクロールできる一枚にする",
+      "need": "資料ではなく、現在地・変化・次の判断をいつでも俯瞰したい",
+      "prompt": "このプロダクトの現在地、決定事項、課題、前回から変わったこと、次の判断を、縦スクロールで読める視覚管理ボードにして。確認済み事実・仮説・要確認を分け、完成後はHTMLライブラリの未整理へ下書き登録して。",
+      "skills": ["visual-management-board"],
+      "outputs": ["スクロール形式の単一HTML", "前回からの変化と次の判断", "HTMLライブラリの下書き"]
     },
     {
       "id": "competitive-decision-report",

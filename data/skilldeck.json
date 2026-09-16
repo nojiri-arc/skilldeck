@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-15T22:29:51.732Z",
+  "generatedAt": "2026-09-16T03:01:30.122Z",
   "categories": [
     {
       "id": "hall-of-fame",
@@ -42,8 +42,8 @@
   "inventory": {
     "legacyCount": 85,
     "userSkills": {
-      "codex": 28,
-      "claude": 28
+      "codex": 29,
+      "claude": 29
     },
     "evidence": {
       "codex": {
@@ -12250,7 +12250,7 @@
       "kind": "skill",
       "name": "shiryo-slides",
       "aliases": [],
-      "description": "議事録やメモから、社内資料・提案資料を16:9のHTMLスライドで作るSkillです。最初にスタイル・用途・5テーマを選び、Playwrightで撮影して崩れを直します。既存スライドの修正とPDF化にも対応します。ADV仕様やPPTXが必要なときはADV系Skillを使います。",
+      "description": "議事録やメモから、社内資料・提案資料をページ形式のHTMLスライドで作るSkillです。最初にスタイル・用途・5テーマを選び、Playwrightで崩れを確認し、完成後はHTMLライブラリへ下書き登録します。PPTXやGoogle Slidesを明示された場合だけ別の資料Skillを使います。",
       "example": "この議事録から提案資料を作って",
       "category": "hall-of-fame",
       "projectTags": [],
@@ -12260,7 +12260,7 @@
       },
       "source": {
         "canonicalId": "skills/shiryo-slides",
-        "contentHash": "sha256:edb27366aaf0f9e6bc4370d73ee6ae0b36206157760777c53641322ec66dd31d"
+        "contentHash": "sha256:1b94ccd62a87a1b3358912b9b1a95073f52e538b7d795e3fe3d41685dd7dbd82"
       },
       "identity": {
         "frontmatterName": "shiryo-slides"
@@ -12278,7 +12278,7 @@
           "installed": true,
           "invocation": "$shiryo-slides",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:edb27366aaf0f9e6bc4370d73ee6ae0b36206157760777c53641322ec66dd31d",
+          "contentHash": "sha256:1b94ccd62a87a1b3358912b9b1a95073f52e538b7d795e3fe3d41685dd7dbd82",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
@@ -12288,7 +12288,7 @@
           "installed": true,
           "invocation": "/shiryo-slides",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:edb27366aaf0f9e6bc4370d73ee6ae0b36206157760777c53641322ec66dd31d",
+          "contentHash": "sha256:1b94ccd62a87a1b3358912b9b1a95073f52e538b7d795e3fe3d41685dd7dbd82",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
@@ -12303,7 +12303,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-15T09:04:57.555Z",
+      "lastVerifiedAt": "2026-09-16T03:01:30.122Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12335,7 +12335,7 @@
       "name": "shiryo-slides-hub",
       "japaneseName": "資料作成キット（ADV対応）",
       "aliases": [],
-      "description": "資料作成の共通入口です。ADV標準を先頭に6テーマから選び、ADV資料を含む社内資料・提案資料を16:9のHTMLスライドで作ります。PPTXやGoogle Slidesを明示された場合は、それぞれの資料Skillへ振り分けます。",
+      "description": "資料作成の共通入口です。ADV標準を先頭に6テーマから選び、ADV資料を含む社内資料・提案資料をページ形式のHTMLスライドで作り、HTMLライブラリへ下書き登録します。PPTXやGoogle Slidesを明示された場合だけ、それぞれの資料Skillへ振り分けます。",
       "example": "ADV資料をHTMLで作って",
       "category": "hall-of-fame",
       "projectTags": [],
@@ -12345,7 +12345,7 @@
       },
       "source": {
         "canonicalId": "skills/shiryo-slides-hub",
-        "contentHash": "sha256:e757aa447e35fc61480071c834bba0b5a3e31a683c2ba468a506dd57bc1dffa1"
+        "contentHash": "sha256:cdb21132c2fdd300a5f9a019be80748939dbd48110ecb9c628d61834a01b13ac"
       },
       "identity": {
         "frontmatterName": "shiryo-slides-hub"
@@ -12363,7 +12363,7 @@
           "installed": true,
           "invocation": "$shiryo-slides-hub",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:e757aa447e35fc61480071c834bba0b5a3e31a683c2ba468a506dd57bc1dffa1",
+          "contentHash": "sha256:cdb21132c2fdd300a5f9a019be80748939dbd48110ecb9c628d61834a01b13ac",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
@@ -12373,7 +12373,7 @@
           "installed": true,
           "invocation": "/shiryo-slides-hub",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:e757aa447e35fc61480071c834bba0b5a3e31a683c2ba468a506dd57bc1dffa1",
+          "contentHash": "sha256:cdb21132c2fdd300a5f9a019be80748939dbd48110ecb9c628d61834a01b13ac",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
@@ -12388,7 +12388,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-15T22:29:51.732Z",
+      "lastVerifiedAt": "2026-09-16T03:01:30.122Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14608,6 +14608,91 @@
         "status": "needs_review",
         "actionScope": "plugin_package",
         "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "user.visual-management-board",
+      "kind": "skill",
+      "name": "visual-management-board",
+      "japaneseName": "視覚管理ボード",
+      "aliases": [],
+      "description": "プロダクトの状態、方針、ロードマップ、意思決定の変化を、縦スクロールで読める一枚のHTMLに整理するSkillです。正式記録やデータを根拠にし、完成後はHTMLライブラリへスクロールビジュアルとして下書き登録します。",
+      "example": "このプロダクトの状態をスクロール形式で見える化して",
+      "category": "hall-of-fame",
+      "projectTags": [],
+      "provider": {
+        "type": "user",
+        "name": "トシ用に作成"
+      },
+      "source": {
+        "canonicalId": "skills/visual-management-board",
+        "contentHash": "sha256:628976d58fc6dfb50076892d0be3fafb73b8b8bd37465c8de070e4b06d41cdd2"
+      },
+      "identity": {
+        "frontmatterName": "visual-management-board"
+      },
+      "triggers": [
+        "プロダクト状態を視覚化して",
+        "方針を一枚で見える化して",
+        "スクロール形式でまとめて",
+        "視覚管理ボードを作って",
+        "$visual-management-board"
+      ],
+      "environments": {
+        "codex": {
+          "configured": true,
+          "installed": true,
+          "invocation": "$visual-management-board",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:628976d58fc6dfb50076892d0be3fafb73b8b8bd37465c8de070e4b06d41cdd2",
+          "availability": "installed_unverified",
+          "evidenceType": "file_hash_verified",
+          "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/visual-management-board",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:628976d58fc6dfb50076892d0be3fafb73b8b8bd37465c8de070e4b06d41cdd2",
+          "availability": "installed_unverified",
+          "evidenceType": "file_hash_verified",
+          "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
+        }
+      },
+      "mirror": {
+        "eligible": true,
+        "status": "synced",
+        "reasonCode": null,
+        "reason": null,
+        "portability": "directly_shareable"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-16T03:01:30.122Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-16T03:00:07.660Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-16T03:00:07.660Z"
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し0セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "skill",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
       }
     },
     {
