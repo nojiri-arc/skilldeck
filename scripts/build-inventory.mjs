@@ -24,7 +24,7 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'shiryo-slides-hub', 'visual-management-board', 'cloudflare-web-publish', 'minutes-full-flow', 'pj-board']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'shiryo-slides-hub', 'visual-management-board', 'cloudflare-web-publish', 'minutes-full-flow', 'pj-board', 'slack-to-reply-draft']);
 
 // トシが公開対象から除外するよう指定したレコード。実体の削除や自動化の停止は行わない。
 const PUBLIC_RECORD_EXCLUSIONS = new Set(['automation.claude.yuiitsu-offline-cv-import-check', 'automation.claude.yuiitsu-offline-cv-import-recheck-0915', 'automation.claude.zz-flowtest-child', 'automation.claude.zz-flowtest-parent', 'automation.claude.zz-flowtest-parent2']);
@@ -87,6 +87,10 @@ const userTextOverrides = new Map([
   ['pj-board', {
     description: 'PJごとの現在地・全体像と戦略・進行表・会議ごとの決定・次回MTGの準備を1枚にしたページを、Obsidianのノートから作り直し、同じURLへ上書き公開するSkillです。会議前のアジェンダ作りにも使います。',
     example: 'ゆとりの空間のPJボード更新して'
+  }],
+  ['slack-to-reply-draft', {
+    description: '登録した11チャンネルで自分宛てにメンションされた未返信の投稿を集め、会話ごとにトシの文体で返信案をチャットに出すSkillです。OKした件だけSlackのスレッドに下書きとして入れ、送信は自分で行います。',
+    example: 'Slack TO返信案'
   }]
 ]);
 
@@ -98,7 +102,8 @@ const japaneseNameOverrides = new Map([
   ['shiryo-slides-hub', '資料作成キット（ADV対応）'],
   ['visual-management-board', '視覚管理ボード'],
   ['minutes-full-flow', '議事録まるっと'],
-  ['pj-board', 'PJボード']
+  ['pj-board', 'PJボード'],
+  ['slack-to-reply-draft', 'Slack TO返信案']
 ]);
 
 const providerNameOverrides = new Map();
@@ -119,7 +124,8 @@ const userTriggerOverrides = new Map([
   ['shiryo-slides-hub', ['資料を作って', '提案書を作って', 'ADV資料をHTMLで作って', '議事録から資料に', '$shiryo-slides-hub']],
   ['visual-management-board', ['プロダクト状態を視覚化して', '方針を一枚で見える化して', 'スクロール形式でまとめて', '視覚管理ボードを作って', '$visual-management-board']],
   ['minutes-full-flow', ['議事録登録して', '議事録まるっと', '議事録とTODOお願い', '$minutes-full-flow']],
-  ['pj-board', ['〇〇のPJボード作って', 'PJボード更新して', '〇〇のMTG準備して', '$pj-board']]
+  ['pj-board', ['〇〇のPJボード作って', 'PJボード更新して', '〇〇のMTG準備して', '$pj-board']],
+  ['slack-to-reply-draft', ['Slack TO返信案', 'TO返信案', 'Slackの返信案出して', '$slack-to-reply-draft']]
 ]);
 
 // 同期の事実と実動テストの事実を混同しないための、個別検証状態。
@@ -159,6 +165,10 @@ const userVerificationOverrides = new Map([
   ['pj-board', {
     codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。2026-09-17 にゆとりの空間のPJボードを作って公開した。新しい会話での実動テストは未実施。' }
+  }],
+  ['slack-to-reply-draft', {
+    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。2026-09-17 に11チャンネルのメンション検索条件を実データで確認した。新しい会話での実動テストは未実施。' }
   }]
 ]);
 

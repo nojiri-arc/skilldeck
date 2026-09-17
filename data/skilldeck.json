@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-17T03:49:09.366Z",
+  "generatedAt": "2026-09-17T13:05:21.961Z",
   "categories": [
     {
       "id": "hall-of-fame",
@@ -42,8 +42,8 @@
   "inventory": {
     "legacyCount": 85,
     "userSkills": {
-      "codex": 31,
-      "claude": 31
+      "codex": 34,
+      "claude": 34
     },
     "evidence": {
       "codex": {
@@ -79,7 +79,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-17T03:49:09.366Z"
+        "lastVerifiedAt": "2026-09-17T13:05:21.961Z"
       },
       {
         "id": "capability-2",
@@ -89,7 +89,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-17T03:49:09.366Z"
+        "lastVerifiedAt": "2026-09-17T13:05:21.961Z"
       },
       {
         "id": "capability-3",
@@ -99,7 +99,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-17T03:49:09.366Z"
+        "lastVerifiedAt": "2026-09-17T13:05:21.961Z"
       },
       {
         "id": "capability-5",
@@ -109,7 +109,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-17T03:49:09.366Z"
+        "lastVerifiedAt": "2026-09-17T13:05:21.961Z"
       },
       {
         "id": "capability-6",
@@ -119,7 +119,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-17T03:49:09.366Z"
+        "lastVerifiedAt": "2026-09-17T13:05:21.961Z"
       },
       {
         "id": "capability-9",
@@ -129,7 +129,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-17T03:49:09.366Z"
+        "lastVerifiedAt": "2026-09-17T13:05:21.961Z"
       },
       {
         "id": "capability-10",
@@ -139,7 +139,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-17T03:49:09.366Z"
+        "lastVerifiedAt": "2026-09-17T13:05:21.961Z"
       },
       {
         "id": "capability-11",
@@ -149,7 +149,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-17T03:49:09.366Z"
+        "lastVerifiedAt": "2026-09-17T13:05:21.961Z"
       },
       {
         "id": "capability-4",
@@ -159,7 +159,7 @@
         "evidenceType": "config_enabled",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-17T03:49:09.366Z"
+        "lastVerifiedAt": "2026-09-17T13:05:21.961Z"
       },
       {
         "id": "capability-7",
@@ -169,7 +169,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-17T03:49:09.366Z"
+        "lastVerifiedAt": "2026-09-17T13:05:21.961Z"
       },
       {
         "id": "capability-8",
@@ -179,7 +179,7 @@
         "evidenceType": "remote_install_marker",
         "availability": "installed_unverified",
         "reason": "導入・有効化の記録はありますが、Skill定義は検出されませんでした。",
-        "lastVerifiedAt": "2026-09-17T03:49:09.366Z"
+        "lastVerifiedAt": "2026-09-17T13:05:21.961Z"
       },
       {
         "id": "capability-12",
@@ -189,7 +189,7 @@
         "evidenceType": "install_marker",
         "availability": "installed_unverified",
         "reason": "導入マーカーはありますが、現在のSkillパッケージおよび有効化状態を確認できませんでした。",
-        "lastVerifiedAt": "2026-09-17T03:49:09.366Z"
+        "lastVerifiedAt": "2026-09-17T13:05:21.961Z"
       }
     ],
     "migrationCandidates": [
@@ -273,7 +273,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -345,7 +345,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -417,7 +417,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -489,7 +489,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -561,7 +561,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -633,7 +633,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -705,7 +705,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -777,7 +777,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -849,7 +849,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -921,7 +921,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1002,7 +1002,7 @@
           "adv-business-knowledge"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1076,7 +1076,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1150,7 +1150,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1228,7 +1228,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1302,7 +1302,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1383,7 +1383,7 @@
           "adv-shiryo-sakusei"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1464,7 +1464,7 @@
           "adv-shiyo-gijiroku"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1536,7 +1536,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1615,7 +1615,7 @@
           "artifact-design"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1700,7 +1700,7 @@
           "artifact-template-adv-1"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -1772,7 +1772,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1844,7 +1844,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1916,7 +1916,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -1988,7 +1988,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2060,7 +2060,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2132,7 +2132,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2217,7 +2217,7 @@
           "artifact-template-jra"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -2289,7 +2289,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2361,7 +2361,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2433,7 +2433,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2505,7 +2505,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2577,7 +2577,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2649,7 +2649,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2721,7 +2721,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2793,7 +2793,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2865,7 +2865,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -2937,7 +2937,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3009,7 +3009,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3081,7 +3081,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3153,7 +3153,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3225,7 +3225,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3306,7 +3306,7 @@
           "aso-internal-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3387,7 +3387,7 @@
           "aso-simulation-and-order-request"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3468,7 +3468,7 @@
           "aso-simulation-intake"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3540,7 +3540,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3612,7 +3612,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3684,7 +3684,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3756,7 +3756,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3828,7 +3828,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -3900,7 +3900,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -3972,7 +3972,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4044,7 +4044,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4116,7 +4116,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4188,7 +4188,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4260,7 +4260,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -4332,7 +4332,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -4404,7 +4404,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4476,7 +4476,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4559,7 +4559,7 @@
           "catchphrase-ideation"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4635,7 +4635,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4714,7 +4714,7 @@
           "claude-in-chrome"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4786,7 +4786,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -4865,7 +4865,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -4941,7 +4941,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5021,25 +5021,25 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 6,
-        "lastUsedAt": "2026-09-16T02:57:54.930Z",
+        "sessionCount": 8,
+        "lastUsedAt": "2026-09-17T06:32:05.746Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 5,
-            "lastUsedAt": "2026-09-16T02:57:54.930Z"
+            "sessionCount": 6,
+            "lastUsedAt": "2026-09-17T06:32:05.746Z"
           },
           "claude": {
             "observed": true,
-            "sessionCount": 1,
-            "lastUsedAt": "2026-09-11T08:09:29.075Z"
+            "sessionCount": 2,
+            "lastUsedAt": "2026-09-17T05:23:10.039Z"
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照5セッション、Claudeで明示呼び出し1セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照6セッション、Claudeで明示呼び出し2セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -5104,7 +5104,7 @@
           "competitive-service-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5176,7 +5176,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5248,7 +5248,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5327,7 +5327,7 @@
           "cowork-plugin"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5406,7 +5406,7 @@
           "cowork-plugin-management:cowork-plugin-customizer"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5485,7 +5485,7 @@
           "cowork-plugin-management:create-cowork-plugin"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5557,7 +5557,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5638,7 +5638,7 @@
           "customer-icebreaker-research"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5717,7 +5717,7 @@
           "dataviz"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5789,7 +5789,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5861,7 +5861,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -5933,7 +5933,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6005,7 +6005,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6084,7 +6084,7 @@
           "design"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6156,7 +6156,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6228,7 +6228,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6311,17 +6311,17 @@
           "design-qc"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 2,
-        "lastUsedAt": "2026-09-15T23:11:20.244Z",
+        "sessionCount": 3,
+        "lastUsedAt": "2026-09-17T05:12:38.771Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 1,
-            "lastUsedAt": "2026-09-15T23:11:20.244Z"
+            "sessionCount": 2,
+            "lastUsedAt": "2026-09-17T05:12:38.771Z"
           },
           "claude": {
             "observed": true,
@@ -6329,7 +6329,7 @@
             "lastUsedAt": "2026-09-10T13:01:28.198Z"
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し1セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照2セッション、Claudeで明示呼び出し1セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -6383,7 +6383,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6455,7 +6455,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6534,7 +6534,7 @@
           "docx"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6617,7 +6617,7 @@
           "domain-modeling"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -6698,7 +6698,7 @@
           "draft-client-proposal"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6779,7 +6779,7 @@
           "draft-sales-email"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6857,7 +6857,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -6929,7 +6929,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7001,7 +7001,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7082,7 +7082,7 @@
           "existing-attacker"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7161,7 +7161,7 @@
           "explain-usage"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7233,7 +7233,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7305,7 +7305,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7377,7 +7377,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7449,7 +7449,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7521,7 +7521,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7604,7 +7604,7 @@
           "google-ads-consultant"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7676,7 +7676,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7748,7 +7748,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7820,7 +7820,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -7892,7 +7892,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -7964,7 +7964,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8047,7 +8047,7 @@
           "grilling"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8119,7 +8119,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8191,7 +8191,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8263,7 +8263,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8335,7 +8335,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8407,7 +8407,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -8479,7 +8479,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8551,7 +8551,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8633,7 +8633,7 @@
           "kimono-brain-todo-management"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8705,7 +8705,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8729,6 +8729,82 @@
         "status": "needs_review",
         "actionScope": "plugin_package",
         "reason": "個別SkillではなくPlugin単位で、他の同梱Skill・依存機能と一緒に必要性を確認します。"
+      }
+    },
+    {
+      "id": "user.link-collection",
+      "kind": "skill",
+      "name": "link-collection",
+      "aliases": [],
+      "description": "案件で使うシート・レポート・Driveフォルダ・資料・管理画面のリンクを、Obsidian VaultのPJごとの`リンク集.md`へ追加し、そこから探して返す。「リンク追加！」「このリンク入れといて」「リンク集に登録して」とURLを渡されたとき、または「〇〇のリンクどこ？」「あのシート開きたい」「〇〇のスプシ出して」と探すときに使う。議事録・メモ・ナレッジの保存（obsidian-record）、TODOの追加（todo-add）、ファイルそのもののDriveへのアップロードだけの依頼には使わない。",
+      "example": "",
+      "category": "development-ai",
+      "projectTags": [],
+      "provider": {
+        "type": "user",
+        "name": "トシ用に作成"
+      },
+      "source": {
+        "canonicalId": "skills/link-collection",
+        "contentHash": "sha256:05ef2486cdd4d5e4b7279e5c48b2877ff486d2afc29f970a9137e81db4c6c371"
+      },
+      "identity": {
+        "frontmatterName": "link-collection"
+      },
+      "triggers": [],
+      "environments": {
+        "codex": {
+          "configured": true,
+          "installed": true,
+          "invocation": "$link-collection",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:05ef2486cdd4d5e4b7279e5c48b2877ff486d2afc29f970a9137e81db4c6c371",
+          "availability": "verified",
+          "evidenceType": "verified_runtime"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/link-collection",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:05ef2486cdd4d5e4b7279e5c48b2877ff486d2afc29f970a9137e81db4c6c371",
+          "availability": "verified",
+          "evidenceType": "verified_runtime"
+        }
+      },
+      "mirror": {
+        "eligible": true,
+        "status": "synced",
+        "reasonCode": null,
+        "reason": null,
+        "portability": "directly_shareable"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "skill",
+        "reason": "ユーザー作成Skillのため自動削除しません。役割重複と今後の利用予定を確認して判断します。"
       }
     },
     {
@@ -8786,7 +8862,7 @@
           "makeleaps-client-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8867,7 +8943,7 @@
           "makeleaps-orderslip-creation"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -8944,12 +9020,12 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 18,
-        "lastUsedAt": "2026-09-17T01:30:04.707Z",
+        "sessionCount": 26,
+        "lastUsedAt": "2026-09-17T13:01:25.104Z",
         "environments": {
           "codex": {
             "observed": true,
@@ -8958,11 +9034,11 @@
           },
           "claude": {
             "observed": true,
-            "sessionCount": 13,
-            "lastUsedAt": "2026-09-17T00:30:42.736Z"
+            "sessionCount": 21,
+            "lastUsedAt": "2026-09-17T13:01:25.104Z"
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照5セッション、Claudeで明示呼び出し13セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照5セッション、Claudeで明示呼び出し21セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -9016,7 +9092,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9097,7 +9173,7 @@
           "meeting-minutes-notion-registration"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9169,7 +9245,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9253,7 +9329,79 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 1,
+        "lastUsedAt": "2026-09-17T09:06:28.381Z",
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-17T09:06:28.381Z"
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照0セッション、Claudeで明示呼び出し1セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "skill",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
+      }
+    },
+    {
+      "id": "automation.claude.mirrativ-data-check-reminder-20260917",
+      "kind": "automation",
+      "name": "mirrativ-data-check-reminder-20260917",
+      "aliases": [],
+      "description": "ミラティブ運用シート更新後の確認事項を18時にリマインドする（1回のみ）",
+      "example": "",
+      "category": "development-ai",
+      "projectTags": [],
+      "provider": {
+        "type": "user",
+        "name": "Claude Scheduled Task"
+      },
+      "source": {
+        "canonicalId": "claude-scheduled-tasks/mirrativ-data-check-reminder-20260917",
+        "contentHash": "sha256:655332db217bd86a31366809ac6872faca5115bc2ca15dc1c15c9b2770ea0e1b"
+      },
+      "environments": {
+        "codex": {
+          "configured": false,
+          "installed": false,
+          "invocation": null,
+          "detectedBy": null,
+          "contentHash": null,
+          "availability": "not-applicable",
+          "evidenceType": "none"
+        },
+        "claude": {
+          "configured": false,
+          "installed": true,
+          "invocation": null,
+          "detectedBy": "claude-scheduled-task-definition",
+          "contentHash": "sha256:655332db217bd86a31366809ac6872faca5115bc2ca15dc1c15c9b2770ea0e1b",
+          "availability": "installed_unverified",
+          "evidenceType": "definition_file"
+        }
+      },
+      "mirror": {
+        "eligible": false,
+        "status": "needs_review",
+        "reasonCode": "automation-state",
+        "reason": "定義ファイルは確認済みですが、クラウド側での有効状態は未確認です。",
+        "portability": "requires_review"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9334,7 +9482,7 @@
           "mtg-after-automation"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9415,7 +9563,7 @@
           "new-attacker"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9487,7 +9635,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9559,7 +9707,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9631,7 +9779,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9703,7 +9851,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -9789,25 +9937,25 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 22,
-        "lastUsedAt": "2026-09-17T01:52:24.888Z",
+        "sessionCount": 28,
+        "lastUsedAt": "2026-09-17T11:49:31.273Z",
         "environments": {
           "codex": {
             "observed": true,
-            "sessionCount": 12,
-            "lastUsedAt": "2026-09-16T07:59:53.181Z"
+            "sessionCount": 14,
+            "lastUsedAt": "2026-09-17T06:34:23.997Z"
           },
           "claude": {
             "observed": true,
-            "sessionCount": 10,
-            "lastUsedAt": "2026-09-17T01:52:24.888Z"
+            "sessionCount": 14,
+            "lastUsedAt": "2026-09-17T11:49:31.273Z"
           }
         },
-        "reason": "直近7日間に、CodexでSkill定義参照12セッション、Claudeで明示呼び出し10セッションを確認しました。"
+        "reason": "直近7日間に、CodexでSkill定義参照14セッション、Claudeで明示呼び出し14セッションを確認しました。"
       },
       "governance": {
         "status": "keep_recommended",
@@ -9861,7 +10009,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -9940,7 +10088,7 @@
           "operating-principles"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10023,7 +10171,7 @@
           "pc-lightening"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10102,7 +10250,7 @@
           "pdf"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10183,7 +10331,7 @@
           "pipedrive-manage-sales"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10267,12 +10415,12 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
-        "status": "no_signal",
+        "status": "recent_signal",
         "windowDays": 7,
-        "sessionCount": 0,
-        "lastUsedAt": null,
+        "sessionCount": 2,
+        "lastUsedAt": "2026-09-17T06:19:45.734Z",
         "environments": {
           "codex": {
             "observed": false,
@@ -10280,17 +10428,17 @@
             "lastUsedAt": null
           },
           "claude": {
-            "observed": false,
-            "sessionCount": 0,
-            "lastUsedAt": null
+            "observed": true,
+            "sessionCount": 2,
+            "lastUsedAt": "2026-09-17T06:19:45.734Z"
           }
         },
-        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+        "reason": "直近7日間に、CodexでSkill定義参照0セッション、Claudeで明示呼び出し2セッションを確認しました。"
       },
       "governance": {
-        "status": "needs_review",
+        "status": "keep_recommended",
         "actionScope": "skill",
-        "reason": "ユーザー作成Skillのため自動削除しません。役割重複と今後の利用予定を確認して判断します。"
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
       }
     },
     {
@@ -10350,7 +10498,7 @@
           "plan-landing-page"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10422,7 +10570,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10494,7 +10642,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10575,7 +10723,7 @@
           "post-order-operations-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10654,7 +10802,7 @@
           "pptx"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10726,7 +10874,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -10798,7 +10946,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10870,7 +11018,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -10942,7 +11090,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11014,7 +11162,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11086,7 +11234,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11158,7 +11306,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11230,7 +11378,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11309,7 +11457,7 @@
           "research"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11381,7 +11529,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11462,7 +11610,7 @@
           "review-cleaning-sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11543,7 +11691,7 @@
           "review-cleaning-sheet-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11624,7 +11772,7 @@
           "review-screenshot-automation-setup"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11705,7 +11853,7 @@
           "review-screenshot-daily-operations"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11786,7 +11934,7 @@
           "review-screenshot-reflection"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11867,7 +12015,7 @@
           "sales-deal-lifecycle-router"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -11948,7 +12096,7 @@
           "sales-sheet-update"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12020,7 +12168,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12092,7 +12240,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12164,7 +12312,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12243,7 +12391,7 @@
           "setup-cowork"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12315,7 +12463,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12387,7 +12535,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12428,7 +12576,7 @@
       },
       "source": {
         "canonicalId": "skills/shiryo-slides",
-        "contentHash": "sha256:5f5892e131ef17b9d6aa33e80923181f81f69ee84d7916719f623741bd3636f0"
+        "contentHash": "sha256:1ded598886915833f2cf090ba96535f829a0e039ad86e3520be8e422a980c9bf"
       },
       "identity": {
         "frontmatterName": "shiryo-slides"
@@ -12446,7 +12594,7 @@
           "installed": true,
           "invocation": "$shiryo-slides",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:5f5892e131ef17b9d6aa33e80923181f81f69ee84d7916719f623741bd3636f0",
+          "contentHash": "sha256:1ded598886915833f2cf090ba96535f829a0e039ad86e3520be8e422a980c9bf",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
@@ -12456,7 +12604,7 @@
           "installed": true,
           "invocation": "/shiryo-slides",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:5f5892e131ef17b9d6aa33e80923181f81f69ee84d7916719f623741bd3636f0",
+          "contentHash": "sha256:1ded598886915833f2cf090ba96535f829a0e039ad86e3520be8e422a980c9bf",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
@@ -12471,7 +12619,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12556,7 +12704,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12628,7 +12776,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12700,7 +12848,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -12772,7 +12920,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12844,7 +12992,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12916,7 +13064,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -12957,7 +13105,7 @@
       },
       "source": {
         "canonicalId": "codex-system/skill-creator",
-        "contentHash": "sha256:6b0f02cf86245d40933e9fc9ce99ef7b0ea287a4a227ce3856b157c261da3bec"
+        "contentHash": "sha256:04570c2fff9bcf38f6bdbd699f7af094f860722373c9be629f72f9400cbbb188"
       },
       "environments": {
         "codex": {
@@ -12965,7 +13113,7 @@
           "installed": true,
           "invocation": "$skill-creator",
           "detectedBy": "codex-system-skill",
-          "contentHash": "sha256:6b0f02cf86245d40933e9fc9ce99ef7b0ea287a4a227ce3856b157c261da3bec",
+          "contentHash": "sha256:04570c2fff9bcf38f6bdbd699f7af094f860722373c9be629f72f9400cbbb188",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         },
@@ -12995,7 +13143,7 @@
           "skill-creator"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13067,7 +13215,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13091,6 +13239,90 @@
         "status": "keep_required",
         "actionScope": "none",
         "reason": "ベンダー提供の組み込みSkillです。個別削除ではなく、環境の標準機能として保持します。"
+      }
+    },
+    {
+      "id": "user.slack-to-reply-draft",
+      "kind": "skill",
+      "name": "slack-to-reply-draft",
+      "japaneseName": "Slack TO返信案",
+      "aliases": [],
+      "description": "登録した11チャンネルで自分宛てにメンションされた未返信の投稿を集め、会話ごとにトシの文体で返信案をチャットに出すSkillです。OKした件だけSlackのスレッドに下書きとして入れ、送信は自分で行います。",
+      "example": "Slack TO返信案",
+      "category": "hall-of-fame",
+      "projectTags": [],
+      "provider": {
+        "type": "user",
+        "name": "トシ用に作成"
+      },
+      "source": {
+        "canonicalId": "skills/slack-to-reply-draft",
+        "contentHash": "sha256:c6236395638ac6357f7c79e32c377bb5a965f375a4455b5bf9e11f299866fc92"
+      },
+      "identity": {
+        "frontmatterName": "slack-to-reply-draft"
+      },
+      "triggers": [
+        "Slack TO返信案",
+        "TO返信案",
+        "Slackの返信案出して",
+        "$slack-to-reply-draft"
+      ],
+      "environments": {
+        "codex": {
+          "configured": true,
+          "installed": true,
+          "invocation": "$slack-to-reply-draft",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:c6236395638ac6357f7c79e32c377bb5a965f375a4455b5bf9e11f299866fc92",
+          "availability": "installed_unverified",
+          "evidenceType": "file_hash_verified",
+          "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/slack-to-reply-draft",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:c6236395638ac6357f7c79e32c377bb5a965f375a4455b5bf9e11f299866fc92",
+          "availability": "installed_unverified",
+          "evidenceType": "file_hash_verified",
+          "verificationNote": "ファイル配置・ハッシュ一致を確認。2026-09-17 に11チャンネルのメンション検索条件を実データで確認した。新しい会話での実動テストは未実施。"
+        }
+      },
+      "mirror": {
+        "eligible": true,
+        "status": "synced",
+        "reasonCode": null,
+        "reason": null,
+        "portability": "directly_shareable"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
+      "usage": {
+        "status": "no_signal",
+        "windowDays": 7,
+        "sessionCount": 0,
+        "lastUsedAt": null,
+        "environments": {
+          "codex": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          },
+          "claude": {
+            "observed": false,
+            "sessionCount": 0,
+            "lastUsedAt": null
+          }
+        },
+        "reason": "直近7日間にSkill定義参照・明示呼び出しは確認できませんでした。未使用の断定ではありません。"
+      },
+      "governance": {
+        "status": "needs_review",
+        "actionScope": "skill",
+        "reason": "ユーザー作成Skillのため自動削除しません。役割重複と今後の利用予定を確認して判断します。"
       }
     },
     {
@@ -13139,7 +13371,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13215,7 +13447,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13287,7 +13519,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -13359,7 +13591,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13440,7 +13672,7 @@
           "task-collection-daily-brief"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13512,7 +13744,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13584,7 +13816,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13656,7 +13888,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13732,7 +13964,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13804,7 +14036,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13876,7 +14108,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13948,7 +14180,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -13989,7 +14221,7 @@
       },
       "source": {
         "canonicalId": "skills/todo-add",
-        "contentHash": "sha256:4eae4c7cc0cedd9fb4b2940e51127c00c048ff701e61004951f2214788e4fdad"
+        "contentHash": "sha256:8476fb9b42557e13c8dd06ab44cfbf50c98f391ba5e590d5fcdc1a4a14c01518"
       },
       "identity": {
         "frontmatterName": "todo-add"
@@ -14001,7 +14233,7 @@
           "installed": true,
           "invocation": "$todo-add",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:4eae4c7cc0cedd9fb4b2940e51127c00c048ff701e61004951f2214788e4fdad",
+          "contentHash": "sha256:8476fb9b42557e13c8dd06ab44cfbf50c98f391ba5e590d5fcdc1a4a14c01518",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         },
@@ -14010,7 +14242,7 @@
           "installed": true,
           "invocation": "/todo-add",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:4eae4c7cc0cedd9fb4b2940e51127c00c048ff701e61004951f2214788e4fdad",
+          "contentHash": "sha256:8476fb9b42557e13c8dd06ab44cfbf50c98f391ba5e590d5fcdc1a4a14c01518",
           "availability": "verified",
           "evidenceType": "verified_runtime"
         }
@@ -14024,7 +14256,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14100,7 +14332,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14176,7 +14408,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14248,7 +14480,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14272,6 +14504,82 @@
         "status": "needs_review",
         "actionScope": "skill",
         "reason": "ユーザー作成Skillのため自動削除しません。役割重複と今後の利用予定を確認して判断します。"
+      }
+    },
+    {
+      "id": "user.toshi-style",
+      "kind": "skill",
+      "name": "toshi-style",
+      "aliases": [],
+      "description": "「トシ好みに」「トシっぽく」「トシ向けに直して」「トシが読みやすいように」と言われたとき、直前の返答・報告・判断依頼・資料・画面の文言・トシ名義の文面を、トシ（野尻忠寿）の好みと判断軸に合わせて作り直す。トシについて理解したうえで出力したいときの参照先にもなる。メール・Slack・LINEの確認や送信そのもの（communication-approval）、資料の新規作成そのもの（shiryo-slides-hub）には使わず、それらの出力を仕上げる段階で使う。",
+      "example": "",
+      "category": "development-ai",
+      "projectTags": [],
+      "provider": {
+        "type": "user",
+        "name": "トシ用に作成"
+      },
+      "source": {
+        "canonicalId": "skills/toshi-style",
+        "contentHash": "sha256:cb74ff2b9ef96072f78d88ac999db7d5944968ce0cab372dcc52d081a60402c7"
+      },
+      "identity": {
+        "frontmatterName": "toshi-style"
+      },
+      "triggers": [],
+      "environments": {
+        "codex": {
+          "configured": true,
+          "installed": true,
+          "invocation": "$toshi-style",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:cb74ff2b9ef96072f78d88ac999db7d5944968ce0cab372dcc52d081a60402c7",
+          "availability": "verified",
+          "evidenceType": "verified_runtime"
+        },
+        "claude": {
+          "configured": true,
+          "installed": true,
+          "invocation": "/toshi-style",
+          "detectedBy": "user-skill-directory",
+          "contentHash": "sha256:cb74ff2b9ef96072f78d88ac999db7d5944968ce0cab372dcc52d081a60402c7",
+          "availability": "verified",
+          "evidenceType": "verified_runtime"
+        }
+      },
+      "mirror": {
+        "eligible": true,
+        "status": "synced",
+        "reasonCode": null,
+        "reason": null,
+        "portability": "directly_shareable"
+      },
+      "requirements": [],
+      "legacy": {},
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
+      "usage": {
+        "status": "recent_signal",
+        "windowDays": 7,
+        "sessionCount": 4,
+        "lastUsedAt": "2026-09-17T05:26:16.337Z",
+        "environments": {
+          "codex": {
+            "observed": true,
+            "sessionCount": 1,
+            "lastUsedAt": "2026-09-17T04:29:58.814Z"
+          },
+          "claude": {
+            "observed": true,
+            "sessionCount": 3,
+            "lastUsedAt": "2026-09-17T05:26:16.337Z"
+          }
+        },
+        "reason": "直近7日間に、CodexでSkill定義参照1セッション、Claudeで明示呼び出し3セッションを確認しました。"
+      },
+      "governance": {
+        "status": "keep_recommended",
+        "actionScope": "skill",
+        "reason": "直近7日間の利用シグナルがあるため保持推奨です。"
       }
     },
     {
@@ -14320,7 +14628,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14392,7 +14700,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14464,7 +14772,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14536,7 +14844,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -14608,7 +14916,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14680,7 +14988,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14752,7 +15060,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14824,7 +15132,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14896,7 +15204,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -14968,7 +15276,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15010,7 +15318,7 @@
       },
       "source": {
         "canonicalId": "skills/visual-management-board",
-        "contentHash": "sha256:29dfb1672cf622be9a6c26241b351e5f6a5ed6a217d03affcb9cb7823797c020"
+        "contentHash": "sha256:ffea9247ec933da2f7cbaf0d4e9fb6d00c6c135064d9ed85beac19505a48db1b"
       },
       "identity": {
         "frontmatterName": "visual-management-board"
@@ -15028,7 +15336,7 @@
           "installed": true,
           "invocation": "$visual-management-board",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:29dfb1672cf622be9a6c26241b351e5f6a5ed6a217d03affcb9cb7823797c020",
+          "contentHash": "sha256:ffea9247ec933da2f7cbaf0d4e9fb6d00c6c135064d9ed85beac19505a48db1b",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
@@ -15038,7 +15346,7 @@
           "installed": true,
           "invocation": "/visual-management-board",
           "detectedBy": "user-skill-directory",
-          "contentHash": "sha256:29dfb1672cf622be9a6c26241b351e5f6a5ed6a217d03affcb9cb7823797c020",
+          "contentHash": "sha256:ffea9247ec933da2f7cbaf0d4e9fb6d00c6c135064d9ed85beac19505a48db1b",
           "availability": "installed_unverified",
           "evidenceType": "file_hash_verified",
           "verificationNote": "ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。"
@@ -15053,7 +15361,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15125,7 +15433,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15197,7 +15505,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15269,7 +15577,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15341,7 +15649,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15413,7 +15721,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15492,7 +15800,7 @@
           "xlsx"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15578,7 +15886,7 @@
           "yuiitsu-ad-reporting"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15653,7 +15961,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15739,7 +16047,7 @@
           "yuiitsu-before-after-posts"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15825,7 +16133,7 @@
           "yuiitsu-daily-ads-analysis"
         ]
       },
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "recent_signal",
         "windowDays": 7,
@@ -15869,7 +16177,7 @@
       },
       "source": {
         "canonicalId": "claude-scheduled-tasks/yuiitsu-erume-daily-sync",
-        "contentHash": "sha256:35fc2e60f86af901d4b6fbbb24dd6062b2f5421df9a9b9bde1498a472d1c954a"
+        "contentHash": "sha256:145ebe93a4e86c632b4f3cade7c4d6bcec6e206bda2160d4c22912a30641ae1a"
       },
       "environments": {
         "codex": {
@@ -15886,7 +16194,7 @@
           "installed": true,
           "invocation": null,
           "detectedBy": "claude-scheduled-task-definition",
-          "contentHash": "sha256:35fc2e60f86af901d4b6fbbb24dd6062b2f5421df9a9b9bde1498a472d1c954a",
+          "contentHash": "sha256:145ebe93a4e86c632b4f3cade7c4d6bcec6e206bda2160d4c22912a30641ae1a",
           "availability": "installed_unverified",
           "evidenceType": "definition_file"
         }
@@ -15900,7 +16208,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
@@ -15975,7 +16283,7 @@
       },
       "requirements": [],
       "legacy": {},
-      "lastVerifiedAt": "2026-09-17T03:49:09.366Z",
+      "lastVerifiedAt": "2026-09-17T13:05:21.961Z",
       "usage": {
         "status": "no_signal",
         "windowDays": 7,
