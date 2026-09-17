@@ -24,7 +24,7 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'shiryo-slides-hub', 'visual-management-board', 'cloudflare-web-publish']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'shiryo-slides-hub', 'visual-management-board', 'cloudflare-web-publish', 'minutes-full-flow', 'pj-board']);
 
 // トシが公開対象から除外するよう指定したレコード。実体の削除や自動化の停止は行わない。
 const PUBLIC_RECORD_EXCLUSIONS = new Set(['automation.claude.yuiitsu-offline-cv-import-check', 'automation.claude.yuiitsu-offline-cv-import-recheck-0915', 'automation.claude.zz-flowtest-child', 'automation.claude.zz-flowtest-parent', 'automation.claude.zz-flowtest-parent2']);
@@ -53,8 +53,8 @@ const userTextOverrides = new Map([
     example: '依頼文精査お願い！'
   }],
   ['obsidian-record', {
-    description: '議事録・メモ・方針を、Obsidian Vaultのルールどおりの場所・項目で保存するSkillです。議事録ではToDoを表で示し、承認後だけtodo-addでタスクデポへ登録します。',
-    example: '議事録保存して'
+    description: 'メモ・ナレッジ・方針を、Obsidian Vaultのルールどおりの場所・項目で保存するSkillです。会議の議事録は「議事録まるっと」（minutes-full-flow）が入口になり、保存の手順としてこのSkillを使います。',
+    example: 'Obsidianに記録して'
   }],
   ['communication-approval', {
     description: 'Gmailを基本に、指定されたSlack／LINEのやり取りを「確認→返信文案→個別承認後に送信」まで扱うSkillです。社外Slackでは、メンションと宛名を重ねず、既決条件を再掲せず、目的を添えた日程提案・読みやすい段落構成・明確な締めまで整えます。会話内の日程返信案は作成できますが、「スケ調整お願い」「スケジュール調整お願い」だけでは起動せず、送信やカレンダー登録も勝手に行いません。',
@@ -79,6 +79,14 @@ const userTextOverrides = new Map([
   ['visual-management-board', {
     description: 'プロダクトの状態、方針、ロードマップ、意思決定の変化を、縦スクロールで読める一枚のHTMLに整理するSkillです。正式記録やデータを根拠にし、完成後はHTMLライブラリへスクロールビジュアルとして下書き登録します。',
     example: 'このプロダクトの状態をスクロール形式で見える化して'
+  }],
+  ['minutes-full-flow', {
+    description: '会議の文字起こしやメモを渡すと、Obsidianへの議事録保存、PJの現在地・決定ログ、Slack「#team-営業議事録」への下書き、TODO候補の番号付き確認とTask Depot登録、PJボードの更新までを1回で進めるSkillです。',
+    example: 'この議事録登録して'
+  }],
+  ['pj-board', {
+    description: 'PJごとの現在地・全体像と戦略・進行表・会議ごとの決定・次回MTGの準備を1枚にしたページを、Obsidianのノートから作り直し、同じURLへ上書き公開するSkillです。会議前のアジェンダ作りにも使います。',
+    example: 'ゆとりの空間のPJボード更新して'
   }]
 ]);
 
@@ -88,7 +96,9 @@ const japaneseNameOverrides = new Map([
   ['obsidian-record', 'Obsidian記録'],
   ['cloudflare-web-publish', 'Cloudflare Web公開'],
   ['shiryo-slides-hub', '資料作成キット（ADV対応）'],
-  ['visual-management-board', '視覚管理ボード']
+  ['visual-management-board', '視覚管理ボード'],
+  ['minutes-full-flow', '議事録まるっと'],
+  ['pj-board', 'PJボード']
 ]);
 
 const providerNameOverrides = new Map();
@@ -104,10 +114,12 @@ const projectTagOverrides = new Map([
 
 const userTriggerOverrides = new Map([
   ['communication-approval', ['コミュニケーションツールの横断確認お願い！', 'チャット系の横断確認お願い！', '$communication-approval']],
-  ['obsidian-record', ['議事録保存して', 'メモしといて', '方針更新して', '$obsidian-record']],
+  ['obsidian-record', ['Obsidianに記録して', 'メモしといて', '方針更新して', '$obsidian-record']],
   ['shiryo-slides', ['資料を作って', '提案書を作って', 'スライドにして', '議事録から資料に', '$shiryo-slides']],
   ['shiryo-slides-hub', ['資料を作って', '提案書を作って', 'ADV資料をHTMLで作って', '議事録から資料に', '$shiryo-slides-hub']],
-  ['visual-management-board', ['プロダクト状態を視覚化して', '方針を一枚で見える化して', 'スクロール形式でまとめて', '視覚管理ボードを作って', '$visual-management-board']]
+  ['visual-management-board', ['プロダクト状態を視覚化して', '方針を一枚で見える化して', 'スクロール形式でまとめて', '視覚管理ボードを作って', '$visual-management-board']],
+  ['minutes-full-flow', ['議事録登録して', '議事録まるっと', '議事録とTODOお願い', '$minutes-full-flow']],
+  ['pj-board', ['〇〇のPJボード作って', 'PJボード更新して', '〇〇のMTG準備して', '$pj-board']]
 ]);
 
 // 同期の事実と実動テストの事実を混同しないための、個別検証状態。
@@ -139,6 +151,14 @@ const userVerificationOverrides = new Map([
   ['visual-management-board', {
     codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' }
+  }],
+  ['minutes-full-flow', {
+    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' }
+  }],
+  ['pj-board', {
+    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。2026-09-17 にゆとりの空間のPJボードを作って公開した。新しい会話での実動テストは未実施。' }
   }]
 ]);
 
