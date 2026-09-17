@@ -97,8 +97,8 @@ const userTextOverrides = new Map([
     example: 'リンク追加！'
   }],
   ['independent-review-session', {
-    description: '成果物を、作ったAIとは別の会社のAI（ClaudeならCodex、CodexならClaude）で、会話履歴のない使い捨てセッションに1回だけ検品させるSkillです。渡すのは仕様・合格条件・成果物・証拠の4つだけで、制作の会話や自己評価は渡さず、合格／差戻し／判定不能を根拠つきで返します。',
-    example: 'この成果物をCodexで独立検品して'
+    description: '成果物を、作ったAIとは別の会社のAI（ClaudeならCodex、CodexならClaude）で、会話履歴のない使い捨てセッションに1回だけ検品させるSkillです。渡すのは仕様・合格条件・成果物・証拠の4つだけで、制作の会話や自己評価は渡さず、合格／差戻し／判定不能を根拠つきで返します。毎回・自動では起こさず、「検品！」と頼んだときだけ動きます。',
+    example: 'この成果物を検品！'
   }]
 ]);
 
@@ -137,7 +137,7 @@ const userTriggerOverrides = new Map([
   ['pj-board', ['〇〇のPJボード作って', 'PJボード更新して', '〇〇のMTG準備して', 'PJボードのタブを〇〇の順にして', '$pj-board']],
   ['slack-to-reply-draft', ['Slack TO返信案', 'TO返信案', 'Slackの返信案出して', '$slack-to-reply-draft']],
   ['link-collection', ['リンク追加！', '〇〇のリンクどこ？', 'リンク集に登録して', '$link-collection']],
-  ['independent-review-session', ['独立検品して', '別AIで検品して', 'Codexで検品して', '使い捨て検品', '$independent-review-session']]
+  ['independent-review-session', ['検品！', '検品して', '独立検品して', '別AIで検品して', 'Codexで検品して', '使い捨て検品', '$independent-review-session']]
 ]);
 
 // 同期の事実と実動テストの事実を混同しないための、個別検証状態。
