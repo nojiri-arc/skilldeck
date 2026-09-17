@@ -24,7 +24,7 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'shiryo-slides-hub', 'visual-management-board', 'cloudflare-web-publish', 'minutes-full-flow', 'pj-board', 'slack-to-reply-draft', 'link-collection']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'shiryo-slides-hub', 'visual-management-board', 'cloudflare-web-publish', 'minutes-full-flow', 'pj-board', 'slack-to-reply-draft', 'link-collection', 'independent-review-session']);
 
 // トシが公開対象から除外するよう指定したレコード。実体の削除や自動化の停止は行わない。
 const PUBLIC_RECORD_EXCLUSIONS = new Set(['automation.claude.yuiitsu-offline-cv-import-check', 'automation.claude.yuiitsu-offline-cv-import-recheck-0915', 'automation.claude.zz-flowtest-child', 'automation.claude.zz-flowtest-parent', 'automation.claude.zz-flowtest-parent2']);
@@ -95,6 +95,10 @@ const userTextOverrides = new Map([
   ['link-collection', {
     description: 'シート・レポート・Driveフォルダ・資料・管理画面のリンクを、ObsidianのPJごとのリンク集へ別名つきで追加し、全案件PJボードを組み立て直して同じURLへ公開するSkillです。「〇〇のリンクどこ？」と聞けば、リンク集からDriveまで探して返します。',
     example: 'リンク追加！'
+  }],
+  ['independent-review-session', {
+    description: '成果物を、作ったAIとは別の会社のAI（ClaudeならCodex、CodexならClaude）で、会話履歴のない使い捨てセッションに1回だけ検品させるSkillです。渡すのは仕様・合格条件・成果物・証拠の4つだけで、制作の会話や自己評価は渡さず、合格／差戻し／判定不能を根拠つきで返します。',
+    example: 'この成果物をCodexで独立検品して'
   }]
 ]);
 
@@ -108,7 +112,8 @@ const japaneseNameOverrides = new Map([
   ['minutes-full-flow', '議事録まるっと'],
   ['pj-board', 'PJボード'],
   ['slack-to-reply-draft', 'Slack TO返信案'],
-  ['link-collection', 'リンク集']
+  ['link-collection', 'リンク集'],
+  ['independent-review-session', '使い捨て検品セッション']
 ]);
 
 const providerNameOverrides = new Map();
@@ -131,7 +136,8 @@ const userTriggerOverrides = new Map([
   ['minutes-full-flow', ['議事録登録して', '議事録まるっと', '議事録とTODOお願い', '$minutes-full-flow']],
   ['pj-board', ['〇〇のPJボード作って', 'PJボード更新して', '〇〇のMTG準備して', 'PJボードのタブを〇〇の順にして', '$pj-board']],
   ['slack-to-reply-draft', ['Slack TO返信案', 'TO返信案', 'Slackの返信案出して', '$slack-to-reply-draft']],
-  ['link-collection', ['リンク追加！', '〇〇のリンクどこ？', 'リンク集に登録して', '$link-collection']]
+  ['link-collection', ['リンク追加！', '〇〇のリンクどこ？', 'リンク集に登録して', '$link-collection']],
+  ['independent-review-session', ['独立検品して', '別AIで検品して', 'Codexで検品して', '使い捨て検品', '$independent-review-session']]
 ]);
 
 // 同期の事実と実動テストの事実を混同しないための、個別検証状態。
@@ -179,6 +185,10 @@ const userVerificationOverrides = new Map([
   ['link-collection', {
     codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。新しい会話での実動テストは未実施。' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。2026-09-17 に全7案件のリンク集（134件）を作り、全案件PJボードの検索に載せた。新しい会話での実動テストは未実施。' }
+  }],
+  ['independent-review-session', {
+    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。2026-09-17 に新しい会話でこのSkillが選ばれること、Codexを検品者にした起動（差戻し・合格の両ケース）を確認。Skill経由の実動テストは未実施。' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。2026-09-17 に新しい会話でこのSkillが選ばれること、Claudeを検品者にした起動（差戻し）を確認。Skill経由の実動テストは未実施。' }
   }]
 ]);
 
