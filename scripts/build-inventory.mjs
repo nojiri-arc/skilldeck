@@ -24,7 +24,7 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'shiryo-slides-hub', 'visual-management-board', 'cloudflare-web-publish', 'minutes-full-flow', 'pj-board', 'slack-to-reply-draft', 'link-collection', 'independent-review-session']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'shiryo-slides-hub', 'visual-management-board', 'cloudflare-web-publish', 'minutes-full-flow', 'pj-board', 'slack-to-reply-draft', 'link-collection', 'independent-review-session', 'ads-operations']);
 
 // トシが公開対象から除外するよう指定したレコード。実体の削除や自動化の停止は行わない。
 const PUBLIC_RECORD_EXCLUSIONS = new Set(['automation.claude.yuiitsu-offline-cv-import-check', 'automation.claude.yuiitsu-offline-cv-import-recheck-0915', 'automation.claude.zz-flowtest-child', 'automation.claude.zz-flowtest-parent', 'automation.claude.zz-flowtest-parent2']);
@@ -99,6 +99,10 @@ const userTextOverrides = new Map([
   ['independent-review-session', {
     description: '成果物を、作ったAIとは別の会社のAI（ClaudeならCodex、CodexならClaude）で、会話履歴のない使い捨てセッションに1回だけ検品させるSkillです。渡すのは仕様・合格条件・成果物・証拠の4つだけで、制作の会話や自己評価は渡さず、合格／差戻し／判定不能を根拠つきで返します。毎回・自動では起こさず、「検品！」と頼んだときだけ動きます。',
     example: 'この成果物を検品！'
+  }],
+  ['ads-operations', {
+    description: 'Google広告・Meta広告などを媒体共通の手順で分析し、承認待ちの改善提案と日次・週次・隔週レポートを作るSkillです。Google広告はスクリプト→スプレッドシート、Meta広告は公式MCPの読み取りでデータを取り、広告の変更は提案IDでの承認後だけ実行します。旧google-ads-consultantを置き換えました。',
+    example: '広告を分析して改善案出して'
   }]
 ]);
 
@@ -113,7 +117,8 @@ const japaneseNameOverrides = new Map([
   ['pj-board', 'PJボード'],
   ['slack-to-reply-draft', 'Slack TO返信案'],
   ['link-collection', 'リンク集'],
-  ['independent-review-session', '使い捨て検品セッション']
+  ['independent-review-session', '使い捨て検品セッション'],
+  ['ads-operations', '広告運用']
 ]);
 
 const providerNameOverrides = new Map();
@@ -137,7 +142,8 @@ const userTriggerOverrides = new Map([
   ['pj-board', ['〇〇のPJボード作って', 'PJボード更新して', '〇〇のMTG準備して', 'PJボードのタブを〇〇の順にして', '$pj-board']],
   ['slack-to-reply-draft', ['Slack TO返信案', 'TO返信案', 'Slackの返信案出して', '$slack-to-reply-draft']],
   ['link-collection', ['リンク追加！', '〇〇のリンクどこ？', 'リンク集に登録して', '$link-collection']],
-  ['independent-review-session', ['検品！', '検品して', '独立検品して', '別AIで検品して', 'Codexで検品して', '使い捨て検品', '$independent-review-session']]
+  ['independent-review-session', ['検品！', '検品して', '独立検品して', '別AIで検品して', 'Codexで検品して', '使い捨て検品', '$independent-review-session']],
+  ['ads-operations', ['広告運用', '広告を分析して改善案出して', '今日の広告アクション案', 'Meta広告の成績を見て', '広告レポート作って', '$ads-operations']]
 ]);
 
 // 同期の事実と実動テストの事実を混同しないための、個別検証状態。
@@ -189,6 +195,10 @@ const userVerificationOverrides = new Map([
   ['independent-review-session', {
     codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。2026-09-17 に新しい会話でこのSkillが選ばれること、Codexを検品者にした起動（差戻し・合格の両ケース）を確認。Skill経由の実動テストは未実施。' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認。2026-09-17 に新しい会話でこのSkillが選ばれること、Claudeを検品者にした起動（差戻し）を確認。Skill経由の実動テストは未実施。' }
+  }],
+  ['ads-operations', {
+    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認（2026-09-18）。新しい会話での実動テストは未実施。' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認（2026-09-18）。Meta公式MCPは未接続。新しい会話での実動テストは未実施。' }
   }]
 ]);
 
@@ -198,7 +208,9 @@ const retiredSkillNames = new Set(['business-card-contact-import', 'wayfinder', 
   // 2026-09-14 トシ承認で退役（SkillDeck精査で不要と判断）。
   'codex:setup', 'codex:review', 'codex:adversarial-review', 'codex:rescue', 'codex:transfer', 'codex:status', 'codex:result', 'codex:cancel', 'mission-control-daily-brief', 'discord-ai-relay', 'create-chatgpt-project', 'sequential-task-execution', 'grill-me', 'grill-with-docs', 'ask-matt', 'setup-matt-pocock-skills', 'to-spec', 'to-tickets', 'implement', 'tdd', 'teach', 'prototype', 'slide-outline-generator', 'funny-gif', 'japanese-english-translator', 'japanese-korean-translator', 'artifact-template-adv-2', 'sso-quick-diagnostics', 'communication-detection',
   // 2026-09-15 トシ承認で退役（統括AI・案件長が前提の旧体制の施策スキル）。
-  'strategy-execution-orchestrator', 'initiative-progress-manager']);
+  'strategy-execution-orchestrator', 'initiative-progress-manager',
+  // 2026-09-18 トシ承認で ads-operations（広告運用）へ改名・拡張して退役。
+  'google-ads-consultant']);
 const categoryByName = new Map([
   ['artifact-template-adv-1', 'materials-design'],
   ['artifact-template-adv-2', 'materials-design'], ['artifact-template-jra', 'materials-design'],
@@ -216,7 +228,7 @@ const categoryByName = new Map([
   ['makeleaps-orderslip-creation', 'task-operations'], ['meeting-minutes-notion-registration', 'meeting-writing-translation'],
   ['mtg-after-automation', 'task-operations'], ['new-attacker', 'sales-customer'],
   ['pipedrive-manage-sales', 'sales-customer'], ['post-order-operations-router', 'task-operations'],
-  ['google-ads-consultant', 'ads-analysis'], ['grill-with-docs', 'development-ai'], ['grilling', 'development-ai'],
+  ['ads-operations', 'ads-analysis'], ['grill-with-docs', 'development-ai'], ['grilling', 'development-ai'],
   ['implement', 'development-ai'], ['japanese-english-translator', 'meeting-writing-translation'],
   ['japanese-korean-translator', 'meeting-writing-translation'], ['kimono-brain-todo-management', 'task-operations'],
   ['mission-control-daily-brief', 'task-operations'], ['pc-lightening', 'development-ai'],

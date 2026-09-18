@@ -87,7 +87,7 @@
       "title": "Google広告の数字から、次の改善を決める",
       "need": "管理画面の数値を、具体的な改善案につなげたい",
       "prompt": "Google広告の直近30日を前期間と比較して分析して。成果が伸びた要因と落ちた要因を分け、予算を変える前に確認すべき点と、優先度の高い改善案をまとめて。",
-      "skills": ["google-ads-consultant", "visualize-data"],
+      "skills": ["ads-operations", "visualize-data"],
       "outputs": ["期間比較と要因整理", "改善案の優先順位", "実行前の確認事項"]
     },
     {
