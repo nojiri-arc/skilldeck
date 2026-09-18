@@ -24,7 +24,7 @@ const CATEGORIES = [
 ];
 
 // トシが「お気に入り」「おすすめ」として指定したSkillだけをここへ登録する。
-const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'shiryo-slides-hub', 'visual-management-board', 'cloudflare-web-publish', 'minutes-full-flow', 'pj-board', 'slack-to-reply-draft', 'link-collection', 'independent-review-session', 'ads-operations']);
+const HALL_OF_FAME_SKILLS = new Set(['strict-recheck-and-refine', 'todo-add', 'elegant-prompt', 'communication-approval', 'shiryo-slides', 'shiryo-slides-hub', 'visual-management-board', 'cloudflare-web-publish', 'minutes-full-flow', 'pj-board', 'slack-to-reply-draft', 'link-collection', 'independent-review-session', 'ads-operations', 'permission-allowlist-sync']);
 
 // トシが公開対象から除外するよう指定したレコード。実体の削除や自動化の停止は行わない。
 const PUBLIC_RECORD_EXCLUSIONS = new Set(['automation.claude.yuiitsu-offline-cv-import-check', 'automation.claude.yuiitsu-offline-cv-import-recheck-0915', 'automation.claude.zz-flowtest-child', 'automation.claude.zz-flowtest-parent', 'automation.claude.zz-flowtest-parent2']);
@@ -107,6 +107,10 @@ const userTextOverrides = new Map([
   ['ads-operations', {
     description: 'Google広告・Meta広告などを媒体共通の手順で分析し、承認待ちの改善提案と日次・週次・隔週レポートを作るSkillです。Google広告はスクリプト→スプレッドシート、Meta広告は公式MCPの読み取りでデータを取り、広告の変更は提案IDでの承認後だけ実行します。旧google-ads-consultantを置き換えました。',
     example: '広告を分析して改善案出して'
+  }],
+  ['permission-allowlist-sync', {
+    description: '直近の会話ログと各フォルダの承認設定を調べ、何度も出ている読み取り系の承認だけを、Claudeの全体の承認一覧へバックアップつきでまとめて登録するSkillです。送信・作成・削除や任意のコードが走るもの、個人情報を返すものは入れず、入れなかった理由も報告します。',
+    example: '承認整理！'
   }]
 ]);
 
@@ -122,7 +126,8 @@ const japaneseNameOverrides = new Map([
   ['slack-to-reply-draft', 'Slack TO返信案'],
   ['link-collection', 'リンク集'],
   ['independent-review-session', '使い捨て検品セッション'],
-  ['ads-operations', '広告運用']
+  ['ads-operations', '広告運用'],
+  ['permission-allowlist-sync', '承認整理']
 ]);
 
 const providerNameOverrides = new Map();
@@ -147,7 +152,8 @@ const userTriggerOverrides = new Map([
   ['slack-to-reply-draft', ['Slack TO返信案', 'TO返信案', 'Slackの返信案出して', '$slack-to-reply-draft']],
   ['link-collection', ['リンク追加！', '〇〇のリンクどこ？', 'リンク集に登録して', '$link-collection']],
   ['independent-review-session', ['検品！', '検品して', '独立検品して', '別AIで検品して', 'Codexで検品して', '使い捨て検品', '$independent-review-session']],
-  ['ads-operations', ['広告運用', '広告を分析して改善案出して', '今日の広告アクション案', 'Meta広告の成績を見て', '広告レポート作って', '$ads-operations']]
+  ['ads-operations', ['広告運用', '広告を分析して改善案出して', '今日の広告アクション案', 'Meta広告の成績を見て', '広告レポート作って', '$ads-operations']],
+  ['permission-allowlist-sync', ['承認整理！', '承認多かったから登録して', '重複してる承認を全体に登録して', '$permission-allowlist-sync']]
 ]);
 
 // 同期の事実と実動テストの事実を混同しないための、個別検証状態。
@@ -203,6 +209,10 @@ const userVerificationOverrides = new Map([
   ['ads-operations', {
     codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認（2026-09-18）。新しい会話での実動テストは未実施。' },
     claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認（2026-09-18）。Meta公式MCPは未接続。新しい会話での実動テストは未実施。' }
+  }],
+  ['permission-allowlist-sync', {
+    codex: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認（2026-09-18）。Codexでは候補一覧を出すだけ。新しい会話での実動テストは未実施。' },
+    claude: { availability: 'installed_unverified', evidenceType: 'file_hash_verified', verificationNote: 'ファイル配置・ハッシュ一致を確認（2026-09-18）。集計・登録スクリプトは単体で確認済み。新しい会話での実動テストは未実施。' }
   }]
 ]);
 
