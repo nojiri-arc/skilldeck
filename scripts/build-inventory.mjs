@@ -44,6 +44,10 @@ const governanceOverrides = new Map([
 
 // legacy-skills.json は89件で凍結されているため、新規skillの日本語説明と依頼例はここで補う。
 const userTextOverrides = new Map([
+  ['yuiitsu-mamechishiki-format', {
+    description: 'ゆいいつのLINE向け「きもの豆知識タイム！」の投稿画像（1080×1080・本文なし）を、実は型・数字型・クイズ型の決まった形式でAIが生成し、通知欄テキスト・出典・監修依頼文までの確認セットを用意するSkillです。Canvaは使いません。',
+    example: '来週の豆知識タイムを4本作って'
+  }],
   ['strict-recheck-and-refine', {
     description: '検品スキル。作業後に別のAIが厳しめに見直し、必要な修正まで行う最終チェック用のSkillです。',
     example: '厳しめの再確認をお願い！'
@@ -242,7 +246,7 @@ const categoryByName = new Map([
   ['task-collection-daily-brief', 'task-operations'], ['tdd', 'development-ai'], ['teach', 'meeting-writing-translation'], ['to-spec', 'development-ai'],
   ['todo-share-table', 'task-operations'],
   ['to-tickets', 'development-ai'], ['yuiitsu-ad-reporting', 'ads-analysis'],
-  ['yuiitsu-before-after-posts', 'materials-design'], ['yuiitsu-daily-ads-analysis', 'ads-analysis']
+  ['yuiitsu-before-after-posts', 'materials-design'], ['yuiitsu-mamechishiki-format', 'materials-design'], ['yuiitsu-daily-ads-analysis', 'ads-analysis']
 ]);
 
 function sha256(value) {
@@ -392,6 +396,7 @@ const SPECIALIZED_WORK_SKILLS = new Set([
   'yuiitsu-ad-reporting',
   'yuiitsu-before-after-posts',
   'yuiitsu-daily-ads-analysis',
+  'yuiitsu-mamechishiki-format',
 ]);
 
 function isSpecializedWorkSkill(name) {
